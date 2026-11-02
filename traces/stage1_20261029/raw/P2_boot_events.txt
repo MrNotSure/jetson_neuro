@@ -1,0 +1,27 @@
+1793297444.929	18:10:44Z	watcher start; capture P2_boot
+1793297444.938	18:10:44Z	status I_1s=-0.0 A Imax_1s=0.0007 peak=0.0007 conv=5995 alarm=False
+1793297450.077	18:10:50Z	status I_1s=-0.0 A Imax_1s=0.0006 peak=0.0007 conv=10697 alarm=False
+1793297455.112	18:10:55Z	status I_1s=-0.0 A Imax_1s=0.0005 peak=0.0007 conv=15399 alarm=False
+1793297460.204	18:11:00Z	status I_1s=-0.0 A Imax_1s=0.0006 peak=0.0007 conv=20085 alarm=False
+1793297465.325	18:11:05Z	status I_1s=-0.0 A Imax_1s=0.0005 peak=0.0007 conv=24771 alarm=False
+1793297470.415	18:11:10Z	status I_1s=-0.0 A Imax_1s=0.0007 peak=0.0007 conv=29440 alarm=False
+1793297475.447	18:11:15Z	status I_1s=-0.0 A Imax_1s=0.0006 peak=0.0007 conv=34126 alarm=False
+1793297480.585	18:11:20Z	status I_1s=-0.0 A Imax_1s=0.0005 peak=0.0007 conv=38820 alarm=False
+1793297485.684	18:11:25Z	status I_1s=-0.0 A Imax_1s=0.0004 peak=0.0007 conv=43514 alarm=False
+1793297490.726	18:11:30Z	status I_1s=-0.0001 A Imax_1s=0.0004 peak=0.0007 conv=48208 alarm=False
+1793297493.241	18:11:33Z	POWER-UP: 1 s mean current 0.1528 A
+1793297495.760	18:11:35Z	status I_1s=0.3195 A Imax_1s=0.4908 peak=0.7434 conv=52894 alarm=False
+1793297500.775	18:11:40Z	status I_1s=0.6186 A Imax_1s=0.6981 peak=0.8885 conv=57580 alarm=False
+1793297505.838	18:11:45Z	status I_1s=0.5939 A Imax_1s=0.6287 peak=0.8885 conv=62274 alarm=False
+1793297510.876	18:11:50Z	status I_1s=0.4659 A Imax_1s=0.8272 peak=0.8885 conv=66975 alarm=False
+1793297516.477	18:11:56Z	status I_1s=0.3518 A Imax_1s=0.543 peak=0.8885 conv=72132 alarm=False
+1793297521.549	18:12:01Z	status I_1s=0.6033 A Imax_1s=0.9987 peak=0.9987 conv=76826 alarm=False
+1793297521.660	18:12:01Z	USB: NVIDIA device(s) [(2389, 28704, 'Linux for Tegra', '<jetson-serial>', 2097152), (2389, 28704, 'Linux for Tegra', None, 2097152), (2389, 28704, 'Linux for Tegra', None, None), (2389, 28704, None, None, None)]; 28.3 s after power-up
+1793297521.661	18:12:01Z	TTY: ['/dev/cu.usbmodem<jetson-serial>21']; 28.3 s after power-up
+1793297523.770	18:12:03Z	ssh attempt rc=255 ssh: connect to host 192.168.55.1 port 22: Operation timed out
+1793297526.350	18:12:06Z	ssh attempt rc=255 ssh: connect to host 192.168.55.1 port 22: Operation timed out
+1793297526.870	18:12:06Z	status I_1s=0.4768 A Imax_1s=0.5826 peak=0.9987 conv=81999 alarm=False
+1793297528.955	18:12:08Z	ssh attempt rc=255 ssh: connect to host 192.168.55.1 port 22: Operation timed out
+1793297530.419	18:12:10Z	SSH: answered; 37.2 s after power-up
+1793297531.986	18:12:11Z	status I_1s=0.35 A Imax_1s=0.4092 peak=0.9987 conv=86685 alarm=False
+1793297535.595	18:12:15Z	watcher end: power-up 1793297493.2230232, usb 1793297521.527304, tty 1793297521.527304, ssh 1793297530.418498

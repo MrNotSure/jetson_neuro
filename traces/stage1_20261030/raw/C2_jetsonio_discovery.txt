@@ -1,0 +1,111 @@
+32:import glob
+38:def _board_find_overlays(dtbos, hdr_names, hdtbos, hw_addons):
+39:    for dtbo in dtbos:
+41:        header = dtc.get_prop_value(dtbo, '/', 'jetson-header-name', 0)
+46:            overlay = dtc.get_prop_value(dtbo, '/', 'overlay-name', 0)
+48:                error = "overlay-name not specified in %s!\n" % dtbo
+54:                                (dtbo, hw_addons[header][overlay])
+57:            hw_addons[header][overlay] = dtbo
+58:            if header not in hdtbos.keys():
+59:                hdtbos[header] = None
+64:        header = dtc.get_prop_value(dtbo, '/', 'overlay-name', 0)
+65:        if header in hdtbos.keys() and hdtbos[header]:
+68:            error = error + "\n%s\n%s" % (dtbo, hdtbos[header])
+72:            hdtbos[header] = dtbo
+77:def _board_get_jetson_io_pinmux_pins(hdr_prefixes):
+116:def _board_root_partition_is_block_device():
+123:def _board_root_partition_get_partlabel():
+132:def _board_partition_exists(partlabel):
+141:def _board_partition_is_root_mountpoint(partlabel):
+148:def _board_get_dtb(compat, model, path):
+149:    dtbs = dtc.find_compatible_dtb_files(compat, model, path)
+157:def _board_partition_mount(partlabel):
+171:def _board_partition_umount(mountpoint):
+177:def _board_load_headers(hdr_defs, dtbos):
+178:    hdtbos = {}
+182:    hdr_names_all = [hdr_def.name for hdr_def in hdr_defs]
+183:    _board_find_overlays(dtbos, hdr_names_all, hdtbos, hw_addons)
+186:    hdr_prefixes = [hdr_def.prefix for hdr_def in hdr_defs]
+189:    for hdr_def in hdr_defs:
+191:        if hdr in hdtbos.keys():
+192:            board_header = _BoardHeader(hdr_def, hdtbos[hdr], hw_addons[hdr],
+200:    def __init__(self, hdr_def, hdtbos, hw_addons, preconf_pins):
+201:        self.hdr_def = hdr_def
+202:        self.hdtbos = hdtbos
+211:    def __init__(self):
+213:        self.bootdir = '/boot'
+214:        self.extlinux = '/boot/extlinux/extlinux.conf'
+240:        self.compat = dt.read_prop('compatible')
+243:        dtbos = dtc.find_compatible_dtbo_files(self.compat.split(),
+249:        self.board_headers = _board_load_headers(Headers.HDRS, dtbos)
+251:    def __del__(self):
+255:    def get_board_headers(self):
+259:        for hdr_def in Headers.HDRS:
+264:    def set_active_header(self, hdr):
+269:                    header.Header(self.board_headers[hdr].hdtbos,
+273:        self.hdtbo = self.board_headers[hdr].hdtbos
+278:    def preconf_pins_avail(self, hdr):
+283:    def hw_addon_get(self):
+286:    def hw_addon_load(self, name):
+306:    def _create_header_dtbo(self, name):
+307:        dtbo = os.path.join(self.bootdir, name)
+308:        shutil.copyfile(self.hdtbo, dtbo)
+315:                dtc.remove_node(dtbo, self.header.pin_get_node(pin))
+323:                    dtc.remove_node(dtbo, n)
+328:            os.remove(dtbo)
+340:                dtc.set_prop_value(dtbo, node, 'u',
+344:                dtc.set_prop_value(dtbo, node, 'u',
+346:                dtc.set_prop_value(dtbo, node, 'u',
+348:                dtc.set_prop_value(dtbo, node, 'u',
+352:                dtc.set_prop_value(dtbo, node, 'u',
+== header.py
+28:def _parse_pinmux_pins(dts, path, prefix, pinmux, pins, pingroups):
+63:        function = None
+82:            elif prop == 'nvidia,function':
+83:                function = value
+84:            elif prop == 'nvidia,pin-group':
+86:            elif prop == 'nvidia,pin-label':
+93:        if function is None:
+94:        # Fixed function or always on pins
+99:                group = function
+101:                                  function, label)
+102:            pingroups.add(group, function, name)
+105:def _header_parse_pinmap(dtbo, prefix, pinmux, pins, pingroups):
+136:    def __init__(self, header):
+148:    def add_fixed(self, pinmux, name, pin_num, node, label):
+157:            self.labels[name] = pinmux.pin_get_function(name)
+161:    def add_configurable(self, pinmux, name, pin_num, node, \
+162:                         function, label):
+166:        # Configurable pins have 'nvidia,function' property specified; there
+171:        # the node matching the selected function should be pulled out
+173:            functions = pinmux.pin_get_all_functions(name)
+174:            curr_func = pinmux.pin_get_function(name)
+177:            self.pins[name] = io.Pin(name, enabled, curr_func, functions, init_state)
+182:            self.nodes[name][function] = node
+183:            self.labels[name][function] = label
+188:            if function in self.nodes[name].keys():
+190:                                % (pin_num, function))
+191:            self.nodes[name][function] = node
+192:            self.labels[name][function] = label
+196:        if function not in self.pins[name].get_functions():
+197:            raise NameError("Invalid function %s for pin%d %s!" \
+198:                            % (function, pin_num, name))
+200:    def disable(self, name):
+205:    def disable_all(self):
+209:    def get_count(self):
+212:    def get_function(self, name):
+215:        return self.pins[name].get_function()
+217:    def get_functions(self, name):
+220:        return self.pins[name].get_functions()
+222:    def get_pin_indices(self, names):
+229:    def get_name(self, pin_num):
+236:    def get_node(self, name, function):
+239:        if function is None:
+241:        if function in self.nodes[name].keys():
+242:            return self.nodes[name][function]
+243:        raise NameError("No node found for pin %s, function %s!" \
+244:                        % (name, function))
+246:    def get_all_nodes(self, name):
+251:    def get_default_node(self, name):
+256:        function = self.pins[name].get_default_function()
+257:        return self.get_node(name, function)

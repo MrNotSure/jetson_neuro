@@ -1,0 +1,7 @@
+conversions 49595, missed 0, spurious ALRT 0, falls 1001, rises 1001, FIFO levels conv [1], fall levels [1]
+fall runs: [1, 1000]
+S (H): falls 1000, mark_ctl rows 1000, OBS (periods.csv rows) 1000; k match True; n_events mismatches 0; dummy lead 1.738 s (lone dummy before: True)
+   edge interval ms: median 10.000, min 2.246, max 24.544, outside 8-15 ms 45
+   write() us: first 58.3, p50 18.1, p99 38.9, max 58.3
+   misses 1 at k [700]; send_lateness > 5 ms: 9 at k [106, 671, 672, 684, 691, 716, 717, 891, 936]; lateness p50/p99/max 1/4161/14522 us
+   ctl_us p50 28.8, p99 53.8; n_events mean 407

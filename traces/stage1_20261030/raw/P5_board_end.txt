@@ -1,0 +1,3 @@
+{"decisions": 72000, "stopped_early": false, "utc_end": "2026-10-30T18:13:20Z"}
+p5 exited
+cpu-thermal=49000 gpu-thermal=49156 soc0-thermal=47968 soc1-thermal=48718 soc2-thermal=48687 tj-thermal=48906 fan 66

@@ -1,0 +1,44 @@
+gpu gov performance min 306000000 max 1020000000 cur 1020000000
+bwmgr min 204000000 max 3199000000
+cpu0 idle disable: 0 0 
+cpu4 idle disable: 0 0 
+railgate_enable 0
+== nvpmodel
+NVPM VERB: PARAM CPU_A78_5: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu5/cpufreq/scaling_max_freq: REAL_VAL: 1728000 CONF_VAL: 1344000
+NVPM VERB: PARAM GPU: ARG MIN_FREQ: PATH /sys/devices/platform/17000000.gpu/devfreq_dev/min_freq: REAL_VAL: 306000000 CONF_VAL: 0
+NVPM VERB: PARAM GPU: ARG MAX_FREQ: PATH /sys/devices/platform/17000000.gpu/devfreq_dev/max_freq: REAL_VAL: 1020000000 CONF_VAL: 918000000
+NVPM VERB: PARAM GPU_POWER_CONTROL_DISABLE: ARG GPU_PWR_CNTL_DIS: PATH /sys/devices/platform/gpu.0/power/control: REAL_VAL: auto CONF_VAL: auto
+NVPM VERB: PARAM EMC: ARG MAX_FREQ: PATH /sys/class/devfreq/bwmgr/max_freq: REAL_VAL: 3199000000 CONF_VAL: 3199000000
+pmode:0001× nvpmodel.service - nvpmodel service
+     Loaded: loaded (/etc/systemd/system/nvpmodel.service; enabled; preset: enabled)
+     Active: failed (Result: exit-code) since Thu 1970-01-01 01:00:32 CET; 56 years 9 months ago
+    Process: 1949 ExecStart=/etc/systemd/nvpmodel.sh (code=exited, status=234)
+   Main PID: 1949 (code=exited, status=234)
+        CPU: 11ms
+
+Jan 01 01:00:32 jetson systemd[1]: Starting nvpmodel.service - nvpmodel service...
+Jan 01 01:00:32 jetson nvpmodel.sh[1951]: NVPM WARN: Golden image context is already created
+Jan 01 01:00:32 jetson nvpmodel.sh[1951]: NVPM WARN: Reboot required for changing to this power mode: 1
+Jan 01 01:00:32 jetson nvpmodel.sh[1951]: NVPM WARN: DO YOU WANT TO REBOOT NOW? enter YES/yes to confirm:
+Jan 01 01:00:32 jetson nvpmodel.sh[1951]: NVPM ERROR: bad input!
+== journal nvpmodel this boot
+1970-01-01T01:00:32+01:00 jetson systemd[1]: Starting nvpmodel.service - nvpmodel service...
+1970-01-01T01:00:32+01:00 jetson nvpmodel.sh[1951]: NVPM WARN: Golden image context is already created
+1970-01-01T01:00:32+01:00 jetson nvpmodel.sh[1951]: NVPM WARN: Reboot required for changing to this power mode: 1
+1970-01-01T01:00:32+01:00 jetson nvpmodel.sh[1951]: NVPM WARN: DO YOU WANT TO REBOOT NOW? enter YES/yes to confirm:
+1970-01-01T01:00:32+01:00 jetson nvpmodel.sh[1951]: NVPM ERROR: bad input!
+1970-01-01T01:00:32+01:00 jetson nvpmodel.sh[1951]: NVPM ERROR: optMask is 2, no request for power mode
+1970-01-01T01:00:32+01:00 jetson systemd[1]: nvpmodel.service: Main process exited, code=exited, status=234/n/a
+1970-01-01T01:00:32+01:00 jetson systemd[1]: nvpmodel.service: Failed with result 'exit-code'.
+1970-01-01T01:00:32+01:00 jetson systemd[1]: Failed to start nvpmodel.service - nvpmodel service.
+== failed units
+● fwupd-refresh.service loaded failed failed Refresh fwupd metadata and update motd
+● nvpmodel.service      loaded failed failed nvpmodel service
+== jetson_clocks-like units
+fake-hwclock-load.service                    enabled         enabled
+fake-hwclock-save.service                    enabled         enabled
+fake-hwclock.service                         masked          enabled
+hwclock.service                              masked          enabled
+nvpmodel.service                             enabled         enabled
+nvpower.service                              enabled         enabled
+fake-hwclock-save.timer                      enabled         enabled

@@ -1,0 +1,2 @@
+sampler: INA228 excess around each read, ms -> mW above [30, 80) ms: [-10,-2) -0.7, [-2,0) -10.1, [0,1) +141.7, [1,2) +116.9, [2,3) +100.8, [3,5) +54.7, [5,10) +5.0, [10,20) -1.8; energy over [-5, 12) ms +467 uJ per read
+freqlog: INA228 excess around each read, ms -> mW above [30, 80) ms: [-10,-2) -5.9, [-2,0) +100.6, [0,1) +83.2, [1,2) -0.3, [2,3) +28.9, [3,5) -12.0, [5,10) +4.1, [10,20) +21.4; energy over [-5, 12) ms +335 uJ per read

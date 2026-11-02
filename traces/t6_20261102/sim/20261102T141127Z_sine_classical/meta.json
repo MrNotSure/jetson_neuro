@@ -1,0 +1,126 @@
+{
+  "config": {
+    "camera": {
+      "width": 320,
+      "height": 240,
+      "hfov_deg": 60.0
+    },
+    "scene": {
+      "background": "uniform",
+      "i_bg": 0.25
+    },
+    "target": {
+      "i_t": 1.0,
+      "radius_deg": 1.5,
+      "trajectory": "sine",
+      "sine_az_amp_deg": 15.0,
+      "sine_az_freq_hz": 0.25,
+      "sine_az_phase_deg": 0.0,
+      "sine_el_amp_deg": 8.0,
+      "sine_el_freq_hz": 0.35,
+      "sine_el_phase_deg": 0.0,
+      "step_interval_s": 3.0,
+      "step_max_deg": 20.0,
+      "step_az_range_deg": 15.0,
+      "step_el_range_deg": 8.0,
+      "random_az_amp_deg": 15.0,
+      "random_el_amp_deg": 8.0,
+      "random_f_min_hz": 0.05,
+      "random_f_max_hz": 0.5,
+      "random_n_sines": 5
+    },
+    "plant": {
+      "omega_n": 25.0,
+      "zeta": 0.8,
+      "rate_limit": 6.0,
+      "pan_limit_deg": 90.0,
+      "tilt_limit_deg": 45.0,
+      "dead_time_s": 0.01,
+      "dt_phys_s": 0.001
+    },
+    "events": {
+      "threshold_median": 0.12,
+      "threshold_sigma": 0.039,
+      "threshold_min": 0.01,
+      "refractory_s": 0.0005,
+      "noise_rate_hz": 0.1,
+      "log_eps": 0.001,
+      "max_px_substep": 1.0
+    },
+    "loop": {
+      "period_s": 0.01,
+      "cmd_deadline_s": 0.005,
+      "cmd_timeout_s": 5.0,
+      "max_consecutive_misses": 100
+    },
+    "link": {
+      "connect_timeout": 10.0,
+      "port": 5555,
+      "ssh_command": "ssh",
+      "ssh_options": [],
+      "ssh_ready_timeout_s": 15.0
+    },
+    "view": {
+      "max_fps": 20.0,
+      "window_s": 10.0
+    },
+    "run": {
+      "episode_length_s": 60.0,
+      "episodes": 1,
+      "seed": 0,
+      "warmup_s": 1.0,
+      "success_in_fov": 0.95,
+      "save_events": false
+    }
+  },
+  "seed": 0,
+  "scenario": "track-sine-v1",
+  "overrides": [
+    "run.episode_length_s=60.0"
+  ],
+  "scenario_exact": false,
+  "endpoint_type": "tcp",
+  "git_sha": "cbcae213b1c86ecfc58042b9a7725e5a1e6fc86c",
+  "git_dirty": false,
+  "os": "Darwin",
+  "arch": "arm64",
+  "python": "3.12.15",
+  "numpy": "2.5.4",
+  "matplotlib": "3.11.2",
+  "ctl_seed": {
+    "0": 9489810283428522141
+  },
+  "controller": {
+    "name": "classical",
+    "params": {
+      "cell": 16,
+      "n_acq": 20,
+      "r_win": 12.0,
+      "ms_iter": 3,
+      "n_meas": 15,
+      "r_gate": 24.0,
+      "sigma_px": 1.0,
+      "q": 2.0,
+      "coast_max": 30,
+      "kp": 0.3,
+      "ki": 8.0,
+      "kd": 0.0,
+      "i_max_deg": 2.0,
+      "model_wn": 25.0,
+      "model_zeta": 0.8,
+      "model_dead_periods": 1,
+      "pan_lim_deg": 90.0,
+      "tilt_lim_deg": 45.0
+    },
+    "fault": null,
+    "stage_log": null,
+    "git_sha": "0c397e1bb42f90ea295710ea4f225f4e218066c6",
+    "git_dirty": false,
+    "os": "Linux",
+    "arch": "aarch64",
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "torch": null
+  },
+  "start_utc": "2026-11-02T14:11:27Z"
+}

@@ -1,0 +1,47 @@
+== end state, Mac 2026-11-02T17:14:52+00:00
+2026-11-02T17:14:52.634Z
+ 18:14:52 up  1:13,  1 user,  load average: 0.00, 0.00, 0.00
+Result=success
+anacron.timer inactive
+man-db.timer inactive
+fstrim.timer inactive
+e2scrub_all.timer inactive
+dpkg-db-backup.timer inactive
+systemd-tmpfiles-clean.timer inactive
+fake-hwclock-save.timer active
+radio wifi (read-only): disabled
+default target: multi-user.target
+No jobs running.
+no apt/dpkg
+nothing of ours running
+5555 closed
+5.7M	/tmp/jn_t6b
+77
+cpu-thermal=47593 gpu-thermal=47718 soc0-thermal=46687 soc1-thermal=47343 soc2-thermal=47375 tj-thermal=47687 
+best (shortest rtt 70.6 ms): board - mac = -0.086 s = -0.0000 d; mac utc 2026-11-02 17:14:54
+2026-11-02T17:20:13.517Z
+anacron.timer active
+man-db.timer active
+fstrim.timer active
+e2scrub_all.timer active
+dpkg-db-backup.timer active
+systemd-tmpfiles-clean.timer active
+fake-hwclock-save.timer active
+No jobs running.
+no apt/dpkg
+no timer job processes
+radio wifi (read-only): disabled
+NEXT                            LEFT LAST                           PASSED UNIT                         ACTIVATES
+Mon 2026-11-02 18:34:34 CET    14min Mon 2026-11-02 18:20:13 CET 228ms ago anacron.timer                anacron.service
+Mon 2026-11-02 19:00:00 CET    39min Mon 2026-11-02 18:00:05 CET 20min ago fake-hwclock-save.timer      fake-hwclock-save.service
+Mon 2026-11-02 20:22:22 CET  2h 2min Fri 2026-10-30 18:24:41 CET         - man-db.timer                 man-db.service
+Tue 2026-11-03 00:00:00 CET 5h 39min Mon 2026-11-02 10:30:40 CET         - dpkg-db-backup.timer         dpkg-db-backup.service
+Tue 2026-11-03 18:20:13 CET      23h Mon 2026-11-02 18:20:13 CET 184ms ago systemd-tmpfiles-clean.timer systemd-tmpfiles-clean.service
+Sun 2026-11-08 03:10:03 CET   5 days Mon 2026-11-02 10:30:40 CET         - e2scrub_all.timer            e2scrub_all.service
+Mon 2026-11-09 00:43:44 CET   6 days Mon 2026-11-02 10:30:40 CET         - fstrim.timer                 fstrim.service
+
+17:20:32
+Result=success ActiveState=inactive SubState=dead  Result=success ActiveState=inactive SubState=dead
+no anacron/run-parts/mandb/dpkg
+No jobs running.
+77

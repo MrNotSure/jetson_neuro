@@ -1,0 +1,21 @@
+loop+try overhead: 4.16 us per iteration
+SPEED f=100000 reg=VSHUNT bytes=3 reads=10000 errors=0 us_per_read=622.8 reads_per_s=1606 bus_bits=57 bus_us=570.0 overhead_us=52.8 last=ffff80
+SPEED f=100000 reg=CURRENT bytes=3 reads=10000 errors=0 us_per_read=622.8 reads_per_s=1606 bus_bits=57 bus_us=570.0 overhead_us=52.8 last=ffffc0
+SPEED f=100000 reg=ENERGY bytes=5 reads=10000 errors=0 us_per_read=815.0 reads_per_s=1227 bus_bits=75 bus_us=750.0 overhead_us=65.0 last=0000000000
+SPEED f=100000 reg=DIAG_ALRT bytes=2 reads=10000 errors=0 us_per_read=526.6 reads_per_s=1899 bus_bits=48 bus_us=480.0 overhead_us=46.6 last=0001
+SPEED f=100000 reg=VSHUNT_pointer_retained bytes=3 reads=10000 errors=0 us_per_read=407.9 reads_per_s=2451 bus_bits=38 bus_us=380.0 overhead_us=27.9
+SPEED f=100000 pair=VSHUNT+VBUS us_per_pair=1244.9 pairs_per_s=803
+SPEED f=400000 reg=VSHUNT bytes=3 reads=10000 errors=0 us_per_read=187.1 reads_per_s=5343 bus_bits=57 bus_us=142.5 overhead_us=44.6 last=ffffe0
+SPEED f=400000 reg=CURRENT bytes=3 reads=10000 errors=0 us_per_read=187.1 reads_per_s=5343 bus_bits=57 bus_us=142.5 overhead_us=44.6 last=ffff50
+SPEED f=400000 reg=ENERGY bytes=5 reads=10000 errors=0 us_per_read=240.0 reads_per_s=4167 bus_bits=75 bus_us=187.5 overhead_us=52.5 last=0000000000
+SPEED f=400000 reg=DIAG_ALRT bytes=2 reads=10000 errors=0 us_per_read=160.7 reads_per_s=6222 bus_bits=48 bus_us=120.0 overhead_us=40.7 last=0001
+SPEED f=400000 reg=VSHUNT_pointer_retained bytes=3 reads=10000 errors=0 us_per_read=120.6 reads_per_s=8291 bus_bits=38 bus_us=95.0 overhead_us=25.6
+SPEED f=400000 pair=VSHUNT+VBUS us_per_pair=372.3 pairs_per_s=2686
+SPEED f=1000000 reg=VSHUNT bytes=3 reads=10000 errors=0 us_per_read=100.8 reads_per_s=9917 bus_bits=57 bus_us=57.0 overhead_us=43.8 last=ffff80
+SPEED f=1000000 reg=CURRENT bytes=3 reads=10000 errors=0 us_per_read=100.8 reads_per_s=9917 bus_bits=57 bus_us=57.0 overhead_us=43.8 last=ffff60
+SPEED f=1000000 reg=ENERGY bytes=5 reads=10000 errors=0 us_per_read=124.7 reads_per_s=8016 bus_bits=75 bus_us=75.0 overhead_us=49.7 last=0000000000
+SPEED f=1000000 reg=DIAG_ALRT bytes=2 reads=10000 errors=0 us_per_read=88.9 reads_per_s=11250 bus_bits=48 bus_us=48.0 overhead_us=40.9 last=0003
+SPEED f=1000000 reg=VSHUNT_pointer_retained bytes=3 reads=10000 errors=0 us_per_read=62.7 reads_per_s=15939 bus_bits=38 bus_us=38.0 overhead_us=24.7
+SPEED f=1000000 pair=VSHUNT+VBUS us_per_pair=198.1 pairs_per_s=5048
+BURST 6 bytes from 0x04: 000010ffffff | VSHUNT alone 000010 | VBUS alone 000000 | bytes 3..5 equal VBUS: False, equal VSHUNT: False
+INA228 reset

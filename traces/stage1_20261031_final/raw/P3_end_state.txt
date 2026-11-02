@@ -1,0 +1,78 @@
+== 2026-10-31T13:49:46Z Part 3 end state (board)
+ 14:49:46 up 40 min,  1 user,  load average: 0.02, 0.05, 0.05
+multi-user.target
+disabled
+== timers
+anacron.timer active enabled
+man-db.timer active enabled
+fstrim.timer active enabled
+e2scrub_all.timer active enabled
+dpkg-db-backup.timer active enabled
+systemd-tmpfiles-clean.timer active static
+fake-hwclock-save.timer active enabled
+apt-daily.timer inactive disabled
+apt-daily-upgrade.timer inactive disabled
+motd-news.timer inactive disabled
+update-notifier-download.timer inactive disabled
+update-notifier-motd.timer inactive disabled
+fwupd-refresh.timer inactive disabled
+No jobs running.
+no apt/dpkg
+nothing of mine running
+5555 closed
+Result=success
+cpu-thermal=47156 gpu-thermal=47000 soc0-thermal=46000 soc1-thermal=46718 soc2-thermal=46625 tj-thermal=47250 
+total 2704
+drwxrwxr-x  3 <user> <user>   4096 Oct 31 14:47 .
+drwxrwxrwt 13 root    root      4096 Oct 31 14:20 ..
+-rw-rw-r--  1 <user> <user>   2915 Oct 31 14:47 board_cmds.log
+-rw-rw-r--  1 <user> <user> 232763 Oct 31 14:35 mc_R1C.csv
+-rw-rw-r--  1 <user> <user>     28 Oct 31 14:34 mc_R1C.log
+-rw-rw-r--  1 <user> <user>      5 Oct 31 14:34 mc_R1C.pid
+-rw-rw-r--  1 <user> <user> 232898 Oct 31 14:34 mc_R1H.csv
+-rw-rw-r--  1 <user> <user>     28 Oct 31 14:33 mc_R1H.log
+-rw-rw-r--  1 <user> <user>      5 Oct 31 14:33 mc_R1H.pid
+-rw-rw-r--  1 <user> <user> 232792 Oct 31 14:39 mc_R2C.csv
+-rw-rw-r--  1 <user> <user>     28 Oct 31 14:38 mc_R2C.log
+-rw-rw-r--  1 <user> <user>      5 Oct 31 14:38 mc_R2C.pid
+-rw-rw-r--  1 <user> <user> 232898 Oct 31 14:38 mc_R2H.csv
+-rw-rw-r--  1 <user> <user>     28 Oct 31 14:37 mc_R2H.log
+-rw-rw-r--  1 <user> <user>      5 Oct 31 14:37 mc_R2H.pid
+-rw-rw-r--  1 <user> <user> 232740 Oct 31 14:41 mc_R3C.csv
+-rw-rw-r--  1 <user> <user>     28 Oct 31 14:40 mc_R3C.log
+-rw-rw-r--  1 <user> <user>      5 Oct 31 14:40 mc_R3C.pid
+-rw-rw-r--  1 <user> <user> 232898 Oct 31 14:43 mc_R3H.csv
+-rw-rw-r--  1 <user> <user>     28 Oct 31 14:42 mc_R3H.log
+-rw-rw-r--  1 <user> <user>      5 Oct 31 14:42 mc_R3H.pid
+-rw-rw-r--  1 <user> <user> 232792 Oct 31 14:46 mc_R4C.csv
+-rw-rw-r--  1 <user> <user>     28 Oct 31 14:45 mc_R4C.log
+-rw-rw-r--  1 <user> <user>      5 Oct 31 14:45 mc_R4C.pid
+-rw-rw-r--  1 <user> <user> 232898 Oct 31 14:45 mc_R4H.csv
+-rw-rw-r--  1 <user> <user>     28 Oct 31 14:44 mc_R4H.log
+-rw-rw-r--  1 <user> <user>      5 Oct 31 14:44 mc_R4H.pid
+-rw-rw-r--  1 <user> <user>  37926 Oct 31 14:31 mc_S.csv
+-rw-rw-r--  1 <user> <user>     28 Oct 31 14:31 mc_S.log
+-rw-rw-r--  1 <user> <user>      5 Oct 31 14:31 mc_S.pid
+-rw-rw-r--  1 <user> <user> 223656 Oct 31 14:29 P1_ina3221_10hz.csv
+-rw-rw-r--  1 <user> <user>   1011 Oct 31 14:29 P1_ina3221_10hz.csv.meta.json
+-rw-rw-r--  1 <user> <user>      0 Oct 31 14:22 P1_sampler.log
+-rw-rw-r--  1 <user> <user>      5 Oct 31 14:22 P1_sampler.pid
+-rw-rw-r--  1 <user> <user> 521227 Oct 31 14:47 P2_ina3221_10hz.csv
+-rw-rw-r--  1 <user> <user>    980 Oct 31 14:47 P2_ina3221_10hz.csv.meta.json
+-rw-rw-r--  1 <user> <user>      0 Oct 31 14:31 P2_sampler.log
+-rw-rw-r--  1 <user> <user>      5 Oct 31 14:31 P2_sampler.pid
+drwxrwxr-x  3 <user> <user>   4096 Oct 31 14:31 scripts
+== Mac processes
+no capture/watcher/orchestrator running on the Mac
+== Pico reset
+OSError: [Errno 6] Device not configured
+ticks_ms since boot: 3550
+version: (1, 29, 0, '') Raspberry Pi Pico with RP2040
+os.listdir('/'): []
+SIO GPIO_OE = 0x00000000  GPIO_IN = 0x01010030
+PIO0 CTRL = 0x00000000 (SM enable bits)
+GP4  funcsel=31 OE=0 IN=1 pad=0x56 PUE=0 PDE=1 IE=1 OD=0
+GP5  funcsel=31 OE=0 IN=1 pad=0x56 PUE=0 PDE=1 IE=1 OD=0
+GP16 funcsel=31 OE=0 IN=1 pad=0x56 PUE=0 PDE=1 IE=1 OD=0
+GP17 funcsel=31 OE=0 IN=0 pad=0x56 PUE=0 PDE=1 IE=1 OD=0
+GP25 funcsel=31 OE=0 IN=0 pad=0x56 PUE=0 PDE=1 IE=1 OD=0

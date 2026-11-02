@@ -1,0 +1,7 @@
+LED retry: 10 s countdown, then 5 blinks, 1 s on / 1 s off
+blink 1 on  at 0 ms pin reads 1
+blink 2 on  at 2001 ms pin reads 1
+blink 3 on  at 4001 ms pin reads 1
+blink 4 on  at 6001 ms pin reads 1
+blink 5 on  at 8001 ms pin reads 1
+done; resetting so GP25 returns to input

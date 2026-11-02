@@ -1,0 +1,7 @@
+cycle 1 radio off: n=540 VDD_IN=4542.6 VDD_CPU_GPU_CV=442.0 VDD_SOC=1374.9 mW; VDD_IN sd=5.9, max=4582, 10s-block means=[4545, 4542, 4542, 4542, 4543]
+cycle 1 radio on : n=540 VDD_IN=4543.9 VDD_CPU_GPU_CV=443.5 VDD_SOC=1367.4 mW; VDD_IN sd=11.9, max=4662, 10s-block means=[4547, 4543, 4545, 4544, 4542]
+cycle 2 radio off: n=541 VDD_IN=4542.0 VDD_CPU_GPU_CV=441.6 VDD_SOC=1368.5 mW; VDD_IN sd=3.4, max=4582, 10s-block means=[4543, 4542, 4542, 4542, 4542]
+cycle 2 radio on : n=540 VDD_IN=4544.4 VDD_CPU_GPU_CV=444.0 VDD_SOC=1376.1 mW; VDD_IN sd=12.8, max=4662, 10s-block means=[4545, 4547, 4544, 4546, 4542]
+VDD_IN          on - off per cycle: +1.3, +2.5 mW; mean +1.9 mW
+VDD_CPU_GPU_CV  on - off per cycle: +1.5, +2.4 mW; mean +1.9 mW
+VDD_SOC         on - off per cycle: -7.5, +7.6 mW; mean +0.1 mW

@@ -1,0 +1,6 @@
+c1_step_max.csv      curr1 VDD_IN           base=920 plateau=1405 mA  rise10-90=622 ms (start->10%=52, start->90%=675)  fall90-10=601 ms (end->90%=49, end->10%=651)  => boxcar W~778 ms
+c1_step_max.csv      curr2 VDD_CPU_GPU_CV   base=104 plateau=562 mA  rise10-90=629 ms (start->10%=49, start->90%=678)  fall90-10=611 ms (end->90%=46, end->10%=657)  => boxcar W~786 ms
+c1_step_max.csv      curr3 VDD_SOC          base=272 plateau=272 mA  rise10-90=0 ms (start->10%=6, start->90%=6)  fall90-10=0 ms (end->90%=3, end->10%=3)  => boxcar W~0 ms
+c1_step_100hz.csv    curr1 VDD_IN           base=912 plateau=1405 mA  rise10-90=630 ms (start->10%=63, start->90%=693)  fall90-10=620 ms (end->90%=53, end->10%=673)  => boxcar W~787 ms
+c1_step_100hz.csv    curr2 VDD_CPU_GPU_CV   base=96 plateau=563 mA  rise10-90=630 ms (start->10%=53, start->90%=683)  fall90-10=600 ms (end->90%=53, end->10%=653)  => boxcar W~787 ms
+c1_step_100hz.csv    curr3 VDD_SOC          base=272 plateau=272 mA  rise10-90=0 ms (start->10%=6, start->90%=6)  fall90-10=0 ms (end->90%=3, end->10%=3)  => boxcar W~0 ms

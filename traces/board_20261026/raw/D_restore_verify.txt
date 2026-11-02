@@ -1,0 +1,27 @@
+--- diff of static (S) lines, before vs after restore:
+STATIC STATE IDENTICAL
+--- live lines after restore:
+L /sys/class/devfreq/17000000.gpu/cur_freq=306000000
+L /sys/class/devfreq/17000000.gpu/target_freq=306000000
+L /sys/class/devfreq/bwmgr/cur_freq=2133000000
+L /sys/class/devfreq/bwmgr/target_freq=204000000
+L /sys/kernel/debug/bpmp/debug/clk/emc/rate=2133000000
+L /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_core/rate=1267200000
+L /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1_core/rate=729600000
+L /sys/kernel/debug/bpmp/debug/clk/gpc0clk/rate=306000000
+L rails in1=5016mV curr1=992mA in2=5008mV curr2=152mA in3=5016mV curr3=280mA
+L jc SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+L jc Online CPUs: 0-5, Offline CPUs: 
+L jc cpu0:  Governor=schedutil MinFreq=729600 MaxFreq=1344000 CurrentFreq=1267200 IdleStates: WFI=1 c7=1 
+L jc cpu1:  Governor=schedutil MinFreq=729600 MaxFreq=1344000 CurrentFreq=1267200 IdleStates: WFI=1 c7=1 
+L jc cpu2:  Governor=schedutil MinFreq=729600 MaxFreq=1344000 CurrentFreq=1267200 IdleStates: WFI=1 c7=1 
+L jc cpu3:  Governor=schedutil MinFreq=729600 MaxFreq=1344000 CurrentFreq=1113600 IdleStates: WFI=1 c7=1 
+L jc cpu4:  Governor=schedutil MinFreq=729600 MaxFreq=1344000 CurrentFreq=729600 IdleStates: WFI=1 c7=1 
+L jc cpu5:  Governor=schedutil MinFreq=729600 MaxFreq=1344000 CurrentFreq=729600 IdleStates: WFI=1 c7=1 
+L jc GPU MinFreq=306000000 MaxFreq=918000000 CurrentFreq=306000000
+L jc Active GPU TPCs: 4
+L jc EMC MinFreq=204000000 MaxFreq=3199000000 CurrentFreq=2133000000
+L jc FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=80
+L jc FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1_enable=1
+L jc NV Power Mode: 25W
+ls: cannot access '/power': No such file or directory

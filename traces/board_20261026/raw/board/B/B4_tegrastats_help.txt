@@ -1,0 +1,24 @@
+## which tegrastats
+/usr/bin/tegrastats
+-rwxr-xr-x 1 root root 84840 Aug  7 07:41 /usr/bin/tegrastats
+/usr/bin/tegrastats
+## tegrastats --help
+Usage: tegrastats [-option]
+Options:
+    --help                    : print this help screen
+    --interval <millisec>     : sample the information in <milliseconds>
+    --cpu_per_socket <numcpu> : display only the top <numcpu> by utilization per socket (default=6)
+				applicable only for socket-based systems
+    --logfile  <filename>     : dump the output of tegrastats to <filename>
+    --load_cfg <filename>     : load the information from <filename>
+    --readall                 : collect all stats including performance intensive stats
+    --save_cfg <filename>     : save the information to <filename>
+    --start                 : run tegrastats as a daemon process in the background
+    --stop                    : stop any running instances of tegrastats
+    --verbose                 : print verbose message
+## tegrastats --version
+Unknown command: --version. Please try again or see --help
+## dpkg owner
+nvidia-l4t-tools: /usr/bin/tegrastats
++++-================-=====================-============-=================================
+ii  nvidia-l4t-tools 39.2.1-20260806224157 arm64        NVIDIA Public Test Tools Package

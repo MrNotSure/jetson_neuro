@@ -1,0 +1,8 @@
+#!/bin/zsh
+# Stage 1 fix session, 30 Oct 2026: run ONE command on the board over the USB cable, logging it first.
+# usage: b 'remote command'      (never used for sudo: those go as their own `ssh jetson-usb 'sudo ...'`)
+LOG=/Users/<user>/Documents/code/jetson_neuro/runs/stage1_20261030_fix/commands.log
+ts=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+one=${1//$'\n'/ ⏎ }
+printf '%s\tboard\tssh jetson-usb %s\n' "$ts" "$one" >> "$LOG"
+exec ssh -o ConnectTimeout=5 jetson-usb "$1"

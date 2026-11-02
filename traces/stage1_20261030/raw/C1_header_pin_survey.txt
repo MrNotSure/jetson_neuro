@@ -1,0 +1,26 @@
+167 pad groups in 2430000.pinmux (read 16:17:35 UTC, line 105 held high by gpioset)
+pin group                  tristate input gpio-mode pull io-hv function
+  7 soc_gpio59_pac6               1     1         0    2     0 rsvd2
+  8 uart1_tx_pr2                  0     0         1    0     0 uarta
+ 10 uart1_rx_pr3                  1     1         1    2     0 uarta
+ 11 uart1_rts_pr4                 1     1         0    1     1 rsvd1
+ 12 soc_gpio41_ph7                1     1         0    1     0 rsvd2
+ 13 spi3_sck_py0                  1     1         0    1     1 rsvd1
+ 15 soc_gpio39_pn1                1     1         0    1     1 rsvd1
+ 16 spi3_cs1_py4                  1     1         0    1     1 rsvd1
+ 18 spi3_cs0_py3                  1     1         0    1     1 rsvd1
+ 19 spi1_mosi_pz5                 1     1         0    1     1 rsvd1
+ 21 spi1_miso_pz4                 1     1         0    1     1 rsvd1
+ 22 spi3_miso_py1                 1     1         0    1     1 rsvd1
+ 23 spi1_sck_pz3                  1     1         0    1     1 rsvd1
+ 24 spi1_cs0_pz6                  1     1         0    2     1 rsvd1
+ 26 spi1_cs1_pz7                  1     1         0    2     1 rsvd1
+ 29 soc_gpio32_pq5                1     1         0    2     0 rsvd0
+ 31 soc_gpio33_pq6                1     1         0    2     0 rsvd0
+ 32 soc_gpio19_pg6                1     1         0    1     1 rsvd1
+ 33 soc_gpio21_ph0                1     1         0    1     0 rsvd0
+ 35 soc_gpio44_pi2                1     1         0    1     0 rsvd2
+ 36 uart1_cts_pr5                 1     1         0    1     1 rsvd1
+ 37 spi3_mosi_py2                 1     1         0    1     1 rsvd1
+ 38 soc_gpio43_pi1                1     1         0    1     0 rsvd2
+ 40 soc_gpio42_pi0                1     1         0    1     0 rsvd2

@@ -1,0 +1,32 @@
+== period 10000 us (~100 Hz) ==
+edges generated 1000, captured 1000, intervals 999
+resolution: 1 count = 3 SM cycles at 125.000 MHz = 24.0 ns
+interval counts: median 416367, min 415964, max 417069, p1 416366, p99 417069
+interval us:     median 9992.808, min 9983.136, max 10009.656, stdev 8.357
+nominal period 10000 us; median - nominal = -7.192 us
+PIO interval - CPU ticks_us interval (us): median -0.216, min -0.344, max +3.136
+total span: PIO 9989990.472 us, CPU 9989988 us, diff +2.472 us
+distinct interval values: 4
+
+== period 1000 us (~1000 Hz) ==
+edges generated 1000, captured 1000, intervals 999
+resolution: 1 count = 3 SM cycles at 125.000 MHz = 24.0 ns
+interval counts: median 41845, min 40545, max 41845, p1 41142, p99 41845
+interval us:     median 1004.280, min 973.080, max 1004.280, stdev 7.382
+nominal period 1000 us; median - nominal = +4.280 us
+PIO interval - CPU ticks_us interval (us): median +0.280, min -0.720, max +2.080
+total span: PIO 998977.944 us, CPU 998976 us, diff +1.944 us
+distinct interval values: 4
+
+period_us=10000 interval value histogram (counts -> us x occurrences):
+   415964 -> 9983.136 us  x1
+   416366 -> 9992.784 us  x381
+   416367 -> 9992.808 us  x190
+   417069 -> 10009.656 us  x427
+   mean interval 9999.990 us
+period_us=1000 interval value histogram (counts -> us x occurrences):
+   40545 -> 973.080 us  x1
+   41142 -> 987.408 us  x168
+   41143 -> 987.432 us  x85
+   41845 -> 1004.280 us  x745
+   mean interval 999.978 us

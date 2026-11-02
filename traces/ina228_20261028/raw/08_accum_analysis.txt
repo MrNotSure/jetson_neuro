@@ -1,0 +1,10 @@
+snapshots 121 over 120.000 s (Pico ticks_us)
+DIAG_ALRT values seen: ['0x0003']  (bit 11 ENERGYOF, 10 CHARGEOF, 9 MATHOF, 1 CNVRF, 0 MEMSTAT)
+ENERGY raw: min 0, max 0
+CHARGE raw: start 0, end -659, change per second min -6 max -5, monotonic: True
+CHARGE slope -5.4914 LSB/s (fit residual sd 0.50 LSB) -> -114.17 uA
+mean CURRENT register over the same time (n=21368): -112.86 uA
+mean VSHUNT over the same time: -112.48 uA (-5.399 steps)
+CHARGE-derived / CURRENT-derived = 1.0116
+POWER raw values: [0]; VBUS raw values: [0, 3, 71, 80, 149, 157]
+DIETEMP: 24.32..26.53 C

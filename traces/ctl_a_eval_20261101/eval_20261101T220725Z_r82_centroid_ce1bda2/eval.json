@@ -1,0 +1,31 @@
+{
+  "controller": "centroid",
+  "params_given": {},
+  "params": {
+    "gain": 0.2,
+    "n_min": 200
+  },
+  "scenarios": [
+    "track-static-v1",
+    "track-sine-v1",
+    "track-step-v1",
+    "track-random-v1"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sets": [],
+  "duration": null,
+  "mode": "lockstep",
+  "endpoint_type": "inproc",
+  "start_utc": "20261101T220725Z"
+}

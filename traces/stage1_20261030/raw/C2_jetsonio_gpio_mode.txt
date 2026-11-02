@@ -1,0 +1,36 @@
+== PinMode uses
+Jetson/io.py:83:    def set_state(self, state):
+Jetson/io.py:151:        self.state.set_state(PinMode.UNUSED)
+Jetson/io.py:163:        return self.state.get_state() == PinMode.SFIO
+Jetson/io.py:181:    def set_state(self, mode, function):
+Jetson/io.py:183:        return self.state.set_state(mode)
+Jetson/header.py:298:    def set_state(self, name, mode, function):
+Jetson/header.py:301:        return self.pins[name].set_state(mode, function)
+Jetson/header.py:349:        if self.pins.is_enabled(name) and self.pins.get_state(name) == io.PinMode.SFIO:
+Jetson/header.py:357:        if self.pins.get_state(name) == io.PinMode.GPIO:
+Jetson/header.py:358:            return "gpio"
+Jetson/header.py:417:    def pingroup_set_state(self, group, mode):
+Jetson/header.py:429:            self.pins.set_state(pin, mode, function)
+Jetson/header.py:442:    def pin_set_state(self, pin, mode, function):
+Jetson/header.py:446:        return self.pins.set_state(name, mode, function)
+Jetson/board.py:304:            self.header.pin_set_state(pin, io.PinMode.SFIO, function)
+Jetson/board.py:339:            if self.header.pin_get_state(pin) == io.PinMode.SFIO:
+Jetson/board.py:341:                                   'nvidia,gpio-mode', '1')
+Jetson/board.py:343:            elif self.header.pin_get_state(pin) == io.PinMode.GPIO:
+Jetson/board.py:349:                                   'nvidia,gpio-mode', '0')
+Jetson/board.py:357:                                   'nvidia,gpio-mode', '0')
+jetson-io.py:106:        if self.is_selected(self.args) == io.PinMode.SFIO:
+jetson-io.py:107:            return "[ ] unused [ ] gpio [*] %s" % self.name.ljust(maxwidth)
+jetson-io.py:108:        elif self.is_selected(self.args) == io.PinMode.GPIO:
+jetson-io.py:109:            return "[ ] unused [*] gpio [ ] %s" % self.name.ljust(maxwidth)
+jetson-io.py:111:            return "[*] unused [ ] gpio [ ] %s" % self.name.ljust(maxwidth)
+jetson-io.py:290:        if self.jetson.header.pingroup_get_state(args[0]) == io.PinMode.UNUSED:
+jetson-io.py:291:            self.jetson.header.pingroup_set_state(args[0], io.PinMode.GPIO)
+jetson-io.py:292:        elif self.jetson.header.pingroup_get_state(args[0]) == io.PinMode.GPIO:
+jetson-io.py:293:            self.jetson.header.pingroup_set_state(args[0], io.PinMode.SFIO)
+jetson-io.py:295:            self.jetson.header.pingroup_set_state(args[0], io.PinMode.UNUSED)
+== config-by-pin.py args
+29:def main():
+33:    main.add_argument("-l", "--list", help="List supported headers",
+35:    main.add_argument("-p", "--pin", help="Pin number")
+36:    parser.add_argument("-n", "--header", help="Header number")

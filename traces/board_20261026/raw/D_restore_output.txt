@@ -1,0 +1,8 @@
+Restoring system configuration from /tmp/jn_board/l4t_dfs.conf
+head: cannot open '/root/.jetsonclocks_gpu_rm.txt' for reading: No such file or directory
+grep: /root/.jetsonclocks_gpu_rm.txt: No such file or directory
+/usr/bin/jetson_clocks: line 253: /power/control: No such file or directory
+grep: /root/.jetsonclocks_gpu_rm.txt: No such file or directory
+Invalid persistence mode: 2
+Terminating early due to previous errors.
+rc=0

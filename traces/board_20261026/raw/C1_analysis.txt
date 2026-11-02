@@ -1,0 +1,60 @@
+=== c1_10hz.csv  n=201 achieved=10.0 Hz cpu=0.100s over 20.0s (0.5% of one core, user 0.032 sys 0.067)
+  sample spacing ms: median=100.000 p1=99.790 p99=100.216 max=100.282
+  6-read cost us: median=3514 p99=5006 max=5084  -> per read median=586 us
+  in1   : changes=    3 (  1.5% of samples)  interval ms median=8050.001 p10=1930.132 p90=14169.869  distinct values=2 min=5016 max=5024
+  curr1 : changes=   22 ( 11.0% of samples)  interval ms median= 299.804 p10=  99.996 p90=1099.805  distinct values=8 min=904 max=968
+  in2   : changes=1 distinct=2 value(s)=[5008 5016]
+  curr2 : changes=   33 ( 16.5% of samples)  interval ms median= 299.895 p10=  99.803 p90=2020.177  distinct values=7 min=88 max=136
+  in3   : changes=   29 ( 14.5% of samples)  interval ms median= 199.892 p10=  99.993 p90=1550.080  distinct values=2 min=5016 max=5024
+  curr3 : changes=0 distinct=1 value(s)=[272]
+  co-change curr1&curr2: 5/22 of curr1 changes (23%)
+  co-change curr1&curr3: 0/22 of curr1 changes (0%)
+  co-change curr2&curr3: 0/33 of curr2 changes (0%)
+  co-change curr1&in1: 2/22 of curr1 changes (9%)
+  power mW mean: VDD_IN=4558 VDD_CPU_GPU_CV=475 VDD_SOC=1366
+  LSBs: in steps [8] mV; curr1 steps [8, 16] mA; curr2 steps [8] mA
+=== c1_100hz.csv  n=501 achieved=100.1 Hz cpu=0.180s over 5.0s (3.6% of one core, user 0.000 sys 0.180)
+  sample spacing ms: median=10.000 p1=9.990 p99=10.014 max=10.062
+  6-read cost us: median=3439 p99=4103 max=4828  -> per read median=573 us
+  in1   : changes=0 distinct=1 value(s)=[5024]
+  curr1 : changes=    3 (  0.6% of samples)  interval ms median=1360.000 p10= 351.998 p90=2368.001  distinct values=2 min=912 max=920
+  in2   : changes=0 distinct=1 value(s)=[5016]
+  curr2 : changes=1 distinct=2 value(s)=[ 96 104]
+  in3   : changes=   97 ( 19.4% of samples)  interval ms median=  29.995 p10=  10.000 p90=  70.001  distinct values=2 min=5016 max=5024
+  curr3 : changes=0 distinct=1 value(s)=[272]
+  co-change curr1&curr2: 0/3 of curr1 changes (0%)
+  co-change curr1&curr3: 0/3 of curr1 changes (0%)
+  co-change curr2&curr3: 0/1 of curr2 changes (0%)
+  co-change curr1&in1: 0/3 of curr1 changes (0%)
+  power mW mean: VDD_IN=4585 VDD_CPU_GPU_CV=484 VDD_SOC=1365
+  LSBs: in steps [] mV; curr1 steps [8] mA; curr2 steps [8] mA
+=== c1_1000hz.csv  n=1455 achieved=290.9 Hz cpu=0.480s over 5.0s (9.6% of one core, user 0.079 sys 0.402)
+  sample spacing ms: median=3.430 p1=3.410 p99=3.551 max=3.972
+  6-read cost us: median=3420 p99=3501 max=3945  -> per read median=570 us
+  in1   : changes=0 distinct=1 value(s)=[5024]
+  curr1 : changes=   22 (  1.5% of samples)  interval ms median=  34.279 p10=   3.429 p90= 573.662  distinct values=2 min=912 max=920
+  in2   : changes=0 distinct=1 value(s)=[5016]
+  curr2 : changes=   17 (  1.2% of samples)  interval ms median=  58.397 p10=   3.454 p90= 376.226  distinct values=2 min=96 max=104
+  in3   : changes=   30 (  2.1% of samples)  interval ms median=  10.489 p10=   3.432 p90=  36.082  distinct values=2 min=5016 max=5024
+  curr3 : changes=0 distinct=1 value(s)=[272]
+  co-change curr1&curr2: 3/22 of curr1 changes (14%)
+  co-change curr1&curr3: 0/22 of curr1 changes (0%)
+  co-change curr2&curr3: 0/17 of curr2 changes (0%)
+  co-change curr1&in1: 0/22 of curr1 changes (0%)
+  power mW mean: VDD_IN=4602 VDD_CPU_GPU_CV=492 VDD_SOC=1364
+  LSBs: in steps [] mV; curr1 steps [8] mA; curr2 steps [8] mA
+=== c1_max.csv  n=1457 achieved=291.3 Hz cpu=0.479s over 5.0s (9.6% of one core, user 0.008 sys 0.471)
+  sample spacing ms: median=3.429 p1=3.414 p99=3.526 max=4.718
+  6-read cost us: median=3419 p99=3492 max=4688  -> per read median=570 us
+  in1   : changes=0 distinct=1 value(s)=[5024]
+  curr1 : changes=   24 (  1.6% of samples)  interval ms median=  23.990 p10=   3.432 p90= 723.685  distinct values=3 min=912 max=928
+  in2   : changes=0 distinct=1 value(s)=[5016]
+  curr2 : changes=    8 (  0.5% of samples)  interval ms median=  37.713 p10=  19.867 p90=1803.558  distinct values=2 min=96 max=104
+  in3   : changes=    4 (  0.3% of samples)  interval ms median=   3.434 p10=   3.428 p90=  11.657  distinct values=2 min=5016 max=5024
+  curr3 : changes=0 distinct=1 value(s)=[272]
+  co-change curr1&curr2: 0/24 of curr1 changes (0%)
+  co-change curr1&curr3: 0/24 of curr1 changes (0%)
+  co-change curr2&curr3: 0/8 of curr2 changes (0%)
+  co-change curr1&in1: 0/24 of curr1 changes (0%)
+  power mW mean: VDD_IN=4602 VDD_CPU_GPU_CV=487 VDD_SOC=1364
+  LSBs: in steps [] mV; curr1 steps [8] mA; curr2 steps [8] mA

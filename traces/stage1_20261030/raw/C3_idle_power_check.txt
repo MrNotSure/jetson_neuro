@@ -1,0 +1,45 @@
+16:39:54
+== net
+l4tbr0:bridge:connected (externally):l4tbr0
+lo:loopback:connected (externally):lo
+docker0:bridge:connected (externally):docker0
+wlP1p1s0:wifi:disconnected:
+p2p-dev-wlP1p1s0:wifi-p2p:disconnected:
+enP8p1s0:ethernet:unavailable:
+can0:can:unmanaged:
+usb0:ethernet:unmanaged:
+can0             DOWN           
+wlP1p1s0         DOWN           
+enP8p1s0         DOWN           
+l4tbr0           UP             192.168.55.1/24 fe80::1/64 fe80::<redacted>/64 
+usb0             UP             fe80::<redacted>/64 
+docker0          DOWN           172.17.0.1/16 
+== top
+top - 17:39:54 up 34 min,  2 users,  load average: 0.00, 0.00, 0.00
+Tasks: 279 total,   1 running, 278 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  1.4 sy,  0.0 ni, 97.3 id,  1.4 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7546.1 total,   6021.7 free,    849.7 used,    894.0 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6696.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+   7010 <user>   20   0   14352   5164   3100 R   9.1   0.1   0:00.02 top
+      1 root      20   0   23192  13736   8684 S   0.0   0.2   0:07.02 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+== temps/fan
+cpu-thermal=50625 gpu-thermal=51218 soc0-thermal=49750 soc1-thermal=50656 soc2-thermal=50468 tj-thermal=51406 
+fan pwm 71 rpm 1561
+== cpufreq
+/sys/devices/system/cpu/cpufreq/policy0 schedutil cur 1113600 min 729600 max 1728000
+/sys/devices/system/cpu/cpufreq/policy4 schedutil cur 729600 min 729600 max 1728000
+gpu 1020000000 bwmgr 2133000000
+== INA3221
+VDD_IN 4952 mV 1136 mA; VDD_CPU_GPU_CV 4944 mV 288 mA; VDD_SOC 4952 mV 288 mA; 
+== sessions
+ 2 2002 <user> -     -    active no  -
+c1  121 gdm     seat0 tty1 active yes 29min ago
+graphical.target

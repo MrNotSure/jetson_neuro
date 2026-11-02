@@ -1,0 +1,28 @@
+Removed "/etc/systemd/system/default.target".
+Created symlink /etc/systemd/system/default.target → /usr/lib/systemd/system/multi-user.target.
+Synchronizing state of docker.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install disable docker
+Synchronizing state of bluetooth.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install disable bluetooth
+Synchronizing state of iperf3.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install disable iperf3
+Removed "/etc/systemd/system/graphical.target.wants/gnome-remote-desktop.service".
+Removed "/etc/systemd/system/dbus-org.freedesktop.ModemManager1.service".
+Removed "/etc/systemd/system/bluetooth.target.wants/bluetooth.service".
+Removed "/etc/systemd/system/multi-user.target.wants/iperf3.service".
+Removed "/etc/systemd/system/multi-user.target.wants/containerd.service".
+Removed "/etc/systemd/system/multi-user.target.wants/nvargus-daemon.service".
+Removed "/etc/systemd/system/multi-user.target.wants/docker.service".
+Removed "/etc/systemd/system/multi-user.target.wants/ModemManager.service".
+Removed "/etc/systemd/system/sockets.target.wants/saned.socket".
+Removed "/etc/systemd/system/sockets.target.wants/docker.socket".
+Removed "/etc/systemd/system/dbus-org.bluez.service".
+Disabling 'docker.service', but its triggering units are still active:
+docker.socket
+Removed "/etc/systemd/system/timers.target.wants/apt-daily-upgrade.timer".
+Removed "/etc/systemd/system/timers.target.wants/fwupd-refresh.timer".
+Removed "/etc/systemd/system/timers.target.wants/update-notifier-download.timer".
+Removed "/etc/systemd/system/timers.target.wants/apt-daily.timer".
+Removed "/etc/systemd/system/timers.target.wants/motd-news.timer".
+Removed "/etc/systemd/system/timers.target.wants/update-notifier-motd.timer".
+disabled

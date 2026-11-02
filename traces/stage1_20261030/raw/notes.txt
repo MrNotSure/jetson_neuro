@@ -1,0 +1,75 @@
+Running notes (agent), Stage 1, day 2, 30 Oct 2026. Times UTC. Day 1: runs/stage1_20261029/report.md.
+
+15:44 Part 0. Jetson off (no tty, no Tegra USB device, ssh timeout). Pico /dev/cu.usbmodem1101, ticks 513 s, listdir [],
+      GP16 reset state. Repo HEAD 78cf5f9, src/scenarios unchanged since 8d91a6d; working tree as on day 1.
+      /private/tmp/jn_run1/ was gone (Mac /private/tmp cleaned); yesterday's scratch was only status files and copies.
+      User: spare jumper is now on Jetson pin 1 (3.3 V) for a method check; marker wire still open at the Jetson end
+      (assumed from day 1, to confirm). User approves the pinctrl debugfs read when asked.
+      Changes for today (scratch copies only): sampler.py finds the INA3221 by /sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon*
+      and checks name + labels; capdec flags records without CNVRF (spurious ALRT edges), checked on day 1's P2b_boot (1 found).
+15:45:31 capture C1_boot started (max 3500 s). Boot watcher started 15:45:33 but has a 900 s limit: it ended at 16:00:34
+      before power-up -> no USB/ssh timestamps for this boot (fix: limit counted from power-up next time).
+16:04:37 power-up (PIO trace, t_pio 1145.84 s). Peak conversion 1.0081 A at +5.8 s, VBUS 18.72 V there. 0 spurious edges,
+      no GP16 edges this time.
+16:07:27 first manual check: Jetson tty present, Tegra USB device present; ssh "No route to host"; 16:07:42 ping OK
+      (0.9-4.6 ms), arp resolved; 16:07:51 ssh OK, board uptime 175 s. Cause of the one failure not known (link settling).
+16:08:03 board clock 1970-01-01 00:03 UTC this time (day 1: 26 Oct twice). INA3221 = hwmon3 this boot. Line 105 unused input.
+16:08:43 sudo date -u -s; after: board - mac = -0.05..-0.07 s. Catch-up jobs started: fwupd-refresh, apt-daily-upgrade.
+~16:10 USER: pin 1 (3.3 V) on the spare jumper against Pico GND = 3.43 V. Method and ground path verified;
+      day 1's 3 mV on pin 29 was a real reading. 3.43 V is +4 % on 3.3 V (meter + regulator tolerance; NV which).
+16:1x pinctrl debugfs read, line 105 released (baseline), approved by the user in advance:
+      ssh jetson-usb 'sudo grep -r -i -A 20 "pq5" /sys/kernel/debug/pinctrl/'
+16:1x baseline pinctrl read (released): soc_gpio32_pq5 pull=2 tristate=1 enable-input=1 io-hv=0 gpio-mode=0 function=rsvd0.
+16:17:28-16:19:28 pin 29 held high (d4.sh 120), 16:19:28-16:21:28 low, then released.
+16:17:35 pinconf-groups read while held high: pq5 unchanged (tristate=1, gpio-mode=0). USER: high reads 3-5 mV.
+      Survey of the header pins (raw/C1_header_pin_survey.txt; pin->port map from the devkit pinout, NV):
+      every header GPIO pad tristate=1; only pin 8 uart1_tx_pr2 has tristate=0, input=0, function uarta.
+      gpio-mode is 1 on the UART pads and 0 on the GPIO pads -> the bit probably means "special function selected",
+      so pin 29 is probably already in GPIO mode and tristate is the only blocker (NV; corrects my earlier reading).
+16:20:46 facts: ttyTHS1 = 3100000.serial (UARTA, header 8/10), root:dialout 660, no getty, no process holds it;
+      console on ttyTCU0, gettys on ttyGS0 and ttyTCU0. <user> NOT in dialout. busybox present; jetson-io present.
+      Catch-up jobs done (list-jobs empty at 16:19:58).
+16:2x read-only facts for option C (raw/C1_boot_config_facts.txt, C1_jetsonio_*.txt): extlinux.conf has only LABEL primary,
+      no FDT/OVERLAYS; dtc 1.7.0 + fdtoverlay present; jetson-io 39.2.1. jetson-io pmx.py: sfio(gpio-mode)=0 & tristate=1
+      -> UNUSED; its GPIO setting = tristate 0, enable-input 1, gpio-mode 0. No /proc/device-tree node mentions soc_gpio32_pq5.
+      User chose option C (persistent pinmux change); asked for a problem description for the planning agent:
+      runs/stage1_20261030/pin29_problem.md.
+16:3x jetson-io offers GPIO for pin 29 (V by reading): base overlay /boot/tegra234-p3767-0000+p3509-a02-hdr40.dtbo
+      (overlay-name "Jetson 40pin Header", compatible incl. p3768-0000+p3767-0005-super) has hdr40-pin29: soc_gpio32_pq5,
+      function extperiph3, pin-group extperiph3_clk; jetson-io.py menu cycles unused/gpio/SFIO per group; gpio state writes
+      tristate 0, enable-input 1, gpio-mode 0. Decoded copy raw/C2_hdr40_p3767_decoded.dts. jetson-io was NOT run.
+~16:35 USER: pin 29 released (unused input, pad pull-up on) = -6.9 mV. The pad pull-up does not reach the header:
+      something on the carrier holds it low or isolates it (NV which). Added to pin29_problem.md as a risk for option C.
+16:37 CORRECTION: catch-up jobs were not done at 16:19:58. They came in waves: systemd-tmpfiles-clean 16:19:58,
+      apt-daily-upgrade 16:27:38-16:28:09, anacron 16:30:15, apt-daily from 16:33:24 + apt-news + esm-cache (still running 16:39).
+      An empty list-jobs is not proof that the catch-up is over. logrotate.timer does not exist on this board (not-found).
+16:38 capture C1_boot stopped: 3148 s, 2 915 576 conversions, 0 missed, 6 PIO wraps all clean, ENERGY vs sum(P dt) 14828.28 vs
+      14828.57 J. Two spurious ALRT edges (CNVRF clear) at ~16:16:21 UTC, FIFO level 2 once: around when the user moved the live
+      spare jumper from pin 1 to pin 29 (NV). Pico machine.reset() 16:38:05, listdir [], GP16 reset state.
+16:39-16:41 UNEXPECTED, MAJOR: idle 7.37-7.39 W (INA228) vs 6.24-6.37 W on day 1; INA3221 VDD_IN 4952 mV x 1136 mA = 5.62 W
+      (26 Oct: 4.55 W). Cause: nvpmodel.service FAILED at this boot ("Reboot required for changing to this power mode: 1",
+      prompt, "bad input", exit 234). nvpmodel -q still says 25W, but: CPU scaling_max 1728000 (25 W conf 1344000), GPU max
+      1020 MHz (conf 918), GPU governor "performance" at 1020 MHz (26 Oct: nvhost_podgov, 306 MHz idle). Board is NOT in its
+      25 W configuration. Nothing changed by me (no nvpmodel/clock writes). Only this boot's journal exists, so day 1's boots
+      can't be checked; day 1's lower idle suggests nvpmodel applied then (NV). /etc/nvpmodel.conf symlink mtime 1970-01-01 01:16
+      (from 26 Oct's 1970-clock session); conf_file_path rewritten 1970-01-01 01:00:32 this boot. Cause NV.
+      Board otherwise: wifi disconnected (radio enabled), load 0, temps 50-51 C, fan PWM 71, gdm greeter session.
+
+--- Part 4 (after the fix session runs/stage1_20261030_fix/: power mode restored by reboot #1, marker on pin 8) ---
+17:36:55 pre-check: nvpmodel success, CPU max 1344000, GPU nvhost_podgov 918 MHz max / 306 cur, masks 240/2,
+      board - mac -0.16 s, no jobs, no apt/dpkg. Board rebooted 17:09 (fix session), so /tmp/jn_run1 recreated.
+17:39:13 sudo systemctl stop (12 timers; inactive after). 17:39:15 sudo systemd-run --on-active=5400 nmcli radio wifi on
+      (run-r8b7802d6f42347ee8083f6cf65ea98c2.timer, fires 19:09:15 UTC). 17:39:16 sudo nmcli radio wifi off (disabled).
+      Only timer left before 18:00 UTC: fake-hwclock-save at 18:00:00 UTC. Temps 48.3-49.2 C, fan PWM 66.
+17:39:29 capture P4_m2 started (max 900 s). 17:39:37 INA3221 sampler 10 Hz 480 s (pid 6210), /tmp/jn_run1/P4_ina3221_10hz.csv.
+      Marker wire connected (pin 8 -> GP16); nothing writes to ttyTHS1 during Part 4.
+17:40:40.251-17:45:40.485 M2 window (marks). Journal in the window: no timer/service starts; dhcpd renews the Mac's
+      lease on l4tbr0 every 6 s, systemd-resolved flips UDP/TCP for 8.8.8.8 every ~5 s (no internet).
+      INA228: 278 072 conversions, P 6362.3 mW (330.32 mA, 19.2608 V); sd per conversion 129.9, 10 ms 114.3, 100 ms 89.9,
+        1 s 34.8, 10 s 8.3 (detrended 5.6) mW; drift -4.2 mW/min (first/last minute 6375/6355; temps 49.2 -> 48.5 C).
+        Meter floor 3.6 mW per conversion (0.12 mW for 1 s means) -> the sd is board activity. 1 s means: strongest
+        periods 5.3 s and 2.7 s (~15 mW), consistent with the dhcpd/resolved cadence (NV link).
+      INA3221 VDD_IN: 4541.9 mW; (5024 mV, 904 mA) in 2986 of 3003 samples, 896/912 mA in 17 -> sd 3.0/1.5/0.5 mW is
+        quantisation, not noise; one-code blips every 60 s (at ~29.5 s of each minute of the window), cause not found.
+        VDD_CPU_GPU_CV 442.2 mW (one code nearly always); VDD_SOC 1382.2 mW (two codes, 272/280 mA).
+      INA228 - VDD_IN = 1820 mW; VDD_IN/INA228 = 0.714. Sampler 0.47 % of one core. Pico reset after Part 4.

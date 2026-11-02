@@ -1,0 +1,59 @@
+def _board_find_overlays(dtbos, hdr_names, hdtbos, hw_addons):
+    for dtbo in dtbos:
+        # HW addon overlays
+        header = dtc.get_prop_value(dtbo, '/', 'jetson-header-name', 0)
+        if header in hdr_names:
+            if header not in hw_addons.keys():
+                hw_addons[header] = {}
+
+            overlay = dtc.get_prop_value(dtbo, '/', 'overlay-name', 0)
+            if overlay is None:
+                error = "overlay-name not specified in %s!\n" % dtbo
+                raise RuntimeError(error)
+            if overlay in hw_addons[header].keys():
+                error = "Multiple DT overlays for '%s' found!\n" % overlay
+                error = error + "Please remove duplicate(s)"
+                error = error + "\n%s\n%s" % \
+                                (dtbo, hw_addons[header][overlay])
+                raise RuntimeError(error)
+
+            hw_addons[header][overlay] = dtbo
+            if header not in hdtbos.keys():
+                hdtbos[header] = None
+
+            continue
+
+        # Header overlays
+        header = dtc.get_prop_value(dtbo, '/', 'overlay-name', 0)
+        if header in hdtbos.keys() and hdtbos[header]:
+            error = "Multiple DT overlays for '%s' found!\n" % header
+            error = error + "Please remove duplicate(s)"
+            error = error + "\n%s\n%s" % (dtbo, hdtbos[header])
+            raise RuntimeError(error)
+
+        if header:
+            hdtbos[header] = dtbo
+            if header not in hw_addons.keys():
+                hw_addons[header] = {}
+
+
+== /boot/tegra234-p3767-0000+p3509-a02-hdr40.dtbo
+Jetson 40pin Header
+nvidia,p3768-0000+p3767-0000 nvidia,p3768-0000+p3767-0001 nvidia,p3768-0000+p3767-0003 nvidia,p3768-0000+p3767-0004 nvidia,p3768-0000+p3767-0005 nvidia,p3768-0000+p3767-0000-super nvidia,p3768-0000+p3767-0001-super nvidia,p3768-0000+p3767-0003-super nvidia,p3768-0000+p3767-0004-super nvidia,p3768-0000+p3767-0005-super nvidia,p3509-0000+p3767-0000 nvidia,p3509-0000+p3767-0001 nvidia,p3509-0000+p3767-0003 nvidia,p3509-0000+p3767-0004 nvidia,p3509-0000+p3767-0005 
+285 /tmp/jn_run1/hdr40_p3767.dts
+133-				};
+134-
+135-				hdr40-pin29 {
+136:					nvidia,pins = "soc_gpio32_pq5";
+137-					nvidia,function = "extperiph3";
+138-					nvidia,pin-group = "extperiph3_clk";
+139-					nvidia,pull = <0x00>;
+140-					nvidia,tristate = <0x00>;
+141-					nvidia,enable-input = <0x00>;
+142-					nvidia,io-high-voltage = <0x00>;
+143-					nvidia,lpdr = <0x00>;
+144-				};
+145-
+146-				hdr40-pin31 {
+147-					nvidia,pins = "soc_gpio33_pq6";
+148-					nvidia,function = "extperiph4";

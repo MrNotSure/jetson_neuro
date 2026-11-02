@@ -1,0 +1,8 @@
+=== 20261026T124159Z_sine_centroid
+status=completed periods=1000 misses=0 achieved_hz=420.5018
+controller=centroid sha=8d91a6d88cca dirty=False arch=aarch64 py=3.12.3 numpy=2.5.4 endpoint=tcp
+lateness_us p50=nan p99=nan max=nan n>500us=0 n>1ms=0 n>5ms=0
+sim_us p50=1325 p99=2322 max=3827
+ctl_us p50=86.7 p99=148.7 max=248.7 mean=69.6
+rtt_us p50=826 p99=1323 max=1840
+link_us p50=797 p99=1212 max=1760

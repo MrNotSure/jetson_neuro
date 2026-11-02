@@ -1,0 +1,26 @@
+uid=2002(<user>) gid=2002(<user>) groups=2002(<user>),4(adm),20(dialout),24(cdrom),27(sudo),29(audio),30(dip),44(video),46(plugdev),100(users),108(i2c),111(lpadmin),122(gdm),983(weston-launch),984(gpio),993(render)
+dialout:x:20:<user>
+crw-rw---- 1 root dialout 236, 1 Oct 29 19:39 /dev/ttyTHS1
+ttyTHS1 writable by this session
+== apt/dpkg check (exact names)
+no apt/dpkg process
+   7407 apt-helper
+1 jobs listed.
+17:04:11
+No jobs running.
+NEXT                            LEFT LAST                             PASSED UNIT                           ACTIVATES
+Fri 2026-10-30 18:16:10 CET    11min Fri 2026-10-30 17:08:43 CET   55min ago fwupd-refresh.timer            fwupd-refresh.service
+Fri 2026-10-30 18:33:37 CET    29min Fri 2026-10-30 17:30:14 CET   33min ago anacron.timer                  anacron.service
+Fri 2026-10-30 19:00:00 CET    55min Fri 2026-10-30 18:00:05 CET 4min 5s ago fake-hwclock-save.timer        fake-hwclock-save.service
+Fri 2026-10-30 22:45:55 CET 4h 41min Thu 1970-01-01 01:00:29 CET           - motd-news.timer                motd-news.service
+Sat 2026-10-31 00:00:00 CET 5h 55min Fri 2026-10-30 17:08:43 CET   55min ago dpkg-db-backup.timer           dpkg-db-backup.service
+Sat 2026-10-31 00:26:36 CET       6h Thu 1970-01-01 01:00:29 CET           - man-db.timer                   man-db.service
+Sat 2026-10-31 06:20:56 CET      12h Fri 2026-10-30 18:03:35 CET     35s ago apt-daily.timer                apt-daily.service
+Sat 2026-10-31 06:27:43 CET      12h Fri 2026-10-30 17:27:38 CET   36min ago apt-daily-upgrade.timer        apt-daily-upgrade.service
+Sat 2026-10-31 17:10:04 CET      23h Fri 2026-10-30 17:10:04 CET   54min ago update-notifier-download.timer update-notifier-download.service
+Sat 2026-10-31 17:19:58 CET      23h Fri 2026-10-30 17:19:58 CET   44min ago systemd-tmpfiles-clean.timer   systemd-tmpfiles-clean.service
+Sun 2026-11-01 03:10:33 CET 1 day 9h Fri 2026-10-30 17:08:43 CET   55min ago e2scrub_all.timer              e2scrub_all.service
+Mon 2026-11-02 01:12:37 CET   2 days Fri 2026-10-30 17:08:43 CET   55min ago fstrim.timer                   fstrim.service
+Mon 2026-11-02 11:16:43 CET   2 days -                                     - update-notifier-motd.timer     update-notifier-motd.service
+
+13 timers listed.

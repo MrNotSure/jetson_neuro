@@ -1,0 +1,67 @@
+1793451042.262	12:50:42Z	watcher start; capture P01
+1793451042.276	12:50:42Z	status I_1s=-0.0001 A Imax_1s=0.0004 peak=0.0005 conv=2219 alarm=False
+1793451047.527	12:50:47Z	status I_1s=-0.0001 A Imax_1s=0.0006 peak=0.0006 conv=6897 alarm=False
+1793451052.799	12:50:52Z	status I_1s=-0.0001 A Imax_1s=0.0004 peak=0.0006 conv=12046 alarm=False
+1793451058.024	12:50:58Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0006 conv=16732 alarm=False
+1793451063.171	12:51:03Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0006 conv=21418 alarm=False
+1793451068.371	12:51:08Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0006 conv=26567 alarm=False
+1793451073.604	12:51:13Z	status I_1s=-0.0001 A Imax_1s=0.0006 peak=0.0007 conv=31253 alarm=False
+1793451078.866	12:51:18Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0007 conv=35938 alarm=False
+1793451084.177	12:51:24Z	status I_1s=-0.0001 A Imax_1s=0.0006 peak=0.0007 conv=41087 alarm=False
+1793451089.396	12:51:29Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0007 conv=45773 alarm=False
+1793451094.652	12:51:34Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0007 conv=50467 alarm=False
+1793451099.885	12:51:39Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0007 conv=55632 alarm=False
+1793451105.159	12:51:45Z	status I_1s=-0.0001 A Imax_1s=0.0006 peak=0.0007 conv=60326 alarm=False
+1793451110.467	12:51:50Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0007 conv=65483 alarm=False
+1793451115.763	12:51:55Z	status I_1s=-0.0001 A Imax_1s=0.0006 peak=0.0007 conv=70145 alarm=False
+1793451121.072	12:52:01Z	status I_1s=-0.0001 A Imax_1s=0.0006 peak=0.0007 conv=75277 alarm=False
+1793451126.465	12:52:06Z	status I_1s=-0.0001 A Imax_1s=0.0004 peak=0.0007 conv=80402 alarm=False
+1793451131.763	12:52:11Z	status I_1s=-0.0 A Imax_1s=0.0005 peak=0.0007 conv=85064 alarm=False
+1793451137.026	12:52:17Z	status I_1s=-0.0001 A Imax_1s=0.0006 peak=0.0007 conv=89750 alarm=False
+1793451142.334	12:52:22Z	status I_1s=-0.0001 A Imax_1s=0.0004 peak=0.0007 conv=94915 alarm=False
+1793451147.596	12:52:27Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0007 conv=99577 alarm=False
+1793451152.909	12:52:32Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0007 conv=104726 alarm=False
+1793451158.327	12:52:38Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0007 conv=109883 alarm=False
+1793451163.612	12:52:43Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0007 conv=114561 alarm=False
+1793451169.029	12:52:49Z	status I_1s=-0.0001 A Imax_1s=0.0006 peak=0.0008 conv=119702 alarm=False
+1793451174.228	12:52:54Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0008 conv=124387 alarm=False
+1793451179.621	12:52:59Z	status I_1s=-0.0 A Imax_1s=0.0005 peak=0.0008 conv=129536 alarm=False
+1793451184.831	12:53:04Z	status I_1s=-0.0 A Imax_1s=0.0005 peak=0.0008 conv=134222 alarm=False
+1793451190.133	12:53:10Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0008 conv=138908 alarm=False
+1793451195.504	12:53:15Z	status I_1s=-0.0 A Imax_1s=0.0006 peak=0.0008 conv=144057 alarm=False
+1793451200.846	12:53:20Z	status I_1s=-0.0 A Imax_1s=0.0005 peak=0.0008 conv=149214 alarm=False
+1793451206.081	12:53:26Z	status I_1s=-0.0 A Imax_1s=0.0007 peak=0.0008 conv=153892 alarm=False
+1793451211.460	12:53:31Z	status I_1s=-0.0 A Imax_1s=0.0006 peak=0.0008 conv=159057 alarm=False
+1793451216.575	12:53:36Z	status I_1s=-0.0 A Imax_1s=0.0005 peak=0.0008 conv=163750 alarm=False
+1793451221.664	12:53:41Z	status I_1s=-0.0 A Imax_1s=0.0006 peak=0.0008 conv=168436 alarm=False
+1793451226.902	12:53:46Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0008 conv=173106 alarm=False
+1793451232.254	12:53:52Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0008 conv=178255 alarm=False
+1793451237.475	12:53:57Z	status I_1s=-0.0 A Imax_1s=0.0006 peak=0.0008 conv=182941 alarm=False
+1793451242.871	12:54:02Z	status I_1s=-0.0 A Imax_1s=0.0005 peak=0.0008 conv=188098 alarm=False
+1793451248.186	12:54:08Z	status I_1s=-0.0 A Imax_1s=0.0007 peak=0.0008 conv=192784 alarm=False
+1793451253.593	12:54:13Z	status I_1s=-0.0 A Imax_1s=0.0006 peak=0.0008 conv=197941 alarm=False
+1793451258.860	12:54:18Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0008 conv=202618 alarm=False
+1793451264.278	12:54:24Z	status I_1s=-0.0001 A Imax_1s=0.0006 peak=0.0008 conv=207767 alarm=False
+1793451269.485	12:54:29Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0008 conv=212461 alarm=False
+1793451274.730	12:54:34Z	status I_1s=-0.0 A Imax_1s=0.0006 peak=0.0008 conv=217578 alarm=False
+1793451280.005	12:54:40Z	status I_1s=-0.0 A Imax_1s=0.0005 peak=0.0008 conv=222264 alarm=False
+1793451285.513	12:54:45Z	status I_1s=-0.0 A Imax_1s=0.0005 peak=0.0008 conv=227405 alarm=False
+1793451290.742	12:54:50Z	status I_1s=-0.0 A Imax_1s=0.0005 peak=0.0008 conv=232562 alarm=False
+1793451296.020	12:54:56Z	status I_1s=-0.0 A Imax_1s=0.0005 peak=0.0008 conv=237240 alarm=False
+1793451301.261	12:55:01Z	status I_1s=-0.0001 A Imax_1s=0.0005 peak=0.0008 conv=241926 alarm=False
+1793451306.479	12:55:06Z	status I_1s=-0.0001 A Imax_1s=0.0006 peak=0.0008 conv=247066 alarm=False
+1793451311.556	12:55:11Z	status I_1s=0.1354 A Imax_1s=0.6874 peak=0.6874 conv=251760 alarm=False
+1793451311.556	12:55:11Z	POWER-UP: 1 s mean current 0.1354 A
+1793451316.703	12:55:16Z	status I_1s=0.3162 A Imax_1s=0.4838 peak=0.6874 conv=256454 alarm=False
+1793451322.324	12:55:22Z	status I_1s=0.6257 A Imax_1s=0.8326 peak=1.0059 conv=261627 alarm=False
+1793451327.409	12:55:27Z	status I_1s=0.5915 A Imax_1s=0.6212 peak=1.0059 conv=266321 alarm=False
+1793451332.475	12:55:32Z	status I_1s=0.3628 A Imax_1s=0.6601 peak=1.0059 conv=271007 alarm=False
+1793451337.641	12:55:37Z	status I_1s=0.2805 A Imax_1s=0.402 peak=1.0059 conv=275693 alarm=False
+1793451342.258	12:55:42Z	USB: NVIDIA device(s) [(2389, 28704, 'Linux for Tegra', '<jetson-serial>', 2097152), (2389, 28704, 'Linux for Tegra', None, 2097152), (2389, 28704, 'Linux for Tegra', None, None)]; 30.6 s after power-up
+1793451344.485	12:55:44Z	ssh attempt rc=255 ssh: connect to host 192.168.55.1 port 22: Operation timed out
+1793451345.008	12:55:45Z	status I_1s=0.4128 A Imax_1s=0.5594 peak=1.0059 conv=282709 alarm=False
+1793451345.009	12:55:45Z	TTY: ['/dev/cu.usbmodem<jetson-serial>21']; 33.4 s after power-up
+1793451347.135	12:55:47Z	ssh attempt rc=255 ssh: connect to host 192.168.55.1 port 22: Operation timed out
+1793451348.583	12:55:48Z	SSH: answered; 37.0 s after power-up
+1793451350.151	12:55:50Z	status I_1s=0.4739 A Imax_1s=0.5766 peak=1.0059 conv=287395 alarm=False
+1793451353.820	12:55:53Z	watcher end: power-up 1793451311.5468538, usb 1793451342.1457658, tty 1793451344.9878862, ssh 1793451348.58291

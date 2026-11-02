@@ -1,0 +1,29 @@
+16:20:46
+2026-10-30T16:19:28.724Z gpioset high rc=0
+2026-10-30T16:19:28.727Z after high, line: 	line 105:      "PQ.05"       unused  output  active-high 
+2026-10-30T16:19:28.732Z LOW: gpioset --mode=time --sec=120 gpiochip0 105=0
+== ttys
+crw-rw---- 1 root dialout 235, 0 Jan  1  1970 /dev/ttyTCU0
+crw-rw---- 1 root dialout 236, 1 Oct 29 19:39 /dev/ttyTHS1
+crw-rw---- 1 root dialout 236, 2 Oct 29 19:39 /dev/ttyTHS2
+/sys/class/tty/ttyTHS1 -> /sys/devices/platform/bus@0/3100000.serial/3100000.serial:0/3100000.serial:0.0
+/sys/class/tty/ttyTHS2 -> /sys/devices/platform/bus@0/3140000.serial/3140000.serial:0/3140000.serial:0.0
+== cmdline console
+console=ttyTCU0,115200
+console=tty0
+== gettys
+  serial-getty@ttyGS0.service  loaded active running Serial Getty on ttyGS0
+  serial-getty@ttyTCU0.service loaded active running Serial Getty on ttyTCU0
+== who holds ttyTHS*
+== id
+uid=2002(<user>) gid=2002(<user>) groups=2002(<user>),4(adm),24(cdrom),27(sudo),29(audio),30(dip),44(video),46(plugdev),100(users),108(i2c),111(lpadmin),122(gdm),983(weston-launch),984(gpio),993(render)
+== tools
+/usr/bin/busybox
+config-by-function.py
+config-by-hardware.py
+config-by-pin.py
+Headers
+Jetson
+jetson-io.py
+Linux
+Utils

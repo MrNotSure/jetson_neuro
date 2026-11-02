@@ -1,0 +1,25 @@
+{
+ "dev": "/dev/ttyTHS1",
+ "baud": 115200,
+ "byte": "0xff",
+ "hz": 1000.0,
+ "period_ns": 1000000,
+ "events_planned": 10000,
+ "events_sent": 10000,
+ "stopped_early": false,
+ "first_sched_ns": 869618634656,
+ "lateness_us_p50_p99_max": [
+  0.64,
+  0.928,
+  2.24
+ ],
+ "write_us_p50_p99_max": [
+  5.056,
+  6.24,
+  47.584
+ ],
+ "cflag": 7346,
+ "ispeed": 4098,
+ "utc_end": "2026-10-30T17:23:44Z",
+ "pid": 5845
+}

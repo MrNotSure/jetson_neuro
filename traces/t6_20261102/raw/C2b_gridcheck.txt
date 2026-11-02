@@ -1,0 +1,26 @@
+# grid check across each event: line fitted to the 60 records before it (index = slot there), extrapolated;
+# every record after is placed by its time. Real conversions sit within 2 us of a slot; 'extra' edges don't.
+# (Two earlier attempts in this file's history used a global period or a fit over both sides; both were wrong.)
+event 267777-267778: T 1079.692 us from the 60 records before (residual sd 68 ns)
+   record 267775: slot 58,   +0.065 us, CNVRF True, level 1 -> real
+   record 267776: slot 59,   +0.134 us, CNVRF True, level 1 -> real
+   record 267777: slot 60, -522.278 us, CNVRF True, level 1 -> EXTRA
+   record 267778: slot 60,   +0.082 us, CNVRF False, level 1 -> real
+   record 267779: slot 61,   +0.150 us, CNVRF True, level 1 -> real
+   record 267780: slot 62,   +0.098 us, CNVRF True, level 1 -> real
+   slots 58..89: 32 expected, 32 with a real record, missing [], residual of the last 10 real records [0.37, 0.31, 0.38, 0.33, 0.4, 0.35, 0.41, 0.36, 0.43, 0.38] us
+event 1078528-1078536: T 1079.706 us from the 60 records before (residual sd 41 ns)
+   record 1078526: slot 58,   +0.068 us, CNVRF True, level 1 -> real
+   record 1078527: slot 59,   +0.002 us, CNVRF True, level 1 -> real
+   record 1078528: slot 59, +141.962 us, CNVRF False, level 4 -> EXTRA
+   record 1078529: slot 59, +152.282 us, CNVRF True, level 4 -> EXTRA
+   record 1078530: slot 59, +162.002 us, CNVRF True, level 3 -> EXTRA
+   record 1078531: slot 59, +183.242 us, CNVRF False, level 3 -> EXTRA
+   record 1078532: slot 60,   +0.056 us, CNVRF True, level 3 -> real
+   record 1078533: slot 61,   +0.110 us, CNVRF True, level 2 -> real
+   record 1078534: slot 62,   +0.044 us, CNVRF False, level 2 -> real
+   record 1078535: slot 63,   +0.098 us, CNVRF True, level 1 -> real
+   record 1078536: slot 64,   +0.032 us, CNVRF False, level 1 -> real
+   record 1078537: slot 65,   +0.086 us, CNVRF True, level 1 -> real
+   record 1078538: slot 66,   +0.021 us, CNVRF True, level 1 -> real
+   slots 58..93: 36 expected, 36 with a real record, missing [], residual of the last 10 real records [-0.09, -0.03, -0.1, -0.04, -0.11, -0.06, -0.0, -0.07, -0.01, -0.08] us

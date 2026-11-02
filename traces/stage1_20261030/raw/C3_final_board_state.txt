@@ -1,0 +1,50 @@
+16:37:38
+== processes
+6969 bash -c date -u +%T; echo "== processes"; pgrep -af "gpioset|sampler.py|jn_sim|d4.sh" || echo "none of gpioset/sampler/jn_sim/d4 running"; gpioinfo gpiochip0 | grep "line 105:"; echo "== jobs"; systemctl list-jobs --no-pager | tail -2; echo "== timers (state)"; systemctl is-active anacron.timer man-db.timer fstrim.timer e2scrub_all.timer dpkg-db-backup.timer systemd-tmpfiles-clean.timer logrotate.timer apt-daily.timer apt-daily-upgrade.timer motd-news.timer update-notifier-download.timer update-notifier-motd.timer fwupd-refresh.timer | tr "\n" " "; echo; echo "== radio"; nmcli radio wifi; nvpmodel -q 2>/dev/null | head -1; echo "== /tmp/jn_run1"; ls -la /tmp/jn_run1 /tmp/jn_run1/scripts
+	line 105:      "PQ.05"       unused   input  active-high 
+== jobs
+
+2 jobs listed.
+== timers (state)
+active active active active active active inactive active active active active active active 
+== radio
+enabled
+NV Power Mode: 25W
+== /tmp/jn_run1
+/tmp/jn_run1:
+total 24
+drwxrwxr-x  3 <user> <user> 4096 Oct 30 17:33 .
+drwxrwxrwt 21 root    root    4096 Oct 30 17:36 ..
+-rw-rw-r--  1 <user> <user>  600 Oct 30 17:21 d4.log
+-rw-rw-r--  1 <user> <user>    0 Oct 30 17:17 d4.out
+-rw-rw-r--  1 <user> <user> 6836 Oct 30 17:33 hdr40_p3767.dts
+drwxrwxr-x  2 <user> <user> 4096 Oct 30 17:08 scripts
+
+/tmp/jn_run1/scripts:
+total 12
+drwxrwxr-x 2 <user> <user> 4096 Oct 30 17:08 .
+drwxrwxr-x 3 <user> <user> 4096 Oct 30 17:33 ..
+-rw-r--r-- 1 <user> <user>  972 Oct 30 16:44 d4.sh
+JOB  UNIT              TYPE  STATE
+3748 apt-daily.service start running
+3970 esm-cache.service start running
+
+2 jobs listed.
+Unit logrotate.timer could not be found.
+not-found
+-- No entries --
+2026-10-30T17:08:44+01:00 jetson systemd[1]: Started fwupd.service - Firmware update daemon.
+2026-10-30T17:08:44+01:00 jetson systemd[1]: Started anacron.service - Run anacron jobs.
+2026-10-30T17:08:44+01:00 jetson systemd[1]: Finished fstrim.service - Discard unused blocks on filesystems from /etc/fstab.
+2026-10-30T17:09:14+01:00 jetson systemd[1]: Finished apt-daily-upgrade.service - Daily apt upgrade and clean activities.
+2026-10-30T17:10:04+01:00 jetson systemd[1]: Starting update-notifier-download.service - Download data for packages that failed at package install time...
+2026-10-30T17:10:05+01:00 jetson systemd[1]: Finished update-notifier-download.service - Download data for packages that failed at package install time.
+2026-10-30T17:19:58+01:00 jetson systemd[1]: Starting systemd-tmpfiles-clean.service - Cleanup of Temporary Directories...
+2026-10-30T17:19:58+01:00 jetson systemd[1]: Finished systemd-tmpfiles-clean.service - Cleanup of Temporary Directories.
+2026-10-30T17:27:38+01:00 jetson systemd[1]: Starting apt-daily-upgrade.service - Daily apt upgrade and clean activities...
+2026-10-30T17:28:09+01:00 jetson systemd[1]: Finished apt-daily-upgrade.service - Daily apt upgrade and clean activities.
+2026-10-30T17:30:15+01:00 jetson systemd[1]: Started anacron.service - Run anacron jobs.
+2026-10-30T17:33:24+01:00 jetson systemd[1]: Starting apt-daily.service - Daily apt download activities...
+2026-10-30T17:33:55+01:00 jetson systemd[1]: Starting apt-news.service - Update APT News...
+2026-10-30T17:33:55+01:00 jetson systemd[1]: Starting esm-cache.service - Update the local ESM caches...
+2026-10-30T17:36:03+01:00 jetson systemd[1]: Finished apt-news.service - Update APT News.

@@ -1,0 +1,15 @@
+=== point mid
+  idle (n=240): VDD_IN=5848 VDD_CPU_GPU_CV=671 VDD_SOC=2330 mW; bus voltages in1/in2/in3 = 4939/4935/4936 mV
+  load (n=249, centroid run + tegrastats + freq logger running): VDD_IN=5853 VDD_CPU_GPU_CV=702 VDD_SOC=2330 mW; in1/in2/in3 = 4939/4936/4936 mV
+  tegrastats (40 lines): CPU MHz values ['729']  EMC MHz ['3199']  GR3D MHz ['608', '609']
+  run 20261026T131527Z_sine_centroid: status=completed misses=0 ctl_us p50=79 p99=133 max=343 (periods with >=200 events: p50=84 p99=135); link_us p50=902 p99=1312; lateness p99=26 max=4242; rms_px_in_view=13.09
+=== point low
+  idle (n=241): VDD_IN=5611 VDD_CPU_GPU_CV=474 VDD_SOC=2324 mW; bus voltages in1/in2/in3 = 4937/4936/4936 mV
+  load (n=250, centroid run + tegrastats + freq logger running): VDD_IN=5660 VDD_CPU_GPU_CV=487 VDD_SOC=2330 mW; in1/in2/in3 = 4936/4929/4936 mV
+  tegrastats (40 lines): CPU MHz values ['115']  EMC MHz ['3199']  GR3D MHz ['305']
+  run 20261026T131715Z_sine_centroid: status=completed misses=0 ctl_us p50=470 p99=682 max=1492 (periods with >=200 events: p50=500 p99=694); link_us p50=1991 p99=2860; lateness p99=19 max=6876; rms_px_in_view=13.09
+=== point max
+  idle (n=241): VDD_IN=6332 VDD_CPU_GPU_CV=1186 VDD_SOC=2332 mW; bus voltages in1/in2/in3 = 4944/4936/4944 mV
+  load (n=249, centroid run + tegrastats + freq logger running): VDD_IN=6379 VDD_CPU_GPU_CV=1194 VDD_SOC=2334 mW; in1/in2/in3 = 4944/4936/4944 mV
+  tegrastats (40 lines): CPU MHz values ['1344']  EMC MHz ['3199']  GR3D MHz ['914', '915', '916']
+  run 20261026T131851Z_sine_centroid: status=completed misses=3 ctl_us p50=46 p99=87 max=248 (periods with >=200 events: p50=49 p99=90); link_us p50=797 p99=3778; lateness p99=3859 max=31676; rms_px_in_view=12.56

@@ -1,0 +1,7 @@
+before: nvfancontrol=active pwm1=66 pwm1_enable=1 rpm=1439 tj_policy=user_space fan_cdev=0 tj=49468
+before stop (pin value P=66): nvfancontrol=active pwm1=66 pwm1_enable=1 rpm=1439 tj_policy=user_space fan_cdev=0 tj=49562
+right after stop: nvfancontrol=inactive pwm1=66 pwm1_enable=1 rpm=1440 tj_policy=step_wise fan_cdev=0 tj=49500
+after pin write: nvfancontrol=inactive pwm1=66 pwm1_enable=1 rpm=1439 tj_policy=step_wise fan_cdev=0 tj=49687
+end of pinned: nvfancontrol=inactive pwm1=66 pwm1_enable=1 rpm=1439 tj_policy=step_wise fan_cdev=0 tj=49218
+after start: nvfancontrol=active pwm1=66 pwm1_enable=1 rpm=1440 tj_policy=user_space fan_cdev=0 tj=49125
+end: nvfancontrol=active pwm1=70 pwm1_enable=1 rpm=1541 tj_policy=user_space fan_cdev=0 tj=49406

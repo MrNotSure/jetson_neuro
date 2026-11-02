@@ -1,0 +1,19 @@
+13:08:27Z	+   0.20 s	watcher start
+13:08:27Z	+   0.29 s	NVIDIA USB device present: True
+13:08:27Z	+   0.39 s	I_1s 0.3239 A, P_1s 6.235 W, V 19.248 V, Imax_1s 0.3532, alarm False
+13:08:33Z	+   5.95 s	NVIDIA USB device present: False
+13:08:33Z	+   5.95 s	I_1s 0.3757 A, P_1s 7.226 W, V 19.237 V, Imax_1s 0.5706, alarm False
+13:08:38Z	+  11.51 s	I_1s 0.3335 A, P_1s 6.418 W, V 19.246 V, Imax_1s 0.4431, alarm False
+13:08:43Z	+  16.53 s	I_1s 0.3205 A, P_1s 6.17 W, V 19.249 V, Imax_1s 0.4578, alarm False
+13:08:48Z	+  21.67 s	I_1s 0.6269 A, P_1s 12.027 W, V 19.183 V, Imax_1s 0.6386, alarm False
+13:08:53Z	+  26.70 s	I_1s 0.6054 A, P_1s 11.617 W, V 19.188 V, Imax_1s 0.6296, alarm False
+13:08:59Z	+  31.97 s	I_1s 0.2529 A, P_1s 4.872 W, V 19.264 V, Imax_1s 0.2987, alarm False
+13:09:04Z	+  37.29 s	I_1s 0.5229 A, P_1s 10.041 W, V 19.206 V, Imax_1s 0.6557, alarm False
+13:09:06Z	+  39.36 s	NVIDIA USB device present: True
+13:09:08Z	+  41.57 s	ssh rc 255 ssh: connect to host 192.168.55.1 port 22: Operation timed out
+13:09:11Z	+  44.29 s	ssh rc 255 ssh: connect to host 192.168.55.1 port 22: Operation timed out
+13:09:11Z	+  44.32 s	I_1s 0.3346 A, P_1s 6.44 W, V 19.246 V, Imax_1s 0.4094, alarm False
+13:09:14Z	+  47.01 s	ssh rc 255 ssh: connect to host 192.168.55.1 port 22: Operation timed out
+13:09:15Z	+  48.67 s	SSH answered
+13:09:16Z	+  49.35 s	I_1s 0.3959 A, P_1s 7.615 W, V 19.233 V, Imax_1s 0.5419, alarm False
+13:09:21Z	+  53.98 s	watcher end: USB gone +5.946872375, USB back +39.356929375, ssh +48.669655625

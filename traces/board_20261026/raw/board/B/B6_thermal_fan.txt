@@ -1,0 +1,200 @@
+## /sys/class/thermal/thermal_zone0 type=cpu-thermal temp=53281 mode=enabled policy=step_wise
+  trip_point_0: type=passive temp=99000 hyst=0
+  trip_point_1: type=critical temp=104500 hyst=0
+  trip_point_2: type=passive temp=70000 hyst=8000
+  cdev0 -> cooling_device1 trip=0 weight=0
+  cdev1 -> cooling_device0 trip=0 weight=0
+  cdev2 -> cooling_device3 trip=0 weight=0
+  cdev3 -> cooling_device11 trip=2 weight=0
+  cdev4 -> cooling_device12 trip=0 weight=0
+## /sys/class/thermal/thermal_zone1 type=gpu-thermal temp=53531 mode=enabled policy=step_wise
+  trip_point_0: type=passive temp=99000 hyst=0
+  trip_point_1: type=critical temp=104500 hyst=0
+  trip_point_2: type=passive temp=70000 hyst=8000
+  cdev0 -> cooling_device1 trip=0 weight=0
+  cdev1 -> cooling_device0 trip=0 weight=0
+  cdev2 -> cooling_device4 trip=0 weight=0
+  cdev3 -> cooling_device11 trip=2 weight=0
+  cdev4 -> cooling_device12 trip=0 weight=0
+## /sys/class/thermal/thermal_zone2 type=cv0-thermal temp=cat: /sys/class/thermal/thermal_zone2/temp: No data available mode=enabled policy=step_wise
+  trip_point_0: type=passive temp=99000 hyst=0
+  trip_point_1: type=critical temp=104500 hyst=0
+  trip_point_2: type=passive temp=70000 hyst=8000
+  cdev0 -> cooling_device1 trip=0 weight=0
+  cdev1 -> cooling_device0 trip=0 weight=0
+  cdev2 -> cooling_device5 trip=0 weight=0
+  cdev3 -> cooling_device11 trip=2 weight=0
+  cdev4 -> cooling_device12 trip=0 weight=0
+## /sys/class/thermal/thermal_zone3 type=cv1-thermal temp=cat: /sys/class/thermal/thermal_zone3/temp: No data available mode=enabled policy=step_wise
+  trip_point_0: type=passive temp=99000 hyst=0
+  trip_point_1: type=critical temp=104500 hyst=0
+  trip_point_2: type=passive temp=70000 hyst=8000
+  cdev0 -> cooling_device1 trip=0 weight=0
+  cdev1 -> cooling_device0 trip=0 weight=0
+  cdev2 -> cooling_device6 trip=0 weight=0
+  cdev3 -> cooling_device11 trip=2 weight=0
+  cdev4 -> cooling_device12 trip=0 weight=0
+## /sys/class/thermal/thermal_zone4 type=cv2-thermal temp=cat: /sys/class/thermal/thermal_zone4/temp: No data available mode=enabled policy=step_wise
+  trip_point_0: type=passive temp=99000 hyst=0
+  trip_point_1: type=critical temp=104500 hyst=0
+  trip_point_2: type=passive temp=70000 hyst=8000
+  cdev0 -> cooling_device1 trip=0 weight=0
+  cdev1 -> cooling_device0 trip=0 weight=0
+  cdev2 -> cooling_device7 trip=0 weight=0
+  cdev3 -> cooling_device11 trip=2 weight=0
+  cdev4 -> cooling_device12 trip=0 weight=0
+## /sys/class/thermal/thermal_zone5 type=soc0-thermal temp=52375 mode=enabled policy=step_wise
+  trip_point_0: type=passive temp=99000 hyst=0
+  trip_point_1: type=critical temp=104500 hyst=0
+  trip_point_2: type=passive temp=70000 hyst=8000
+  cdev0 -> cooling_device1 trip=0 weight=0
+  cdev1 -> cooling_device0 trip=0 weight=0
+  cdev2 -> cooling_device8 trip=0 weight=0
+  cdev3 -> cooling_device11 trip=2 weight=0
+  cdev4 -> cooling_device12 trip=0 weight=0
+## /sys/class/thermal/thermal_zone6 type=soc1-thermal temp=53375 mode=enabled policy=step_wise
+  trip_point_0: type=passive temp=99000 hyst=0
+  trip_point_1: type=critical temp=104500 hyst=0
+  trip_point_2: type=passive temp=70000 hyst=8000
+  cdev0 -> cooling_device1 trip=0 weight=0
+  cdev1 -> cooling_device0 trip=0 weight=0
+  cdev2 -> cooling_device9 trip=0 weight=0
+  cdev3 -> cooling_device11 trip=2 weight=0
+  cdev4 -> cooling_device12 trip=0 weight=0
+## /sys/class/thermal/thermal_zone7 type=soc2-thermal temp=53031 mode=enabled policy=step_wise
+  trip_point_0: type=passive temp=99000 hyst=0
+  trip_point_1: type=critical temp=104500 hyst=0
+  trip_point_2: type=passive temp=70000 hyst=8000
+  cdev0 -> cooling_device1 trip=0 weight=0
+  cdev1 -> cooling_device0 trip=0 weight=0
+  cdev2 -> cooling_device10 trip=0 weight=0
+  cdev3 -> cooling_device11 trip=2 weight=0
+  cdev4 -> cooling_device12 trip=0 weight=0
+## /sys/class/thermal/thermal_zone8 type=tj-thermal temp=53593 mode=enabled policy=user_space
+  trip_point_0: type=active temp=35000 hyst=4000
+  trip_point_1: type=active temp=74000 hyst=4000
+  trip_point_2: type=active temp=95000 hyst=4000
+  trip_point_3: type=critical temp=104500 hyst=0
+  cdev0 -> cooling_device2 trip=0 weight=0
+  cdev1 -> cooling_device2 trip=1 weight=0
+  cdev2 -> cooling_device2 trip=2 weight=0
+## cooling devices
+/sys/class/thermal/cooling_device0 type=cpufreq-cpu0 cur_state=0 max_state=21
+/sys/class/thermal/cooling_device1 type=cpufreq-cpu4 cur_state=0 max_state=21
+/sys/class/thermal/cooling_device10 type=soc2-throttle-alert cur_state=0 max_state=2
+/sys/class/thermal/cooling_device11 type=hot-surface-alert cur_state=0 max_state=2
+/sys/class/thermal/cooling_device12 type=devfreq-17000000.gpu cur_state=0 max_state=7
+/sys/class/thermal/cooling_device2 type=pwm-fan cur_state=0 max_state=3
+/sys/class/thermal/cooling_device3 type=cpu-throttle-alert cur_state=0 max_state=2
+/sys/class/thermal/cooling_device4 type=gpu-throttle-alert cur_state=0 max_state=2
+/sys/class/thermal/cooling_device5 type=cv0-throttle-alert cur_state=0 max_state=2
+/sys/class/thermal/cooling_device6 type=cv1-throttle-alert cur_state=0 max_state=2
+/sys/class/thermal/cooling_device7 type=cv2-throttle-alert cur_state=0 max_state=2
+/sys/class/thermal/cooling_device8 type=soc0-throttle-alert cur_state=0 max_state=2
+/sys/class/thermal/cooling_device9 type=soc1-throttle-alert cur_state=0 max_state=2
+## fan hwmon /sys/class/hwmon/hwmon0 (pwmfan)
+total 0
+drwxr-xr-x 3 root root    0 Oct 26 13:45 .
+drwxr-xr-x 3 root root    0 Oct 19 20:56 ..
+lrwxrwxrwx 1 root root    0 Oct 26 13:35 device -> ../../../pwm-fan
+-r--r--r-- 1 root root 4096 Jan  1  1970 name
+lrwxrwxrwx 1 root root    0 Oct 26 13:35 of_node -> ../../../../../firmware/devicetree/base/pwm-fan
+drwxr-xr-x 2 root root    0 Oct 26 13:35 power
+-rw-r--r-- 1 root root 4096 Oct 26 13:45 pwm1
+-rw-r--r-- 1 root root 4096 Oct 26 13:35 pwm1_enable
+lrwxrwxrwx 1 root root    0 Oct 19 20:56 subsystem -> ../../../../../class/hwmon
+-rw-r--r-- 1 root root 4096 Oct 19 20:56 uevent
+name	-r--r--r--	pwmfan 
+pwm1	-rw-r--r--	83 
+pwm1_enable	-rw-r--r--	1 
+uevent	-rw-r--r--	OF_NAME=pwm-fan OF_FULLNAME=/pwm-fan OF_COMPATIBLE_0=pwm-fan OF_COMPATIBLE_N=1 
+## tach hwmon /sys/class/hwmon/hwmon2 (pwm_tach)
+name	-r--r--r--	pwm_tach 
+rpm	-r--r--r--	1951 
+uevent	-rw-r--r--	OF_NAME=tachometer OF_FULLNAME=/bus@0/tachometer@39c0000 OF_COMPATIBLE_0=nvidia,pwm-tegra234-tachometer OF_COMPATIBLE_N=1 
+## pwm-fan of_node
+compatible	 70 77 6d 2d 66 61 6e 00 
+#cooling-cells	 00 00 00 02 
+cooling-levels	 00 00 00 00 00 00 00 58 00 00 00 bb 00 00 00 ff 
+name	 70 77 6d 2d 66 61 6e 00 
+phandle	 00 00 01 cd 
+pwms	 00 00 01 d3 00 00 00 00 00 00 b1 16 
+## systemctl status nvfancontrol
+● nvfancontrol.service - nvfancontrol service
+     Loaded: loaded (/etc/systemd/system/nvfancontrol.service; enabled; preset: enabled)
+     Active: active (running) since Thu 1970-01-01 01:00:29 CET; 56 years 9 months ago
+   Main PID: 1728 (nvfancontrol)
+      Tasks: 1 (limit: 8721)
+     Memory: 500.0K (peak: 1.7M)
+        CPU: 1.250s
+     CGroup: /system.slice/nvfancontrol.service
+             └─1728 /usr/sbin/nvfancontrol "&"
+
+Jan 01 01:00:29 jetson systemd[1]: Started nvfancontrol.service - nvfancontrol service.
+## systemctl cat nvfancontrol
+# /etc/systemd/system/nvfancontrol.service
+#
+# SPDX-FileCopyrightText: Copyright (c) 2022-2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions are met:
+#
+# 1. Redistributions of source code must retain the above copyright notice, this
+# list of conditions and the following disclaimer.
+#
+# 2. Redistributions in binary form must reproduce the above copyright notice,
+# this list of conditions and the following disclaimer in the documentation
+# and/or other materials provided with the distribution.
+#
+# 3. Neither the name of the copyright holder nor the names of its
+# contributors may be used to endorse or promote products derived from
+# this software without specific prior written permission.
+#
+# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+[Unit]
+Description=nvfancontrol service
+; TPC power gating must be enabled before anything touching gpu
+Before=graphical.target
+Before=gdm3.service
+; Start the nvfancontrol before oem-config
+Before=nv-oem-config-gui.service nv-oem-config-debconf@.service
+; Hand over the fan control to SMCU when safety systemd is up
+Before=nv-spi-server.service
+Conflicts=nv-spi-server.service
+After=ldconfig.service nvpower.service
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Service]
+Type=simple
+Environment=LD_LIBRARY_PATH=/usr/lib/aarch64-linux-gnu/nvidia
+ExecStart=/usr/sbin/nvfancontrol &
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+## /var/lib/nvfancontrol
+ls: cannot access '/var/lib/nvfancontrol/..': Permission denied
+ls: cannot access '/var/lib/nvfancontrol/status': Permission denied
+ls: cannot access '/var/lib/nvfancontrol/.': Permission denied
+total 0
+d????????? ? ? ? ?            ? .
+d????????? ? ? ? ?            ? ..
+-????????? ? ? ? ?            ? status
+--- /var/lib/nvfancontrol/status
+cat: /var/lib/nvfancontrol/status: Permission denied
+## /etc/nvfancontrol.conf
+lrwxrwxrwx 1 root root 54 Jan  1  1970 /etc/nvfancontrol.conf -> /etc/nvpower/nvfancontrol/nvfancontrol_p3767_0000.conf
+/etc/nvpower/nvfancontrol/nvfancontrol_p3767_0000.conf

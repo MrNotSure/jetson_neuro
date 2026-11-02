@@ -1,0 +1,13 @@
+records 45627, bad framing 0, trailer True
+conversions 43529, seq16 gaps 0, FIFO levels [1]
+records without CNVRF (spurious ALRT edges): 0 at t = [] s
+GP16 rises 1001, falls 1001
+span 46.997 s, interval median 1079.760 us, min 1079.640, max 1089.840, missed 0, +10us steps 94, irregular 0
+PIO wraps crossed: 0 (one every 515.4 s)
+I mean 329.052 mA sd 9.222 mA, min 319.56, max 442.10; V mean 19.2511 V sd 2.77 mV; P mean 6334.6 mW
+rise: 1001 edges, seq gaps 0
+fall: 1001 edges, seq gaps 0
+ENERGY samples 47: 1.6925 -> 293.1089 J over 46.0 s
+CHARGE samples 47: 0.252766 -> 15.393281 C over 46.0 s
+sync phase 0: SM0-SM1 0 counts, SM0-SM2 1 counts, SM0 moved 176 counts during the spin
+sync phase 1: SM0-SM1 1 counts, SM0-SM2 2 counts, SM0 moved 176 counts during the spin

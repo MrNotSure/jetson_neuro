@@ -1,0 +1,10 @@
+S0: conversions 43529, missed 0, spurious ALRT 0, seq16 gaps 0, falls 1001, rises 1001, fall/rise seq gaps 0/0, FIFO levels conv [1], fall levels [1], rise levels [1]
+pulse widths (fall -> next rise) us: min 8.64, p50 8.76, max 8.88; outside 8.5-8.9: 0; falls without a following rise: 0
+DEGLITCH (pre-registered): 0 GP16 pulses < 1 us dropped, at t = [] s, widths [] us
+fall runs: [1, 1000]
+H/A blocks in S0: 1; fall runs > 1: 1; lone edges: 1
+S (A, affinity 2): falls 1000, mark_ctl rows 1000, OBS (periods.csv rows) 1000; falls = rows = OBS = 1000: PASS; k match True; n_events mismatches 0; dummy lead 3.166 s (lone dummy before: True, width 8.64 us)
+   edge interval ms: median 9.995, min 8.238, max 11.148, outside 8-15 ms 0; pulse width us min/p50/max 8.64/8.76/8.88
+   write() us: first 31.3, p50 13.3, p99 17.3, max 42.9
+   misses 0 at k []; send_lateness > 5 ms: 0 at k []; lateness p50/p99/max 1/25/1415 us
+   ctl_us p50 509.4, p99 648.0, max 1541.8; n_events mean 159.0

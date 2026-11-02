@@ -1,0 +1,37 @@
+== 2026-10-30T17:24:55Z final
+rtt    83.1 ms   board - mac -0.146 s
+rtt    84.3 ms   board - mac -0.146 s
+rtt   156.7 ms   board - mac -0.110 s
+best (shortest rtt 83.1 ms): board - mac = -0.146 s = -0.0000 d; mac utc 2026-10-30 17:24:56
+ 18:24:56 up 15 min,  2 users,  load average: 0.00, 0.02, 0.06
+Result=success
+NV Power Mode: 25W
+1
+/sys/devices/system/cpu/cpufreq/policy0 governor=schedutil min=729600 max=1344000
+/sys/devices/system/cpu/cpufreq/policy4 governor=schedutil min=729600 max=1344000
+gpu governor=nvhost_podgov max=918000000 cur=306000000
+tpc_pg_mask=240 fbp_pg_mask=2
+cpuidle disable: 0 0 0 0 0 0 0 0 0 0 0 0 
+cpu-thermal=48531 gpu-thermal=48718 soc0-thermal=47562 soc1-thermal=48406 soc2-thermal=48156 tj-thermal=48625 
+== timers
+active active active active active active active active active active active active 
+No jobs running.
+== processes
+5871 bash -c uptime; systemctl show -p Result nvpmodel; nvpmodel -q 2>&1 | head -2; for p in /sys/devices/system/cpu/cpufreq/policy0 /sys/devices/system/cpu/cpufreq/policy4; do echo "$p governor=$(cat $p/scaling_governor) min=$(cat $p/scaling_min_freq) max=$(cat $p/scaling_max_freq)"; done; G=/sys/class/devfreq/17000000.gpu; echo "gpu governor=$(cat $G/governor) max=$(cat $G/max_freq) cur=$(cat $G/cur_freq)"; echo "tpc_pg_mask=$(cat /sys/devices/platform/gpu.0/tpc_pg_mask) fbp_pg_mask=$(cat /sys/devices/platform/gpu.0/fbp_pg_mask)"; echo "cpuidle disable: $(cat /sys/devices/system/cpu/cpu*/cpuidle/state*/disable | tr "\n" " ")"; for z in /sys/class/thermal/thermal_zone*; do t=$(cat $z/temp 2>/dev/null) && echo -n "$(cat $z/type)=$t "; done; echo; echo "== timers"; systemctl is-active apt-daily.timer apt-daily-upgrade.timer anacron.timer fwupd-refresh.timer man-db.timer fstrim.timer e2scrub_all.timer dpkg-db-backup.timer systemd-tmpfiles-clean.timer motd-news.timer update-notifier-download.timer update-notifier-motd.timer | tr "\n" " "; echo; systemctl list-jobs --no-pager | tail -1; echo "== processes"; pgrep -af "uart_marker|sampler.py|gpioset|jn_sim" || echo "none running"; gpioinfo gpiochip0 | grep "line 105:"; stty -F /dev/ttyTHS1 speed; nmcli radio wifi; cd ~/jetson_neuro && git rev-parse --short HEAD && git status --short | wc -l; ls -la /tmp/jn_fix
+	line 105:      "PQ.05"       unused   input  active-high 
+115200
+enabled
+8d91a6d
+0
+total 768
+drwxrwxr-x  3 <user> <user>   4096 Oct 30 18:23 .
+drwxrwxrwt 19 root    root      4096 Oct 30 18:24 ..
+-rw-rw-r--  1 <user> <user>  31297 Oct 30 18:17 health1_ina3221_10hz.csv
+-rw-rw-r--  1 <user> <user>    975 Oct 30 18:17 health1_ina3221_10hz.csv.meta.json
+-rw-rw-r--  1 <user> <user> 262926 Oct 30 18:23 m3_100hz.csv
+-rw-rw-r--  1 <user> <user>    405 Oct 30 18:23 m3_100hz.csv.meta.json
+-rw-rw-r--  1 <user> <user> 438926 Oct 30 18:23 m3_1khz.csv
+-rw-rw-r--  1 <user> <user>    403 Oct 30 18:23 m3_1khz.csv.meta.json
+drwxrwxr-x  2 <user> <user>   4096 Oct 30 18:18 scripts
+-rw-rw-r--  1 <user> <user>   8526 Oct 30 18:19 smoke_100hz.csv
+-rw-rw-r--  1 <user> <user>    400 Oct 30 18:19 smoke_100hz.csv.meta.json

@@ -1,0 +1,52 @@
+== p3768/p3767 overlays in /boot
+kernel_tegra234-p3768-0000+p3767-0005-nv-super.dtb
+tegra234-p3737-0000+p3701-0000-as-p3767-0000.dtbo
+tegra234-p3737-0000+p3701-0000-as-p3767-0001.dtbo
+tegra234-p3737-0000+p3701-0000-as-p3767-0003.dtbo
+tegra234-p3737-0000+p3701-0000-as-p3767-0004.dtbo
+tegra234-p3767-0000+p3509-a02-audio-adafruit-sph0645lm4h.dtbo
+tegra234-p3767-0000+p3509-a02-audio-adafruit-uda1334a.dtbo
+tegra234-p3767-0000+p3509-a02-audio-fe-pi.dtbo
+tegra234-p3767-0000+p3509-a02-audio-respeaker-4-mic-array.dtbo
+tegra234-p3767-0000+p3509-a02-audio-respeaker-4-mic-lin-array.dtbo
+tegra234-p3767-0000+p3509-a02-csi.dtbo
+tegra234-p3767-0000+p3509-a02-hdr40.dtbo
+tegra234-p3767-0000+p3509-a02-m2ke.dtbo
+tegra234-p3767-0000+p3768-0000-csi.dtbo
+tegra234-p3767-camera-p3768-imx219-A.dtbo
+tegra234-p3767-camera-p3768-imx219-C.dtbo
+tegra234-p3767-camera-p3768-imx219-dual.dtbo
+tegra234-p3767-camera-p3768-imx219-imx477.dtbo
+tegra234-p3767-camera-p3768-imx477-A.dtbo
+tegra234-p3767-camera-p3768-imx477-C.dtbo
+tegra234-p3767-camera-p3768-imx477-dual-4lane.dtbo
+tegra234-p3767-camera-p3768-imx477-dual.dtbo
+tegra234-p3767-camera-p3768-imx477-imx219.dtbo
+tegra234-p3768-0000+p3767-0000.dtb
+tegra234-p3768-0000+p3767-0000-dynamic.dtbo
+tegra234-p3768-0000+p3767-0000-nv.dtb
+tegra234-p3768-0000+p3767-0000-nv-super.dtb
+tegra234-p3768-0000+p3767-0001-nv.dtb
+tegra234-p3768-0000+p3767-0001-nv-super.dtb
+tegra234-p3768-0000+p3767-0003-nv.dtb
+tegra234-p3768-0000+p3767-0003-nv-super.dtb
+tegra234-p3768-0000+p3767-0004-nv.dtb
+tegra234-p3768-0000+p3767-0004-nv-super.dtb
+tegra234-p3768-0000+p3767-0005.dtb
+tegra234-p3768-0000+p3767-0005-nv.dtb
+tegra234-p3768-0000+p3767-0005-nv-super.dtb
+== jetson-io Headers
+/opt/nvidia/jetson-io/Headers:
+csi122.py
+csi22.py
+csi-agx.py
+csi-nano.py
+csi-tx1tx2.py
+hdr20.py
+hdr30.py
+hdr40.py
+__init__.py
+m2kb.py
+m2ke.py
+== jetson-io refs to pin 29 / pq5
+== live DT: nodes mentioning soc_gpio32_pq5

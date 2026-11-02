@@ -1,0 +1,28 @@
+== B1_modeB_280_280_560us  (expected cycle 560 us)
+   conversions seen 1500 of 2248 slots; missed 748; off-grid falls 1477; glitch pulses <1 us 0
+   interval (consecutive slots, n=751): median 559.848 us, min 559.800, max 1119.672, sd 20418 ns, p1..p99 559.800..559.872
+   fitted period 560.1855 us = expected +0.0331 %; jitter about the fit sd 152141 ns, max |res| 306543 ns
+   phase steps of the conversion grid (>1 us): [(423799, 559.82), (496018, 9.98), (995967, 10.01)]
+   handler start after the fall: median 55 us, p99 115, max 118
+   DIAG_ALRT read done (ALRT re-armed) after the fall: median 600 us, p99 658, max 663; margin to next conversion min -103 us
+== B2_modeF_150_540_50_740us  (expected cycle 740 us)
+   conversions seen 1500 of 1500 slots; missed 0; off-grid falls 566; glitch pulses <1 us 0
+   interval (consecutive slots, n=1499): median 739.800 us, min 739.752, max 749.808, sd 366 ns, p1..p99 739.752..739.824
+   fitted period 739.8025 us = expected -0.0267 %; jitter about the fit sd 2821 ns, max |res| 5333 ns
+   phase steps of the conversion grid (>1 us): [(496400, 10.01), (996506, 9.98)]
+   handler start after the fall: median 47 us, p99 59, max 60
+   DIAG_ALRT read done (ALRT re-armed) after the fall: median 588 us, p99 603, max 606; margin to next conversion min 133 us
+== B3_modeB_540_540_1080us  (expected cycle 1080 us)
+   conversions seen 999 of 999 slots; missed 0; off-grid falls 379; glitch pulses <1 us 0
+   interval (consecutive slots, n=998): median 1079.688 us, min 1079.664, max 1089.696, sd 448 ns, p1..p99 1079.664..1079.736
+   fitted period 1079.7141 us = expected -0.0265 %; jitter about the fit sd 3032 ns, max |res| 6191 ns
+   phase steps of the conversion grid (>1 us): [(495579, 10.01), (995488, 10.01)]
+   handler start after the fall: median 26 us, p99 37, max 38
+   DIAG_ALRT read done (ALRT re-armed) after the fall: median 567 us, p99 581, max 584; margin to next conversion min 496 us
+== B4_modeF_1052x3_avg1_3156us  (expected cycle 3156 us)
+   conversions seen 599 of 599 slots; missed 0; off-grid falls 217; glitch pulses <1 us 0
+   interval (consecutive slots, n=598): median 3155.088 us, min 3155.040, max 3165.120, sd 707 ns, p1..p99 3155.064..3155.136
+   fitted period 3155.1550 us = expected -0.0268 %; jitter about the fit sd 2794 ns, max |res| 5708 ns
+   phase steps of the conversion grid (>1 us): [(495350, 10.03), (993866, 9.98), (1495535, 10.01)]
+   handler start after the fall: median 41 us, p99 53, max 54
+   DIAG_ALRT read done (ALRT re-armed) after the fall: median 582 us, p99 597, max 599; margin to next conversion min 2557 us

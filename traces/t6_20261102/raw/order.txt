@@ -1,0 +1,32 @@
+# T6 block order, written 2026-11-02T12:01Z, before the first block. Fixed and counterbalanced (spec R9.3):
+# one I block, then rounds in the 4-round cycle H A, A H, A H, H A, repeating, so each condition comes first
+# equally often in every 4 rounds; one final I block at the very end of the session.
+# Rounds 1-4: capture C1 (with idle_start). Rounds 5..N (N <= 20; cap 40 min of blocks, about 16 rounds) and
+# idle_end: capture C2. The lines are listed up to the cap; rounds beyond the stopping point aren't run.
+# I = idle (no controller, no marker, 61 s between the marks); H = hold; A = classical; 60 s blocks, track-sine-v1.
+idle_start I
+round1 H A
+round2 A H
+round3 A H
+round4 H A
+round5 H A
+round6 A H
+round7 A H
+round8 H A
+round9 H A
+round10 A H
+round11 A H
+round12 H A
+round13 H A
+round14 A H
+round15 A H
+round16 H A
+round17 H A
+round18 A H
+round19 A H
+round20 H A
+idle_end I
+# Addendum, 2026-11-02T14:00Z (after rounds 1-4): the Jetson was power-cycled during the lunch break, so C2 runs on a
+# new boot. One extra idle block (I50) opens C2, before round 5, so the second boot has an idle block at each end.
+# Rounds 5..20 and idle_end follow unchanged. Line numbers of the lines above are unchanged.
+idle_c2start I

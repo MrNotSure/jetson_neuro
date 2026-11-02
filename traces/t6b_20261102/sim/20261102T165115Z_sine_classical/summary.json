@@ -1,0 +1,96 @@
+{
+  "status": "completed",
+  "reason": null,
+  "scenario_exact": false,
+  "achieved_hz": 99.9939436301517,
+  "episodes": [
+    {
+      "episode": 0,
+      "periods": 6000,
+      "error": {
+        "rms_deg": 0.18229940729065566,
+        "max_deg": 0.4742084466208554,
+        "rms_px_in_view": 0.8817512138924506,
+        "max_px_in_view": 2.2937029841091587,
+        "rms_deg_in_view": 0.18229940729066454,
+        "max_deg_in_view": 0.4742084466210649
+      },
+      "mission": {
+        "in_fov_fraction": 1.0,
+        "target_losses": 0,
+        "reacquire_mean_s": 0.0,
+        "reacquire_max_s": 0.0,
+        "unrecovered_losses": 0,
+        "longest_out_of_view_s": 0.0,
+        "success": true
+      },
+      "events": {
+        "mean": 158.2275,
+        "p95": 256.0,
+        "max": 553.0
+      }
+    }
+  ],
+  "overall": {
+    "periods": 6000,
+    "episodes": 1,
+    "error": {
+      "rms_deg": 0.18229940729065566,
+      "max_deg": 0.4742084466208554,
+      "rms_px_in_view": 0.8817512138924506,
+      "max_px_in_view": 2.2937029841091587,
+      "rms_deg_in_view": 0.18229940729066454,
+      "max_deg_in_view": 0.4742084466210649
+    },
+    "mission": {
+      "in_fov_fraction": 1.0,
+      "target_losses": 0,
+      "reacquire_mean_s": 0.0,
+      "reacquire_max_s": 0.0,
+      "unrecovered_losses": 0,
+      "longest_out_of_view_s": 0.0,
+      "success": true
+    },
+    "events_per_period": {
+      "mean": 158.2275,
+      "p95": 256.0,
+      "max": 553.0
+    },
+    "timing": {
+      "sim_us": {
+        "mean": 1475.3446666666666,
+        "p99": 1911.6300000000138,
+        "max": 35118.0
+      },
+      "ctl_us": {
+        "mean": 491.035317333334,
+        "p99": 590.0166399999999,
+        "max": 1144.064
+      },
+      "rtt_us": {
+        "mean": 1448.6170726666646,
+        "p99": 1744.5582500000003,
+        "max": 18690.667
+      },
+      "link_us": {
+        "mean": 957.5817553333325,
+        "p99": 1236.7096099999999,
+        "max": 18027.915
+      },
+      "send_lateness_us": {
+        "mean": 227.76388483333346,
+        "p99": 52.66050000000169,
+        "max": 96213.833
+      }
+    },
+    "misses": 0,
+    "cmd_invalid": 0,
+    "cmd_clamped": 0,
+    "ctl_flags": {
+      "fault": 0,
+      "detect": 0,
+      "recover": 0
+    },
+    "success_rate": 1.0
+  }
+}

@@ -1,0 +1,94 @@
+16:29:09
+2026-10-30T16:21:28.840Z RELEASE: gpioget gpiochip0 105 -> 0 rc=0
+2026-10-30T16:21:28.848Z end; line: 	line 105:      "PQ.05"       unused   input  active-high 
+no gpioset
+	line 105:      "PQ.05"       unused   input  active-high 
+== model
+NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+
+nvidia,p3768-0000+p3767-0005-super nvidia,p3767-0005 nvidia,tegra234 
+== extlinux
+total 24
+drwxr-xr-x 2 root root  4096 Oct 15 15:55 .
+drwxr-xr-x 5 root root 12288 Jan  1  1970 ..
+-rw-r--r-- 1 root root  1064 Oct 15 15:55 extlinux.conf
+-rw-r--r-- 1 root root   727 Sep 23 17:43 extlinux.conf.nv-update-extlinux-backup
+TIMEOUT 30
+DEFAULT primary
+
+MENU TITLE L4T boot options
+
+LABEL primary
+      MENU LABEL primary kernel
+      LINUX /boot/Image
+      INITRD /boot/initrd
+      APPEND ${cbootargs} root=PARTUUID=<root-partuuid> rw rootwait rootfstype=ext4 mminit_loglevel=4 console=ttyTCU0,115200 firmware_class.path=/etc/firmware fbcon=map:0 video=efifb:off console=tty0 efi_pstore.pstore_disable=1 pstore.backend=ramoops efi=runtime pci=pcie_bus_perf nvme.use_threaded_interrupts=1 swiotlb=2048 nv-auto-config 
+
+# When testing a custom kernel, it is recommended that you create a backup of
+# the original kernel and add a new entry to this file so that the device can
+# fallback to the original kernel. To do this:
+#
+# 1, Make a backup of the original kernel
+#      sudo cp /boot/Image /boot/Image.backup
+#
+# 2, Copy your custom kernel into /boot/Image
+#
+# 3, Uncomment below menu setting lines for the original kernel
+#
+# 4, Reboot
+
+# LABEL backup
+#    MENU LABEL backup kernel
+#    LINUX /boot/Image.backup
+#    INITRD /boot/initrd
+#    APPEND ${cbootargs}
+
+== /boot dtb/dtbo
+/boot/kernel_tegra234-p3768-0000+p3767-0005-nv-super.dtb
+/boot/tegra234-carveouts.dtbo
+/boot/tegra234-p3737-0000+p3701-0000-as-p3701-0004.dtbo
+/boot/tegra234-p3737-0000+p3701-0000-as-p3767-0000.dtbo
+/boot/tegra234-p3737-0000+p3701-0000-as-p3767-0001.dtbo
+/boot/tegra234-p3737-0000+p3701-0000-as-p3767-0003.dtbo
+/boot/tegra234-p3737-0000+p3701-0000-as-p3767-0004.dtbo
+/boot/tegra234-p3737-0000+p3701-0000-audio-adafruit-sph0645lm4h.dtbo
+/boot/tegra234-p3737-0000+p3701-0000-audio-adafruit-uda1334a.dtbo
+/boot/tegra234-p3737-0000+p3701-0000-audio-fe-pi.dtbo
+/boot/tegra234-p3737-0000+p3701-0000-audio-respeaker-4-mic-array.dtbo
+/boot/tegra234-p3737-0000+p3701-0000-audio-respeaker-4-mic-lin-array.dtbo
+/boot/tegra234-p3737-0000+p3701-0000-csi.dtbo
+/boot/tegra234-p3737-0000+p3701-0000.dtb
+/boot/tegra234-p3737-0000+p3701-0000-dynamic.dtbo
+/boot/tegra234-p3737-0000+p3701-0000-hdr40.dtbo
+/boot/tegra234-p3737-0000+p3701-0000-m2ke.dtbo
+/boot/tegra234-p3737-0000+p3701-0000-nv.dtb
+/boot/tegra234-p3737-0000+p3701-0004-nv.dtb
+/boot/tegra234-p3737-0000+p3701-0004-nv-super.dtb
+/boot/tegra234-p3737-0000+p3701-0005-nv.dtb
+/boot/tegra234-p3737-0000+p3701-0008.dtb
+/boot/tegra234-p3737-0000+p3701-0008-nv.dtb
+/boot/tegra234-p3737-camera-dual-hawk-ar0234-e3653-overlay.dtbo
+/boot/tegra234-p3737-camera-dual-imx274-overlay.dtbo
+/boot/tegra234-p3737-camera-e3331-overlay.dtbo
+/boot/tegra234-p3737-camera-e3333-overlay.dtbo
+/boot/tegra234-p3737-camera-eCAM130A-overlay.dtbo
+/boot/tegra234-p3737-camera-imx185-overlay.dtbo
+/boot/tegra234-p3737-camera-imx390-addr-0x21-overlay.dtbo
+/boot/tegra234-p3737-camera-imx390-overlay.dtbo
+/boot/tegra234-p3737-camera-p3762-a00-1Hawk-overlay.dtbo
+/boot/tegra234-p3737-camera-p3762-a00-2Hawk-overlay.dtbo
+/boot/tegra234-p3737-camera-p3762-a00-3Hawk-3Owl-overlay.dtbo
+/boot/tegra234-p3737-camera-p3762-a00-4Hawk-overlay.dtbo
+/boot/tegra234-p3737-camera-p3762-a00-4Owl-overlay.dtbo
+/boot/tegra234-p3737-camera-p3762-a00-overlay.dtbo
+/boot/tegra234-p3740-0002+p3701-0008.dtb
+/boot/tegra234-p3740-0002+p3701-0008-hdr20.dtbo
+/boot/tegra234-p3740-0002+p3701-0008-m2kb.dtbo
+== tools
+/usr/bin/dtc
+/usr/bin/fdtoverlay
+/usr/bin/fdtget
+/usr/bin/fdtput
+device-tree-compiler	1.7.0-2build1
+nvidia-l4t-jetson-io	39.2.1-20260806224157
+nvidia-l4t-kernel-dtbs	6.8.12-tegra-39.2.1-20260806224157

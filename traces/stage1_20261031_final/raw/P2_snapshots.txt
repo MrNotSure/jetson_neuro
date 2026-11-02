@@ -1,0 +1,246 @@
+== S (H, round 0) before
+2026-10-31T13:31:28.735Z
+cpu-thermal=46250 gpu-thermal=45968 soc0-thermal=45218 soc1-thermal=45781 soc2-thermal=45750 tj-thermal=46218 
+fan_pwm=55 fan_rpm=1122 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== S mc_start
+pid=3960 log: listening 192.168.55.1:5555
+port 5555 listening
+== S mc_wait
+pid 3960 exited
+log: listening 192.168.55.1:5555
+rows: 1000
+0,0,1355505866112,1355505924448,521
+0,999,1365495473600,1365495486464,507
+port 5555 closed
+== S after
+2026-10-31T13:31:41.485Z
+cpu-thermal=46218 gpu-thermal=46093 soc0-thermal=45250 soc1-thermal=45718 soc2-thermal=45843 tj-thermal=46218 
+fan_pwm=55 fan_rpm=1124 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R1I (I, round 1) before
+2026-10-31T13:32:29.092Z
+cpu-thermal=46093 gpu-thermal=46031 soc0-thermal=45281 soc1-thermal=45593 soc2-thermal=45812 tj-thermal=46187 
+fan_pwm=55 fan_rpm=1122 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R1I after
+2026-10-31T13:33:30.424Z
+cpu-thermal=46000 gpu-thermal=45843 soc0-thermal=45156 soc1-thermal=45593 soc2-thermal=45718 tj-thermal=46156 
+fan_pwm=55 fan_rpm=1122 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R1H (H, round 1) before
+2026-10-31T13:33:40.684Z
+cpu-thermal=46000 gpu-thermal=46093 soc0-thermal=45125 soc1-thermal=45656 soc2-thermal=45718 tj-thermal=46218 
+fan_pwm=55 fan_rpm=1122 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R1H mc_start
+pid=4176 log: listening 192.168.55.1:5555
+port 5555 listening
+== R1H mc_wait
+pid 4176 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,1487186093952,1487186134112,521
+0,5999,1547174542336,1547174559968,489
+port 5555 closed
+== R1H after
+2026-10-31T13:34:43.225Z
+cpu-thermal=46250 gpu-thermal=45906 soc0-thermal=45312 soc1-thermal=45718 soc2-thermal=45781 tj-thermal=46281 
+fan_pwm=55 fan_rpm=1124 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R1C (C, round 1) before
+2026-10-31T13:34:53.494Z
+cpu-thermal=46125 gpu-thermal=46187 soc0-thermal=45218 soc1-thermal=45812 soc2-thermal=45875 tj-thermal=46250 
+fan_pwm=55 fan_rpm=1123 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R1C mc_start
+pid=4315 log: listening 192.168.55.1:5555
+port 5555 listening
+== R1C mc_wait
+pid 4315 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,1560064395232,1560064430304,521
+0,5999,1620053008768,1620053027168,223
+port 5555 closed
+== R1C after
+2026-10-31T13:35:56.163Z
+cpu-thermal=46156 gpu-thermal=46031 soc0-thermal=45062 soc1-thermal=45750 soc2-thermal=45656 tj-thermal=46218 
+fan_pwm=55 fan_rpm=1124 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R2I (I, round 2) before
+2026-10-31T13:36:06.489Z
+cpu-thermal=45937 gpu-thermal=45781 soc0-thermal=45062 soc1-thermal=45562 soc2-thermal=45625 tj-thermal=46187 
+fan_pwm=55 fan_rpm=1123 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R2I after
+2026-10-31T13:37:07.930Z
+cpu-thermal=45906 gpu-thermal=45937 soc0-thermal=44937 soc1-thermal=45562 soc2-thermal=45593 tj-thermal=45875 
+fan_pwm=55 fan_rpm=1123 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R2H (H, round 2) before
+2026-10-31T13:37:18.156Z
+cpu-thermal=45812 gpu-thermal=45937 soc0-thermal=45062 soc1-thermal=45437 soc2-thermal=45531 tj-thermal=46031 
+fan_pwm=55 fan_rpm=1123 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R2H mc_start
+pid=4526 log: listening 192.168.55.1:5555
+port 5555 listening
+== R2H mc_wait
+pid 4526 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,1704541201056,1704541236832,521
+0,5999,1764529939072,1764529951840,489
+port 5555 closed
+== R2H after
+2026-10-31T13:38:20.591Z
+cpu-thermal=45843 gpu-thermal=45875 soc0-thermal=45062 soc1-thermal=45531 soc2-thermal=45625 tj-thermal=46093 
+fan_pwm=55 fan_rpm=1121 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R2C (C, round 2) before
+2026-10-31T13:38:30.916Z
+cpu-thermal=46031 gpu-thermal=45750 soc0-thermal=45062 soc1-thermal=45406 soc2-thermal=45718 tj-thermal=45843 
+fan_pwm=55 fan_rpm=1122 cpu_cur policy0=883200 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R2C mc_start
+pid=4661 log: listening 192.168.55.1:5555
+port 5555 listening
+== R2C mc_wait
+pid 4661 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,1777343481760,1777343540256,521
+0,5999,1837332253888,1837332267808,266
+port 5555 closed
+== R2C after
+2026-10-31T13:39:33.413Z
+cpu-thermal=45750 gpu-thermal=45500 soc0-thermal=44750 soc1-thermal=45343 soc2-thermal=45500 tj-thermal=45875 
+fan_pwm=55 fan_rpm=1121 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R3I (I, round 3) before
+2026-10-31T13:39:43.719Z
+cpu-thermal=45750 gpu-thermal=45531 soc0-thermal=44781 soc1-thermal=45250 soc2-thermal=45406 tj-thermal=45812 
+fan_pwm=55 fan_rpm=1121 cpu_cur policy0=1113600 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R3I after
+2026-10-31T13:40:45.147Z
+cpu-thermal=45750 gpu-thermal=45562 soc0-thermal=44781 soc1-thermal=45343 soc2-thermal=45468 tj-thermal=45781 
+fan_pwm=55 fan_rpm=1122 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R3C (C, round 3) before
+2026-10-31T13:40:55.408Z
+cpu-thermal=45968 gpu-thermal=45812 soc0-thermal=44843 soc1-thermal=45375 soc2-thermal=45500 tj-thermal=45875 
+fan_pwm=55 fan_rpm=1122 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R3C mc_start
+pid=4878 log: listening 192.168.55.1:5555
+port 5555 listening
+== R3C mc_wait
+pid 4878 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,1921871947264,1921871982912,521
+0,5999,1981860540000,1981860556320,226
+port 5555 closed
+== R3C after
+2026-10-31T13:41:58.058Z
+cpu-thermal=46093 gpu-thermal=45843 soc0-thermal=45156 soc1-thermal=45843 soc2-thermal=45687 tj-thermal=46250 
+fan_pwm=55 fan_rpm=1118 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R3H (H, round 3) before
+2026-10-31T13:42:08.374Z
+cpu-thermal=46156 gpu-thermal=46093 soc0-thermal=45187 soc1-thermal=45812 soc2-thermal=45812 tj-thermal=46187 
+fan_pwm=55 fan_rpm=1118 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R3H mc_start
+pid=5013 log: listening 192.168.55.1:5555
+port 5555 listening
+== R3H mc_wait
+pid 5013 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,1994841378848,1994841441152,521
+0,5999,2054830291072,2054830308672,489
+port 5555 closed
+== R3H after
+2026-10-31T13:43:10.929Z
+cpu-thermal=46500 gpu-thermal=46250 soc0-thermal=45468 soc1-thermal=46000 soc2-thermal=46000 tj-thermal=46375 
+fan_pwm=55 fan_rpm=1118 cpu_cur policy0=1113600 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R4I (I, round 4) before
+2026-10-31T13:43:21.209Z
+cpu-thermal=46406 gpu-thermal=46156 soc0-thermal=45437 soc1-thermal=45968 soc2-thermal=46187 tj-thermal=46437 
+fan_pwm=55 fan_rpm=1117 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R4I after
+2026-10-31T13:44:22.579Z
+cpu-thermal=46437 gpu-thermal=46312 soc0-thermal=45437 soc1-thermal=46062 soc2-thermal=46125 tj-thermal=46468 
+fan_pwm=60 fan_rpm=1238 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R4H (H, round 4) before
+2026-10-31T13:44:32.884Z
+cpu-thermal=46406 gpu-thermal=46343 soc0-thermal=45500 soc1-thermal=46125 soc2-thermal=46062 tj-thermal=46500 
+fan_pwm=60 fan_rpm=1238 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R4H mc_start
+pid=5230 log: listening 192.168.55.1:5555
+port 5555 listening
+== R4H mc_wait
+pid 5230 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,2139262353568,2139262387488,521
+0,5999,2199251354944,2199251373312,489
+port 5555 closed
+== R4H after
+2026-10-31T13:45:35.280Z
+cpu-thermal=46406 gpu-thermal=46281 soc0-thermal=45625 soc1-thermal=46062 soc2-thermal=46093 tj-thermal=46718 
+fan_pwm=60 fan_rpm=1239 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R4C (C, round 4) before
+2026-10-31T13:45:45.583Z
+cpu-thermal=46437 gpu-thermal=46625 soc0-thermal=45593 soc1-thermal=46218 soc2-thermal=46218 tj-thermal=46593 
+fan_pwm=60 fan_rpm=1238 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.
+== R4C mc_start
+pid=5363 log: listening 192.168.55.1:5555
+port 5555 listening
+== R4C mc_wait
+pid 5363 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,2211982130432,2211982163904,521
+0,5999,2271971286816,2271971302016,266
+port 5555 closed
+== R4C after
+2026-10-31T13:46:48.130Z
+cpu-thermal=46531 gpu-thermal=46750 soc0-thermal=45656 soc1-thermal=46250 soc2-thermal=46250 tj-thermal=46593 
+fan_pwm=60 fan_rpm=1238 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+no apt/dpkg
+No jobs running.

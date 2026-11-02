@@ -1,0 +1,4 @@
+A=runs/board_20261026/runs/20261026T124159Z_sine_centroid
+B=runs/board_20261026/runs/20261026T124203Z_sine_centroid
+rows A=1000 B=1000; compared columns (24): episode, k, t_us, pan, tilt, pan_rate, tilt_rate, pan_sp, tilt_sp, cmd_pan, cmd_tilt, cmd_invalid, cmd_clamped, ctl_flags, target_az, target_el, target_u, target_v, err_px, in_fov, n_events, n_on, n_off, miss
+IDENTICAL: all non-timing columns match exactly in every row

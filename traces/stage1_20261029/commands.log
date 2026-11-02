@@ -1,0 +1,53 @@
+2026-10-29T17:52:01Z	mac	Part 0: ls /dev/cu.usbmodem<jetson-serial>*; ioreg NVIDIA check; ssh -o ConnectTimeout=5 jetson-usb true; mpremote connect list; mpremote run pico_state.py; git status; git diff --stat 8d91a6d HEAD -- src scenarios
+2026-10-29T17:52:17Z	mac	ioreg -p IOUSB -w0 | grep -i ...; ls /dev/cu.*
+2026-10-29T17:52:51Z	mac	wait for Pico: mpremote connect list (poll); then mpremote connect id:<pico-serial> run pico_state.py
+2026-10-29T18:02:12Z	mac	scripts/cap_host.py T0_test15 --max-s 15
+2026-10-29T18:03:13Z	mac	scripts/cap_host.py T0_test10 --max-s 10
+2026-10-29T18:10:36Z	mac	scripts/cap_host.py P2_boot --max-s 1500
+2026-10-29T18:12:26Z	board	ssh jetson-usb date -u "+board_utc %F %T.%N"; uptime; cat /proc/uptime; timedatectl | head -6; cat /sys/class/hwmon/hwmon4/name; gpioinfo gpiochip0 | grep -n -E "PQ.05"; gpioinfo gpiochip0 | sed -n "107p"; systemctl list-jobs --no-pager | tail -3; cd ~/jetson_neuro && git rev-parse HEAD && git status --short | head
+2026-10-29T18:12:38Z	board	ssh jetson-usb for h in /sys/class/hwmon/hwmon*; do echo "$h $(cat $h/name) -> $(readlink -f $h)"; done; ls -d /sys/bus/i2c/drivers/ina3221/*/hwmon/hwmon*; D=$(ls -d /sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon* | head -1); for i in 1 2 3 4 5; do echo "$(date -u +%T.%N | cut -c1-12) in1=$(cat $D/in1_input) curr1=$(cat $D/curr1_input) in2=$(cat $D/in2_input) curr2=$(cat $D/curr2_input) in3=$(cat $D/in3_input) curr3=$(cat $D/curr3_input)"; sleep 1; done; uptime
+2026-10-29T18:17:00Z	board	ssh jetson-usb 'sudo systemctl poweroff'   (user asked to shut everything down)
+2026-10-29T18:17:44Z	mac	touch /private/tmp/jn_run1/stop_P2_boot (stop capture); mpremote connect id:<pico-serial> reset; mpremote run pico_state.py
+2026-10-29T18:28:51Z	mac	scripts/cap_host.py P2b_boot --max-s 3500
+2026-10-29T18:30:53Z	board	ssh jetson-usb 'date -u +%s.%N' x4 (clockcheck.py)
+2026-10-29T18:30:54Z	board	ssh jetson-usb timedatectl | head -7; uptime; systemctl list-jobs --no-pager | tail -2; for h in /sys/class/hwmon/hwmon*; do echo "$h $(cat $h/name)"; done; gpioinfo gpiochip0 | grep "line 105:"; cd ~/jetson_neuro && git rev-parse --short HEAD && git status --short | wc -l
+2026-10-29T18:31:30Z	board	ssh jetson-usb "sudo date -u -s '<Mac UTC, next full second, zsh strftime>'"   (clock sync, Part 3.1; board was -267498.7 s)
+2026-10-29T18:31:39Z	board	ssh jetson-usb 'date -u +%s.%N' x4 (clockcheck.py)
+2026-10-29T18:31:40Z	board	ssh jetson-usb systemctl list-jobs --no-pager; ps -eo pid,etime,pcpu,comm --sort=-pcpu | head -8; mkdir -p /tmp/jn_run1/scripts && ls -la /tmp/jn_run1
+2026-10-29T18:32:07Z	mac	rsync scripts/d4.sh jetson-usb:/tmp/jn_run1/scripts/
+2026-10-29T18:32:07Z	board	ssh jetson-usb ls -la /tmp/jn_run1/scripts; systemctl list-jobs --no-pager | tail -4
+2026-10-29T18:33:56Z	board	ssh jetson-usb nohup bash /tmp/jn_run1/scripts/d4.sh 60 > /tmp/jn_run1/d4.out 2>&1 < /dev/null & sleep 1.5; cat /tmp/jn_run1/d4.log; gpioinfo gpiochip0 | grep "line 105:"
+2026-10-29T18:35:13Z	board	ssh jetson-usb cat /tmp/jn_run1/d4.log; pgrep -a gpioset || echo "no gpioset running"; gpioinfo gpiochip0 | grep "line 105:"
+2026-10-29T18:35:21Z	board	ssh jetson-usb grep -q "^.*end;" /tmp/jn_run1/d4.log
+2026-10-29T18:35:25Z	board	ssh jetson-usb grep -q "^.*end;" /tmp/jn_run1/d4.log
+2026-10-29T18:35:28Z	board	ssh jetson-usb grep -q "^.*end;" /tmp/jn_run1/d4.log
+2026-10-29T18:35:31Z	board	ssh jetson-usb grep -q "^.*end;" /tmp/jn_run1/d4.log
+2026-10-29T18:35:34Z	board	ssh jetson-usb grep -q "^.*end;" /tmp/jn_run1/d4.log
+2026-10-29T18:35:37Z	board	ssh jetson-usb grep -q "^.*end;" /tmp/jn_run1/d4.log
+2026-10-29T18:35:41Z	board	ssh jetson-usb grep -q "^.*end;" /tmp/jn_run1/d4.log
+2026-10-29T18:35:44Z	board	ssh jetson-usb grep -q "^.*end;" /tmp/jn_run1/d4.log
+2026-10-29T18:35:47Z	board	ssh jetson-usb grep -q "^.*end;" /tmp/jn_run1/d4.log
+2026-10-29T18:35:50Z	board	ssh jetson-usb grep -q "^.*end;" /tmp/jn_run1/d4.log
+2026-10-29T18:35:53Z	board	ssh jetson-usb grep -q "^.*end;" /tmp/jn_run1/d4.log
+2026-10-29T18:35:57Z	board	ssh jetson-usb grep -q "^.*end;" /tmp/jn_run1/d4.log
+2026-10-29T18:35:57Z	board	ssh jetson-usb cat /tmp/jn_run1/d4.log | tail -3; mv /tmp/jn_run1/d4.log /tmp/jn_run1/d4_run1.log; nohup bash /tmp/jn_run1/scripts/d4.sh 90 > /tmp/jn_run1/d4.out 2>&1 < /dev/null & sleep 1.5; cat /tmp/jn_run1/d4.log; gpioinfo gpiochip0 | grep "line 105:"
+2026-10-29T18:38:12Z	board	ssh jetson-usb grep -q "end;" /tmp/jn_run1/d4.log
+2026-10-29T18:38:15Z	board	ssh jetson-usb grep -q "end;" /tmp/jn_run1/d4.log
+2026-10-29T18:38:18Z	board	ssh jetson-usb grep -q "end;" /tmp/jn_run1/d4.log
+2026-10-29T18:38:21Z	board	ssh jetson-usb grep -q "end;" /tmp/jn_run1/d4.log
+2026-10-29T18:38:25Z	board	ssh jetson-usb grep -q "end;" /tmp/jn_run1/d4.log
+2026-10-29T18:38:28Z	board	ssh jetson-usb grep -q "end;" /tmp/jn_run1/d4.log
+2026-10-29T18:38:31Z	board	ssh jetson-usb grep -q "end;" /tmp/jn_run1/d4.log
+2026-10-29T18:38:34Z	board	ssh jetson-usb grep -q "end;" /tmp/jn_run1/d4.log
+2026-10-29T18:38:37Z	board	ssh jetson-usb grep -q "end;" /tmp/jn_run1/d4.log
+2026-10-29T18:38:41Z	board	ssh jetson-usb grep -q "end;" /tmp/jn_run1/d4.log
+2026-10-29T18:38:44Z	board	ssh jetson-usb grep -q "end;" /tmp/jn_run1/d4.log
+2026-10-29T18:38:47Z	board	ssh jetson-usb grep -q "end;" /tmp/jn_run1/d4.log
+2026-10-29T18:38:50Z	board	ssh jetson-usb grep -q "end;" /tmp/jn_run1/d4.log
+2026-10-29T18:38:54Z	board	ssh jetson-usb grep -q "end;" /tmp/jn_run1/d4.log
+2026-10-29T18:38:57Z	board	ssh jetson-usb grep -q "end;" /tmp/jn_run1/d4.log
+2026-10-29T18:39:00Z	board	ssh jetson-usb grep -q "end;" /tmp/jn_run1/d4.log
+2026-10-29T18:39:00Z	board	ssh jetson-usb cat /tmp/jn_run1/d4.log; pgrep -a gpioset || echo "no gpioset running"; gpioinfo gpiochip0 | grep "line 105:"; systemctl list-jobs --no-pager | tail -3
+2026-10-29T18:39:00Z	mac	rsync jetson-usb:/tmp/jn_run1/ raw/board_tmp_jn_run1/
+2026-10-29T18:39:30Z	board	ssh jetson-usb 'sudo systemctl poweroff'   (user asked to shut everything down; pin 29 did not drive in D4)
+2026-10-29T18:39:29Z	mac	touch /private/tmp/jn_run1/stop_P2b_boot; mpremote connect id:<pico-serial> reset; mpremote run pico_state.py; capcheck.py raw/P2b_boot.bin

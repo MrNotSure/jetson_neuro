@@ -1,0 +1,868 @@
+== S (A, round 0, S0) before
+2026-11-02T16:11:29.503Z
+cpu-thermal=47062 gpu-thermal=47281 soc0-thermal=46406 soc1-thermal=46843 soc2-thermal=46906 tj-thermal=47375 
+fan_pwm=58 fan_rpm=1187 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5032 mA=920
+no apt/dpkg
+No jobs running.
+== S mc_start
+pid=3744 log: listening 192.168.55.1:5555
+affinity: pid 3744's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_S.csv 
+port 5555 listening
+== S mc_wait
+pid 3744 exited
+log: listening 192.168.55.1:5555
+rows: 1000
+0,0,620216066496,620216097760,521
+0,999,630205697952,630205711264,78
+port 5555 closed
+== S after
+2026-11-02T16:11:43.739Z
+cpu-thermal=47218 gpu-thermal=47187 soc0-thermal=46312 soc1-thermal=46968 soc2-thermal=47031 tj-thermal=47468 
+fan_pwm=58 fan_rpm=1188 cpu_cur policy0=806400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5032 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 36
+== R1I (I, round 1, K1) before
+2026-11-02T16:26:30.903Z
+cpu-thermal=47718 gpu-thermal=47343 soc0-thermal=46625 soc1-thermal=47093 soc2-thermal=47156 tj-thermal=47625 
+fan_pwm=64 fan_rpm=1309 cpu_cur policy0=1344000 policy4=1267200 gpu_cur=306000000
+vdd_in mV=5000 mA=1072
+no apt/dpkg
+No jobs running.
+== R1I after
+2026-11-02T16:27:32.203Z
+cpu-thermal=47281 gpu-thermal=47218 soc0-thermal=46406 soc1-thermal=47125 soc2-thermal=47062 tj-thermal=47437 
+fan_pwm=64 fan_rpm=1342 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+2026-11-02T17:26:30+01:00 jetson wireplumber[3920]: SPA handle 'api.libcamera.enum.manager' could not be loaded; is it installed?
+2026-11-02T17:26:30+01:00 jetson wireplumber[3920]: PipeWire's libcamera SPA missing or broken. libcamera not supported.
+2026-11-02T17:26:30+01:00 jetson rtkit-daemon[2275]: Supervising 0 threads of 0 processes of 1 users.
+2026-11-02T17:26:30+01:00 jetson wireplumber[3920]: Failed to get percentage from UPower: org.freedesktop.DBus.Error.NameHasNoOwner
+2026-11-02T17:26:30+01:00 jetson wireplumber[3920]: BlueZ system service is not available
+journal lines in the last 80 s (all): 103
+== R1H (H, round 1, K1) before
+2026-11-02T16:27:42.439Z
+cpu-thermal=47437 gpu-thermal=47468 soc0-thermal=46406 soc1-thermal=47250 soc2-thermal=47093 tj-thermal=47437 
+fan_pwm=64 fan_rpm=1343 cpu_cur policy0=1344000 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R1H mc_start
+pid=4135 log: listening 192.168.55.1:5555
+affinity: pid 4135's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R1H.csv 
+port 5555 listening
+== R1H mc_wait
+pid 4135 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,1591727909536,1591727942560,521
+0,5999,1651716645664,1651716656576,489
+port 5555 closed
+== R1H after
+2026-11-02T16:28:45.170Z
+cpu-thermal=47312 gpu-thermal=47218 soc0-thermal=46343 soc1-thermal=47125 soc2-thermal=47062 tj-thermal=47375 
+fan_pwm=64 fan_rpm=1344 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 36
+== R1A (A, round 1, K1) before
+2026-11-02T16:28:55.428Z
+cpu-thermal=47187 gpu-thermal=47218 soc0-thermal=46406 soc1-thermal=47093 soc2-thermal=47062 tj-thermal=47406 
+fan_pwm=59 fan_rpm=1225 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R1A mc_start
+pid=4279 log: listening 192.168.55.1:5555
+affinity: pid 4279's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R1A.csv 
+port 5555 listening
+== R1A mc_wait
+pid 4279 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,1664351709088,1664351746464,521
+0,5999,1724340438176,1724340451232,209
+port 5555 closed
+== R1A after
+2026-11-02T16:29:57.802Z
+cpu-thermal=47187 gpu-thermal=47281 soc0-thermal=46406 soc1-thermal=47187 soc2-thermal=47062 tj-thermal=47468 
+fan_pwm=64 fan_rpm=1344 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 33
+== R2H (H, round 2, K1) before
+2026-11-02T16:30:08.060Z
+cpu-thermal=47250 gpu-thermal=47343 soc0-thermal=46375 soc1-thermal=47031 soc2-thermal=47000 tj-thermal=47343 
+fan_pwm=59 fan_rpm=1221 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R2H mc_start
+pid=4431 log: listening 192.168.55.1:5555
+affinity: pid 4431's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R2H.csv 
+port 5555 listening
+== R2H mc_wait
+pid 4431 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,1737029375520,1737029408224,521
+0,5999,1797017919264,1797017930560,489
+port 5555 closed
+== R2H after
+2026-11-02T16:31:10.521Z
+cpu-thermal=47250 gpu-thermal=47218 soc0-thermal=46375 soc1-thermal=47093 soc2-thermal=47062 tj-thermal=47343 
+fan_pwm=64 fan_rpm=1343 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=928
+no apt/dpkg
+No jobs running.
+2026-11-02T17:30:01+01:00 jetson CRON[4384]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+journal lines in the last 80 s (all): 35
+== R2A (A, round 2, K1) before
+2026-11-02T16:31:20.740Z
+cpu-thermal=47343 gpu-thermal=47031 soc0-thermal=46531 soc1-thermal=47125 soc2-thermal=47031 tj-thermal=47468 
+fan_pwm=64 fan_rpm=1295 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5032 mA=920
+no apt/dpkg
+No jobs running.
+== R2A mc_start
+pid=4577 log: listening 192.168.55.1:5555
+affinity: pid 4577's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R2A.csv 
+port 5555 listening
+== R2A mc_wait
+pid 4577 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,1809615647424,1809615687424,521
+0,5999,1869604492064,1869604504992,193
+port 5555 closed
+== R2A after
+2026-11-02T16:32:23.082Z
+cpu-thermal=47218 gpu-thermal=47281 soc0-thermal=46531 soc1-thermal=47125 soc2-thermal=47062 tj-thermal=47343 
+fan_pwm=64 fan_rpm=1330 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+2026-11-02T17:31:48+01:00 jetson systemd[3902]: launchpadlib-cache-clean.service - Clean up old files in the Launchpadlib cache was skipped because of an unmet condition check (ConditionPathExists=/home/<user>/.launchpadlib/api.launchpad.net/cache).
+journal lines in the last 80 s (all): 35
+== R2I (I, round 2, K1) before
+2026-11-02T16:32:33.339Z
+cpu-thermal=47500 gpu-thermal=47187 soc0-thermal=46343 soc1-thermal=47093 soc2-thermal=46968 tj-thermal=47562 
+fan_pwm=64 fan_rpm=1344 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R2I after
+2026-11-02T16:33:34.642Z
+cpu-thermal=47375 gpu-thermal=47437 soc0-thermal=46468 soc1-thermal=47187 soc2-thermal=47062 tj-thermal=47500 
+fan_pwm=64 fan_rpm=1344 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 33
+== R3A (A, round 3, K1) before
+2026-11-02T16:33:44.927Z
+cpu-thermal=47281 gpu-thermal=47218 soc0-thermal=46343 soc1-thermal=47156 soc2-thermal=47031 tj-thermal=47281 
+fan_pwm=64 fan_rpm=1342 cpu_cur policy0=1113600 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R3A mc_start
+pid=4817 log: listening 192.168.55.1:5555
+affinity: pid 4817's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R3A.csv 
+port 5555 listening
+== R3A mc_wait
+pid 4817 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,1953929540832,1953929576928,521
+0,5999,2013918130272,2013918142784,185
+port 5555 closed
+== R3A after
+2026-11-02T16:34:47.403Z
+cpu-thermal=47343 gpu-thermal=47312 soc0-thermal=46375 soc1-thermal=47093 soc2-thermal=47031 tj-thermal=47375 
+fan_pwm=64 fan_rpm=1339 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 34
+== R3I (I, round 3, K1) before
+2026-11-02T16:34:57.651Z
+cpu-thermal=47406 gpu-thermal=47312 soc0-thermal=46375 soc1-thermal=47187 soc2-thermal=47000 tj-thermal=47531 
+fan_pwm=59 fan_rpm=1222 cpu_cur policy0=1113600 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R3I after
+2026-11-02T16:35:58.994Z
+cpu-thermal=47406 gpu-thermal=47281 soc0-thermal=46343 soc1-thermal=47156 soc2-thermal=47062 tj-thermal=47500 
+fan_pwm=64 fan_rpm=1323 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 33
+== R3H (H, round 3, K1) before
+2026-11-02T16:36:09.245Z
+cpu-thermal=47187 gpu-thermal=47500 soc0-thermal=46562 soc1-thermal=47093 soc2-thermal=47062 tj-thermal=47250 
+fan_pwm=59 fan_rpm=1228 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R3H mc_start
+pid=5053 log: listening 192.168.55.1:5555
+affinity: pid 5053's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R3H.csv 
+port 5555 listening
+== R3H mc_wait
+pid 5053 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,2098253972064,2098254003904,521
+0,5999,2158242538880,2158242548768,489
+port 5555 closed
+== R3H after
+2026-11-02T16:37:11.761Z
+cpu-thermal=47281 gpu-thermal=47218 soc0-thermal=46468 soc1-thermal=47093 soc2-thermal=47062 tj-thermal=47468 
+fan_pwm=64 fan_rpm=1344 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 34
+== R4I (I, round 4, K1) before
+2026-11-02T16:37:22.009Z
+cpu-thermal=47468 gpu-thermal=47187 soc0-thermal=46375 soc1-thermal=47125 soc2-thermal=47062 tj-thermal=47406 
+fan_pwm=64 fan_rpm=1342 cpu_cur policy0=1113600 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R4I after
+2026-11-02T16:38:23.342Z
+cpu-thermal=47312 gpu-thermal=47343 soc0-thermal=46562 soc1-thermal=47218 soc2-thermal=47031 tj-thermal=47468 
+fan_pwm=64 fan_rpm=1344 cpu_cur policy0=729600 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 34
+== R4A (A, round 4, K1) before
+2026-11-02T16:38:33.592Z
+cpu-thermal=47375 gpu-thermal=47312 soc0-thermal=46468 soc1-thermal=47187 soc2-thermal=47125 tj-thermal=47343 
+fan_pwm=64 fan_rpm=1344 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R4A mc_start
+pid=5293 log: listening 192.168.55.1:5555
+affinity: pid 5293's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R4A.csv 
+port 5555 listening
+== R4A mc_wait
+pid 5293 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,2242588636128,2242588675296,521
+0,5999,2302577485664,2302577498784,78
+port 5555 closed
+== R4A after
+2026-11-02T16:39:36.024Z
+cpu-thermal=47406 gpu-thermal=47375 soc0-thermal=46468 soc1-thermal=46968 soc2-thermal=47062 tj-thermal=47593 
+fan_pwm=59 fan_rpm=1222 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 34
+== R4H (H, round 4, K1) before
+2026-11-02T16:39:46.246Z
+cpu-thermal=47187 gpu-thermal=47187 soc0-thermal=46437 soc1-thermal=47093 soc2-thermal=47093 tj-thermal=47406 
+fan_pwm=64 fan_rpm=1344 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=912
+no apt/dpkg
+No jobs running.
+== R4H mc_start
+pid=5441 log: listening 192.168.55.1:5555
+affinity: pid 5441's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R4H.csv 
+port 5555 listening
+== R4H mc_wait
+pid 5441 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,2315213924608,2315213958880,521
+0,5999,2375202512288,2375202522656,489
+port 5555 closed
+== R4H after
+2026-11-02T16:40:48.695Z
+cpu-thermal=47312 gpu-thermal=47281 soc0-thermal=46531 soc1-thermal=47218 soc2-thermal=47093 tj-thermal=47562 
+fan_pwm=64 fan_rpm=1343 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 36
+== R5A (A, round 5, K2) before
+2026-11-02T16:41:35.125Z
+cpu-thermal=47281 gpu-thermal=47218 soc0-thermal=46406 soc1-thermal=47156 soc2-thermal=47062 tj-thermal=47437 
+fan_pwm=64 fan_rpm=1331 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R5A mc_start
+pid=5592 log: listening 192.168.55.1:5555
+affinity: pid 5592's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R5A.csv 
+port 5555 listening
+== R5A mc_wait
+pid 5592 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,2424073033984,2424073071680,521
+0,5999,2484061762368,2484061775104,145
+port 5555 closed
+== R5A after
+2026-11-02T16:42:37.515Z
+cpu-thermal=47531 gpu-thermal=47250 soc0-thermal=46437 soc1-thermal=47281 soc2-thermal=47093 tj-thermal=47531 
+fan_pwm=64 fan_rpm=1344 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 34
+== R5H (H, round 5, K2) before
+2026-11-02T16:42:47.774Z
+cpu-thermal=47375 gpu-thermal=47250 soc0-thermal=46531 soc1-thermal=47218 soc2-thermal=47156 tj-thermal=47562 
+fan_pwm=64 fan_rpm=1344 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R5H mc_start
+pid=5736 log: listening 192.168.55.1:5555
+affinity: pid 5736's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R5H.csv 
+port 5555 listening
+== R5H mc_wait
+pid 5736 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,2496754272864,2496754305600,521
+0,5999,2556742817536,2556742827136,489
+port 5555 closed
+== R5H after
+2026-11-02T16:43:50.208Z
+cpu-thermal=47468 gpu-thermal=47437 soc0-thermal=46593 soc1-thermal=47187 soc2-thermal=47156 tj-thermal=47531 
+fan_pwm=64 fan_rpm=1344 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 34
+== R5I (I, round 5, K2) before
+2026-11-02T16:44:00.456Z
+cpu-thermal=47562 gpu-thermal=47437 soc0-thermal=46625 soc1-thermal=47125 soc2-thermal=47062 tj-thermal=47562 
+fan_pwm=64 fan_rpm=1345 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=912
+no apt/dpkg
+No jobs running.
+== R5I after
+2026-11-02T16:45:01.794Z
+cpu-thermal=47437 gpu-thermal=47281 soc0-thermal=46593 soc1-thermal=47343 soc2-thermal=47125 tj-thermal=47593 
+fan_pwm=64 fan_rpm=1347 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 36
+== R6H (H, round 6, K2) before
+2026-11-02T16:45:12.053Z
+cpu-thermal=47468 gpu-thermal=47375 soc0-thermal=46593 soc1-thermal=47375 soc2-thermal=47156 tj-thermal=47625 
+fan_pwm=64 fan_rpm=1346 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R6H mc_start
+pid=5973 log: listening 192.168.55.1:5555
+affinity: pid 5973's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R6H.csv 
+port 5555 listening
+== R6H mc_wait
+pid 5973 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,2641018869120,2641018899456,521
+0,5999,2701007480416,2701007490624,489
+port 5555 closed
+== R6H after
+2026-11-02T16:46:14.615Z
+cpu-thermal=47437 gpu-thermal=47312 soc0-thermal=46531 soc1-thermal=47281 soc2-thermal=47218 tj-thermal=47562 
+fan_pwm=64 fan_rpm=1346 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 32
+== R6I (I, round 6, K2) before
+2026-11-02T16:46:24.889Z
+cpu-thermal=47406 gpu-thermal=47468 soc0-thermal=46531 soc1-thermal=47281 soc2-thermal=47062 tj-thermal=47468 
+fan_pwm=64 fan_rpm=1345 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R6I after
+2026-11-02T16:47:26.279Z
+cpu-thermal=47281 gpu-thermal=47218 soc0-thermal=46437 soc1-thermal=47093 soc2-thermal=47093 tj-thermal=47312 
+fan_pwm=64 fan_rpm=1347 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 36
+== R6A (A, round 6, K2) before
+2026-11-02T16:47:36.551Z
+cpu-thermal=47531 gpu-thermal=47156 soc0-thermal=46437 soc1-thermal=47062 soc2-thermal=47125 tj-thermal=47625 
+fan_pwm=64 fan_rpm=1347 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R6A mc_start
+pid=6214 log: listening 192.168.55.1:5555
+affinity: pid 6214's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R6A.csv 
+port 5555 listening
+== R6A mc_wait
+pid 6214 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,2785577198944,2785577236128,521
+0,5999,2845565698080,2845565710784,211
+port 5555 closed
+== R6A after
+2026-11-02T16:48:39.057Z
+cpu-thermal=47593 gpu-thermal=47250 soc0-thermal=46656 soc1-thermal=47156 soc2-thermal=47187 tj-thermal=47375 
+fan_pwm=64 fan_rpm=1344 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 33
+== R7I (I, round 7, K2) before
+2026-11-02T16:48:49.341Z
+cpu-thermal=47312 gpu-thermal=47406 soc0-thermal=46562 soc1-thermal=47281 soc2-thermal=47093 tj-thermal=47562 
+fan_pwm=64 fan_rpm=1347 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R7I after
+2026-11-02T16:49:50.686Z
+cpu-thermal=47250 gpu-thermal=47468 soc0-thermal=46500 soc1-thermal=47062 soc2-thermal=47000 tj-thermal=47375 
+fan_pwm=64 fan_rpm=1346 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 36
+== R7H (H, round 7, K2) before
+2026-11-02T16:50:00.959Z
+cpu-thermal=47500 gpu-thermal=47437 soc0-thermal=46437 soc1-thermal=47125 soc2-thermal=47062 tj-thermal=47562 
+fan_pwm=64 fan_rpm=1345 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R7H mc_start
+pid=6450 log: listening 192.168.55.1:5555
+affinity: pid 6450's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R7H.csv 
+port 5555 listening
+== R7H mc_wait
+pid 6450 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,2929956311296,2929956343584,521
+0,5999,2989944633056,2989944643200,489
+port 5555 closed
+== R7H after
+2026-11-02T16:51:03.398Z
+cpu-thermal=47406 gpu-thermal=47218 soc0-thermal=46500 soc1-thermal=47218 soc2-thermal=47062 tj-thermal=47531 
+fan_pwm=64 fan_rpm=1346 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 34
+== R7A (A, round 7, K2) before
+2026-11-02T16:51:13.641Z
+cpu-thermal=47375 gpu-thermal=47312 soc0-thermal=46375 soc1-thermal=47187 soc2-thermal=47093 tj-thermal=47406 
+fan_pwm=64 fan_rpm=1347 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R7A mc_start
+pid=6597 log: listening 192.168.55.1:5555
+affinity: pid 6597's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R7A.csv 
+port 5555 listening
+== R7A mc_wait
+pid 6597 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,3002614537152,3002614573152,521
+0,5999,3062603540000,3062603553504,193
+port 5555 closed
+== R7A after
+2026-11-02T16:52:16.057Z
+cpu-thermal=47343 gpu-thermal=47312 soc0-thermal=46531 soc1-thermal=47250 soc2-thermal=47125 tj-thermal=47468 
+fan_pwm=64 fan_rpm=1345 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 35
+== R8H (H, round 8, K2) before
+2026-11-02T16:52:26.315Z
+cpu-thermal=47312 gpu-thermal=47468 soc0-thermal=46437 soc1-thermal=47156 soc2-thermal=47125 tj-thermal=47437 
+fan_pwm=64 fan_rpm=1345 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R8H mc_start
+pid=6745 log: listening 192.168.55.1:5555
+affinity: pid 6745's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R8H.csv 
+port 5555 listening
+== R8H mc_wait
+pid 6745 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,3075280262368,3075280290880,521
+0,5999,3135268728000,3135268738176,489
+port 5555 closed
+== R8H after
+2026-11-02T16:53:28.819Z
+cpu-thermal=47375 gpu-thermal=47468 soc0-thermal=46531 soc1-thermal=47250 soc2-thermal=47187 tj-thermal=47468 
+fan_pwm=64 fan_rpm=1345 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=928
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 34
+== R8A (A, round 8, K2) before
+2026-11-02T16:53:39.069Z
+cpu-thermal=47468 gpu-thermal=47312 soc0-thermal=46593 soc1-thermal=47281 soc2-thermal=47156 tj-thermal=47687 
+fan_pwm=64 fan_rpm=1347 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R8A mc_start
+pid=6889 log: listening 192.168.55.1:5555
+affinity: pid 6889's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R8A.csv 
+port 5555 listening
+== R8A mc_wait
+pid 6889 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,3147943863648,3147943896832,521
+0,5999,3207932402592,3207932415424,146
+port 5555 closed
+== R8A after
+2026-11-02T16:54:41.409Z
+cpu-thermal=47562 gpu-thermal=47375 soc0-thermal=46593 soc1-thermal=47281 soc2-thermal=47312 tj-thermal=47687 
+fan_pwm=64 fan_rpm=1347 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 33
+== R8I (I, round 8, K2) before
+2026-11-02T16:54:51.654Z
+cpu-thermal=47468 gpu-thermal=47531 soc0-thermal=46718 soc1-thermal=47343 soc2-thermal=47250 tj-thermal=47718 
+fan_pwm=64 fan_rpm=1347 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R8I after
+2026-11-02T16:55:53.004Z
+cpu-thermal=47718 gpu-thermal=47437 soc0-thermal=46656 soc1-thermal=47343 soc2-thermal=47281 tj-thermal=47875 
+fan_pwm=64 fan_rpm=1348 cpu_cur policy0=1113600 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=912
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 34
+== R9A (A, round 9, K3) before
+2026-11-02T16:56:38.829Z
+cpu-thermal=47468 gpu-thermal=47531 soc0-thermal=46593 soc1-thermal=47250 soc2-thermal=47218 tj-thermal=47750 
+fan_pwm=64 fan_rpm=1348 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R9A mc_start
+pid=7133 log: listening 192.168.55.1:5555
+affinity: pid 7133's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R9A.csv 
+port 5555 listening
+== R9A mc_wait
+pid 7133 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,3327773981824,3327774018944,521
+0,5999,3387762995776,3387763008960,103
+port 5555 closed
+== R9A after
+2026-11-02T16:57:41.251Z
+cpu-thermal=47593 gpu-thermal=47781 soc0-thermal=46656 soc1-thermal=47343 soc2-thermal=47312 tj-thermal=47750 
+fan_pwm=64 fan_rpm=1349 cpu_cur policy0=1113600 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 33
+== R9I (I, round 9, K3) before
+2026-11-02T16:57:51.507Z
+cpu-thermal=47468 gpu-thermal=47718 soc0-thermal=46656 soc1-thermal=47312 soc2-thermal=47281 tj-thermal=47593 
+fan_pwm=64 fan_rpm=1350 cpu_cur policy0=883200 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R9I after
+2026-11-02T16:58:52.858Z
+cpu-thermal=47562 gpu-thermal=47468 soc0-thermal=46718 soc1-thermal=47218 soc2-thermal=47312 tj-thermal=47531 
+fan_pwm=64 fan_rpm=1349 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 35
+== R9H (H, round 9, K3) before
+2026-11-02T16:59:03.120Z
+cpu-thermal=47468 gpu-thermal=47437 soc0-thermal=46656 soc1-thermal=47281 soc2-thermal=47312 tj-thermal=47656 
+fan_pwm=64 fan_rpm=1348 cpu_cur policy0=1113600 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R9H mc_start
+pid=7368 log: listening 192.168.55.1:5555
+affinity: pid 7368's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R9H.csv 
+port 5555 listening
+== R9H mc_wait
+pid 7368 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,3472087257216,3472087286208,521
+0,5999,3532075972640,3532075983360,489
+port 5555 closed
+== R9H after
+2026-11-02T17:00:05.601Z
+cpu-thermal=47500 gpu-thermal=47468 soc0-thermal=46625 soc1-thermal=47406 soc2-thermal=47343 tj-thermal=47875 
+fan_pwm=64 fan_rpm=1350 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+2026-11-02T18:00:05+01:00 jetson systemd[1]: Starting fake-hwclock-save.service - Save the current clock...
+2026-11-02T18:00:05+01:00 jetson systemd[1]: fake-hwclock-save.service: Deactivated successfully.
+2026-11-02T18:00:05+01:00 jetson systemd[1]: Finished fake-hwclock-save.service - Save the current clock.
+journal lines in the last 80 s (all): 37
+== R10I (I, round 10, K3) before
+2026-11-02T17:00:15.886Z
+cpu-thermal=47437 gpu-thermal=47437 soc0-thermal=46593 soc1-thermal=47312 soc2-thermal=47312 tj-thermal=47593 
+fan_pwm=64 fan_rpm=1350 cpu_cur policy0=729600 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R10I after
+2026-11-02T17:01:17.227Z
+cpu-thermal=47468 gpu-thermal=47468 soc0-thermal=46656 soc1-thermal=47312 soc2-thermal=47281 tj-thermal=47750 
+fan_pwm=64 fan_rpm=1350 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+2026-11-02T18:00:05+01:00 jetson systemd[1]: Starting fake-hwclock-save.service - Save the current clock...
+2026-11-02T18:00:05+01:00 jetson systemd[1]: fake-hwclock-save.service: Deactivated successfully.
+2026-11-02T18:00:05+01:00 jetson systemd[1]: Finished fake-hwclock-save.service - Save the current clock.
+journal lines in the last 80 s (all): 35
+== R10A (A, round 10, K3) before
+2026-11-02T17:01:27.506Z
+cpu-thermal=47406 gpu-thermal=47593 soc0-thermal=46593 soc1-thermal=47312 soc2-thermal=47250 tj-thermal=47812 
+fan_pwm=64 fan_rpm=1350 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R10A mc_start
+pid=7615 log: listening 192.168.55.1:5555
+affinity: pid 7615's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R10A.csv 
+port 5555 listening
+== R10A mc_wait
+pid 7615 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,3616497132352,3616497171424,521
+0,5999,3676485962720,3676485975104,193
+port 5555 closed
+== R10A after
+2026-11-02T17:02:29.973Z
+cpu-thermal=47375 gpu-thermal=47718 soc0-thermal=46562 soc1-thermal=47281 soc2-thermal=47250 tj-thermal=47656 
+fan_pwm=64 fan_rpm=1351 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 32
+== R10H (H, round 10, K3) before
+2026-11-02T17:02:40.240Z
+cpu-thermal=47593 gpu-thermal=47281 soc0-thermal=46656 soc1-thermal=47343 soc2-thermal=47156 tj-thermal=47593 
+fan_pwm=64 fan_rpm=1350 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R10H mc_start
+pid=7759 log: listening 192.168.55.1:5555
+affinity: pid 7759's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R10H.csv 
+port 5555 listening
+== R10H mc_wait
+pid 7759 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,3689234564160,3689234600768,521
+0,5999,3749223338176,3749223348416,489
+port 5555 closed
+== R10H after
+2026-11-02T17:03:42.700Z
+cpu-thermal=47375 gpu-thermal=47531 soc0-thermal=46468 soc1-thermal=47125 soc2-thermal=47062 tj-thermal=47468 
+fan_pwm=64 fan_rpm=1348 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 33
+== R11A (A, round 11, K3) before
+2026-11-02T17:03:52.963Z
+cpu-thermal=47312 gpu-thermal=47500 soc0-thermal=46562 soc1-thermal=47312 soc2-thermal=47125 tj-thermal=47500 
+fan_pwm=64 fan_rpm=1348 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R11A mc_start
+pid=7903 log: listening 192.168.55.1:5555
+affinity: pid 7903's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R11A.csv 
+port 5555 listening
+== R11A mc_wait
+pid 7903 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,3761954740000,3761954779616,521
+0,5999,3821943800640,3821943813568,134
+port 5555 closed
+== R11A after
+2026-11-02T17:04:55.441Z
+cpu-thermal=47250 gpu-thermal=47187 soc0-thermal=46593 soc1-thermal=47031 soc2-thermal=47125 tj-thermal=47468 
+fan_pwm=64 fan_rpm=1345 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 34
+== R11H (H, round 11, K3) before
+2026-11-02T17:05:05.655Z
+cpu-thermal=47468 gpu-thermal=47250 soc0-thermal=46593 soc1-thermal=47093 soc2-thermal=47125 tj-thermal=47562 
+fan_pwm=64 fan_rpm=1345 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R11H mc_start
+pid=8048 log: listening 192.168.55.1:5555
+affinity: pid 8048's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R11H.csv 
+port 5555 listening
+== R11H mc_wait
+pid 8048 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,3834619439872,3834619472160,521
+0,5999,3894608511712,3894608522464,489
+port 5555 closed
+== R11H after
+2026-11-02T17:06:08.065Z
+cpu-thermal=47281 gpu-thermal=47531 soc0-thermal=46406 soc1-thermal=47125 soc2-thermal=47093 tj-thermal=47406 
+fan_pwm=59 fan_rpm=1222 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 36
+== R11I (I, round 11, K3) before
+2026-11-02T17:06:18.322Z
+cpu-thermal=47218 gpu-thermal=47468 soc0-thermal=46375 soc1-thermal=47062 soc2-thermal=47062 tj-thermal=47406 
+fan_pwm=64 fan_rpm=1345 cpu_cur policy0=1113600 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R11I after
+2026-11-02T17:07:19.618Z
+cpu-thermal=47343 gpu-thermal=47281 soc0-thermal=46625 soc1-thermal=47218 soc2-thermal=47187 tj-thermal=47468 
+fan_pwm=64 fan_rpm=1344 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 34
+== R12H (H, round 12, K3) before
+2026-11-02T17:07:29.880Z
+cpu-thermal=47468 gpu-thermal=47375 soc0-thermal=46531 soc1-thermal=47250 soc2-thermal=47093 tj-thermal=47562 
+fan_pwm=64 fan_rpm=1345 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R12H mc_start
+pid=8289 log: listening 192.168.55.1:5555
+affinity: pid 8289's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R12H.csv 
+port 5555 listening
+== R12H mc_wait
+pid 8289 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,3978807819936,3978807852416,521
+0,5999,4038796764064,4038796773824,489
+port 5555 closed
+== R12H after
+2026-11-02T17:08:32.369Z
+cpu-thermal=47218 gpu-thermal=47375 soc0-thermal=46406 soc1-thermal=47156 soc2-thermal=47125 tj-thermal=47312 
+fan_pwm=64 fan_rpm=1346 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 35
+== R12I (I, round 12, K3) before
+2026-11-02T17:08:42.650Z
+cpu-thermal=47250 gpu-thermal=47031 soc0-thermal=46468 soc1-thermal=47281 soc2-thermal=47031 tj-thermal=47437 
+fan_pwm=64 fan_rpm=1276 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R12I after
+2026-11-02T17:09:43.968Z
+cpu-thermal=47187 gpu-thermal=47062 soc0-thermal=46375 soc1-thermal=47093 soc2-thermal=47062 tj-thermal=47281 
+fan_pwm=64 fan_rpm=1343 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 36
+== R12A (A, round 12, K3) before
+2026-11-02T17:09:54.259Z
+cpu-thermal=47281 gpu-thermal=47156 soc0-thermal=46437 soc1-thermal=47093 soc2-thermal=47031 tj-thermal=47343 
+fan_pwm=64 fan_rpm=1345 cpu_cur policy0=1190400 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=920
+no apt/dpkg
+No jobs running.
+== R12A mc_start
+pid=8525 log: listening 192.168.55.1:5555
+affinity: pid 8525's current affinity list: 2
+cmdline: /home/<user>/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R12A.csv 
+port 5555 listening
+== R12A mc_wait
+pid 8525 exited
+log: listening 192.168.55.1:5555
+rows: 6000
+0,0,4123247428960,4123247467616,521
+0,5999,4183239736384,4183239749504,184
+port 5555 closed
+== R12A after
+2026-11-02T17:10:56.647Z
+cpu-thermal=47312 gpu-thermal=47187 soc0-thermal=46406 soc1-thermal=47250 soc2-thermal=47125 tj-thermal=47406 
+fan_pwm=64 fan_rpm=1345 cpu_cur policy0=729600 policy4=729600 gpu_cur=306000000
+vdd_in mV=5024 mA=936
+no apt/dpkg
+No jobs running.
+journal lines in the last 80 s (all): 35

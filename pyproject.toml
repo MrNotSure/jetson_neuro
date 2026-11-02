@@ -1,0 +1,35 @@
+[build-system]
+# Bounded so a clean-checkout build is reproducible (review F3/S2). >=77 is
+# required for the PEP 639 SPDX `license` string below.
+requires = ["setuptools>=77,<85"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jn_sim"
+version = "0.1.0"
+description = "Event-vision closed-loop simulator for the jetson_neuro project"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = "MIT"
+license-files = ["LICENSE"]
+# numpy is the only runtime dependency. The controller host (the Jetson)
+# needs numpy only; matplotlib is the optional `view` extra (spec R1.1).
+dependencies = [
+    "numpy==2.5.4",
+]
+
+[project.optional-dependencies]
+view = ["matplotlib==3.11.2"]
+dev = ["pytest==9.1.1"]
+
+[project.scripts]
+jn-sim = "jn_sim.__main__:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,45 @@
+K2: conversions 824291, missed 0, spurious ALRT 0, seq16 gaps 0, falls 48008, rises 48008, fall/rise seq gaps 0/0, FIFO levels conv [1], fall levels [1], rise levels [1]
+pulse widths (fall -> next rise) us: min 8.52, p50 8.76, max 8.88; outside 8.5-8.9: 0; falls without a following rise: 0
+DEGLITCH (pre-registered): 0 GP16 pulses < 1 us dropped, at t = [] s, widths [] us
+fall runs: [1, 6000, 1, 6000, 1, 6000, 1, 6000, 1, 6000, 1, 6000, 1, 6000, 1, 6000]
+H/A blocks in K2: 8; fall runs > 1: 8; lone edges: 8
+R5A (A, affinity 2): falls 6000, mark_ctl rows 6000, OBS (periods.csv rows) 6000; falls = rows = OBS = 6000: PASS; k match True; n_events mismatches 0; dummy lead 1.420 s (lone dummy before: True, width 8.76 us)
+   edge interval ms: median 10.000, min 2.556, max 30.173, outside 8-15 ms 40; pulse width us min/p50/max 8.64/8.76/8.88
+   write() us: first 37.7, p50 13.0, p99 15.2, max 38.9
+   misses 1 at k [526]; send_lateness > 5 ms: 19 at k [527, 528, 591, 1068, 1069, 1649, 1963, 1964, 1965, 1966]; lateness p50/p99/max 1/108/20193 us
+   ctl_us p50 487.9, p99 577.0, max 2582.6; n_events mean 157.5
+R5H (H, affinity 2): falls 6000, mark_ctl rows 6000, OBS (periods.csv rows) 6000; falls = rows = OBS = 6000: PASS; k match True; n_events mismatches 0; dummy lead 1.449 s (lone dummy before: True, width 8.76 us)
+   edge interval ms: median 9.999, min 2.870, max 25.955, outside 8-15 ms 24; pulse width us min/p50/max 8.64/8.76/8.88
+   write() us: first 32.7, p50 10.7, p99 12.6, max 32.7
+   misses 1 at k [120]; send_lateness > 5 ms: 13 at k [193, 194, 195, 799, 3891, 4871, 5200, 5431, 5809, 5810]; lateness p50/p99/max 1/154/18447 us
+   ctl_us p50 15.8, p99 19.6, max 58.1; n_events mean 404.4
+R6H (H, affinity 2): falls 6000, mark_ctl rows 6000, OBS (periods.csv rows) 6000; falls = rows = OBS = 6000: PASS; k match True; n_events mismatches 0; dummy lead 1.424 s (lone dummy before: True, width 8.76 us)
+   edge interval ms: median 9.999, min 1.951, max 39.214, outside 8-15 ms 68; pulse width us min/p50/max 8.64/8.76/8.88
+   write() us: first 30.3, p50 10.5, p99 14.6, max 36.5
+   misses 1 at k [725]; send_lateness > 5 ms: 52 at k [240, 241, 242, 243, 244, 245, 246, 247, 1122, 1123]; lateness p50/p99/max 1/2253/41487 us
+   ctl_us p50 15.5, p99 25.6, max 53.1; n_events mean 404.4
+R6A (A, affinity 2): falls 6000, mark_ctl rows 6000, OBS (periods.csv rows) 6000; falls = rows = OBS = 6000: PASS; k match True; n_events mismatches 0; dummy lead 1.492 s (lone dummy before: True, width 8.64 us)
+   edge interval ms: median 9.998, min 2.384, max 47.277, outside 8-15 ms 45; pulse width us min/p50/max 8.52/8.76/8.88
+   write() us: first 37.2, p50 13.1, p99 16.1, max 45.2
+   misses 1 at k [1407]; send_lateness > 5 ms: 36 at k [396, 1119, 1407, 1408, 1409, 1410, 1411, 1412, 1413, 1414]; lateness p50/p99/max 1/634/70612 us
+   ctl_us p50 492.2, p99 586.4, max 4057.0; n_events mean 158.1
+R7H (H, affinity 2): falls 6000, mark_ctl rows 6000, OBS (periods.csv rows) 6000; falls = rows = OBS = 6000: PASS; k match True; n_events mismatches 0; dummy lead 1.447 s (lone dummy before: True, width 8.76 us)
+   edge interval ms: median 10.000, min 2.074, max 58.205, outside 8-15 ms 32; pulse width us min/p50/max 8.64/8.76/8.88
+   write() us: first 32.3, p50 10.7, p99 12.9, max 32.3
+   misses 1 at k [1207]; send_lateness > 5 ms: 22 at k [192, 323, 324, 325, 326, 327, 328, 329, 330, 331]; lateness p50/p99/max 1/43/61496 us
+   ctl_us p50 15.8, p99 20.2, max 57.1; n_events mean 404.4
+R7A (A, affinity 2): falls 6000, mark_ctl rows 6000, OBS (periods.csv rows) 6000; falls = rows = OBS = 6000: PASS; k match True; n_events mismatches 0; dummy lead 1.466 s (lone dummy before: True, width 8.76 us)
+   edge interval ms: median 9.999, min 2.396, max 49.883, outside 8-15 ms 34; pulse width us min/p50/max 8.64/8.76/8.88
+   write() us: first 36.0, p50 13.0, p99 15.6, max 39.7
+   misses 0 at k []; send_lateness > 5 ms: 27 at k [406, 3478, 3479, 5004, 5005, 5006, 5007, 5008, 5009, 5010]; lateness p50/p99/max 1/53/96214 us
+   ctl_us p50 499.7, p99 590.0, max 1144.1; n_events mean 158.2
+R8H (H, affinity 2): falls 6000, mark_ctl rows 6000, OBS (periods.csv rows) 6000; falls = rows = OBS = 6000: PASS; k match True; n_events mismatches 0; dummy lead 1.449 s (lone dummy before: True, width 8.88 us)
+   edge interval ms: median 10.000, min 2.740, max 21.077, outside 8-15 ms 18; pulse width us min/p50/max 8.64/8.76/8.88
+   write() us: first 28.5, p50 10.5, p99 12.4, max 28.5
+   misses 1 at k [4829]; send_lateness > 5 ms: 5 at k [535, 1759, 1760, 3601, 4738]; lateness p50/p99/max 1/23/11055 us
+   ctl_us p50 15.6, p99 19.3, max 52.9; n_events mean 404.4
+R8A (A, affinity 2): falls 6000, mark_ctl rows 6000, OBS (periods.csv rows) 6000; falls = rows = OBS = 6000: PASS; k match True; n_events mismatches 0; dummy lead 1.362 s (lone dummy before: True, width 8.88 us)
+   edge interval ms: median 10.000, min 3.304, max 20.872, outside 8-15 ms 16; pulse width us min/p50/max 8.64/8.76/8.88
+   write() us: first 33.2, p50 12.8, p99 14.5, max 33.2
+   misses 1 at k [635]; send_lateness > 5 ms: 5 at k [1246, 2474, 2475, 4305, 5527]; lateness p50/p99/max 1/27/10481 us
+   ctl_us p50 482.5, p99 575.9, max 2448.2; n_events mean 157.0

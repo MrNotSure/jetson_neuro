@@ -1,0 +1,6 @@
+# Part 2 block order, written 2026-10-31T13:29:10Z before the first block
+# rng = numpy.random.Generator(numpy.random.PCG64(20261031)); rng.permutation(["I", "H", "C"]) per round; numpy 2.5.4
+round1 I H C
+round2 I H C
+round3 I C H
+round4 I H C

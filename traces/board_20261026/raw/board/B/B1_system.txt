@@ -1,0 +1,94 @@
+## /etc/nv_tegra_release
+# R39 (release), REVISION: 2.1, GCID: 46758480, BOARD: generic, EABI: aarch64, DATE: Fri Aug  7 05:54:22 AM UTC 2026
+# KERNEL_VARIANT: oot
+TARGET_USERSPACE_LIB_DIR=nvidia
+TARGET_USERSPACE_LIB_DIR_PATH=usr/lib/aarch64-linux-gnu/nvidia
+## uname -a
+Linux jetson 6.8.12-1021-tegra #1 SMP PREEMPT Thu Aug  6 21:56:04 PDT 2026 aarch64 aarch64 aarch64 GNU/Linux
+## lscpu
+Architecture:                            aarch64
+CPU op-mode(s):                          32-bit, 64-bit
+Byte Order:                              Little Endian
+CPU(s):                                  6
+On-line CPU(s) list:                     0-5
+Vendor ID:                               ARM
+Model name:                              Cortex-A78AE
+Model:                                   1
+Thread(s) per core:                      1
+Core(s) per cluster:                     6
+Socket(s):                               -
+Cluster(s):                              1
+Stepping:                                r0p1
+CPU(s) scaling MHz:                      57%
+CPU max MHz:                             1728.0000
+CPU min MHz:                             115.2000
+BogoMIPS:                                62.50
+Flags:                                   fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp uscat ilrcpc flagm paca pacg
+L1d cache:                               384 KiB (6 instances)
+L1i cache:                               384 KiB (6 instances)
+L2 cache:                                1.5 MiB (6 instances)
+L3 cache:                                4 MiB (2 instances)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-5
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; CSV2, BHB
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Not affected
+## /sys/devices/system/cpu/{online,offline,possible,present}
+online=0-5
+offline=
+possible=0-5
+present=0-5
+## cpuidle driver/governor
+available_governors	-r--r--r--	menu  
+current_driver	-r--r--r--	psci_idle 
+current_governor	-rw-r--r--	menu 
+current_governor_ro	-r--r--r--	menu 
+## cpuidle states per cpu (name desc latency residency disable usage time_us)
+cpu0 state0 name=WFI desc="ARM WFI" latency=1 residency=1 disable=0 usage=2866708 time=5124423068
+cpu0 state1 name=c7 desc="Core powergate" latency=5000 residency=30000 disable=0 usage=1570 time=1378667
+cpu1 state0 name=WFI desc="ARM WFI" latency=1 residency=1 disable=0 usage=1083857 time=2384060124
+cpu1 state1 name=c7 desc="Core powergate" latency=5000 residency=30000 disable=0 usage=72535 time=2759740584
+cpu2 state0 name=WFI desc="ARM WFI" latency=1 residency=1 disable=0 usage=653125 time=1531536671
+cpu2 state1 name=c7 desc="Core powergate" latency=5000 residency=30000 disable=0 usage=63034 time=3623590470
+cpu3 state0 name=WFI desc="ARM WFI" latency=1 residency=1 disable=0 usage=340760 time=824278336
+cpu3 state1 name=c7 desc="Core powergate" latency=5000 residency=30000 disable=0 usage=57102 time=4337916455
+cpu4 state0 name=WFI desc="ARM WFI" latency=1 residency=1 disable=0 usage=124018 time=667902701
+cpu4 state1 name=c7 desc="Core powergate" latency=5000 residency=30000 disable=0 usage=88803 time=4511083487
+cpu5 state0 name=WFI desc="ARM WFI" latency=1 residency=1 disable=0 usage=83307 time=289197905
+cpu5 state1 name=c7 desc="Core powergate" latency=5000 residency=30000 disable=0 usage=34388 time=4894601478
+## free -m
+               total        used        free      shared  buff/cache   available
+Mem:            7546         849        5736          16        1179        6697
+Swap:           2047           0        2047
+## df -h /
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p1  227G   36G  180G  17% /
+## venv python
+3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]
+/home/<user>/venvs/jn/bin/python
+Linux-6.8.12-1021-tegra-aarch64-with-glibc2.39
+numpy 2.5.4
+monotonic namespace(implementation='clock_gettime(CLOCK_MONOTONIC)', monotonic=True, adjustable=False, resolution=1e-09)
+perf_counter namespace(implementation='clock_gettime(CLOCK_MONOTONIC)', monotonic=True, adjustable=False, resolution=1e-09)
+clock_getres(CLOCK_MONOTONIC) 1e-09
+## /proc/cmdline
+root=PARTUUID=<root-partuuid> rw rootwait rootfstype=ext4 mminit_loglevel=4 console=ttyTCU0,115200 firmware_class.path=/etc/firmware fbcon=map:0 video=efifb:off console=tty0 efi_pstore.pstore_disable=1 pstore.backend=ramoops efi=runtime pci=pcie_bus_perf nvme.use_threaded_interrupts=1 swiotlb=2048 nv-auto-config bl_prof_dataptr=2031616@0x267210000 bl_prof_ro_ptr=65536@0x267200000 
+## clocksource
+arch_sys_counter
+arch_sys_counter tsc osc usec 
+## uptime
+ 13:45:14 up  1:26,  2 users,  load average: 0.26, 0.14, 0.04

@@ -1,0 +1,14 @@
+== 2026-10-30T16:59:32Z Part 0
+rtt   867.6 ms   board - mac +0.253 s
+rtt   131.1 ms   board - mac -0.115 s
+rtt    89.9 ms   board - mac -0.135 s
+best (shortest rtt 89.9 ms): board - mac = -0.135 s = -0.0000 d; mac utc 2026-10-30 16:59:34
+ 17:59:35 up 54 min,  2 users,  load average: 0.00, 0.00, 0.00
+3278.24 19532.28
+265 [capture-control]
+266 [capture]
+No jobs running.
+	line 105:      "PQ.05"       unused   input  active-high 
+total 8
+drwxrwxr-x  2 <user> <user> 4096 Oct 30 17:59 .
+drwxrwxrwt 21 root    root    4096 Oct 30 17:59 ..

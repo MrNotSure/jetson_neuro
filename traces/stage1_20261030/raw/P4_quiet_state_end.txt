@@ -1,0 +1,21 @@
+{
+ "rate_hz_requested": 10.0,
+ "duration_s_requested": 480.0,
+ "samples": 4801,
+ "wall_s": 480.003550944,
+ "achieved_hz": 10.002009340468636,
+ "cpu_user_s": 0.573832,
+ "cpu_sys_s": 1.665352,
+ "cpu_total_s": 2.239184,
+ "cpu_fraction_of_one_core": 0.00466493215643156,
+ "start_mono_ns": 1832828294912,
+ "start_realtime_ns": 1793381977068939904,
+sampler exited
+2026-10-30T18:39:15+01:00 jetson systemd[1]: Started run-r8b7802d6f42347ee8083f6cf65ea98c2.timer - /usr/bin/nmcli radio wifi on.
+2026-10-30T18:39:16+01:00 jetson systemd[1]: Starting systemd-rfkill.service - Load/Save RF Kill Switch Status...
+2026-10-30T18:39:16+01:00 jetson systemd[1]: Started systemd-rfkill.service - Load/Save RF Kill Switch Status.
+cpu-thermal=48406 gpu-thermal=48218 soc0-thermal=47500 soc1-thermal=48312 soc2-thermal=48125 tj-thermal=48531 fan pwm 66
+disabled
+nothing of mine running
+disabled
+4

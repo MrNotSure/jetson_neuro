@@ -1,0 +1,15 @@
+# T6b block order, written 2026-11-02T16:22Z, before the first block (raw/plan.txt section 1). Line n = round n.
+# All six permutations of I, H, A, twice; each condition takes each position 4 times; H before A in 6 of 12 rounds.
+# Captures: K1 = rounds 1-4, K2 = rounds 5-8, K3 = rounds 9-12. Tags R<round><cond>.
+round1 I H A
+round2 H A I
+round3 A I H
+round4 I A H
+round5 A H I
+round6 H I A
+round7 I H A
+round8 H A I
+round9 A I H
+round10 I A H
+round11 A H I
+round12 H I A

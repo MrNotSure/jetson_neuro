@@ -1,0 +1,22 @@
+2026-11-02T09:31:02Z
+ 10:31:02 up 3 min,  1 user,  load average: 0.10, 0.23, 0.11
+Result=success
+ExecMainStatus=0
+ActiveState=inactive
+NV Power Mode: 25W
+1
+/sys/devices/system/cpu/cpufreq/policy0 governor=schedutil min=729600 max=1344000 cur=1190400
+/sys/devices/system/cpu/cpufreq/policy4 governor=schedutil min=729600 max=1344000 cur=729600
+gpu governor=nvhost_podgov max=918000000 cur=306000000
+tpc_pg_mask=240 fbp_pg_mask=2
+default target: multi-user.target
+radio: disabled
+cpu-thermal=43562 gpu-thermal=43218 soc0-thermal=42343 soc1-thermal=42875 soc2-thermal=43000 tj-thermal=43437 
+no apt/dpkg
+No jobs running.
+2026-11-02T10:30:40+01:00 jetson systemd[1]: Starting dpkg-db-backup.service - Daily dpkg database backup service...
+2026-11-02T10:30:40+01:00 jetson systemd[1]: Starting e2scrub_all.service - Online ext4 Metadata Check for All Filesystems...
+2026-11-02T10:30:40+01:00 jetson systemd[1]: Starting fake-hwclock-save.service - Save the current clock...
+2026-11-02T10:30:40+01:00 jetson systemd[1]: Starting fstrim.service - Discard unused blocks on filesystems from /etc/fstab...
+6
+3.12.3 2.5.4

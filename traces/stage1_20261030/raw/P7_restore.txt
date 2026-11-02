@@ -1,0 +1,15 @@
+18:24:07
+active active active active active active active active active active active active 
+enabled
+Fri 2026-10-30 20:09:15 CET    45min -                                     - run-r8b7802d6f42347ee8083f6cf65ea98c2.timer run-r8b7802d6f42347ee8083f6cf65ea98c2.service
+nothing of mine running
+Result=success
+P4_ina3221_10hz.csv
+P4_ina3221_10hz.csv.meta.json
+P4_sampler.log
+P4_sampler.pid
+P5.csv
+P5.csv.meta.json
+P5.log
+P5.pid
+scripts

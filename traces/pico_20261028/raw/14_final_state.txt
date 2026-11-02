@@ -1,0 +1,27 @@
+### 2026-10-28T16:37:27Z machine.reset() via mpremote reset
+reset exit=0
+### enumeration
+  |       "USB Serial Number" = "<pico-serial>"
+  |       "USB Product Name" = "Board in FS mode"
+  |       "idVendor" = 11914
+  |       "idProduct" = 5
+/dev/cu.Bluetooth-Incoming-Port None 0000:0000 None None
+/dev/cu.<bt-headset> None 0000:0000 None None
+/dev/cu.debug-console None 0000:0000 None None
+/dev/cu.usbmodem2101 <pico-serial> 2e8a:0005 MicroPython Board in FS mode
+### state (read-only)
+ticks_ms since boot: 4173
+version: (1, 29, 0, '') Raspberry Pi Pico with RP2040
+os.listdir('/'): []
+main.py present: False  boot.py present: False
+fs used bytes: 8192 of 1441792
+SIO GPIO_OE = 0x00000000 (bit n set = GPn is an SIO output)
+GP4  funcsel=31 OE=0 pad PUE=0 PDE=1 IE=1
+GP5  funcsel=31 OE=0 pad PUE=0 PDE=1 IE=1
+GP16 funcsel=31 OE=0 pad PUE=0 PDE=1 IE=1
+GP17 funcsel=31 OE=0 pad PUE=0 PDE=1 IE=1
+GP25 funcsel=31 OE=0 pad PUE=0 PDE=1 IE=1
+run exit=0
+### mpremote connects (auto port selection)
+hello from Raspberry Pi Pico with RP2040
+exit=0

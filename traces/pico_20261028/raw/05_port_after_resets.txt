@@ -1,0 +1,11 @@
+before:            cu.usbmodem2101 
+soft-reset exit=0
+after soft-reset:  cu.usbmodem2101 
+ticks_ms after soft-reset 60407
+reset exit=0
+16:23:00 t+1s: cu.usbmodem2101 
+16:23:01 t+2s: cu.usbmodem2101 
+16:23:02 t+3s: cu.usbmodem2101 
+after reset:       cu.usbmodem2101 
+/dev/cu.usbmodem2101 <pico-serial> 2e8a:0005 MicroPython Board in FS mode
+ticks_ms after hard reset 3230

@@ -1,0 +1,131 @@
+=== 20261026T130159Z_sine_centroid
+status=completed periods=3000 misses=2 achieved_hz=99.9860
+controller=centroid sha=8d91a6d88cca dirty=False arch=aarch64 py=3.12.3 numpy=2.5.4 endpoint=tcp
+lateness_us p50=1.2 p99=47.5 max=6933.4 n>500us=19 n>1ms=16 n>5ms=2
+sim_us p50=2090 p99=3910 max=10485
+ctl_us p50=89.5 p99=175.8 max=391.7 mean=69.1
+rtt_us p50=1115 p99=1699 max=4976
+link_us p50=1046 p99=1632 max=4885
+rms_px_in_view=12.94 max_px_in_view=26.64 rms_deg=2.671 in_fov_fraction=1.0 events_mean=259.6
+top-5 lateness periods (k: lateness_us): 1576:6933, 1244:5437, 2509:4077, 2514:3252, 2569:3085
+top-5 ctl_us periods (k: ctl_us): 0:392, 2167:193, 327:192, 2133:188, 2137:187
+top-5 link_us periods (k: link_us): 2499:4885, 2434:4848, 2369:3836, 2524:3767, 2459:3688
+  miss at k=2474; periods k-3..k+3:
+                   k              miss  send_lateness_us            sim_us            ctl_us            rtt_us           link_us          n_events
+              2471.0               0.0               0.6            1452.0              83.4             719.4             636.1             217.0
+              2472.0               0.0               0.9            1375.0              91.3             797.6             706.3             290.0
+              2473.0               0.0               0.7            1672.0              89.2             792.2             703.0             327.0
+              2474.0               1.0               1.7            1449.0               nan               nan               nan             378.0
+              2475.0               0.0               0.8            1678.0              89.4             797.7             708.3             452.0
+              2476.0               0.0               1.1            1929.0              90.7             882.2             791.5             486.0
+              2477.0               0.0               1.0            1640.0             101.2             838.4             737.2             526.0
+  miss at k=2771; periods k-3..k+3:
+                   k              miss  send_lateness_us            sim_us            ctl_us            rtt_us           link_us          n_events
+              2768.0               0.0               1.2            2495.0              89.4             897.7             808.2             403.0
+              2769.0               0.0              96.0            2170.0              94.6            1063.7             969.1             414.0
+              2770.0               0.0              47.5            2230.0              90.2             888.3             798.1             421.0
+              2771.0               1.0             157.5            4960.0               nan               nan               nan             378.0
+              2772.0               0.0               0.5            1677.0              90.2            1637.0            1546.8             384.0
+              2773.0               0.0               4.7            2666.0              93.9             827.6             733.8             341.0
+              2774.0               0.0               0.3            1858.0              89.3             907.1             817.8             296.0
+
+=== 20261026T130240Z_sine_hold
+status=completed periods=3000 misses=0 achieved_hz=99.9902
+controller=hold sha=8d91a6d88cca dirty=False arch=aarch64 py=3.12.3 numpy=2.5.4 endpoint=tcp
+lateness_us p50=0.8 p99=15.7 max=1874.5 n>500us=8 n>1ms=5 n>5ms=0
+sim_us p50=2052 p99=2998 max=10876
+ctl_us p50=3.7 p99=6.5 max=11.9 mean=4.2
+rtt_us p50=816 p99=1180 max=2127
+link_us p50=812 p99=1174 max=2121
+rms_px_in_view=59.17 max_px_in_view=84.50 rms_deg=11.996 in_fov_fraction=1.0 events_mean=405.6
+top-5 lateness periods (k: lateness_us): 2754:1874, 2624:1649, 2821:1391, 1819:1093, 1924:1049
+top-5 ctl_us periods (k: ctl_us): 0:12, 1:10, 2324:7, 2034:7, 1614:7
+top-5 link_us periods (k: link_us): 1980:2121, 2754:1866, 2491:1588, 818:1580, 2493:1348
+
+=== 20261026T130403Z_sine_hold
+status=completed periods=3000 misses=0 achieved_hz=99.9898
+controller=hold sha=8d91a6d88cca dirty=False arch=aarch64 py=3.12.3 numpy=2.5.4 endpoint=tcp
+lateness_us p50=1.0 p99=438.3 max=9231.5 n>500us=29 n>1ms=20 n>5ms=4
+sim_us p50=2369 p99=4452 max=17058
+ctl_us p50=3.5 p99=6.6 max=16.6 mean=4.0
+rtt_us p50=829 p99=1535 max=11544
+link_us p50=825 p99=1530 max=11541
+rms_px_in_view=59.17 max_px_in_view=84.50 rms_deg=11.996 in_fov_fraction=1.0 events_mean=405.6
+top-5 lateness periods (k: lateness_us): 1592:9232, 717:8218, 1594:5530, 1593:5457, 1541:3757
+top-5 ctl_us periods (k: ctl_us): 1787:17, 2607:14, 1483:13, 2931:13, 1267:13
+top-5 link_us periods (k: link_us): 1591:11541, 718:5200, 374:4640, 529:3645, 379:3632
+
+=== 20261026T130445Z_sine_centroid
+status=completed periods=3000 misses=1 achieved_hz=99.9847
+controller=centroid sha=8d91a6d88cca dirty=False arch=aarch64 py=3.12.3 numpy=2.5.4 endpoint=tcp
+lateness_us p50=1.1 p99=2535.3 max=18993.1 n>500us=66 n>1ms=56 n>5ms=13
+sim_us p50=2099 p99=4117 max=16566
+ctl_us p50=92.3 p99=133.2 max=353.5 mean=73.5
+rtt_us p50=1217 p99=2002 max=16742
+link_us p50=1157 p99=1904 max=16660
+rms_px_in_view=13.16 max_px_in_view=26.64 rms_deg=2.717 in_fov_fraction=1.0 events_mean=261.5
+top-5 lateness periods (k: lateness_us): 2663:18993, 1753:15444, 2664:13343, 2731:13132, 2668:11595
+top-5 ctl_us periods (k: ctl_us): 0:354, 1756:175, 1899:167, 2821:157, 533:150
+top-5 link_us periods (k: link_us): 2667:16660, 2728:11568, 1799:9913, 502:6616, 2731:5887
+  miss at k=2662; periods k-3..k+3:
+                   k              miss  send_lateness_us            sim_us            ctl_us            rtt_us           link_us          n_events
+              2659.0               0.0               1.3            2366.0               3.9            1109.7            1105.8             160.0
+              2660.0               0.0               1.7            2254.0               6.8            1147.2            1140.4             176.0
+              2661.0               0.0               3.9            2282.0             123.4            1640.0            1516.6             201.0
+              2662.0               1.0               2.0            1993.0               nan               nan               nan             223.0
+              2663.0               0.0           18993.1            9261.0             123.6            2904.0            2780.3             230.0
+              2664.0               0.0           13343.2            1316.0             118.6            2009.5            1890.9             265.0
+              2665.0               0.0            6870.5            1303.0             125.2            1440.9            1315.7             249.0
+
+=== 20261026T130527Z_sine_hold
+status=completed periods=3000 misses=0 achieved_hz=99.9882
+controller=hold sha=8d91a6d88cca dirty=False arch=aarch64 py=3.12.3 numpy=2.5.4 endpoint=tcp
+lateness_us p50=1.0 p99=59.7 max=14961.1 n>500us=17 n>1ms=12 n>5ms=4
+sim_us p50=2342 p99=3422 max=21410
+ctl_us p50=4.2 p99=6.3 max=14.6 mean=4.5
+rtt_us p50=1026 p99=1488 max=7529
+link_us p50=1021 p99=1482 max=7523
+rms_px_in_view=59.17 max_px_in_view=84.50 rms_deg=11.996 in_fov_fraction=1.0 events_mean=405.6
+top-5 lateness periods (k: lateness_us): 634:14961, 635:11711, 140:8149, 2321:7830, 2320:4360
+top-5 ctl_us periods (k: ctl_us): 1146:15, 1284:14, 584:13, 0:10, 1:7
+top-5 link_us periods (k: link_us): 2320:7523, 2362:6467, 2363:3772, 633:3141, 2364:3043
+
+=== 20261026T130650Z_sine_hold
+status=completed periods=3000 misses=0 achieved_hz=99.9860
+controller=hold sha=8d91a6d88cca dirty=False arch=aarch64 py=3.12.3 numpy=2.5.4 endpoint=tcp
+lateness_us p50=1.1 p99=23.8 max=2031.3 n>500us=5 n>1ms=3 n>5ms=0
+sim_us p50=2379 p99=3267 max=7784
+ctl_us p50=5.0 p99=6.7 max=13.8 mean=4.7
+rtt_us p50=1043 p99=1488 max=3345
+link_us p50=1038 p99=1482 max=3339
+rms_px_in_view=59.17 max_px_in_view=84.50 rms_deg=11.996 in_fov_fraction=1.0 events_mean=405.6
+top-5 lateness periods (k: lateness_us): 927:2031, 924:1347, 1816:1206, 1818:763, 1599:563
+top-5 ctl_us periods (k: ctl_us): 2138:14, 0:11, 1:10, 2036:7, 2427:7
+top-5 link_us periods (k: link_us): 1317:3339, 984:1886, 501:1726, 1511:1706, 1184:1699
+
+=== 20261026T130855Z_sine_centroid
+status=completed periods=3000 misses=0 achieved_hz=99.9837
+controller=centroid sha=8d91a6d88cca dirty=False arch=aarch64 py=3.12.3 numpy=2.5.4 endpoint=tcp
+lateness_us p50=1.6 p99=7.5 max=5322.8 n>500us=6 n>1ms=5 n>5ms=1
+sim_us p50=2125 p99=3320 max=10013
+ctl_us p50=94.8 p99=131.3 max=352.1 mean=74.8
+rtt_us p50=1241 p99=1639 max=2750
+link_us p50=1175 p99=1592 max=2743
+rms_px_in_view=13.09 max_px_in_view=26.64 rms_deg=2.704 in_fov_fraction=1.0 events_mean=261.8
+top-5 lateness periods (k: lateness_us): 47:5323, 676:4074, 1637:1762, 2347:1516, 347:1314
+top-5 ctl_us periods (k: ctl_us): 0:352, 1513:180, 476:164, 880:163, 2462:161
+top-5 link_us periods (k: link_us): 207:2743, 1637:2221, 1576:1970, 2304:1699, 654:1689
+
+=== 20261026T130937Z_sine_centroid
+status=completed periods=3000 misses=0 achieved_hz=99.9853
+controller=centroid sha=8d91a6d88cca dirty=False arch=aarch64 py=3.12.3 numpy=2.5.4 endpoint=tcp
+lateness_us p50=1.2 p99=63.4 max=7538.0 n>500us=24 n>1ms=17 n>5ms=1
+sim_us p50=2090 p99=3860 max=14868
+ctl_us p50=90.2 p99=129.5 max=389.1 mean=70.7
+rtt_us p50=1120 p99=1654 max=5098
+link_us p50=1063 p99=1615 max=4976
+rms_px_in_view=13.09 max_px_in_view=26.64 rms_deg=2.704 in_fov_fraction=1.0 events_mean=261.8
+top-5 lateness periods (k: lateness_us): 23:7538, 24:4719, 232:4493, 1916:3928, 208:2988
+top-5 ctl_us periods (k: ctl_us): 0:389, 2661:190, 274:161, 283:160, 2840:158
+top-5 link_us periods (k: link_us): 23:4976, 231:4868, 91:4709, 437:4013, 71:3858
+

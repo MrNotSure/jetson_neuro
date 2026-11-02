@@ -1,0 +1,74 @@
+## ip -br addr
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+wlP1p1s0         DOWN           
+can0             DOWN           
+enP8p1s0         DOWN           
+l4tbr0           UP             192.168.55.1/24 fe80::<redacted>/64 fe80::1/64 
+usb0             UP             fe80::<redacted>/64 
+docker0          DOWN           172.17.0.1/16 
+## ip -br link
+lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP> 
+wlP1p1s0         DOWN           xx:xx:xx:xx:xx:xx <NO-CARRIER,BROADCAST,MULTICAST,UP> 
+can0             DOWN           <NOARP,ECHO> 
+enP8p1s0         DOWN           xx:xx:xx:xx:xx:xx <NO-CARRIER,BROADCAST,MULTICAST,UP> 
+l4tbr0           UP             xx:xx:xx:xx:xx:xx <BROADCAST,MULTICAST,UP,LOWER_UP> 
+usb0             UP             xx:xx:xx:xx:xx:xx <BROADCAST,MULTICAST,UP,LOWER_UP> 
+docker0          DOWN           xx:xx:xx:xx:xx:xx <NO-CARRIER,BROADCAST,MULTICAST,UP> 
+## ip route
+default via 192.168.55.100 dev l4tbr0 metric 32766 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
+192.168.55.0/24 dev l4tbr0 proto kernel scope link src 192.168.55.1 
+## nmcli general
+STATE                   CONNECTIVITY  WIFI-HW  WIFI     WWAN-HW  WWAN    
+connected (local only)  limited       enabled  enabled  missing  enabled 
+## nmcli radio
+WIFI-HW  WIFI     WWAN-HW  WWAN    
+enabled  enabled  missing  enabled 
+## nmcli device
+DEVICE            TYPE      STATE                   CONNECTION 
+l4tbr0            bridge    connected (externally)  l4tbr0     
+lo                loopback  connected (externally)  lo         
+docker0           bridge    connected (externally)  docker0    
+wlP1p1s0          wifi      disconnected            --         
+p2p-dev-wlP1p1s0  wifi-p2p  disconnected            --         
+enP8p1s0          ethernet  unavailable             --         
+can0              can       unmanaged               --         
+usb0              ethernet  unmanaged               --         
+## nmcli connection
+NAME                TYPE      DEVICE   AUTOCONNECT  AUTOCONNECT-PRIORITY 
+l4tbr0              bridge    l4tbr0   no           0                    
+lo                  loopback  lo       no           0                    
+docker0             bridge    docker0  no           0                    
+<hotspot-ssid>   wifi      --       yes          0                    
+Wired connection 1  ethernet  --       yes          -999                 
+## ethernet carrier
+enP8p1s0 operstate=down carrier=0 speed=-1
+wlP1p1s0 operstate=down carrier=0 speed=cat: /sys/class/net/wlP1p1s0/speed: Invalid argument
+usb0 operstate=up carrier=1 speed=cat: /sys/class/net/usb0/speed: Invalid argument
+l4tbr0 operstate=up carrier=1 speed=-1
+## bridge members of l4tbr0
+usb0
+## usb0 driver / gadget
+/sys/devices/platform/bus@0/3550000.usb/gadget.0
+acm.GS0
+mass_storage.0
+ncm.usb0
+## who owns 192.168.55.1
+5: l4tbr0    inet 192.168.55.1/24 scope global l4tbr0\       valid_lft forever preferred_lft forever
+## sudo ufw status
+sudo: ufw: command not found
+## listening sockets
+Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess
+udp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*          
+udp   UNCONN 0      0         127.0.0.53:53         0.0.0.0:*          
+udp   UNCONN 0      0            0.0.0.0:67         0.0.0.0:*          
+udp   UNCONN 0      0            0.0.0.0:33582      0.0.0.0:*          
+udp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*          
+udp   UNCONN 0      0                  *:58003            *:*          
+udp   UNCONN 0      0                  *:5353             *:*          
+tcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*          
+tcp   LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*          
+tcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*          
+tcp   LISTEN 0      4096               *:6566             *:*          
+tcp   LISTEN 0      4096            [::]:22            [::]:*          
+tcp   LISTEN 0      4096               *:5201             *:*          

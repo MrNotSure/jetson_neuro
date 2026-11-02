@@ -1,0 +1,15 @@
+== 2026-10-30T17:36:55Z Part 4 pre-check
+rtt   904.1 ms   board - mac +0.250 s
+rtt    89.3 ms   board - mac -0.157 s
+best (shortest rtt 89.3 ms): board - mac = -0.157 s = -0.0000 d; mac utc 2026-10-30 17:36:57
+ 18:36:57 up 27 min,  2 users,  load average: 0.00, 0.03, 0.04
+Result=success
+policy0 max=1344000
+policy4 max=1344000
+gpu nvhost_podgov max=918000000 cur=306000000 tpc=240 fbp=2
+enabled
+wlP1p1s0:disconnected
+p2p-dev-wlP1p1s0:disconnected
+No jobs running.
+no apt/dpkg
+scripts

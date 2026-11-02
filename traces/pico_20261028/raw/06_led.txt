@@ -1,0 +1,7 @@
+LED test: starting in 2 s, 5 blinks, 0.5 s on / 0.5 s off
+blink 1 on
+blink 2 on
+blink 3 on
+blink 4 on
+blink 5 on
+done; resetting so GP25 returns to input

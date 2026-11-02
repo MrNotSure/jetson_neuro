@@ -1,0 +1,168 @@
+T6b pre-registered analysis (raw/plan.txt); run folder /Users/<user>/Documents/code/jetson_neuro/runs/t6b_20261102; captures ['K1', 'K2', 'K3']
+K1: 828918 valid conversions, missed 0, spurious ALRT 0, falls 48008, rises 48008, trailer True
+  DEGLITCH (pre-registered): dropped 0 GP16 pulses < 1 us wide
+  Mac unix - mono over the capture: spread 2.2 ms
+  PIO-vs-Mac-arrival fit: slope 1.000003894, residual sd 2.35 ms
+  fall runs: 16 (8 of length > 1, 8 lone); H/A blocks 8
+K2: 824290 valid conversions, missed 0, spurious ALRT 0, falls 48008, rises 48008, trailer True
+  DEGLITCH (pre-registered): dropped 0 GP16 pulses < 1 us wide
+  Mac unix - mono over the capture: spread 3.8 ms
+  PIO-vs-Mac-arrival fit: slope 1.000003647, residual sd 2.39 ms
+  fall runs: 16 (8 of length > 1, 8 lone); H/A blocks 8
+K3: 839105 valid conversions, missed 0, spurious ALRT 1, falls 48008, rises 48008, trailer True
+  DEGLITCH (pre-registered): dropped 0 GP16 pulses < 1 us wide
+  Mac unix - mono over the capture: spread 4.9 ms
+  PIO-vs-Mac-arrival fit: slope 1.000003499, residual sd 2.55 ms
+  fall runs: 16 (8 of length > 1, 8 lone); H/A blocks 8
+
+excluded blocks (each takes its whole round): none
+pulses < 1 us dropped, per capture: {'K1': 0, 'K2': 0, 'K3': 0}; total 0
+
+per block:
+| block | cap | cond | P_a mW | window s | X [-1,4.5) uJ | X [-2,4.5) uJ | X [-2,5.5) uJ | baseline mW | pre [-2,-1) mW | post [4.5,5.5) mW | events | ctl_us p50/p99/max | rms_deg | max_deg | in-FOV | losses | miss / late>5ms | out 8-15 ms | conv used | affinity |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| R1I | K1 | I | 6317.2 | 53.1 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | 49145 | - |
+| R1H | K1 | H | 6336.8 | 54.0 | 124.64 | 105.42 | 98.98 | 6324.9 | -1.3 | -2.1 | 404.4 | 16/22/1547 | 12.001 | 16.957 | 1.000 | 0 | 0 / 5 | 17 | 55420/55578 | 2 |
+| R1A | K1 | A | 6359.7 | 54.0 | 311.46 | 284.44 | 276.53 | 6327.1 | -6.3 | -1.9 | 157.2 | 485/579/2520 | 0.180 | 0.474 | 1.000 | 0 | 1 / 37 | 48 | 55106/55578 | 2 |
+| R2H | K1 | H | 6333.1 | 54.0 | 114.62 | 89.94 | 81.00 | 6321.6 | +5.7 | -3.4 | 404.4 | 16/20/1659 | 12.001 | 16.957 | 1.000 | 0 | 0 / 10 | 17 | 55395/55578 | 2 |
+| R2A | K1 | A | 6360.3 | 54.0 | 338.88 | 331.70 | 329.79 | 6323.2 | -0.7 | -0.3 | 158.2 | 483/578/1165 | 0.182 | 0.474 | 1.000 | 0 | 0 / 8 | 23 | 55351/55577 | 2 |
+| R2I | K1 | I | 6319.1 | 53.1 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | 49154 | - |
+| R3A | K1 | A | 6359.0 | 54.0 | 310.86 | 323.39 | 320.48 | 6327.1 | +2.7 | -5.7 | 156.8 | 487/572/2609 | 0.179 | 0.474 | 1.000 | 0 | 1 / 17 | 30 | 55256/55578 | 2 |
+| R3I | K1 | I | 6318.1 | 53.1 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | 49184 | - |
+| R3H | K1 | H | 6346.5 | 54.0 | 144.81 | 90.67 | 78.61 | 6327.8 | -2.2 | -0.0 | 404.4 | 16/22/55 | 12.001 | 16.957 | 1.000 | 0 | 1 / 14 | 35 | 55214/55577 | 2 |
+| R4I | K1 | I | 6316.7 | 53.1 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | 49155 | - |
+| R4A | K1 | A | 6357.9 | 54.0 | 332.66 | 297.00 | 290.39 | 6323.1 | +4.8 | +1.3 | 158.2 | 493/588/2689 | 0.182 | 0.491 | 1.000 | 0 | 2 / 7 | 20 | 55353/55578 | 2 |
+| R4H | K1 | H | 6338.0 | 54.0 | 133.02 | 127.83 | 126.99 | 6323.7 | -2.0 | +0.4 | 404.4 | 15/19/60 | 12.001 | 16.957 | 1.000 | 0 | 0 / 3 | 16 | 55429/55577 | 2 |
+| R5A | K2 | A | 6367.3 | 54.0 | 344.22 | 343.31 | 344.77 | 6331.2 | +1.0 | +1.7 | 157.5 | 488/577/2583 | 0.184 | 0.643 | 1.000 | 0 | 1 / 19 | 40 | 55186/55577 | 2 |
+| R5H | K2 | H | 6346.7 | 54.0 | 144.56 | 123.04 | 120.42 | 6330.5 | -2.0 | +2.2 | 404.4 | 16/20/58 | 12.001 | 16.957 | 1.000 | 0 | 1 / 13 | 24 | 55302/55578 | 2 |
+| R5I | K2 | I | 6323.2 | 53.1 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | 49147 | - |
+| R6H | K2 | H | 6346.9 | 54.0 | 132.77 | 95.91 | 86.03 | 6331.0 | +5.8 | -1.7 | 404.4 | 15/26/53 | 12.001 | 16.957 | 1.000 | 0 | 1 / 52 | 68 | 54865/55577 | 2 |
+| R6I | K2 | I | 6325.5 | 53.1 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | 49160 | - |
+| R6A | K2 | A | 6358.4 | 54.0 | 338.17 | 325.01 | 321.30 | 6322.2 | +2.6 | -0.7 | 158.1 | 492/586/4057 | 0.180 | 0.455 | 1.000 | 0 | 1 / 36 | 45 | 55114/55577 | 2 |
+| R7I | K2 | I | 6318.9 | 53.1 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | 49157 | - |
+| R7H | K2 | H | 6336.5 | 54.0 | 131.75 | 129.38 | 129.42 | 6321.2 | -1.7 | +0.6 | 404.4 | 16/20/57 | 12.001 | 16.957 | 1.000 | 0 | 1 / 22 | 32 | 55234/55577 | 2 |
+| R7A | K2 | A | 6376.1 | 54.0 | 361.60 | 340.00 | 337.32 | 6335.5 | +4.0 | +2.1 | 158.2 | 500/590/1144 | 0.182 | 0.474 | 1.000 | 0 | 0 / 27 | 34 | 55234/55578 | 2 |
+| R8H | K2 | H | 6346.6 | 54.0 | 112.30 | 107.73 | 106.12 | 6332.9 | -0.5 | -0.5 | 404.4 | 16/19/53 | 12.001 | 16.957 | 1.000 | 0 | 1 / 5 | 18 | 55396/55577 | 2 |
+| R8A | K2 | A | 6359.4 | 54.0 | 332.69 | 257.18 | 240.26 | 6323.6 | -2.8 | -0.1 | 157.0 | 482/576/2448 | 0.180 | 0.488 | 1.000 | 0 | 1 / 5 | 16 | 55414/55577 | 2 |
+| R8I | K2 | I | 6320.2 | 53.1 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | 49177 | - |
+| R9A | K3 | A | 6360.7 | 54.0 | 343.01 | 341.80 | 345.78 | 6324.1 | +0.3 | +4.3 | 157.5 | 495/592/1140 | 0.180 | 0.574 | 1.000 | 0 | 1 / 13 | 28 | 55297/55578 | 2 |
+| R9I | K3 | I | 6320.6 | 53.1 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | 49166 | - |
+| R9H | K3 | H | 6342.8 | 54.0 | 128.10 | 113.14 | 106.46 | 6328.5 | -1.4 | -3.4 | 404.4 | 16/20/52 | 12.001 | 16.957 | 1.000 | 0 | 0 / 11 | 23 | 55347/55577 | 2 |
+| R10I | K3 | I | 6329.3 | 53.1 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | 49162 | - |
+| R10A | K3 | A | 6366.0 | 54.0 | 338.38 | 319.30 | 312.02 | 6330.7 | -0.2 | -3.1 | 158.2 | 486/574/4065 | 0.182 | 0.474 | 1.000 | 0 | 0 / 13 | 25 | 55336/55577 | 2 |
+| R10H | K3 | H | 6342.3 | 54.0 | 143.13 | 96.66 | 89.05 | 6325.3 | +2.0 | +2.7 | 404.4 | 16/31/61 | 12.001 | 16.957 | 1.000 | 0 | 1 / 24 | 38 | 55193/55577 | 2 |
+| R11A | K3 | A | 6364.6 | 54.0 | 353.40 | 352.64 | 351.35 | 6327.3 | +0.6 | -1.1 | 157.8 | 495/586/1128 | 0.181 | 0.474 | 1.000 | 0 | 1 / 27 | 49 | 55080/55578 | 2 |
+| R11H | K3 | H | 6340.9 | 54.0 | 120.85 | 98.23 | 88.75 | 6327.1 | +0.3 | -4.5 | 404.4 | 15/21/57 | 12.001 | 16.957 | 1.000 | 0 | 1 / 14 | 27 | 55304/55578 | 2 |
+| R11I | K3 | I | 6322.5 | 53.1 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | 49151 | - |
+| R12H | K3 | H | 6339.7 | 54.0 | 124.52 | 93.60 | 84.86 | 6323.7 | -0.9 | -1.9 | 404.4 | 16/20/54 | 12.001 | 16.957 | 1.000 | 0 | 2 / 16 | 30 | 55268/55578 | 2 |
+| R12I | K3 | I | 6316.2 | 53.1 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | 49161 | - |
+| R12A | K3 | A | 6360.0 | 54.0 | 330.31 | 341.59 | 342.51 | 6325.1 | +0.0 | -1.6 | 156.5 | 485/575/2263 | 0.180 | 0.569 | 1.000 | 0 | 1 / 6 | 18 | 55395/55581 | 2 |
+  R1H: excess by segment, ms -> mW: [-1,0) +27, [0,0.5) +182, [0.5,1) +68, [1,2) +4, [2,3) -3, [3,4.5) -0, [4.5,5.5) -2; decisions 6000 (OBS 6000), rate 99.9996 Hz, flagged 5
+  R1A: excess by segment, ms -> mW: [-1,0) +17, [0,0.5) +288, [0.5,1) +273, [1,2) +39, [2,3) -5, [3,4.5) -2, [4.5,5.5) -2; decisions 6000 (OBS 6000), rate 100.0001 Hz, flagged 37
+  R2H: excess by segment, ms -> mW: [-1,0) +14, [0,0.5) +173, [0.5,1) +63, [1,2) -1, [2,3) -0, [3,4.5) -1, [4.5,5.5) -3; decisions 6000 (OBS 6000), rate 100.0004 Hz, flagged 10
+  R2A: excess by segment, ms -> mW: [-1,0) +24, [0,0.5) +302, [0.5,1) +272, [1,2) +49, [2,3) +2, [3,4.5) +1, [4.5,5.5) -0; decisions 6000 (OBS 6000), rate 99.9999 Hz, flagged 8
+  R3A: excess by segment, ms -> mW: [-1,0) +15, [0,0.5) +290, [0.5,1) +276, [1,2) +36, [2,3) -3, [3,4.5) -3, [4.5,5.5) -6; decisions 6000 (OBS 6000), rate 100.0003 Hz, flagged 17
+  R3H: excess by segment, ms -> mW: [-1,0) +33, [0,0.5) +186, [0.5,1) +75, [1,2) +6, [2,3) -1, [3,4.5) +6, [4.5,5.5) -0; decisions 6000 (OBS 6000), rate 100.0003 Hz, flagged 15
+  R4A: excess by segment, ms -> mW: [-1,0) +27, [0,0.5) +303, [0.5,1) +276, [1,2) +44, [2,3) -0, [3,4.5) -0, [4.5,5.5) +1; decisions 6000 (OBS 6000), rate 99.9995 Hz, flagged 9
+  R4H: excess by segment, ms -> mW: [-1,0) +23, [0,0.5) +182, [0.5,1) +67, [1,2) +2, [2,3) -0, [3,4.5) +4, [4.5,5.5) +0; decisions 6000 (OBS 6000), rate 100.0003 Hz, flagged 3
+  R5A: excess by segment, ms -> mW: [-1,0) +24, [0,0.5) +310, [0.5,1) +275, [1,2) +44, [2,3) +1, [3,4.5) +5, [4.5,5.5) +2; decisions 6000 (OBS 6000), rate 100.0001 Hz, flagged 20
+  R5H: excess by segment, ms -> mW: [-1,0) +25, [0,0.5) +179, [0.5,1) +74, [1,2) +6, [2,3) +2, [3,4.5) +6, [4.5,5.5) +2; decisions 6000 (OBS 6000), rate 100.0004 Hz, flagged 14
+  R6H: excess by segment, ms -> mW: [-1,0) +31, [0,0.5) +187, [0.5,1) +82, [1,2) +0, [2,3) -0, [3,4.5) -1, [4.5,5.5) -2; decisions 6000 (OBS 6000), rate 100.0003 Hz, flagged 53
+  R6A: excess by segment, ms -> mW: [-1,0) +19, [0,0.5) +297, [0.5,1) +287, [1,2) +44, [2,3) +2, [3,4.5) +1, [4.5,5.5) -1; decisions 6000 (OBS 6000), rate 100.0004 Hz, flagged 36
+  R7H: excess by segment, ms -> mW: [-1,0) +17, [0,0.5) +175, [0.5,1) +64, [1,2) +10, [2,3) +2, [3,4.5) +0, [4.5,5.5) +1; decisions 6000 (OBS 6000), rate 100.0007 Hz, flagged 23
+  R7A: excess by segment, ms -> mW: [-1,0) +27, [0,0.5) +324, [0.5,1) +275, [1,2) +46, [2,3) +10, [3,4.5) +4, [4.5,5.5) +2; decisions 6000 (OBS 6000), rate 99.9993 Hz, flagged 27
+  R8H: excess by segment, ms -> mW: [-1,0) +20, [0,0.5) +174, [0.5,1) +68, [1,2) -1, [2,3) -2, [3,4.5) -3, [4.5,5.5) -1; decisions 6000 (OBS 6000), rate 100.0005 Hz, flagged 6
+  R8A: excess by segment, ms -> mW: [-1,0) +21, [0,0.5) +289, [0.5,1) +280, [1,2) +40, [2,3) -2, [3,4.5) +7, [4.5,5.5) -0; decisions 6000 (OBS 6000), rate 100.0004 Hz, flagged 6
+  R9A: excess by segment, ms -> mW: [-1,0) +19, [0,0.5) +288, [0.5,1) +292, [1,2) +44, [2,3) +1, [3,4.5) +5, [4.5,5.5) +4; decisions 6000 (OBS 6000), rate 99.9992 Hz, flagged 14
+  R9H: excess by segment, ms -> mW: [-1,0) +17, [0,0.5) +183, [0.5,1) +69, [1,2) +3, [2,3) -0, [3,4.5) -0, [4.5,5.5) -3; decisions 6000 (OBS 6000), rate 100.0001 Hz, flagged 11
+  R10A: excess by segment, ms -> mW: [-1,0) +32, [0,0.5) +319, [0.5,1) +269, [1,2) +45, [2,3) -0, [3,4.5) -0, [4.5,5.5) -3; decisions 6000 (OBS 6000), rate 99.9999 Hz, flagged 13
+  R10H: excess by segment, ms -> mW: [-1,0) +24, [0,0.5) +184, [0.5,1) +76, [1,2) +2, [2,3) +8, [3,4.5) +2, [4.5,5.5) +3; decisions 6000 (OBS 6000), rate 100.0000 Hz, flagged 24
+  R11A: excess by segment, ms -> mW: [-1,0) +27, [0,0.5) +317, [0.5,1) +275, [1,2) +47, [2,3) +7, [3,4.5) +2, [4.5,5.5) -1; decisions 6000 (OBS 6000), rate 99.9991 Hz, flagged 28
+  R11H: excess by segment, ms -> mW: [-1,0) +28, [0,0.5) +182, [0.5,1) +73, [1,2) +2, [2,3) -5, [3,4.5) -2, [4.5,5.5) -4; decisions 6000 (OBS 6000), rate 99.9991 Hz, flagged 15
+  R12H: excess by segment, ms -> mW: [-1,0) +26, [0,0.5) +181, [0.5,1) +69, [1,2) +3, [2,3) -3, [3,4.5) -0, [4.5,5.5) -2; decisions 6000 (OBS 6000), rate 99.9997 Hz, flagged 18
+  R12A: excess by segment, ms -> mW: [-1,0) +30, [0,0.5) +304, [0.5,1) +270, [1,2) +45, [2,3) -3, [3,4.5) +1, [4.5,5.5) -2; decisions 6000 (OBS 6000), rate 99.9937 Hz, flagged 7
+
+rounds kept (H and A valid): [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]; with a valid I block too: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]; rounds excluded: []
+
+| round | cap | order | P_I mW | P_H mW | P_A mW | f Hz | X_H uJ | X_A uJ | D (b) uJ | D [-2,4.5) uJ | D [-2,5.5) uJ | (a) uJ | harness uJ | E_tot(A) mJ |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | K1 | I H A | 6317.2 | 6336.8 | 6359.7 | 99.9999 | 124.64 | 311.46 | +186.83 | +179.02 | +177.55 | +229.0 | +196.2 | 63.5975 |
+| 2 | K1 | H A I | 6319.1 | 6333.1 | 6360.3 | 100.0001 | 114.62 | 338.88 | +224.26 | +241.76 | +248.79 | +272.4 | +139.3 | 63.6030 |
+| 3 | K1 | A I H | 6318.1 | 6346.5 | 6359.0 | 100.0003 | 144.81 | 310.86 | +166.05 | +232.72 | +241.87 | +124.8 | +284.0 | 63.5894 |
+| 4 | K1 | I A H | 6316.7 | 6338.0 | 6357.9 | 99.9999 | 133.02 | 332.66 | +199.64 | +169.17 | +163.39 | +199.3 | +213.0 | 63.5792 |
+| 5 | K2 | A H I | 6323.2 | 6346.7 | 6367.3 | 100.0002 | 144.56 | 344.22 | +199.66 | +220.27 | +224.35 | +205.9 | +235.2 | 63.6727 |
+| 6 | K2 | H I A | 6325.5 | 6346.9 | 6358.4 | 100.0004 | 132.77 | 338.17 | +205.40 | +229.10 | +235.27 | +115.1 | +214.1 | 63.5836 |
+| 7 | K2 | I H A | 6318.9 | 6336.5 | 6376.1 | 100.0000 | 131.75 | 361.60 | +229.85 | +210.62 | +207.90 | +395.6 | +176.5 | 63.7606 |
+| 8 | K2 | H A I | 6320.2 | 6346.6 | 6359.4 | 100.0004 | 112.30 | 332.69 | +220.38 | +149.45 | +134.14 | +127.8 | +264.4 | 63.5939 |
+| 9 | K3 | A I H | 6320.6 | 6342.8 | 6360.7 | 99.9996 | 128.10 | 343.01 | +214.91 | +228.66 | +239.32 | +179.7 | +221.6 | 63.6076 |
+| 10 | K3 | I A H | 6329.3 | 6342.3 | 6366.0 | 99.9999 | 143.13 | 338.38 | +195.25 | +222.64 | +222.97 | +237.2 | +129.5 | 63.6599 |
+| 11 | K3 | A H I | 6322.5 | 6340.9 | 6364.6 | 99.9991 | 120.85 | 353.40 | +232.56 | +254.41 | +262.60 | +236.9 | +184.1 | 63.6464 |
+| 12 | K3 | H I A | 6316.2 | 6339.7 | 6360.0 | 99.9967 | 124.52 | 330.31 | +205.79 | +247.99 | +257.64 | +202.8 | +235.0 | 63.6022 |
+
+PRIMARY
+(b) E_dyn(A) = mean D = X_A - X_H, window [-1, 4.5) ms: +206.71 uJ [+194.53, +218.90] (se 5.54, n 12, t 2.201)
+
+SECONDARY
+(b) E_dyn(A), window [-2, 4.5) ms: +215.48 uJ [+194.63, +236.34] (se 9.48, n 12, t 2.201)
+(b) E_dyn(A), window [-2, 5.5) ms: +217.98 uJ [+192.53, +243.43] (se 11.56, n 12, t 2.201)
+(a) E_dyn(A) = (P_A - P_H)/f per round: +210.6 uJ [+162.0, +259.1] (se 22.1, n 12, t 2.201)
+(b) X_H [-1, 4.5): +129.59 uJ [+122.64, +136.54] (se 3.16, n 12, t 2.201);  X_A +336.30 uJ [+326.96, +345.65] (se 4.25, n 12, t 2.201)
+(b) X_H [-2, 4.5): +105.96 uJ [+96.85, +115.08] (se 4.14, n 12, t 2.201);  X_A +321.45 uJ [+303.43, +339.46] (se 8.18, n 12, t 2.201)
+decision rate f per round: mean 99.9997 Hz, range 99.9967-100.0004
+block means: P_H +6341.4 mW [+6338.4, +6344.4] (se 1.4, n 12, t 2.201); P_A +6362.4 mW [+6359.1, +6365.8] (se 1.5, n 12, t 2.201); P_I +6320.6 mW [+6318.1, +6323.1] (se 1.1, n 12, t 2.201)
+harness (P_H - P_I)/f per round: +207.7 uJ [+178.5, +237.0] (se 13.3, n 12, t 2.201)
+E_tot(A) = P_A/f per round: +63.6247 mJ [+63.5912, +63.6581] (se 0.0152, n 12, t 2.201)
+  stack: idle floor P_I/f +63.2064 mJ [+63.1817, +63.2310] (se 0.0112, n 12, t 2.201)
+       + harness       +207.7 uJ [+178.5, +237.0] (se 13.3, n 12, t 2.201)
+       + algorithm (a) +210.6 uJ [+162.0, +259.1] (se 22.1, n 12, t 2.201)
+
+WINDOW CHECK (excess over the block baseline, per round, t CI; method (b) with pre = 1 ms)
+H: [-2, -1) ms before the edge +0.1 mW [-1.7, +2.0] (se 0.8, n 12, t 2.201) -> consistent with 0; [4.5, 5.5) ms after the edge -1.0 mW [-2.4, +0.5] (se 0.7, n 12, t 2.201) -> consistent with 0
+A: [-2, -1) ms before the edge +0.5 mW [-1.4, +2.4] (se 0.9, n 12, t 2.201) -> consistent with 0; [4.5, 5.5) ms after the edge -0.4 mW [-2.1, +1.2] (se 0.8, n 12, t 2.201) -> consistent with 0
+
+DRIFT: against round index (least squares, t CI, n - 2 df)
+X_H: slope -0.278 uJ/round [-2.407, +1.852] -> consistent with 0; sd 10.94 uJ, range 112.3-144.8
+X_A: slope +1.998 uJ/round [-0.509, +4.505] -> consistent with 0; sd 14.71 uJ, range 310.9-361.6
+D: slope +2.275 uJ/round [-1.113, +5.664] -> consistent with 0; sd 19.18 uJ, range 166.0-232.6
+by capture (mean, t CI over that capture's rounds; one-way ANOVA F across captures)
+X_H: K1 +129.3 uJ [+108.9, +149.6] (se 6.4, n 4, t 3.182); K2 +130.3 uJ [+109.1, +151.6] (se 6.7, n 4, t 3.182); K3 +129.1 uJ [+113.6, +144.7] (se 4.9, n 4, t 3.182); ANOVA F(2, 9) = 0.01, 5 % critical 4.256 -> no difference at 5 %
+X_A: K1 +323.5 uJ [+300.5, +346.4] (se 7.2, n 4, t 3.182); K2 +344.2 uJ [+324.2, +364.1] (se 6.3, n 4, t 3.182); K3 +341.3 uJ [+325.9, +356.6] (se 4.8, n 4, t 3.182); ANOVA F(2, 9) = 3.29, 5 % critical 4.256 -> no difference at 5 %
+D: K1 +194.2 uJ [+155.4, +232.9] (se 12.2, n 4, t 3.182); K2 +213.8 uJ [+191.9, +235.8] (se 6.9, n 4, t 3.182); K3 +212.1 uJ [+187.0, +237.3] (se 7.9, n 4, t 3.182); ANOVA F(2, 9) = 1.37, 5 % critical 4.256 -> no difference at 5 %
+
+LOGGER HYPOTHESIS AND PRECISION
+(b) [-1,4.5) primary: mean +206.71 uJ, sd_D 19.18 uJ, half-width 12.19 uJ = 5.9 % (t, 11 df); N for +-5 %: 16 rounds, for +-10 %: 6 rounds
+(b) [-2,4.5): mean +215.48 uJ, sd_D 32.82 uJ, half-width 20.86 uJ = 9.7 % (t, 11 df); N for +-5 %: 39 rounds, for +-10 %: 12 rounds
+(b) [-2,5.5): mean +217.98 uJ, sd_D 40.06 uJ, half-width 25.45 uJ = 11.7 % (t, 11 df); N for +-5 %: 55 rounds, for +-10 %: 16 rounds
+(a): mean +210.55 uJ, sd_D 76.44 uJ, half-width 48.57 uJ = 23.1 % (t, 11 df); N for +-5 %: 207 rounds, for +-10 %: 54 rounds
+harness: mean +207.7 uJ, sd 46.0 uJ, half-width 29.2 uJ
+sd_D (primary) = 19.18 uJ; T6: 14.3 uJ logger-excluded, 66.6 uJ primary; ratio to each 1.34 / 0.29
+sd_D 95 % CI (chi-square, 11 df): [13.59, 32.57] uJ; contains 14.3: True, contains 66.6: False -> logger hypothesis supported (pre-registered rule: supported if the CI contains 14.3 and excludes 66.6; rejected if the reverse; otherwise not decided)
+
+CONTROLLERS, TRACKING AND EVENTS (per block, rounds kept)
+H ctl_p50: mean 15.64, range 15.46-15.87
+H ctl_p99: mean 21.68, range 19.3-30.53
+H ctl_max: mean 313.8, range 51.81-1659
+H nev_mean: mean 404.4, range 404.4-404.4
+H rms_deg: mean 12, range 12-12
+H max_deg: mean 16.96, range 16.96-16.96
+H in_fov: mean 1, range 1-1
+H misses per block [0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 2]; late > 5 ms [5, 10, 14, 3, 13, 52, 22, 5, 11, 24, 14, 16]; losses [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; affinity ['2']
+H n_events per decision: +404.4 events [+404.4, +404.4] (se 0.0, n 12, t 2.201)
+A ctl_p50: mean 489.3, range 482.5-499.7
+A ctl_p99: mean 581.1, range 571.6-592.3
+A ctl_max: mean 2318, range 1128-4065
+A nev_mean: mean 157.6, range 156.5-158.2
+A rms_deg: mean 0.181, range 0.1793-0.1835
+A max_deg: mean 0.5054, range 0.455-0.6429
+A in_fov: mean 1, range 1-1
+A misses per block [1, 0, 1, 2, 1, 1, 0, 1, 1, 0, 1, 1]; late > 5 ms [37, 8, 17, 7, 19, 36, 27, 5, 13, 13, 27, 6]; losses [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]; affinity ['2']
+A n_events per decision: +157.6 events [+157.2, +158.0] (se 0.2, n 12, t 2.201)
+
+SNAPSHOTS (raw/snapshots.txt, in the gaps; VDD_IN as recorded, not analysed for differences)
+I before: 12 snapshots; VDD_IN mW 4582-5360 (mean 4680); tj 47.4-47.7 C; policy0 kHz [729600, 883200, 1113600, 1190400, 1344000]; policy4 kHz [729600, 1267200]; gpu Hz [306000000]; fan_pwm [59, 64]; apt/dpkg clean True; no jobs True
+I after: 12 snapshots; VDD_IN mW 4582-4622 (mean 4619); tj 47.3-47.9 C; policy0 kHz [729600, 1113600, 1190400]; policy4 kHz [729600]; gpu Hz [306000000]; fan_pwm [64]; apt/dpkg clean True; no jobs True
+H before: 12 snapshots; VDD_IN mW 4582-4622 (mean 4619); tj 47.2-47.7 C; policy0 kHz [1113600, 1190400, 1344000]; policy4 kHz [729600]; gpu Hz [306000000]; fan_pwm [59, 64]; apt/dpkg clean True; no jobs True
+H after: 12 snapshots; VDD_IN mW 4662-4702 (mean 4696); tj 47.3-47.9 C; policy0 kHz [1190400]; policy4 kHz [729600]; gpu Hz [306000000]; fan_pwm [59, 64]; apt/dpkg clean True; no jobs True
+A before: 12 snapshots; VDD_IN mW 4622-4629 (mean 4623); tj 47.3-47.8 C; policy0 kHz [1113600, 1190400]; policy4 kHz [729600]; gpu Hz [306000000]; fan_pwm [59, 64]; apt/dpkg clean True; no jobs True
+A after: 12 snapshots; VDD_IN mW 4702-4702 (mean 4702); tj 47.3-47.8 C; policy0 kHz [729600, 1113600, 1190400]; policy4 kHz [729600]; gpu Hz [306000000]; fan_pwm [59, 64]; apt/dpkg clean True; no jobs True
+all snapshots: tj 47.2-47.9 C (stop limit 80 C)

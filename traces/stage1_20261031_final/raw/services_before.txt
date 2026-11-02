@@ -1,0 +1,213 @@
+== 2026-10-31T12:57:25Z services before (Part 1.1), board uptime 114.15 s
+== systemctl get-default
+graphical.target
+== list-units --type=service --state=running
+  accounts-daemon.service       loaded active running Accounts Service
+  auditd.service                loaded active running Security Auditing Service
+  avahi-daemon.service          loaded active running Avahi mDNS/DNS-SD Stack
+  bluetooth.service             loaded active running Bluetooth service
+  colord.service                loaded active running Manage, Install and Generate Color Profiles
+  containerd.service            loaded active running containerd container runtime
+  cron.service                  loaded active running Regular background program processing daemon
+  dbus.service                  loaded active running D-Bus System Message Bus
+  docker.service                loaded active running Docker Application Container Engine
+  gdm.service                   loaded active running GNOME Display Manager
+  gnome-remote-desktop.service  loaded active running GNOME Remote Desktop
+  haveged.service               loaded active running Entropy Daemon based on the HAVEGE algorithm
+  iperf3.service                loaded active running iperf3 server
+  kerneloops.service            loaded active running Tool to automatically collect and submit kernel crash signatures
+  lpd.service                   loaded active running LSB: BSD lpr/lpd line printer spooling system
+  ModemManager.service          loaded active running Modem Manager
+  NetworkManager.service        loaded active running Network Manager
+  nv-tee-supplicant.service     loaded active running OP-TEE Client Supplicant
+  nvargus-daemon.service        loaded active running Argus daemon
+  nvfancontrol.service          loaded active running nvfancontrol service
+  nvidia-pva-allowd.service     loaded active running service for managing PVA allowlists
+  nvmemwarning.service          loaded active running Display Low memory warning
+  packagekit.service            loaded active running PackageKit Daemon
+  polkit.service                loaded active running Authorization Manager
+  power-profiles-daemon.service loaded active running Power Profiles daemon
+  rsyslog.service               loaded active running System Logging Service
+  rtkit-daemon.service          loaded active running RealtimeKit Scheduling Policy Service
+  seatd.service                 loaded active running Seat management daemon
+  serial-getty@ttyGS0.service   loaded active running Serial Getty on ttyGS0
+  serial-getty@ttyTCU0.service  loaded active running Serial Getty on ttyTCU0
+  ssh.service                   loaded active running OpenBSD Secure Shell server
+  switcheroo-control.service    loaded active running Switcheroo Control Proxy service
+  systemd-journald.service      loaded active running Journal Service
+  systemd-logind.service        loaded active running User Login Management
+  systemd-networkd.service      loaded active running Network Configuration
+  systemd-resolved.service      loaded active running Network Name Resolution
+  systemd-timesyncd.service     loaded active running Network Time Synchronization
+  systemd-udevd.service         loaded active running Rule-based Manager for Device Events and Files
+  udisks2.service               loaded active running Disk Manager
+  upower.service                loaded active running Daemon for power management
+  user@121.service              loaded active running User Manager for UID 121
+  user@2002.service             loaded active running User Manager for UID 2002
+  wpa_supplicant.service        loaded active running WPA supplicant
+== list-unit-files --state=enabled
+apport-autoreport.path                       enabled enabled
+nvidia-cdi-refresh.path                      enabled enabled
+tpm-udev.path                                enabled enabled
+accounts-daemon.service                      enabled enabled
+anacron.service                              enabled enabled
+apparmor.service                             enabled enabled
+apport.service                               enabled enabled
+auditd.service                               enabled enabled
+avahi-daemon.service                         enabled enabled
+bluetooth.service                            enabled enabled
+cloud-config.service                         enabled enabled
+cloud-final.service                          enabled enabled
+cloud-init-local.service                     enabled enabled
+cloud-init.service                           enabled enabled
+console-setup.service                        enabled enabled
+containerd.service                           enabled enabled
+cron.service                                 enabled enabled
+dmesg.service                                enabled enabled
+docker.service                               enabled enabled
+e2scrub_reap.service                         enabled enabled
+fake-hwclock-load.service                    enabled enabled
+fake-hwclock-save.service                    enabled enabled
+getty@.service                               enabled enabled
+gnome-remote-desktop.service                 enabled enabled
+grub-common.service                          enabled enabled
+grub-initrd-fallback.service                 enabled enabled
+haveged.service                              enabled enabled
+iperf3.service                               enabled enabled
+kerneloops.service                           enabled enabled
+keyboard-setup.service                       enabled enabled
+ModemManager.service                         enabled enabled
+networkd-dispatcher.service                  enabled enabled
+NetworkManager-dispatcher.service            enabled enabled
+NetworkManager.service                       enabled enabled
+nv-ftpm-device-provision.service             enabled enabled
+nv-graphics.service                          enabled enabled
+nv-kdump.service                             enabled enabled
+nv-l4t-bootloader-config.service             enabled enabled
+nv-l4t-usb-device-mode.service               enabled enabled
+nv-load-display-modules.service              enabled enabled
+nv-load-gpu-libs.service                     enabled enabled
+nv-oobe.service                              enabled enabled
+nv-power-adapter-check.service               enabled enabled
+nv-rootfs-validation-config.service          enabled enabled
+nv-tee-supplicant.service                    enabled enabled
+nv_hugetlbfs_init.service                    enabled enabled
+nv_nvsciipc_init.service                     enabled enabled
+nv_nvsciipc_preinit.service                  enabled enabled
+nvargus-daemon.service                       enabled enabled
+nvcpupowerfix.service                        enabled enabled
+nvfancontrol.service                         enabled enabled
+nvfb-ping-config.service                     enabled enabled
+nvfb-ssh-keygen.service                      enabled enabled
+nvfb-swapfile.service                        enabled enabled
+nvfb-tegra-hda.service                       enabled enabled
+nvfb-udev.service                            enabled enabled
+nvidia-cdi-refresh.service                   enabled enabled
+nvidia-pva-allowd.service                    enabled enabled
+nvmefc-boot-connections.service              enabled enabled
+nvmemwarning.service                         enabled enabled
+nvmf-autoconnect.service                     enabled enabled
+nvpmodel.service                             enabled enabled
+nvpower.service                              enabled enabled
+nvweston.service                             enabled enabled
+openvpn.service                              enabled enabled
+power-profiles-daemon.service                enabled enabled
+rsync.service                                enabled enabled
+rsyslog.service                              enabled enabled
+seatd.service                                enabled enabled
+secureboot-db.service                        enabled enabled
+setvtrgb.service                             enabled enabled
+snapd.apparmor.service                       enabled enabled
+snapd.autoimport.service                     enabled enabled
+snapd.core-fixup.service                     enabled enabled
+snapd.recovery-chooser-trigger.service       enabled enabled
+snapd.seeded.service                         enabled enabled
+snapd.service                                enabled enabled
+snapd.system-shutdown.service                enabled enabled
+ssh.service                                  enabled enabled
+sssd.service                                 enabled enabled
+switcheroo-control.service                   enabled enabled
+systemd-oomd.service                         enabled enabled
+systemd-pcrlock-file-system.service          enabled enabled
+systemd-pcrlock-firmware-code.service        enabled enabled
+systemd-pcrlock-firmware-config.service      enabled enabled
+systemd-pcrlock-machine-id.service           enabled enabled
+systemd-pcrlock-make-policy.service          enabled enabled
+systemd-pcrlock-secureboot-authority.service enabled enabled
+systemd-pcrlock-secureboot-policy.service    enabled enabled
+systemd-pstore.service                       enabled enabled
+systemd-resolved.service                     enabled enabled
+systemd-timesyncd.service                    enabled enabled
+ua-reboot-cmds.service                       enabled enabled
+ubiquity.service                             enabled enabled
+ubuntu-advantage.service                     enabled enabled
+udisks2.service                              enabled enabled
+wpa_supplicant.service                       enabled enabled
+apport-forward.socket                        enabled enabled
+avahi-daemon.socket                          enabled enabled
+cloud-init-hotplugd.socket                   enabled enabled
+docker.socket                                enabled enabled
+saned.socket                                 enabled enabled
+snapd.socket                                 enabled enabled
+ssh.socket                                   enabled enabled
+sssd-autofs.socket                           enabled enabled
+sssd-nss.socket                              enabled enabled
+sssd-pac.socket                              enabled enabled
+sssd-pam-priv.socket                         enabled enabled
+sssd-pam.socket                              enabled enabled
+sssd-ssh.socket                              enabled enabled
+sssd-sudo.socket                             enabled enabled
+systemd-networkd.socket                      enabled enabled
+systemd-oomd.socket                          enabled enabled
+systemd-pcrextend.socket                     enabled enabled
+systemd-sysext.socket                        enabled enabled
+uuidd.socket                                 enabled enabled
+reboot.target                                enabled enabled
+remote-fs.target                             enabled disabled
+remote-veritysetup.target                    enabled enabled
+anacron.timer                                enabled enabled
+apport-autoreport.timer                      enabled enabled
+apt-daily-upgrade.timer                      enabled enabled
+apt-daily.timer                              enabled enabled
+dpkg-db-backup.timer                         enabled enabled
+e2scrub_all.timer                            enabled enabled
+fake-hwclock-save.timer                      enabled enabled
+fstrim.timer                                 enabled enabled
+fwupd-refresh.timer                          enabled enabled
+man-db.timer                                 enabled enabled
+motd-news.timer                              enabled enabled
+snapd.snap-repair.timer                      enabled enabled
+ua-timer.timer                               enabled enabled
+update-notifier-download.timer               enabled enabled
+update-notifier-motd.timer                   enabled enabled
+== list-timers --all
+NEXT                            LEFT LAST                         PASSED UNIT                           ACTIVATES
+Sat 2026-10-31 14:00:00 CET 2min 33s Sat 2026-10-31 13:56:44 CET 42s ago fake-hwclock-save.timer        fake-hwclock-save.service
+-                                  - Thu 1970-01-01 01:00:28 CET       - anacron.timer                  anacron.service
+-                                  - -                                 - apport-autoreport.timer        apport-autoreport.service
+-                                  - Thu 1970-01-01 01:00:28 CET       - apt-daily-upgrade.timer        apt-daily-upgrade.service
+-                                  - Thu 1970-01-01 01:00:28 CET       - apt-daily.timer                apt-daily.service
+-                                  - Sat 2026-10-31 13:56:44 CET 42s ago dpkg-db-backup.timer           dpkg-db-backup.service
+-                                  - Sat 2026-10-31 13:56:44 CET 42s ago e2scrub_all.timer              e2scrub_all.service
+-                                  - Thu 1970-01-01 01:00:28 CET       - fstrim.timer                   fstrim.service
+-                                  - Thu 1970-01-01 01:00:28 CET       - fwupd-refresh.timer            fwupd-refresh.service
+-                                  - Thu 1970-01-01 01:00:28 CET       - man-db.timer                   man-db.service
+-                                  - Thu 1970-01-01 01:00:28 CET       - motd-news.timer                motd-news.service
+-                                  - -                                 - snapd.snap-repair.timer        snapd.snap-repair.service
+-                                  - -                                 - systemd-tmpfiles-clean.timer   systemd-tmpfiles-clean.service
+-                                  - -                                 - ua-timer.timer                 ua-timer.service
+-                                  - -                                 - update-notifier-download.timer update-notifier-download.service
+-                                  - -                                 - update-notifier-motd.timer     update-notifier-motd.service
+
+16 timers listed.
+== systemctl --failed
+== nmcli radio wifi
+enabled
+l4tbr0:bridge:connected (externally):l4tbr0
+lo:loopback:connected (externally):lo
+docker0:bridge:connected (externally):docker0
+wlP1p1s0:wifi:disconnected:
+p2p-dev-wlP1p1s0:wifi-p2p:disconnected:
+enP8p1s0:ethernet:unavailable:
+can0:can:unmanaged:
+usb0:ethernet:unmanaged:

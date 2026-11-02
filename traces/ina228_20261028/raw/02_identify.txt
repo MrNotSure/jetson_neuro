@@ -1,0 +1,22 @@
+i2c: I2C(0, freq=100000, scl=5, sda=4, timeout=50000) | GP4 PUE=1 PDE=0 GP5 PUE=1 PDE=0 GP17 PUE=1 PDE=0
+scan at 100 kHz: [64] in 19246 us
+GP17 (ALRT) level, internal pull-up: 1
+register values before any write (datasheet reset value in brackets):
+  CONFIG           0x00 = 0x0000 [0x0000] same
+  ADC_CONFIG       0x01 = 0xFB68 [0xFB68] same
+  SHUNT_CAL        0x02 = 0x1000 [0x1000] same
+  SHUNT_TEMPCO     0x03 = 0x0000 [0x0000] same
+  DIAG_ALRT        0x0B = 0x0003 [0x0001] DIFFERENT
+  SOVL             0x0C = 0x7FFF [0x7FFF] same
+  SUVL             0x0D = 0x8000 [0x8000] same
+  BOVL             0x0E = 0x7FFF [0x7FFF] same
+  BUVL             0x0F = 0x0000 [0x0000] same
+  TEMP_LIMIT       0x10 = 0x7FFF [0x7FFF] same
+  PWR_LIMIT        0x11 = 0xFFFF [0xFFFF] same
+  MANUFACTURER_ID  0x3E = 0x5449 [0x5449] same
+  DEVICE_ID        0x3F = 0x2281 [0x2281] same
+MANUFACTURER_ID 0x5449 = b'TI'; DEVICE_ID 0x2281 -> DIEID 0x228, REV_ID 1
+DIETEMP x10 (C): 25.414 25.414 25.391 25.414 25.430 25.391 25.414 25.414 25.406 25.414
+DIETEMP mean 25.410 C
+quick look, default config: VSHUNT steps [-5, -5, -5, -5, -2] (x312.5 nV); VBUS steps [18, 18, 18, 18, 37] (x195.3125 uV = ['3.52', '3.52', '3.52', '3.52', '7.23'] mV)
+after CONFIG.RST: CONFIG 0x0000 ADC_CONFIG 0xFB68 SHUNT_CAL 0x1000

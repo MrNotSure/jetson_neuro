@@ -1,0 +1,161 @@
+grep: /sys/kernel/debug/pinctrl/c300000.pinmux/pinmux-select: Invalid argument
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups:115 (soc_gpio32_pq5): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	pull=2
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	tristate=1
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	enable-input=1
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	open-drain=0
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	io-reset=0
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	rcv-sel=0
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	io-hv=0
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	schmitt=0
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	pull-down-strength=0
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	pull-up-strength=0
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	drive-type=0
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	gpio-mode=0
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	function=rsvd0
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-116 (soc_gpio33_pq6): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	pull=2
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	tristate=1
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	enable-input=1
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	open-drain=0
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	io-reset=0
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-groups-	rcv-sel=0
+--
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins:pin 105 (SOC_GPIO32_PQ5): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 106 (SOC_GPIO33_PQ6): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 107 (SOC_GPIO35_PQ7): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 108 (SOC_GPIO37_PR0): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 109 (SOC_GPIO56_PR1): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 110 (UART1_TX_PR2): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 111 (UART1_RX_PR3): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 112 (UART1_RTS_PR4): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 113 (UART1_CTS_PR5): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 114 (GPU_PWR_REQ_PX0): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 115 (CV_PWR_REQ_PX1): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 116 (GP_PWM2_PX2): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 117 (GP_PWM3_PX3): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 118 (UART2_TX_PX4): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 119 (UART2_RX_PX5): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 120 (UART2_RTS_PX6): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 121 (UART2_CTS_PX7): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 122 (SPI3_SCK_PY0): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 123 (SPI3_MISO_PY1): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 124 (SPI3_MOSI_PY2): 
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinconf-pins-pin 125 (SPI3_CS0_PY3): 
+grep: /sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-select: Invalid argument
+--
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins:pin 105 (SOC_GPIO32_PQ5): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 106 (SOC_GPIO33_PQ6): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 107 (SOC_GPIO35_PQ7): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 108 (SOC_GPIO37_PR0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 109 (SOC_GPIO56_PR1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 110 (UART1_TX_PR2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 111 (UART1_RX_PR3): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 112 (UART1_RTS_PR4): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 113 (UART1_CTS_PR5): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 114 (GPU_PWR_REQ_PX0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 115 (CV_PWR_REQ_PX1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 116 (GP_PWM2_PX2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 117 (GP_PWM3_PX3): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 118 (UART2_TX_PX4): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 119 (UART2_RX_PX5): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 120 (UART2_RTS_PX6): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 121 (UART2_CTS_PX7): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 122 (SPI3_SCK_PY0): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 123 (SPI3_MISO_PY1): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 124 (SPI3_MOSI_PY2): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-pins-pin 125 (SPI3_CS0_PY3): (MUX UNCLAIMED) (GPIO UNCLAIMED)
+--
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions:function 7: rsvd0, groups = [ soc_gpio08_pb0 pex_wake_n_pl2 soc_gpio34_pl3 gpu_pwr_req_px0 cv_pwr_req_px1 soc_gpio29_pq2 soc_gpio30_pq3 soc_gpio31_pq4 soc_gpio32_pq5 soc_gpio33_pq6 soc_gpio35_pq7 soc_gpio56_pr1 cpu_pwr_req_pi5 soc_gpio20_pg7 soc_gpio21_ph0 soc_gpio22_ph1 soc_gpio13_pg0 soc_gpio14_pg1 soc_gpio15_pg2 soc_gpio16_pg3 soc_gpio17_pg4 soc_gpio18_pg5 soc_gpio41_ph7 soc_gpio42_pi0 soc_gpio43_pi1 soc_gpio44_pi2 soc_gpio06_ph2 soc_gpio45_pad0 soc_gpio46_pad1 soc_gpio47_pad2 soc_gpio48_pad3 soc_gpio57_pac4 soc_gpio58_pac5 soc_gpio60_pac7 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 8: eth0, groups = [ soc_gpio36_pm5 soc_gpio53_pm6 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 9: eth2, groups = [ soc_gpio55_pm4 dp_aux_ch3_hpd_pm3 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 10: eth1, groups = [ soc_gpio38_pm7 soc_gpio40_pn2 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 11: dp, groups = [ dp_aux_ch0_hpd_pm0 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 12: eth3, groups = [ dp_aux_ch1_hpd_pm1 dp_aux_ch2_hpd_pm2 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 13: i2c4, groups = [ dp_aux_ch1_p_pn3 dp_aux_ch1_n_pn4 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 14: i2c7, groups = [ dp_aux_ch2_p_pn5 dp_aux_ch2_n_pn6 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 15: i2c9, groups = [ dp_aux_ch3_p_pn7 dp_aux_ch3_n_pn0 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 16: eqos, groups = [ eqos_td3_pe4 eqos_td2_pe3 eqos_td1_pe2 eqos_td0_pe1 eqos_rd3_pf1 eqos_rd2_pf0 eqos_rd1_pe7 eqos_sma_mdio_pf4 eqos_rd0_pe6 eqos_sma_mdc_pf5 eqos_comp eqos_txc_pe0 eqos_rxc_pf3 eqos_tx_ctl_pe5 eqos_rx_ctl_pf2 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 17: pe2, groups = [ pex_l2_clkreq_n_pk4 pex_l2_rst_n_pk5 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 18: pe1, groups = [ pex_l1_clkreq_n_pk2 pex_l1_rst_n_pk3 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 19: pe0, groups = [ pex_l0_clkreq_n_pk0 pex_l0_rst_n_pk1 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 20: pe3, groups = [ pex_l3_clkreq_n_pk6 pex_l3_rst_n_pk7 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 21: pe4, groups = [ pex_l4_clkreq_n_pl0 pex_l4_rst_n_pl1 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 22: pe5, groups = [ pex_l5_clkreq_n_paf0 pex_l5_rst_n_paf1 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 23: pe6, groups = [ pex_l6_clkreq_n_paf2 pex_l6_rst_n_paf3 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 24: pe10, groups = [ pex_l10_clkreq_n_pag6 pex_l10_rst_n_pag7 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 25: pe7, groups = [ pex_l7_clkreq_n_pag0 pex_l7_rst_n_pag1 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 26: pe8, groups = [ pex_l8_clkreq_n_pag2 pex_l8_rst_n_pag3 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 27: pe9, groups = [ pex_l9_clkreq_n_pag4 pex_l9_rst_n_pag5 ]
+--
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions:function 64: extperiph3, groups = [ soc_gpio32_pq5 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 65: extperiph4, groups = [ soc_gpio33_pq6 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 66: spi4, groups = [ uart4_rts_ph5 uart4_tx_ph3 soc_gpio14_pg1 soc_gpio15_pg2 soc_gpio16_pg3 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 67: ccla, groups = [ soc_gpio17_pg4 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 68: i2s2, groups = [ soc_gpio41_ph7 soc_gpio42_pi0 soc_gpio43_pi1 soc_gpio44_pi2 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 69: i2s1, groups = [ soc_gpio45_pad0 soc_gpio46_pad1 soc_gpio47_pad2 soc_gpio48_pad3 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 70: i2s8, groups = [ soc_gpio57_pac4 soc_gpio58_pac5 soc_gpio59_pac6 soc_gpio60_pac7 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 71: i2s3, groups = [ spi5_cs0_pac3 spi5_miso_pac1 spi5_mosi_pac2 spi5_sck_pac0 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 72: rsvd2, groups = [ soc_gpio08_pb0 soc_gpio55_pm4 soc_gpio38_pm7 soc_gpio39_pn1 soc_gpio40_pn2 dp_aux_ch0_hpd_pm0 dp_aux_ch1_hpd_pm1 dp_aux_ch1_p_pn3 dp_aux_ch1_n_pn4 dp_aux_ch2_p_pn5 dp_aux_ch2_n_pn6 dp_aux_ch3_p_pn7 dp_aux_ch3_n_pn0 eqos_td3_pe4 eqos_td2_pe3 eqos_td1_pe2 eqos_td0_pe1 eqos_rd3_pf1 eqos_rd2_pf0 eqos_rd1_pe7 eqos_sma_mdio_pf4 eqos_rd0_pe6 eqos_sma_mdc_pf5 eqos_comp eqos_txc_pe0 eqos_rxc_pf3 eqos_tx_ctl_pe5 eqos_rx_ctl_pf2 pex_l2_clkreq_n_pk4 pex_wake_n_pl2 pex_l1_clkreq_n_pk2 pex_l1_rst_n_pk3 pex_l0_clkreq_n_pk0 pex_l0_rst_n_pk1 pex_l2_rst_n_pk5 pex_l3_clkreq_n_pk6 pex_l3_rst_n_pk7 pex_l4_clkreq_n_pl0 pex_l4_rst_n_pl1 soc_gpio34_pl3 pex_l5_clkreq_n_paf0 pex_l5_rst_n_paf1 pex_l6_clkreq_n_paf2 pex_l6_rst_n_paf3 pex_l10_clkreq_n_pag6 pex_l10_rst_n_pag7 pex_l7_clkreq_n_pag0 pex_l7_rst_n_pag1 pex_l8_clkreq_n_pag2 pex_l8_rst_n_pag3 pex_l9_clkreq_n_pag4 pex_l9_rst_n_pag5 qspi0_io3_pc5 qspi0_io2_pc4 qspi0_io1_pc3 qspi0_io0_pc2 qspi0_sck_pc0 qspi0_cs_n_pc1 qspi1_io3_pd3 qspi1_io2_pd2 qspi1_io1_pd1 qspi1_io0_pd0 qspi1_sck_pc6 qspi1_cs_n_pc7 qspi_comp sdmmc1_clk_pj0 sdmmc1_cmd_pj1 sdmmc1_comp sdmmc1_dat3_pj5 sdmmc1_dat2_pj4 sdmmc1_dat1_pj3 sdmmc1_dat0_pj2 ufs0_rst_n_pae1 ufs0_ref_clk_pae0 spi3_miso_py1 spi1_cs0_pz6 spi3_cs0_py3 spi1_miso_pz4 spi3_cs1_py4 spi1_sck_pz3 spi3_sck_py0 spi1_cs1_pz7 spi1_mosi_pz5 spi3_mosi_py2 uart2_tx_px4 uart2_rx_px5 uart2_rts_px6 uart2_cts_px7 uart5_tx_py5 uart5_rx_py6 uart5_rts_py7 uart5_cts_pz0 gpu_pwr_req_px0 gp_pwm3_px3 gp_pwm2_px2 cv_pwr_req_px1 usb_vbus_en0_pz1 usb_vbus_en1_pz2 extperiph2_clk_pp1 extperiph1_clk_pp0 cam_i2c_sda_pp3 pwr_i2c_scl_pp7 pwr_i2c_sda_pq0 soc_gpio29_pq2 soc_gpio30_pq3 soc_gpio31_pq4 uart1_cts_pr5 uart1_rts_pr4 uart1_rx_pr3 uart1_tx_pr2 cpu_pwr_req_pi5 uart4_rts_ph5 uart4_tx_ph3 gen1_i2c_scl_pi3 gen1_i2c_sda_pi4 soc_gpio20_pg7 soc_gpio13_pg0 soc_gpio14_pg1 soc_gpio15_pg2 soc_gpio16_pg3 soc_gpio17_pg4 soc_gpio18_pg5 soc_gpio19_pg6 soc_gpio41_ph7 soc_gpio42_pi0 soc_gpio43_pi1 soc_gpio44_pi2 soc_gpio06_ph2 soc_gpio07_pi6 dap4_sclk_pa4 dap4_dout_pa5 dap4_din_pa6 dap4_fs_pa7 dap6_sclk_pa0 dap6_dout_pa1 dap6_din_pa2 dap6_fs_pa3 soc_gpio45_pad0 soc_gpio46_pad1 soc_gpio47_pad2 soc_gpio48_pad3 soc_gpio57_pac4 soc_gpio58_pac5 soc_gpio59_pac6 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 73: dmic5, groups = [ ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 74: dca, groups = [ soc_gpio36_pm5 soc_gpio53_pm6 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 75: displayb, groups = [ dp_aux_ch2_hpd_pm2 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 76: displaya, groups = [ dp_aux_ch3_hpd_pm3 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 77: vi1, groups = [ cam_i2c_sda_pp3 cam_i2c_scl_pp2 soc_gpio23_pp4 soc_gpio24_pp5 soc_gpio25_pp6 soc_gpio28_pq1 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions:function 78: dcb, groups = [ soc_gpio32_pq5 soc_gpio33_pq6 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 79: dmic1, groups = [ soc_gpio25_pp6 soc_gpio35_pq7 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 80: dmic4, groups = [ soc_gpio37_pr0 soc_gpio56_pr1 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 81: i2s7, groups = [ uart4_cts_ph6 uart4_rx_ph4 soc_gpio21_ph0 soc_gpio22_ph1 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 82: dmic2, groups = [ spi5_cs0_pac3 spi5_mosi_pac2 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 83: dspk0, groups = [ spi5_miso_pac1 spi5_sck_pac0 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions:function 84: rsvd3, groups = [ soc_gpio08_pb0 soc_gpio36_pm5 soc_gpio53_pm6 soc_gpio55_pm4 soc_gpio38_pm7 soc_gpio39_pn1 soc_gpio40_pn2 dp_aux_ch0_hpd_pm0 dp_aux_ch1_hpd_pm1 dp_aux_ch2_hpd_pm2 dp_aux_ch3_hpd_pm3 dp_aux_ch1_p_pn3 dp_aux_ch1_n_pn4 dp_aux_ch2_p_pn5 dp_aux_ch2_n_pn6 dp_aux_ch3_p_pn7 dp_aux_ch3_n_pn0 eqos_td3_pe4 eqos_td2_pe3 eqos_td1_pe2 eqos_td0_pe1 eqos_rd3_pf1 eqos_rd2_pf0 eqos_rd1_pe7 eqos_sma_mdio_pf4 eqos_rd0_pe6 eqos_sma_mdc_pf5 eqos_comp eqos_txc_pe0 eqos_rxc_pf3 eqos_tx_ctl_pe5 eqos_rx_ctl_pf2 pex_l2_clkreq_n_pk4 pex_wake_n_pl2 pex_l1_clkreq_n_pk2 pex_l1_rst_n_pk3 pex_l0_clkreq_n_pk0 pex_l0_rst_n_pk1 pex_l2_rst_n_pk5 pex_l3_clkreq_n_pk6 pex_l3_rst_n_pk7 pex_l4_clkreq_n_pl0 pex_l4_rst_n_pl1 soc_gpio34_pl3 pex_l5_clkreq_n_paf0 pex_l5_rst_n_paf1 pex_l6_clkreq_n_paf2 pex_l6_rst_n_paf3 pex_l10_clkreq_n_pag6 pex_l10_rst_n_pag7 pex_l7_clkreq_n_pag0 pex_l7_rst_n_pag1 pex_l8_clkreq_n_pag2 pex_l8_rst_n_pag3 pex_l9_clkreq_n_pag4 pex_l9_rst_n_pag5 qspi0_io3_pc5 qspi0_io2_pc4 qspi0_io1_pc3 qspi0_io0_pc2 qspi0_sck_pc0 qspi0_cs_n_pc1 qspi1_io3_pd3 qspi1_io2_pd2 qspi1_io1_pd1 qspi1_io0_pd0 qspi1_sck_pc6 qspi1_cs_n_pc7 qspi_comp sdmmc1_clk_pj0 sdmmc1_cmd_pj1 sdmmc1_comp sdmmc1_dat3_pj5 sdmmc1_dat2_pj4 sdmmc1_dat1_pj3 sdmmc1_dat0_pj2 ufs0_rst_n_pae1 ufs0_ref_clk_pae0 spi3_miso_py1 spi1_cs0_pz6 spi3_cs0_py3 spi1_miso_pz4 spi3_cs1_py4 spi1_sck_pz3 spi3_sck_py0 spi1_cs1_pz7 spi1_mosi_pz5 spi3_mosi_py2 uart2_tx_px4 uart2_rx_px5 uart2_rts_px6 uart2_cts_px7 uart5_tx_py5 uart5_rx_py6 uart5_rts_py7 uart5_cts_pz0 gpu_pwr_req_px0 gp_pwm3_px3 gp_pwm2_px2 cv_pwr_req_px1 usb_vbus_en0_pz1 usb_vbus_en1_pz2 extperiph2_clk_pp1 extperiph1_clk_pp0 pwr_i2c_scl_pp7 pwr_i2c_sda_pq0 soc_gpio28_pq1 soc_gpio29_pq2 soc_gpio30_pq3 soc_gpio31_pq4 soc_gpio32_pq5 soc_gpio33_pq6 soc_gpio35_pq7 uart1_cts_pr5 uart1_rts_pr4 uart1_rx_pr3 uart1_tx_pr2 cpu_pwr_req_pi5 uart4_cts_ph6 uart4_rts_ph5 uart4_rx_ph4 uart4_tx_ph3 gen1_i2c_scl_pi3 gen1_i2c_sda_pi4 soc_gpio20_pg7 soc_gpio21_ph0 soc_gpio22_ph1 soc_gpio13_pg0 soc_gpio14_pg1 soc_gpio15_pg2 soc_gpio16_pg3 soc_gpio17_pg4 soc_gpio18_pg5 soc_gpio19_pg6 soc_gpio41_ph7 soc_gpio42_pi0 soc_gpio43_pi1 soc_gpio44_pi2 soc_gpio06_ph2 soc_gpio07_pi6 dap4_sclk_pa4 dap4_dout_pa5 dap4_din_pa6 dap4_fs_pa7 dap6_sclk_pa0 dap6_dout_pa1 dap6_din_pa2 dap6_fs_pa3 soc_gpio45_pad0 soc_gpio46_pad1 soc_gpio47_pad2 soc_gpio48_pad3 soc_gpio59_pac6 spi5_cs0_pac3 spi5_miso_pac1 spi5_mosi_pac2 spi5_sck_pac0 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 85: tsc_alt, groups = [ ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 86: istctrl, groups = [ ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 87: vi1_alt, groups = [ soc_gpio23_pp4 soc_gpio24_pp5 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 88: dspk1, groups = [ soc_gpio37_pr0 soc_gpio56_pr1 ]
+/sys/kernel/debug/pinctrl/2430000.pinmux/pinmux-functions-function 89: igpu, groups = [ soc_gpio60_pac7 ]
+--
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups:group: soc_gpio32_pq5
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups:pin 105 (SOC_GPIO32_PQ5)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-group: soc_gpio33_pq6
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-pin 106 (SOC_GPIO33_PQ6)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-group: soc_gpio35_pq7
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-pin 107 (SOC_GPIO35_PQ7)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-group: soc_gpio37_pr0
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-pin 108 (SOC_GPIO37_PR0)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-group: soc_gpio56_pr1
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-pin 109 (SOC_GPIO56_PR1)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-group: uart1_cts_pr5
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-pin 113 (UART1_CTS_PR5)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-group: uart1_rts_pr4
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-pin 112 (UART1_RTS_PR4)
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-
+/sys/kernel/debug/pinctrl/2430000.pinmux/pingroups-group: uart1_rx_pr3
+--
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins:pin 105 (SOC_GPIO32_PQ5) 105:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 106 (SOC_GPIO33_PQ6) 106:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 107 (SOC_GPIO35_PQ7) 107:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 108 (SOC_GPIO37_PR0) 108:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 109 (SOC_GPIO56_PR1) 109:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 110 (UART1_TX_PR2) 110:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 111 (UART1_RX_PR3) 111:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 112 (UART1_RTS_PR4) 112:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 113 (UART1_CTS_PR5) 113:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 114 (GPU_PWR_REQ_PX0) 114:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 115 (CV_PWR_REQ_PX1) 115:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 116 (GP_PWM2_PX2) 116:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 117 (GP_PWM3_PX3) 117:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 118 (UART2_TX_PX4) 118:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 119 (UART2_RX_PX5) 119:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 120 (UART2_RTS_PX6) 120:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 121 (UART2_CTS_PX7) 121:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 122 (SPI3_SCK_PY0) 122:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 123 (SPI3_MISO_PY1) 123:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 124 (SPI3_MOSI_PY2) 124:tegra234-gpio  2430000.pinmux
+/sys/kernel/debug/pinctrl/2430000.pinmux/pins-pin 125 (SPI3_CS0_PY3) 125:tegra234-gpio  2430000.pinmux

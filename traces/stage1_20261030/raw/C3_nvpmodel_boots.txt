@@ -1,0 +1,21 @@
+IDX BOOT ID                          FIRST ENTRY                 LAST ENTRY
+  0 1adad0ccd58e45a3afc657eb3f4d76c9 Thu 2026-10-29 19:39:13 CET Fri 2026-10-30 17:40:29 CET
+== boot -2
+== boot -1
+== boot 0
+1970-01-01T01:00:32+01:00 jetson nvpmodel.sh[1951]: NVPM WARN: Golden image context is already created
+1970-01-01T01:00:32+01:00 jetson nvpmodel.sh[1951]: NVPM WARN: Reboot required for changing to this power mode: 1
+1970-01-01T01:00:32+01:00 jetson nvpmodel.sh[1951]: NVPM WARN: DO YOU WANT TO REBOOT NOW? enter YES/yes to confirm:
+1970-01-01T01:00:32+01:00 jetson nvpmodel.sh[1951]: NVPM ERROR: bad input!
+1970-01-01T01:00:32+01:00 jetson nvpmodel.sh[1951]: NVPM ERROR: optMask is 2, no request for power mode
+1970-01-01T01:00:32+01:00 jetson systemd[1]: nvpmodel.service: Failed with result 'exit-code'.
+1970-01-01T01:00:32+01:00 jetson systemd[1]: Failed to start nvpmodel.service - nvpmodel service.
+== nvpmodel conf / status mtimes
+lrwxrwxrwx 1 root root   44 1970-01-01 01:16:10.496000000 +0100 /etc/nvpmodel.conf -> /etc/nvpmodel/nvpmodel_p3767_0003_super.conf
+
+/var/lib/nvpmodel/:
+total 16
+drwxr-xr-x  2 root root 4096 1970-01-01 01:16:11.572000000 +0100 .
+drwxr-xr-x 74 root root 4096 2026-10-15 16:11:27.424592880 +0200 ..
+-rw-r--r--  1 root root   18 1970-01-01 01:00:32.728000000 +0100 conf_file_path
+-rw-r--r--  1 root root   10 2026-10-26 17:11:44.592000000 +0100 status

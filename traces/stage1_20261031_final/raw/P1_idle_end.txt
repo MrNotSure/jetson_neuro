@@ -1,0 +1,12 @@
+{
+ "rate_hz_requested": 10.0,
+ "duration_s_requested": 420.0,
+ "samples": 4201,
+ "wall_s": 420.003803904,
+ "achieved_hz": 10.00229036249448,
+ "cpu_user_s": 0.006451999999999999,
+ "cpu_sys_s": 2.0073429999999997,
+sampler exited
+== dhcpd / resolved lines in window: 100 / 30
+cpu-thermal=45968 gpu-thermal=45875 soc0-thermal=44968 soc1-thermal=45562 soc2-thermal=45687 tj-thermal=46093 
+fan_pwm=55

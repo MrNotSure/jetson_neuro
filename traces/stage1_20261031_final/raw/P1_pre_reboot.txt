@@ -1,0 +1,23 @@
+2026-10-31T13:08:19Z
+multi-user.target
+docker.service inactive disabled
+docker.socket inactive disabled
+containerd.service inactive disabled
+bluetooth.service inactive disabled
+nvargus-daemon.service inactive disabled
+iperf3.service inactive disabled
+saned.socket inactive disabled
+gnome-remote-desktop.service inactive disabled
+ModemManager.service inactive disabled
+apt-daily.timer inactive disabled
+apt-daily-upgrade.timer inactive disabled
+motd-news.timer inactive disabled
+update-notifier-download.timer inactive disabled
+update-notifier-motd.timer inactive disabled
+fwupd-refresh.timer inactive disabled
+No jobs running.
+no apt/dpkg
+total 12
+drwxrwxr-x  3 <user> <user> 4096 Oct 31 13:57 .
+drwxrwxrwt 17 root    root    4096 Oct 31 14:07 ..
+drwxrwxr-x  2 <user> <user> 4096 Oct 31 13:57 scripts

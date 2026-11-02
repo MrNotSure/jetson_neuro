@@ -1,0 +1,51 @@
+16:07:42
+== en12
+en12: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	options=404<VLAN_MTU,CHANNEL_IO>
+	ether xx:xx:xx:xx:xx:xx
+	inet6 fe80::<redacted>%en12 prefixlen 64 secured scopeid 0x1b 
+	inet 192.168.55.100 netmask 0xffffff00 broadcast 192.168.55.255
+	nd6 options=201<PERFORMNUD,DAD>
+	media: autoselect (2500Base-T <full-duplex>)
+	status: active
+== interfaces with status:
+anpi2 inactive 
+anpi1 inactive 
+anpi0 inactive 
+en4 inactive 
+en5 inactive 
+en6 inactive 
+en1 inactive 
+en2 inactive 
+en3 inactive 
+bridge0 inactive 
+ap1 inactive 
+en0 active <mac-lan-ip>
+awdl0 active 
+en12 active 192.168.55.100
+== route
+   route to: 192.168.55.1
+destination: 192.168.55.1
+  interface: en12
+      flags: <UP,HOST,DONE,LLINFO,WASCLONED,IFSCOPE,IFREF>
+ recvpipe  sendpipe  ssthresh  rtt,msec    rttvar  hopcount      mtu     expire
+       0         0         0         0         0         0      1500      1178 
+== arp
+? (192.168.55.1) at xx:xx:xx:xx:xx:xx on en12 ifscope [ethernet]
+== ping
+PING 192.168.55.1 (192.168.55.1): 56 data bytes
+64 bytes from 192.168.55.1: icmp_seq=0 ttl=64 time=4.562 ms
+64 bytes from 192.168.55.1: icmp_seq=1 ttl=64 time=1.009 ms
+64 bytes from 192.168.55.1: icmp_seq=2 ttl=64 time=0.897 ms
+
+--- 192.168.55.1 ping statistics ---
+3 packets transmitted, 3 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 0.897/2.156/4.562/1.702 ms
+== ports
+
+Hardware Port: Linux for Tegra
+Device: en12
+Ethernet Address: xx:xx:xx:xx:xx:xx
+ssh-ok
+ 01:03:13 up 2 min,  2 users,  load average: 0.39, 0.44, 0.19
+175.40 995.91

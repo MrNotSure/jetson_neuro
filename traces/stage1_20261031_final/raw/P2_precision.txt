@@ -1,0 +1,10 @@
+(b) C-H: mean 15.32 uJ, sd over 4 blocks/rounds 36.15 uJ, se 18.07
+X_H: mean 172.41 uJ, sd over 4 blocks/rounds 38.98 uJ, se 19.49
+X_C: mean 187.73 uJ, sd over 4 blocks/rounds 6.75 uJ, se 3.38
+(b) C-H, z: half-width +-5 uJ needs 201 rounds = 1.2e+06 decisions per condition (201 min per condition)
+(b) C-H, z: half-width +-10 uJ needs 50 rounds = 3.01e+05 decisions per condition (50 min per condition)
+(b) C-H, z: half-width +-20 uJ needs 13 rounds = 7.53e+04 decisions per condition (13 min per condition)
+X_C alone (one controller, own-baseline excess), +-5 % = +-9.4 uJ: 2.0 blocks (z) = 1.19e+04 decisions
+X_C alone (one controller, own-baseline excess), +-10 % = +-18.8 uJ: 0.5 blocks (z) = 2.98e+03 decisions
+a C-H difference resolved to +-5 % of X_C (+-9.4 uJ) with the observed C-H spread: 57 rounds = 3.42e+05 decisions per condition
+a C-H difference resolved to +-10 % of X_C (+-18.8 uJ) with the observed C-H spread: 14 rounds = 8.55e+04 decisions per condition

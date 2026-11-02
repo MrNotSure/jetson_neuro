@@ -1,0 +1,12 @@
+rc 0; new dirs ['20261031T133455Z_sine_centroid']
+--- stdout
+run directory: runs/stage1_20261031_final/sim/20261031T133455Z_sine_centroid
+status: completed
+  periods=6000 episodes=1 misses=5 achieved_hz=99.9937
+  error: rms_deg=2.68 max_deg=5.84  in_view rms_px=13 max_px=28.4
+  in_fov=1 losses=0 unrecovered=0 success_rate=1
+  events/period p95=520  sim_us p99=4.47e+03  rtt_us p99=3.08e+03  lateness_us p99=1.79e+03
+  cmd_invalid=0 cmd_clamped=0 flags={'fault': 0, 'detect': 0, 'recover': 0}
+
+--- stderr
+

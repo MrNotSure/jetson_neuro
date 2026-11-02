@@ -1,0 +1,36 @@
+### throughput 1048576 4096  (16:34:13Z)
+port /dev/cu.usbmodem2101
+requested 1048576 bytes in 4096-byte writes; received 1048576 payload bytes
+identical to expected stream: True; first mismatch at None
+trailing stdout after payload: b''  stderr: b''
+time OK->last byte 1.607 s, first->last byte 1.508 s
+throughput 0.653 MB/s (from OK), 0.696 MB/s (first->last); MB = 1e6 bytes
+exit=0
+
+### throughput 5242880 4096  (16:34:15Z)
+port /dev/cu.usbmodem2101
+requested 5242880 bytes in 4096-byte writes; received 5242880 payload bytes
+identical to expected stream: True; first mismatch at None
+trailing stdout after payload: b''  stderr: b''
+time OK->last byte 7.726 s, first->last byte 7.626 s
+throughput 0.679 MB/s (from OK), 0.687 MB/s (first->last); MB = 1e6 bytes
+exit=0
+
+### throughput 1048576 256  (16:34:24Z)
+port /dev/cu.usbmodem2101
+requested 1048576 bytes in 256-byte writes; received 1048576 payload bytes
+identical to expected stream: True; first mismatch at None
+trailing stdout after payload: b''  stderr: b''
+time OK->last byte 1.662 s, first->last byte 1.622 s
+throughput 0.631 MB/s (from OK), 0.646 MB/s (first->last); MB = 1e6 bytes
+exit=0
+
+### throughput 1048576 16384  (16:34:26Z)
+port /dev/cu.usbmodem2101
+requested 1048576 bytes in 16384-byte writes; received 1048576 payload bytes
+identical to expected stream: True; first mismatch at None
+trailing stdout after payload: b''  stderr: b''
+time OK->last byte 1.778 s, first->last byte 1.480 s
+throughput 0.590 MB/s (from OK), 0.708 MB/s (first->last); MB = 1e6 bytes
+exit=0
+

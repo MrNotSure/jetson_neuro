@@ -1,0 +1,13 @@
+# C4 pilot block order; numpy 2.5.4 Generator(PCG64(20261026)).permutation([I]*4+[H]*4+[C]*4)
+C
+H
+I
+H
+C
+H
+I
+H
+I
+I
+C
+C

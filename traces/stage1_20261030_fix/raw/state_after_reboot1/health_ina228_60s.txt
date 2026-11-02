@@ -1,0 +1,1 @@
+window 60.4 s: 55935 conversions over 60.39 s (PIO), P mean 6375.6 mW, I 331.01 mA, V 19.2609 V, sd(P per conv) 149.5 mW

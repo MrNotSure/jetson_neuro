@@ -1,0 +1,84 @@
+2026-11-02T13:53:21.665Z
+ 14:53:21 up 3 min,  1 user,  load average: 0.22, 0.10, 0.03
+2026-11-02 14:50:01
+== power mode
+Result=success
+ExecMainStatus=0
+ActiveState=inactive
+NV Power Mode: 25W
+1
+/sys/devices/system/cpu/cpufreq/policy0 governor=schedutil min=729600 max=1344000 cur=1190400
+/sys/devices/system/cpu/cpufreq/policy4 governor=schedutil min=729600 max=1344000 cur=729600
+gpu governor=nvhost_podgov min=306000000 max=918000000 cur=306000000
+cpuidle disable: 0 0 0 0 0 0 0 0 0 0 0 0 
+tpc_pg_mask=240 fbp_pg_mask=2
+== timers
+anacron.timer inactive enabled
+man-db.timer inactive enabled
+fstrim.timer inactive enabled
+e2scrub_all.timer inactive enabled
+dpkg-db-backup.timer inactive enabled
+systemd-tmpfiles-clean.timer inactive static
+fake-hwclock-save.timer active enabled
+apt-daily.timer inactive disabled
+apt-daily-upgrade.timer inactive disabled
+motd-news.timer inactive disabled
+update-notifier-download.timer inactive disabled
+update-notifier-motd.timer inactive disabled
+fwupd-refresh.timer inactive disabled
+default target: multi-user.target
+radio: disabled
+No jobs running.
+774 /usr/sbin/anacron -d -q -s
+== journal starts since boot
+2026-11-02T14:02:49+01:00 jetson systemd[1]: Starting user-runtime-dir@2002.service - User Runtime Directory /run/user/2002...
+2026-11-02T14:02:49+01:00 jetson systemd[3017]: Started ubuntu-report.path - Pending report trigger for Ubuntu Report.
+2026-11-02T14:02:49+01:00 jetson systemd[3017]: Started launchpadlib-cache-clean.timer - Clean up old files in the Launchpadlib cache.
+2026-11-02T14:02:49+01:00 jetson systemd[3017]: Starting dbus.socket - D-Bus User Message Bus Socket...
+2026-11-02T14:02:49+01:00 jetson systemd[3017]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+2026-11-02T14:02:49+01:00 jetson systemd[3017]: Starting gnome-initial-setup-copy-worker.service - GNOME Initial Setup Copy Worker...
+2026-11-02T14:02:49+01:00 jetson systemd[3017]: Started pipewire.service - PipeWire Multimedia Service.
+2026-11-02T14:02:49+01:00 jetson systemd[3017]: Started filter-chain.service - PipeWire filter chain daemon.
+2026-11-02T14:02:49+01:00 jetson systemd[3017]: Started wireplumber.service - Multimedia Service Session Manager.
+2026-11-02T14:02:49+01:00 jetson systemd[3017]: Started pipewire-pulse.service - PipeWire PulseAudio.
+2026-11-02T14:02:49+01:00 jetson systemd[3017]: Starting dbus.service - D-Bus User Message Bus...
+2026-11-02T14:02:49+01:00 jetson systemd[3017]: Started dbus.service - D-Bus User Message Bus.
+== boots
+IDX BOOT ID                          FIRST ENTRY                 LAST ENTRY
+  0 9e7688287ec1439fa72f1ca86ceb1b68 Mon 2026-11-02 14:00:00 CET Mon 2026-11-02 14:53:18 CET
+== end of the previous boot
+total 48
+drwxrwxrwt 12 root root 4096 Nov  2 14:01 .
+drwxr-xr-x 22 root root 4096 Jan  1  1970 ..
+drwxrwxrwt  2 root root 4096 Nov  2 14:00 .font-unix
+drwxrwxrwt  2 root root 4096 Nov  2 14:00 .ICE-unix
+drwx------  2 root root 4096 Nov  2 14:00 snap-private-tmp
+drwx------  3 root root 4096 Nov  2 14:00 systemd-private-9e7688287ec1439fa72f1ca86ceb1b68-haveged.service-DhHr1T
+drwx------  3 root root 4096 Nov  2 14:01 systemd-private-9e7688287ec1439fa72f1ca86ceb1b68-polkit.service-BY3zB6
+drwx------  3 root root 4096 Nov  2 14:00 systemd-private-9e7688287ec1439fa72f1ca86ceb1b68-systemd-logind.service-jblDpK
+drwx------  3 root root 4096 Nov  2 14:00 systemd-private-9e7688287ec1439fa72f1ca86ceb1b68-systemd-resolved.service-vl3SEt
+drwx------  3 root root 4096 Nov  2 14:00 systemd-private-9e7688287ec1439fa72f1ca86ceb1b68-systemd-timesyncd.service-Z697gF
+drwxrwxrwt  2 root root 4096 Nov  2 14:00 .X11-unix
+drwxrwxrwt  2 root root 4096 Nov  2 14:00 .XIM-unix
+ina3221: /sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon4 ina3221
+0c397e1
+status lines: 0
+cpu-thermal=43187 gpu-thermal=42843 soc0-thermal=41968 soc1-thermal=42500 soc2-thermal=42625 tj-thermal=43187 
+fan_pwm=47 fan_rpm=852 
+
+# --- notes, T6 after the lunch power cycle (all V unless marked)
+# Jetson cold boot about 13:50:01 UTC (user turned it off during lunch, on again; how it was turned off: NV, the
+#   journal is volatile, only boot 0 is listed). Board clock came up 3012.3 s behind (last fake-hwclock save).
+# 13:53:03 one ssh: sudo systemctl stop <the six timers> && sudo date -u -s '+3012.309 seconds' (timers first, so the
+#   jump couldn't trigger catch-up runs); clockcheck 13:53:05: board - mac -0.003 s.
+# anacron.service had started at boot (pre-sync clock) with cron.daily in 5 min, cron.weekly in 10 min; stopping the
+#   timer doesn't stop the running service. Both jobs ran at 13:55:12-13:55:13 UTC (about 1 s, "lpd restarted"),
+#   anacron exited normally. Nothing of it left running at 13:57.
+# Power mode as before: Result=success, 25 W, CPU max 1344000 (both policies, all cores REAL = CONF), GPU
+#   nvhost_podgov 918 MHz, TPC/FBP 240/2 (REAL and CONF; raw/nvpmodel_verbose_reboot.txt). INA3221 now hwmon4.
+# multi-user.target, radio disabled, no jobs, no apt/dpkg, --failed empty, checkout 0c397e1 clean. /tmp/jn_t6 recreated,
+#   scripts copied, md5 equal to the Mac copies. tj 43.2 C, fan PWM 47 (this morning 47.7 C, 64).
+# Pico: now /dev/cu.usbmodem101 (was 1101), ticks_ms 430766 at 13:55:02 -> the Pico restarted at about 13:47:52 UTC,
+#   about 2 min before the Jetson booted, so it was re-plugged while the Jetson was off (V by the two uptimes; whether
+#   the marker wire was on GP16 then: NV). Filesystem [], GP16 funcsel 31, OE 0, pull-down, reads 1 (pin 8 high).
+# Mac on AC again (97 %, charging). caffeinate -ims -t 10800 started 13:56.

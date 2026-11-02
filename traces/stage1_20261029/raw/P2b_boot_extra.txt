@@ -1,0 +1,7 @@
+irregular interval 225.36 us at +-0.7210 s after power-up; neighbours [1079.76, 1079.64, 225.36, 854.4, 1089.72]; I around [-0.0, 0.2, 0.1, 0.1] mA, V [0.387, 0.386, 0.386, 0.403], diag ['0xc003', '0xc003', '0xc003', '0xc001']
+irregular interval 854.40 us at +-0.7202 s after power-up; neighbours [1079.64, 225.36, 854.4, 1089.72, 1079.64]; I around [0.2, 0.1, 0.1, 0.0] mA, V [0.386, 0.386, 0.403, 0.4], diag ['0xc003', '0xc003', '0xc001', '0xc003']
+power-up at t_pio 38.2090; peak conv 1.0081 A at +29.761 s
+VBUS after power-up: mean 19.2382 V, min 19.0078, max 19.3396; at peak current 19.0770 V
+idle +120..+480 s: I 330.9 mA, V 19.2406 V, P 6367.5 mW, sd(P per conv) 261.2 mW
+ENERGY register 3832.41 J over 636.0 s vs sum(P*dt) over same span 3832.59 J
+after halt (last 5 s): I 2.06 mA, V 19.324 V, P 39.8 mW

@@ -1,0 +1,8 @@
+RELIABILITY req=100000 bus=I2C(0, freq=100000, scl=5, sda=4, timeout=50000) reads=10000 exceptions={} wrong=0 examples=[] total_us=5459857 us_per_read=546.0
+  check at 100 kHz afterwards: scan [64], IDs ['0x5449', '0x2281']
+RELIABILITY req=400000 bus=I2C(0, freq=399361, scl=5, sda=4, timeout=50000) reads=10000 exceptions={} wrong=0 examples=[] total_us=1807872 us_per_read=180.8
+  check at 100 kHz afterwards: scan [64], IDs ['0x5449', '0x2281']
+RELIABILITY req=1000000 bus=I2C(0, freq=1000000, scl=5, sda=4, timeout=50000) reads=10000 exceptions={} wrong=0 examples=[] total_us=1089214 us_per_read=108.9
+  check at 100 kHz afterwards: scan [64], IDs ['0x5449', '0x2281']
+zero-error frequencies: [100000, 400000, 1000000]
+INA228 reset

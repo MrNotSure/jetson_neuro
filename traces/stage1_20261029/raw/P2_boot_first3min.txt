@@ -1,0 +1,25 @@
+conversions 229879, span 248.2 s, missed check: max interval 1089.8 us, bad framing 0, seq gaps 0
+Mac clock fit: unix = 1793297438.239 + 0.999753397 * t_pio  (rate vs Mac -246.6 ppm)
+current first > 50 mA at t_pio 53.8413 s = unix 1793297492.067 (2026-10-29T18:11:32.067 UTC)
+before power-up: I mean -0.041 mA, sd 0.186 mA (n 48848); VBUS mean 2.95 mV
+USB: seen at +29.6 s after power-up (watcher polls every ~0.5-1 s)
+TTY: seen at +29.6 s after power-up (watcher polls every ~0.5-1 s)
+SSH: seen at +38.4 s after power-up (watcher polls every ~0.5-1 s)
+peak single conversion: 0.9987 A at +28.770 s (18.98 W at 19 V)
+peak 10 ms mean: 0.9634 A at +28.78 s; peak 1 s mean: 0.6284 A at +17.5 s
+any 10 ms mean above 2.5 A: False; samples above 2.5 A: 0
+inrush: first 50 ms after power-up, max conversion 0.7434 A; first 10 conversions [0.0045, 0.0338, 0.2023, 0.7434, 0.0298, 0.0583, 0.066, 0.0502, 0.0241, 0.007, 0.0038, 0.0039] A
+  +   0..  10.0 s: I mean   433.3 mA, sd  168.3, max   888.5; P(19 V)  8.232 W
+  +  10..  20.0 s: I mean   536.9 mA, sd  139.5, max   827.2; P(19 V) 10.201 W
+  +  20..  30.0 s: I mean   409.5 mA, sd  137.7, max   998.7; P(19 V)  7.780 W
+  +  30..  40.0 s: I mean   408.9 mA, sd   60.1, max   586.4; P(19 V)  7.769 W
+  +  40..  60.0 s: I mean   342.7 mA, sd   21.0, max   488.7; P(19 V)  6.512 W
+  +  60..  90.0 s: I mean   329.1 mA, sd   19.5, max   486.1; P(19 V)  6.254 W
+  +  90.. 120.0 s: I mean   330.1 mA, sd   18.5, max   494.1; P(19 V)  6.272 W
+  + 120.. 150.0 s: I mean   328.3 mA, sd   16.3, max   493.6; P(19 V)  6.238 W
+  + 150.. 180.0 s: I mean   332.5 mA, sd   21.2, max   494.1; P(19 V)  6.318 W
+  + 180.. 194.4 s: I mean   327.4 mA, sd   13.3, max   459.8; P(19 V)  6.220 W
+final 30 s mean 328.0 mA (6.233 W at 19 V); 10 s means stay within 5 % from +161 s
+VBUS during the whole capture: mean 3.26 mV, max 30.47 mV (jumper open)
+CHARGE 0.8..247.8 s: 68.9112 C -> mean 278.99 mA; sampled CURRENT mean over the same span 278.95 mA (ratio 1.0001)
+ENERGY register 0.0000 -> 0.0224 J (POWER uses VBUS ~0, so ~0 expected)

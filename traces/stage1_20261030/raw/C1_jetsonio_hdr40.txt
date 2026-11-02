@@ -1,0 +1,47 @@
+49 /opt/nvidia/jetson-io/Headers/hdr40.py
+== Jetson/ modules
+/opt/nvidia/jetson-io/Jetson:
+board.py
+header_def.py
+header.py
+__init__.py
+io.py
+pmx.py
+
+/opt/nvidia/jetson-io/Linux:
+debugfs.py
+dt.py
+extlinux.py
+__init__.py
+pinctrl.py
+
+/opt/nvidia/jetson-io/Utils:
+dtc.py
+fio.py
+__init__.py
+syscall.py
+/opt/nvidia/jetson-io/Jetson/board.py:341:                                   'nvidia,gpio-mode', '1')
+/opt/nvidia/jetson-io/Jetson/board.py:342:            # GPIO pin
+/opt/nvidia/jetson-io/Jetson/board.py:343:            elif self.header.pin_get_state(pin) == io.PinMode.GPIO:
+/opt/nvidia/jetson-io/Jetson/board.py:345:                                   'nvidia,tristate', '0')
+/opt/nvidia/jetson-io/Jetson/board.py:347:                                   'nvidia,enable-input', '1')
+/opt/nvidia/jetson-io/Jetson/board.py:349:                                   'nvidia,gpio-mode', '0')
+/opt/nvidia/jetson-io/Jetson/board.py:353:                                   'nvidia,tristate', '1')
+/opt/nvidia/jetson-io/Jetson/board.py:355:                                   'nvidia,enable-input', '1')
+/opt/nvidia/jetson-io/Jetson/board.py:357:                                   'nvidia,gpio-mode', '0')
+/opt/nvidia/jetson-io/Jetson/header.py:357:        if self.pins.get_state(name) == io.PinMode.GPIO:
+/opt/nvidia/jetson-io/Jetson/header.py:358:            return "gpio"
+/opt/nvidia/jetson-io/Jetson/io.py:25:    GPIO = 2
+/opt/nvidia/jetson-io/Jetson/pmx.py:30:    def __init__(self, function, tristate, input_en, sfio):
+/opt/nvidia/jetson-io/Jetson/pmx.py:32:        self.tristate = tristate
+/opt/nvidia/jetson-io/Jetson/pmx.py:44:    tristate = None
+/opt/nvidia/jetson-io/Jetson/pmx.py:53:            tristate = None
+/opt/nvidia/jetson-io/Jetson/pmx.py:62:        res = re.match(r'\tgpio-mode=([0-1]*)', pinconf)
+/opt/nvidia/jetson-io/Jetson/pmx.py:66:        res = re.match(r'\ttristate=([0-1]*)', pinconf)
+/opt/nvidia/jetson-io/Jetson/pmx.py:68:            tristate = res.groups()[0]
+/opt/nvidia/jetson-io/Jetson/pmx.py:70:        res = re.match(r'\tenable-input=([0-1]*)', pinconf)
+/opt/nvidia/jetson-io/Jetson/pmx.py:82:        if function and tristate and input_en and sfio:
+/opt/nvidia/jetson-io/Jetson/pmx.py:83:            conf[name] = _PinConfig(function, tristate, input_en, sfio)
+/opt/nvidia/jetson-io/Jetson/pmx.py:145:        # | sfio | input_en | tristate | pin mode |
+/opt/nvidia/jetson-io/Jetson/pmx.py:154:        elif self.pinconfig[pin].tristate == '0':
+/opt/nvidia/jetson-io/Jetson/pmx.py:164:        # | sfio | input_en | tristate | pin mode |

@@ -1,0 +1,7 @@
+window 300.1 s, 277904 conversions, mean 6290.8 mW
+1 s means (n 300): strongest periods (s) [5.36, 5.45, 2.7, 2.65, 2.29] amplitudes [18.0, 17.4, 10.4, 8.4, 8.0] mW
+  near 5.3 s: peak 18.0 mW at 5.36 s; median amplitude of all bins 2.4 mW
+  near 2.7 s: peak 10.4 mW at 2.70 s; median amplitude of all bins 2.4 mW
+0.1 s means (n 3000): strongest periods (s) [5.36, 5.45, 0.26, 1.06, 2.7] amplitudes [19.0, 18.0, 16.2, 14.1, 13.5] mW
+  near 5.3 s: peak 19.0 mW at 5.36 s; median amplitude of all bins 1.9 mW
+  near 2.7 s: peak 13.5 mW at 2.70 s; median amplitude of all bins 1.9 mW

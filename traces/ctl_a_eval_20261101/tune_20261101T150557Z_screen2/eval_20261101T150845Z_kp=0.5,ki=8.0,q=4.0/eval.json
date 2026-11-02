@@ -1,0 +1,42 @@
+{
+  "controller": "classical",
+  "params_given": {
+    "kp": 0.5,
+    "ki": 8.0,
+    "q": 4.0
+  },
+  "params": {
+    "cell": 16,
+    "n_acq": 20,
+    "r_win": 12.0,
+    "ms_iter": 3,
+    "n_meas": 15,
+    "r_gate": 24.0,
+    "sigma_px": 1.0,
+    "q": 4.0,
+    "coast_max": 30,
+    "kp": 0.5,
+    "ki": 8.0,
+    "kd": 0.0,
+    "i_max_deg": 2.0,
+    "model_wn": 25.0,
+    "model_zeta": 0.8,
+    "model_dead_periods": 1,
+    "pan_lim_deg": 90.0,
+    "tilt_lim_deg": 45.0
+  },
+  "scenarios": [
+    "track-sine-v1",
+    "track-random-v1",
+    "track-step-v1"
+  ],
+  "seeds": [
+    0,
+    1
+  ],
+  "sets": [],
+  "duration": null,
+  "mode": "lockstep",
+  "endpoint_type": "inproc",
+  "start_utc": "20261101T150845Z"
+}

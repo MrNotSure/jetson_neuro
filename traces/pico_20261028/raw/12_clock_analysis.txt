@@ -1,0 +1,10 @@
+port /dev/cu.usbmodem2101; 121 pairs written to runs/pico_20261028/raw/12_clock_pairs.csv; trailing out b'' err b''
+monotonic clock info: namespace(implementation='mach_absolute_time()', monotonic=True, adjustable=False, resolution=4.166666666666667e-08)
+pairs 121, span 120.0 s
+round trip us: median 670.1, p99 1096.3, min 427.6, max 1228.8
+all pairs    n=121 (rtt <= 1228.8 us): rate +2.94 ppm (Pico ticks vs Mac monotonic), residual stdev 51.6 us, max |res| 314.1 us
+fastest 50%  n= 60 (rtt <= 667.9 us): rate +2.95 ppm (Pico ticks vs Mac monotonic), residual stdev 26.4 us, max |res| 105.5 us
+fastest 25%  n= 30 (rtt <= 553.3 us): rate +3.10 ppm (Pico ticks vs Mac monotonic), residual stdev 24.8 us, max |res| 86.7 us
+slope std error, 100% of pairs: +/-0.14 ppm (1 sigma)
+slope std error, 50% of pairs: +/-0.11 ppm (1 sigma)
+slope std error, 25% of pairs: +/-0.15 ppm (1 sigma)

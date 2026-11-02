@@ -1,0 +1,12 @@
+C1: sampler 7458 reads, read duration t1-t0 p50 4476 us; sampler period p50 100.0000 ms; freqlog period p50 99.9998 ms
+| block | X [-1,4.5) uJ | sampler start phase after marker, ms: p10 / p50 / p90 | sampler end phase p50 | freqlog phase p50 | board-mono -> PIO fit resid us | INA228 excess around the sampler reads, uJ per read |
+|---|---|---|---|---|---|---|
+| R1H | 178.4 | 0.08 / 0.49 / 0.89 | 5.00 | 2.39 | 55.4 | +538 |
+| R1A | 361.0 | 0.51 / 0.87 / 1.29 | 5.38 | 2.85 | 51.2 | +619 |
+| R2A | 259.9 | 3.09 / 3.42 / 3.80 | 7.92 | 5.38 | 44.2 | +354 |
+| R2H | 86.0 | 2.55 / 2.96 / 3.47 | 7.44 | 4.79 | 59.9 | +403 |
+| R3A | 355.5 | 7.57 / 7.93 / 8.29 | 12.43 | 9.56 | 50.1 | +332 |
+| R3H | 188.8 | 0.11 / 0.49 / 9.94 | 5.09 | 1.96 | 55.9 | +525 |
+| R4H | 84.2 | 6.20 / 6.59 / 6.96 | 11.10 | 8.57 | 57.8 | +407 |
+| R4A | 390.5 | 0.10 / 9.46 / 9.90 | 13.82 | 1.83 | 48.2 | +631 |
+INA228 power around a sampler read, mean of blocks, ms after read start -> mW above [30, 80) ms: [-5,0) -5.9, [0,1) +141.7, [1,2) +116.9, [2,3) +100.8, [3,4) +49.6, [4,6) +28.7, [6,10) +6.8, [10,20) -1.8

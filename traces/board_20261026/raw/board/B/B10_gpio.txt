@@ -1,0 +1,277 @@
+## which gpio tools
+/usr/bin/gpiodetect
+/usr/bin/gpioinfo
+/usr/bin/gpioget
+/usr/bin/gpioset
+/usr/bin/gpiomon
+gpiodetect (libgpiod) v1.6.3
+Copyright (C) 2017-2018 Bartosz Golaszewski
+||/ Name           Version         Architecture Description
++++-==============-===============-============-===============================================================
+ii  gpiod          1.6.3-1.1build1 arm64        Tools for interacting with Linux GPIO character device - binary
+un  libgpiod2      <none>          <none>       (no description available)
+## gpiodetect
+gpiochip0 [tegra234-gpio] (164 lines)
+gpiochip1 [tegra234-gpio-aon] (32 lines)
+## gpioinfo
+gpiochip0 - 164 lines:
+	line   0:      "PA.00" "regulator-vdd-3v3-sd" output active-high [used]
+	line   1:      "PA.01"       unused   input  active-high 
+	line   2:      "PA.02"       unused   input  active-high 
+	line   3:      "PA.03"       unused   input  active-high 
+	line   4:      "PA.04"       unused   input  active-high 
+	line   5:      "PA.05"       unused   input  active-high 
+	line   6:      "PA.06"       unused   input  active-high 
+	line   7:      "PA.07"       unused   input  active-high 
+	line   8:      "PB.00"       unused   input  active-high 
+	line   9:      "PC.00"       unused   input  active-high 
+	line  10:      "PC.01"       unused   input  active-high 
+	line  11:      "PC.02"       unused   input  active-high 
+	line  12:      "PC.03"       unused   input  active-high 
+	line  13:      "PC.04"       unused   input  active-high 
+	line  14:      "PC.05"       unused   input  active-high 
+	line  15:      "PC.06"       unused   input  active-high 
+	line  16:      "PC.07"       unused   input  active-high 
+	line  17:      "PD.00"       unused   input  active-high 
+	line  18:      "PD.01"       unused   input  active-high 
+	line  19:      "PD.02"       unused   input  active-high 
+	line  20:      "PD.03"       unused   input  active-high 
+	line  21:      "PE.00"       unused   input  active-high 
+	line  22:      "PE.01"       unused   input  active-high 
+	line  23:      "PE.02"       unused   input  active-high 
+	line  24:      "PE.03"       unused   input  active-high 
+	line  25:      "PE.04"       unused   input  active-high 
+	line  26:      "PE.05"       unused   input  active-high 
+	line  27:      "PE.06"       unused   input  active-high 
+	line  28:      "PE.07"       unused   input  active-high 
+	line  29:      "PF.00"       unused   input  active-high 
+	line  30:      "PF.01"       unused   input  active-high 
+	line  31:      "PF.02"       unused   input  active-high 
+	line  32:      "PF.03"       unused   input  active-high 
+	line  33:      "PF.04"       unused   input  active-high 
+	line  34:      "PF.05"       unused   input  active-high 
+	line  35:      "PG.00" "Force Recovery" input active-low [used]
+	line  36:      "PG.01"       unused   input  active-high 
+	line  37:      "PG.02"       unused   input  active-high 
+	line  38:      "PG.03"       unused   input  active-high 
+	line  39:      "PG.04"       unused   input  active-high 
+	line  40:      "PG.05"       unused   input  active-high 
+	line  41:      "PG.06"       unused   input  active-high 
+	line  42:      "PG.07"         "cd"   input   active-low [used]
+	line  43:      "PH.00"       unused   input  active-high 
+	line  44:      "PH.01"       unused   input  active-high 
+	line  45:      "PH.02"       unused   input  active-high 
+	line  46:      "PH.03"       unused   input  active-high 
+	line  47:      "PH.04"       unused   input  active-high 
+	line  48:      "PH.05"       unused   input  active-high 
+	line  49:      "PH.06"       unused  output  active-high 
+	line  50:      "PH.07"       unused   input  active-high 
+	line  51:      "PI.00"       unused   input  active-high 
+	line  52:      "PI.01"       unused   input  active-high 
+	line  53:      "PI.02"       unused   input  active-high 
+	line  54:      "PI.03"       unused   input  active-high 
+	line  55:      "PI.04"       unused   input  active-high 
+	line  56:      "PI.05"       kernel   input  active-high [used]
+	line  57:      "PI.06"       unused   input  active-high 
+	line  58:      "PJ.00"       unused   input  active-high 
+	line  59:      "PJ.01"       unused   input  active-high 
+	line  60:      "PJ.02"       unused   input  active-high 
+	line  61:      "PJ.03"       unused   input  active-high 
+	line  62:      "PJ.04"       unused   input  active-high 
+	line  63:      "PJ.05"       unused   input  active-high 
+	line  64:      "PK.00"       unused   input  active-high 
+	line  65:      "PK.01"       unused   input  active-high 
+	line  66:      "PK.02"       unused   input  active-high 
+	line  67:      "PK.03"       unused   input  active-high 
+	line  68:      "PK.04"       unused  output  active-high 
+	line  69:      "PK.05"       unused  output  active-high 
+	line  70:      "PK.06"       unused   input  active-high 
+	line  71:      "PK.07"       unused   input  active-high 
+	line  72:      "PL.00"       unused   input  active-high 
+	line  73:      "PL.01"       unused   input  active-high 
+	line  74:      "PL.02" "nvidia,pex-wake" input active-high [used]
+	line  75:      "PL.03"       unused   input  active-high 
+	line  76:      "PM.00"       kernel   input  active-high [used]
+	line  77:      "PM.01"       unused   input  active-high 
+	line  78:      "PM.02"       unused   input  active-high 
+	line  79:      "PM.03"       unused   input  active-high 
+	line  80:      "PM.04"       unused   input  active-high 
+	line  81:      "PM.05"       unused   input  active-high 
+	line  82:      "PM.06"       unused   input  active-high 
+	line  83:      "PM.07"       unused   input  active-high 
+	line  84:      "PN.00"       unused   input  active-high 
+	line  85:      "PN.01"       unused   input  active-high 
+	line  86:      "PN.02"       unused   input  active-high 
+	line  87:      "PN.03"       unused   input  active-high 
+	line  88:      "PN.04"       unused   input  active-high 
+	line  89:      "PN.05"       unused   input  active-high 
+	line  90:      "PN.06"       unused   input  active-high 
+	line  91:      "PN.07"       unused   input  active-high 
+	line  92:      "PP.00"       unused   input  active-high 
+	line  93:      "PP.01"       unused   input  active-high 
+	line  94:      "PP.02"       unused   input  active-high 
+	line  95:      "PP.03"       unused   input  active-high 
+	line  96:      "PP.04"       unused   input  active-high 
+	line  97:      "PP.05"       unused   input  active-high 
+	line  98:      "PP.06"       unused   input  active-high 
+	line  99:      "PP.07"       unused   input  active-high 
+	line 100:      "PQ.00"       unused   input  active-high 
+	line 101:      "PQ.01"       unused   input  active-high 
+	line 102:      "PQ.02"       unused   input  active-high 
+	line 103:      "PQ.03"       unused  output  active-high 
+	line 104:      "PQ.04"       unused   input  active-high 
+	line 105:      "PQ.05"       unused   input  active-high 
+	line 106:      "PQ.06"       unused   input  active-high 
+	line 107:      "PQ.07"       unused   input  active-high 
+	line 108:      "PR.00"       unused   input  active-high 
+	line 109:      "PR.01"       unused   input  active-high 
+	line 110:      "PR.02"       unused   input  active-high 
+	line 111:      "PR.03"       unused   input  active-high 
+	line 112:      "PR.04"       unused   input  active-high 
+	line 113:      "PR.05"       unused   input  active-high 
+	line 114:      "PX.00"       kernel   input  active-high [used]
+	line 115:      "PX.01"       kernel   input  active-high [used]
+	line 116:      "PX.02"       unused   input  active-high 
+	line 117:      "PX.03"       unused   input  active-high 
+	line 118:      "PX.04"       unused   input  active-high 
+	line 119:      "PX.05"       unused   input  active-high 
+	line 120:      "PX.06"       unused   input  active-high 
+	line 121:      "PX.07"       unused   input  active-high 
+	line 122:      "PY.00"       unused   input  active-high 
+	line 123:      "PY.01"       unused   input  active-high 
+	line 124:      "PY.02"       unused   input  active-high 
+	line 125:      "PY.03"       unused   input  active-high 
+	line 126:      "PY.04"       unused   input  active-high 
+	line 127:      "PY.05"       unused   input  active-high 
+	line 128:      "PY.06"       unused   input  active-high 
+	line 129:      "PY.07"       unused   input  active-high 
+	line 130:      "PZ.00"       unused   input  active-high 
+	line 131:      "PZ.01"  "interrupt"   input  active-high [used]
+	line 132:      "PZ.02"       unused   input  active-high 
+	line 133:      "PZ.03"       unused   input  active-high 
+	line 134:      "PZ.04"       unused   input  active-high 
+	line 135:      "PZ.05"       unused   input  active-high 
+	line 136:      "PZ.06"       unused   input  active-high 
+	line 137:      "PZ.07"       unused   input  active-high 
+	line 138:     "PAC.00"       unused  output  active-high 
+	line 139:     "PAC.01"       unused   input  active-high 
+	line 140:     "PAC.02"       unused   input  active-high 
+	line 141:     "PAC.03"       unused   input  active-high 
+	line 142:     "PAC.04"       unused   input  active-high 
+	line 143:     "PAC.05"       unused   input  active-high 
+	line 144:     "PAC.06"       unused   input  active-high 
+	line 145:     "PAC.07"       unused   input  active-high 
+	line 146:     "PAD.00"       unused   input  active-high 
+	line 147:     "PAD.01"       unused   input  active-high 
+	line 148:     "PAD.02"       unused   input  active-high 
+	line 149:     "PAD.03"       unused   input  active-high 
+	line 150:     "PAE.00"       unused   input  active-high 
+	line 151:     "PAE.01"       unused   input  active-high 
+	line 152:     "PAF.00"       unused   input  active-high 
+	line 153:     "PAF.01"       unused   input  active-high 
+	line 154:     "PAF.02"       unused   input  active-high 
+	line 155:     "PAF.03"       unused   input  active-high 
+	line 156:     "PAG.00"       unused   input  active-high 
+	line 157:     "PAG.01"       unused   input  active-high 
+	line 158:     "PAG.02"       unused   input  active-high 
+	line 159:     "PAG.03"       unused   input  active-high 
+	line 160:     "PAG.04"       unused   input  active-high 
+	line 161:     "PAG.05"       unused   input  active-high 
+	line 162:     "PAG.06"       unused   input  active-high 
+	line 163:     "PAG.07"       unused   input  active-high 
+gpiochip1 - 32 lines:
+	line   0:     "PAA.00"       unused   input  active-high 
+	line   1:     "PAA.01"       unused   input  active-high 
+	line   2:     "PAA.02"       unused   input  active-high 
+	line   3:     "PAA.03"       unused   input  active-high 
+	line   4:     "PAA.04"       unused  output  active-high 
+	line   5:     "PAA.05" "regulator-vdd-3v3-pcie" output active-high [used]
+	line   6:     "PAA.06"       unused   input  active-high 
+	line   7:     "PAA.07"       unused   input  active-high 
+	line   8:     "PBB.00"       unused   input  active-high 
+	line   9:     "PBB.01"       unused   input  active-high 
+	line  10:     "PBB.02"       unused   input  active-high 
+	line  11:     "PBB.03"       unused  output  active-high 
+	line  12:     "PCC.00"       unused  output  active-high 
+	line  13:     "PCC.01"       unused  output  active-high 
+	line  14:     "PCC.02"       unused  output  active-high 
+	line  15:     "PCC.03"       unused  output  active-high 
+	line  16:     "PCC.04"       unused   input  active-high 
+	line  17:     "PCC.05"       unused   input  active-high 
+	line  18:     "PCC.06"       unused   input  active-high 
+	line  19:     "PCC.07"       unused   input  active-high 
+	line  20:     "PDD.00"       unused   input  active-high 
+	line  21:     "PDD.01"       unused   input  active-high 
+	line  22:     "PDD.02"       unused   input  active-high 
+	line  23:     "PEE.00"       unused   input  active-high 
+	line  24:     "PEE.01"       unused   input  active-high 
+	line  25:     "PEE.02"       unused   input  active-high 
+	line  26:     "PEE.03"       unused   input  active-high 
+	line  27:     "PEE.04"      "Power"   input   active-low [used]
+	line  28:     "PEE.05"       unused   input  active-high 
+	line  29:     "PEE.06"       unused   input  active-high 
+	line  30:     "PEE.07"       unused   input  active-high 
+	line  31:     "PGG.00"       unused   input  active-high 
+## /dev/gpiochip* permissions
+crw-rw---- 1 root gpio 254, 0 Oct 19 20:56 /dev/gpiochip0
+crw-rw---- 1 root gpio 254, 1 Oct 19 20:56 /dev/gpiochip1
+## id / groups
+uid=2002(<user>) gid=2002(<user>) groups=2002(<user>),4(adm),24(cdrom),27(sudo),29(audio),30(dip),44(video),46(plugdev),100(users),108(i2c),111(lpadmin),122(gdm),983(weston-launch),984(gpio),993(render)
+<user> adm cdrom sudo audio dip video plugdev users i2c lpadmin gdm weston-launch gpio render
+## udev rules mentioning gpio
+/lib/udev/rules.d/60-jetson-gpio-common.rules
+/lib/udev/rules.d/71-power-switch-proliant.rules
+## jetson-io
+total 60
+drwxr-xr-x  6 root root  4096 Sep 23 17:40 .
+drwxr-xr-x 17 root root  4096 Oct 15 17:45 ..
+-rwxr-xr-x  1 root root  5877 Aug  7 07:41 config-by-function.py
+-rwxr-xr-x  1 root root  3906 Aug  7 07:41 config-by-hardware.py
+-rwxr-xr-x  1 root root  3001 Aug  7 07:41 config-by-pin.py
+drwxr-xr-x  2 root root  4096 Sep 23 17:40 Headers
+drwxr-xr-x  2 root root  4096 Sep 23 17:40 Jetson
+-rwxr-xr-x  1 root root 19699 Aug  7 07:41 jetson-io.py
+drwxr-xr-x  2 root root  4096 Sep 23 17:40 Linux
+drwxr-xr-x  2 root root  4096 Sep 23 17:40 Utils
+## Jetson.GPIO (dpkg, system dist-packages, venv)
+ii  python3-jetson-gpio 2.1.13-0ubuntu1 arm64        Jetson GPIO library package (Python 3)
+ls: cannot access '/usr/local/lib/python3*/dist-packages/Jetson*': No such file or directory
+/usr/lib/python3/dist-packages/Jetson
+/usr/lib/python3/dist-packages/Jetson.GPIO-2.1.13.egg-info
+venv: no Jetson.GPIO / gpiod package
+## venv pip list
+Package                Version
+---------------------- ------------
+cuda-bindings          13.4.4
+cuda-pathfinder        1.8.3
+cuda-toolkit           13.2.2
+filelock               4.2.4
+fsspec                 2026.9.0
+Jinja2                 3.1.6
+MarkupSafe             3.0.4
+mpmath                 1.3.0
+networkx               3.7
+numpy                  2.5.4
+nvidia-cublas          13.4.1.3
+nvidia-cuda-cupti      13.2.86
+nvidia-cuda-nvrtc      13.2.86
+nvidia-cuda-runtime    13.2.86
+nvidia-cudnn-cu13      9.24.0.43
+nvidia-cufft           12.2.0.57
+nvidia-cufile          1.17.1.22
+nvidia-curand          10.4.2.66
+nvidia-cusolver        12.2.0.11
+nvidia-cusparse        12.7.10.12
+nvidia-cusparselt-cu13 0.8.1
+nvidia-nccl-cu13       2.30.7
+nvidia-nvjitlink       13.4.92
+nvidia-nvshmem-cu13    3.4.5
+nvidia-nvtx            13.2.86
+pip                    24.0
+setuptools             84.0.0
+sympy                  1.14.0
+torch                  2.14.1+cu132
+triton                 3.8.0
+typing_extensions      4.16.0
+## /sys/class/gpio
+ls: cannot access '/sys/class/gpio': No such file or directory

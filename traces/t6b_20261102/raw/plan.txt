@@ -1,0 +1,103 @@
+T6b pre-registration: controller A (`classical`) against `hold`, confirmation of T6
+Written 2026-11-02T16:22Z, after the smoke test (S0) and before the first block. Not changed after the first block.
+Sections 1 and 2 are the brief's text, verbatim. Section 3 fixes the details the brief leaves open.
+
+== 1. Design (brief, verbatim)
+
+- `track-sine-v1`, realtime, 60 s blocks, 10 s gaps.
+- Conditions: I (idle: no controller, no marker, 61 s between the marks),
+  H (`hold`), A (`classical`, default parameters). H and A each run as a
+  fresh `mark_ctl.py` process pinned with `taskset -c 2`, with one dummy
+  byte, then one `0xFF` at the start of each step.
+- **12 rounds, each I, H and A once.** The order cycles through all six
+  permutations twice, so every condition takes every position equally
+  often, and H comes before A in half the rounds:
+  - rounds 1–6: `I H A`, `H A I`, `A I H`, `I A H`, `A H I`, `H I A`;
+  - rounds 7–12: the same six again.
+- Fixed length: no extra rounds, and no early stop.
+- **Captures:** K1 = rounds 1–4, K2 = rounds 5–8, K3 = rounds 9–12, each a
+  new `cap_host.py` capture.
+- **No 10 Hz loggers at all** during the captures: no INA3221 sampler and no
+  `freqlog.py`. Between blocks, in the 10 s gap, `t6_run.py`'s snapshot reads
+  temperatures, fan PWM, both policies' `scaling_cur_freq`, the GPU's
+  `cur_freq`, one INA3221 `VDD_IN` reading and `pgrep -x`. No snapshot runs
+  inside a block.
+
+== 2. Analysis (brief, verbatim; `t6_analyze.py`, with the logger exclusion off)
+
+- **Marker integrity:** pulses shorter than 1 µs are dropped before the
+  falls are split into blocks; a start bit is 8.68 µs. Report how many were
+  dropped. Then every H/A block must have falls = `mark_ctl` rows = OBS =
+  6000. A block that doesn't is excluded, along with its whole round.
+- **Primary result:** method (b), the marker-aligned excess X per block:
+  - conversion time = ALRT edge − 540 µs; 0.1 ms bins;
+  - window [−1, 4.5) ms around the edge; baseline [5.5, 8.5) ms;
+  - periods of 8–15 ms only; flagged periods (miss, send lateness over
+    5 ms) dropped.
+
+  Per round, D = X_A − X_H. **E_dyn(A)** is the mean of D, with a 95 % CI
+  from t at n − 1 df.
+- **Secondary results:**
+  - E_dyn(A) by method (b) with the windows [−2, 4.5) and [−2, 5.5) ms;
+  - E_dyn(A) by method (a): (P_A − P_H)/f per round, block means over
+    [first edge + 3 s, last edge − 3 s];
+  - **harness cost** (P_H − P_I)/f per round, with I's window mapped as
+    `p6_analyze.py` does, and a t CI;
+  - **E_tot(A)** = P_A/f per round, as a stack: idle floor P_I/f, harness,
+    algorithm;
+  - X_H, X_A and D against round index (slope with CI), and against the
+    captures.
+- **Window check:** A's and H's excess over [−2, −1) and [4.5, 5.5) ms. If
+  either isn't consistent with 0, report it. The primary window still stays
+  as pre-registered.
+- **Logger hypothesis:** the sd of D should be near T6's logger-excluded
+  14 µJ, not its primary 67 µJ. Report sd_D, and N for ±5 % and ±10 %.
+- **`VDD_IN` isn't analysed for differences:** in T6 it read larger than the
+  19 V input. Only the snapshot readings are kept.
+
+== 3. Details fixed here (the brief leaves them open)
+
+Implementation: scripts/t6_analyze.py, md5 ef9dc8469c533313e2cddc49eaf7bea1 at this time. Method (b), method (a) and
+the I window are T6's code unchanged (checked: on T6's C1 it reproduces raw/result_C1.txt of T6 exactly, D +207.38 uJ,
+(a) +222.7 uJ). Orchestrator scripts/t6_run.py md5 67954f34934545cc9d6c343b0651cf62; check scripts/t6_check.py md5
+c4563e61dead7eca0212634f7aba396c. Command, after K3:   .venv/bin/python scripts/t6_analyze.py raw/result K1 K2 K3
+-> raw/result.txt, raw/result.json, raw/result_profiles.png.
+
+a. Pulse width = time from a GP16 fall to the next GP16 rise. A fall with width < 1 us is dropped (with its rise).
+   A fall with no following rise is kept. Falls are then split into runs at gaps > 0.5 s; runs of length 1 are the
+   dummies; runs of length > 1 are matched in order to the capture's H/A blocks (T6's rule).
+b. OBS = rows of the block's periods.csv. Integrity needs falls = rows = OBS = 6000 exactly. I blocks have no
+   integrity rule; an I block leaves the analysis only with its round.
+c. f per round = mean of that round's H and A decision rates, rate = (falls − 1)/(last fall − first fall) (T6's f for
+   method (a)). The same f is used for (a), harness, E_tot and the stack terms of that round, so the stack adds up
+   exactly per round: P_A/f = P_I/f + (P_H − P_I)/f + (P_A − P_H)/f. Each term: mean over rounds, t CI (n − 1 df).
+d. I window ("as p6_analyze.py does"): [mark start + 4 s, mark end − 4 s], the Mac's monotonic marks mapped to PIO
+   time by a linear fit of conversion edge time against Mac arrival time, per capture. H/A (a) window:
+   [first fall + 3 s, last fall − 3 s].
+e. Window check: per round, the mean power over [−2, −1) ms before the next edge and over [4.5, 5.5) ms after the
+   preceding edge, minus the block baseline, from the pre = 1 ms profile (T6's definition). "Consistent with 0" =
+   the 95 % t CI over rounds (n − 1 df) contains 0.
+f. Slopes: least squares of X_H, X_A and D on round index 1–12, t CI with n − 2 df; "consistent with 0" as in (e).
+   Against the captures: mean and t CI per capture (4 rounds, 3 df), and a one-way ANOVA F(2, n − 3) against its 5 %
+   critical value (4.256 for F(2, 9)).
+g. Logger hypothesis: report sd_D (sample sd, n − 1 df) with a chi-square 95 % CI. Supported if the CI contains
+   14.3 uJ (T6 logger-excluded) and excludes 66.6 uJ (T6 primary); rejected if the reverse; otherwise not decided.
+h. Sizing: N = the smallest number of rounds with t(N − 1) sd_D / sqrt(N) <= 5 % (10 %) of |mean D| (T6's rule),
+   for the primary and each secondary E_dyn. The half-width reached is reported against +-5 % of the primary mean.
+i. No interim analysis of energy between captures; after each capture only capcheck.py and t6_check.py (integrity,
+   missed conversions, pulse widths) run. They can stop the session (hard rule 11) but cannot change the design.
+j. Tracking and controller figures are reported from the kept rounds' blocks: ctl_us p50/p99/max, n_events per
+   decision, rms_deg, max_deg, in-FOV, losses, misses, late > 5 ms, affinity.
+k. VDD_IN: only the snapshot readings (one in1 x curr1 product per snapshot, before and after each block, in the
+   gaps), summarised by condition as recorded. Not differenced, not used for any energy figure.
+
+== 4. State before the first block (for the record; not part of the design)
+
+- Smoke test S0 passed: falls = rows = OBS = 1000, dummy 3.17 s before the first decision, 0 missed conversions,
+  pulse widths 8.64–8.88 us, 0 pulses < 1 us, ctl_us p50 509 us, affinity 2, metadata classical / 0c397e1 /
+  git_dirty false (raw/S0_check.txt, raw/S0_meta_check.txt).
+- Checklist deviation, already happened: the marker wire went onto GP16 with the Jetson running (after the user
+  confirmed it was up), not before power-up (SETUP_NOTES 8.3). No capture was running. S0's widths and 0 glitches
+  show a clean line.
+- fake-hwclock-save.timer (not one of the six; left running per SETUP_NOTES 8.3) is next due at 17:00:00Z and may
+  land inside a K3 block. It writes one small file. Logged, not acted on.

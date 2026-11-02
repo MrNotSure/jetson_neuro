@@ -1,0 +1,6 @@
+           CPU0       CPU1       CPU2       CPU3       CPU4       CPU5       
+141:        572          0          0          0          0          0     GICv3 195 Level     xhci-hcd:usb1
+142:          0          0          0          0          0          0     GICv3 196 Level     3610000.usb
+143:          0          0          0          0          0          0  c360000.pmc  76 Level     3610000.usb
+181:     199381          0          0          0          0          0     GICv3 198 Level     3550000.usb
+irq 181 smp_affinity_list=0-5 effective=0

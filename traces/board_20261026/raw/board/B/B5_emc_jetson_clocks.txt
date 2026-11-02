@@ -1,0 +1,116 @@
+## sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2133000000
+
+## sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/max_rate
+3199000000
+
+## sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/min_rate
+204000000
+
+## sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/mrq_rate_locked
+0
+
+## sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/state
+1
+
+## sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/flags
+0xa000000
+
+## sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/parent
+osc
+
+## sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/refcount
+2
+
+## sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/vdd_core
+cat: /sys/kernel/debug/bpmp/debug/clk/emc/vdd_core: Is a directory
+
+## sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/dvfs
+vdd_core 204000000 633851
+vdd_core 665600000 633851
+vdd_core 1600000000 664606
+vdd_core 2133000000 676800
+vdd_core 2750000000 735853
+vdd_core 3199000000 783870
+vdd_core 3200000000 828828
+
+## sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/dvfs_table
+ T: regime 0
+vdd_core 204000000 689571
+vdd_core 665600000 689571
+vdd_core 1600000000 717992
+vdd_core 2133000000 730218
+vdd_core 2750000000 782607
+vdd_core 3199000000 828714
+vdd_core 3200000000 865671
+ T: regime 1
+vdd_core 204000000 645341
+vdd_core 665600000 645341
+vdd_core 1600000000 675544
+vdd_core 2133000000 687751
+vdd_core 2750000000 743288
+vdd_core 3199000000 791145
+vdd_core 3200000000 832143
+*T: regime 2
+vdd_core 204000000 633851
+vdd_core 665600000 633851
+vdd_core 1600000000 664606
+vdd_core 2133000000 676800
+vdd_core 2750000000 735853
+vdd_core 3199000000 783870
+vdd_core 3200000000 828828
+ T: regime 3
+vdd_core 204000000 624777
+vdd_core 665600000 624777
+vdd_core 1600000000 655615
+vdd_core 2133000000 667798
+vdd_core 2750000000 730771
+vdd_core 3199000000 778211
+vdd_core 3200000000 827293
+ T: regime 4
+vdd_core 204000000 689571
+vdd_core 665600000 689571
+vdd_core 1600000000 717992
+vdd_core 2133000000 730218
+vdd_core 2750000000 782607
+vdd_core 3199000000 828714
+vdd_core 3200000000 865671
+
+## sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/hz_off
+0
+
+## sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/mrqcount
+1(0x2)
+
+## sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/pto_counter
+2127532032
+
+## nvpmodel EMC cap
+ls: cannot access '/sys/kernel/nvpmodel_emc_cap/': No such file or directory
+/sys/kernel/nvpmodel_emc_cap/*=cat: '/sys/kernel/nvpmodel_emc_cap/*': No such file or directory
+## bwmgr devfreq
+available_frequencies	-r--r--r--	204000000 665600000 2133000000 3199000000 
+available_governors	-r--r--r--	bpmp-bwmgr 
+cur_freq	-r--r--r--	2133000000 
+governor	-rw-r--r--	bpmp-bwmgr 
+max_freq	-rw-r--r--	3199000000 
+min_freq	-rw-r--r--	204000000 
+name	-r--r--r--	bwmgr 
+target_freq	-r--r--r--	204000000 
+trans_stat	-rw-r--r--	     From  :   To            : 204000000 66560000021330000003199000000   time(ms) * 204000000:         0         0         0         0   5224620   665600000:         0         0         0         0         0  2133000000:         1         0         0         0         0  3199000000:         0         0         0         0         0 Total transition : 1 
+uevent	-rw-r--r--	
+## sudo jetson_clocks --show
+SOC family:tegra234  Machine:NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+Online CPUs: 0-5, Offline CPUs: 
+cpu0:  Governor=schedutil MinFreq=729600 MaxFreq=1344000 CurrentFreq=1267200 IdleStates: WFI=1 c7=1 
+cpu1:  Governor=schedutil MinFreq=729600 MaxFreq=1344000 CurrentFreq=1190400 IdleStates: WFI=1 c7=1 
+cpu2:  Governor=schedutil MinFreq=729600 MaxFreq=1344000 CurrentFreq=1190400 IdleStates: WFI=1 c7=1 
+cpu3:  Governor=schedutil MinFreq=729600 MaxFreq=1344000 CurrentFreq=1190400 IdleStates: WFI=1 c7=1 
+cpu4:  Governor=schedutil MinFreq=729600 MaxFreq=1344000 CurrentFreq=729600 IdleStates: WFI=1 c7=1 
+cpu5:  Governor=schedutil MinFreq=729600 MaxFreq=1344000 CurrentFreq=729600 IdleStates: WFI=1 c7=1 
+GPU MinFreq=306000000 MaxFreq=918000000 CurrentFreq=306000000
+Active GPU TPCs: 4
+EMC MinFreq=204000000 MaxFreq=3199000000 CurrentFreq=2133000000
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1=83
+FAN Dynamic Speed Control=nvfancontrol hwmon0_pwm1_enable=1
+NV Power Mode: 25W

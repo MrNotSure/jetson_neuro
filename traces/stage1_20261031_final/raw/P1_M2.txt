@@ -1,0 +1,15 @@
+INA228: 277904 conversions over 300.06 s (PIO); capture-wide missed 0, spurious ALRT 0, GP16 rises/falls 206/203
+INA228 board input: P 6290.8 mW, I 326.80 mA, V 19.2496 V (sd 2.2 mV)
+INA228 drift -2.18 mW/min (se 0.15)
+INA3221: 3001 samples over 300.0 s at 10.002 Hz, sampler CPU 0.48 % of one core, hwmon /sys/devices/platform/bus@0/c240000.i2c/i2c-1/1-0040/hwmon/hwmon3
+VDD_IN: mean 4509.0 mW, sd/sample 3.7, sd 1 s 2.2, sd 10 s 1.0 mW, drift -0.19 mW/min (se 0.05), distinct values 2
+VDD_CPU_GPU_CV: mean 442.3 mW, sd/sample 0.3, sd 1 s 0.2, sd 10 s 0.1 mW, drift +0.07 mW/min (se 0.00), distinct values 2
+VDD_SOC: mean 1368.7 mW, sd/sample 0.0, sd 1 s 0.0, sd 10 s 0.0 mW, drift +0.00 mW/min (se 0.00), distinct values 1
+
+| | Mean (mW) | sd per sample | sd of 10 ms means | sd of 100 ms means | sd of 1 s means | sd of 10 s means |
+|---|---|---|---|---|---|---|
+| INA228, 19 V input | 6290.8 | 116.3 (1.08 ms) | 100.4 | 80.8 | 33.5 | 7.4 |
+| INA3221 VDD_IN, 5 V | 4509.0 | 3.7 (100 ms) | – | 3.7 | 2.2 | 1.0 |
+
+INA228 - VDD_IN = 1781.8 mW; VDD_IN / INA228 = 0.7168
+block counts INA228: 10 ms 30006, 1 s 300, 10 s 30

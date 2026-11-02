@@ -1,0 +1,19 @@
+== 2026-10-29T18:31:39Z after sync
+rtt    99.9 ms   board - mac -0.047 s
+rtt   120.4 ms   board - mac -0.038 s
+rtt    98.0 ms   board - mac -0.047 s
+rtt   125.8 ms   board - mac -0.034 s
+best (shortest rtt 98.0 ms): board - mac = -0.047 s = -0.0000 d; mac utc 2026-10-29 18:31:40
+No jobs running.
+    PID     ELAPSED %CPU COMMAND
+      1       01:50  5.6 systemd
+   2542       01:35  2.8 gnome-shell
+    780       01:40  2.3 dbus-daemon
+    945       01:40  2.0 wpa_supplicant
+     60       01:50  0.7 kworker/u13:2-events_freezable_power_
+    937       01:40  0.7 NetworkManager
+   2183       01:37  0.5 dockerd
+total 12
+drwxrwxr-x  3 <user> <user> 4096 Oct 29 19:31 .
+drwxrwxrwt 19 root    root    4096 Oct 29 19:31 ..
+drwxrwxr-x  2 <user> <user> 4096 Oct 29 19:31 scripts

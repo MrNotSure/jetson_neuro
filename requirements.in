@@ -1,0 +1,13 @@
+# Direct dependencies for the jn_sim simulator host (spec R1.1, T1).
+# numpy is the only runtime dependency; matplotlib is the `view` extra and
+# pytest the `dev` extra. All three, and their transitive dependencies, are
+# pinned in requirements.lock via:
+#
+#   ~/.local/bin/uv pip compile --universal -p 3.12 requirements.in \
+#       -o requirements.lock
+#
+# so the one lock file installs on macOS arm64 and Linux x86_64/aarch64 for
+# Python 3.12 (wheels checked on PyPI, 22 Oct 2026).
+numpy==2.5.4
+matplotlib==3.11.2
+pytest==9.1.1

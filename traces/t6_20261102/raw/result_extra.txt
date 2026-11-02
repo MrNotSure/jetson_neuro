@@ -1,0 +1,25 @@
+boot 1, rounds [1, 2, 3, 4]: E_dyn (b) +207.4 [+101.9, +312.8] (n 4) uJ; (b, excl) +196.6 [+178.3, +214.9] (n 4) uJ; (a) +222.7 [+119.0, +326.3] (n 4) uJ
+boot 2, rounds [5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 19, 20]: E_dyn (b) +219.3 [+179.5, +259.0] (n 14) uJ; (b, excl) +200.7 [+191.9, +209.5] (n 14) uJ; (a) +202.6 [+173.0, +232.2] (n 14) uJ
+
+VDD_IN per round, A - H, mW (INA3221, 10 Hz, 40 mW codes) and the INA228's A - H at the input:
+  round  1 (C1): VDD_IN  +20.6   INA228  +13.0
+  round  2 (C1): VDD_IN  +20.0   INA228  +27.9
+  round  3 (C1): VDD_IN  +12.7   INA228  +23.2
+  round  4 (C1): VDD_IN  +17.1   INA228  +25.0
+  round  5 (C2b): VDD_IN  +34.7   INA228  +24.7
+  round  6 (C2b): VDD_IN  +38.4   INA228  +14.6
+  round  7 (C2b): VDD_IN  +35.7   INA228  +14.4
+  round  8 (C2b): VDD_IN  +33.2   INA228  +18.9
+  round 10 (C2b): VDD_IN  +33.9   INA228  +29.7
+  round 11 (C2b): VDD_IN  +32.9   INA228  +21.4
+  round 12 (C2b): VDD_IN  +36.5   INA228  +25.8
+  round 13 (C3): VDD_IN  +36.5   INA228  +26.1
+  round 14 (C3): VDD_IN  +36.7   INA228  +19.5
+  round 15 (C3): VDD_IN  +34.4   INA228  +17.6
+  round 16 (C3): VDD_IN  +35.9   INA228  +11.7
+  round 17 (C3): VDD_IN  +37.7   INA228  +23.1
+  round 19 (C3): VDD_IN  +37.7   INA228  +17.3
+  round 20 (C3): VDD_IN  +38.3   INA228  +18.9
+  mean VDD_IN +31.8 mW vs INA228 +20.7 mW; ratio 1.54 (VDD_IN is downstream of the input, so a ratio > 1 isn't physical)
+
+logger-excluded variant: dropped decision intervals per block 30.0-46.8 % (mean 35.2 %)

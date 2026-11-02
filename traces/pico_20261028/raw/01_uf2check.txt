@@ -1,0 +1,22 @@
+file: runs/pico_20261028/firmware/RPI_PICO-20260824-v1.29.0.uf2
+size: 680960 bytes, 1330.000 blocks of 512
+first block:
+  magicStart0 = 0x0A324655  expected 0x0A324655  OK
+  magicStart1 = 0x9E5D5157  expected 0x9E5D5157  OK
+  magicEnd    = 0x0AB16F30  expected 0x0AB16F30  OK
+  flags       = 0x00002000  familyID-present bit set
+  familyID    = 0xE48BFF56 (RP2040)  expected 0xE48BFF56  OK
+  targetAddr  = 0x10000000
+  payloadSize = 256
+  blockNo     = 0 of numBlocks 1330
+all blocks:
+  count 1330, numBlocks field 1330, match OK
+  families seen: 0xE48BFF56
+  address range 0x10000000..0x10053200 (332.5 KiB)
+  inside RP2040 XIP flash window: OK
+  payload contains 'v1.29.0': True
+  payload contains 'Raspberry Pi Pico W': False
+  payload contains 'Raspberry Pi Pico2': False
+  payload contains 'RP2350': False
+  payload contains 'Raspberry Pi Pico with RP2040': True
+RESULT: PASS (RP2040 UF2)

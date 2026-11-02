@@ -1,0 +1,71 @@
+2026-11-02T17:59:01.367390+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:01.367482+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:07.373116+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:07.373218+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:13.376403+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:13.376513+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:19.379207+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:19.379308+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:19.597635+01:00 jetson systemd-resolved[456]: Using degraded feature set UDP instead of TCP for DNS server 8.8.8.8.
+2026-11-02T17:59:24.602359+01:00 jetson systemd-resolved[456]: Using degraded feature set TCP instead of UDP for DNS server 8.8.8.8.
+2026-11-02T17:59:25.385530+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:25.385626+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:31.391809+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:31.391906+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:34.612694+01:00 jetson systemd-resolved[456]: Using degraded feature set UDP instead of TCP for DNS server 8.8.8.8.
+2026-11-02T17:59:37.397328+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:37.397419+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:39.618693+01:00 jetson systemd-resolved[456]: Using degraded feature set TCP instead of UDP for DNS server 8.8.8.8.
+2026-11-02T17:59:43.403484+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:43.403579+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:49.409308+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:49.409398+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:49.626534+01:00 jetson systemd-resolved[456]: Using degraded feature set UDP instead of TCP for DNS server 8.8.8.8.
+2026-11-02T17:59:54.631973+01:00 jetson systemd-resolved[456]: Using degraded feature set TCP instead of UDP for DNS server 8.8.8.8.
+2026-11-02T17:59:55.411692+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T17:59:55.411790+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:01.417474+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:01.417569+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:05.170425+01:00 jetson systemd[1]: Starting fake-hwclock-save.service - Save the current clock...
+2026-11-02T18:00:05.178177+01:00 jetson systemd[1]: fake-hwclock-save.service: Deactivated successfully.
+2026-11-02T18:00:05.178537+01:00 jetson systemd[1]: Finished fake-hwclock-save.service - Save the current clock.
+2026-11-02T18:00:07.424681+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:07.424780+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:13.431888+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:13.431979+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:14.651417+01:00 jetson systemd-resolved[456]: Using degraded feature set UDP instead of TCP for DNS server 8.8.8.8.
+2026-11-02T18:00:19.438622+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:19.438724+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:19.657651+01:00 jetson systemd-resolved[456]: Using degraded feature set TCP instead of UDP for DNS server 8.8.8.8.
+2026-11-02T18:00:25.446317+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:25.446418+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:31.450574+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:31.450665+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:37.454992+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:37.455093+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:39.678402+01:00 jetson systemd-resolved[456]: Using degraded feature set UDP instead of TCP for DNS server 8.8.8.8.
+2026-11-02T18:00:43.462014+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:43.462096+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:44.683456+01:00 jetson systemd-resolved[456]: Using degraded feature set TCP instead of UDP for DNS server 8.8.8.8.
+2026-11-02T18:00:49.468326+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:49.468410+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:55.474368+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:00:55.474467+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:01:01.480723+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:01:01.480803+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:01:04.704287+01:00 jetson systemd-resolved[456]: Using degraded feature set UDP instead of TCP for DNS server 8.8.8.8.
+2026-11-02T18:01:07.487206+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:01:07.487285+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:01:09.709641+01:00 jetson systemd-resolved[456]: Using degraded feature set TCP instead of UDP for DNS server 8.8.8.8.
+2026-11-02T18:01:13.493892+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:01:13.493972+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:01:19.499676+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:01:19.499771+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:01:19.720497+01:00 jetson systemd-resolved[456]: Using degraded feature set UDP instead of TCP for DNS server 8.8.8.8.
+2026-11-02T18:01:24.725753+01:00 jetson systemd-resolved[456]: Using degraded feature set TCP instead of UDP for DNS server 8.8.8.8.
+2026-11-02T18:01:25.502168+01:00 jetson dhcpd[1943]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-11-02T18:01:25.502261+01:00 jetson dhcpd[1943]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+ExecMainStartTimestamp=Mon 2026-11-02 18:00:05 CET
+ExecMainExitTimestamp=Mon 2026-11-02 18:00:05 CET
+board - mac offset interpolated -0.069 s; fake-hwclock-save start mapped to PIO 211.010 s (+-0.05 s)
+R9H first decision edge 150.956 s, last 210.946 s; event - last edge = +0.064 s; (a) window ends at last edge - 3 s

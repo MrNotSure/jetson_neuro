@@ -1,0 +1,140 @@
+## hwmon names
+/sys/class/hwmon/hwmon0 name=pwmfan -> /sys/devices/platform/pwm-fan/hwmon/hwmon0
+/sys/class/hwmon/hwmon1 name=nvme -> /sys/devices/platform/bus@0/14160000.pcie/pci0004:00/0004:00:00.0/0004:01:00.0/nvme/nvme0/hwmon1
+/sys/class/hwmon/hwmon2 name=pwm_tach -> /sys/devices/platform/bus@0/39c0000.tachometer/hwmon/hwmon2
+/sys/class/hwmon/hwmon3 name=soctherm_oc -> /sys/devices/platform/soctherm-oc-event/hwmon/hwmon3
+/sys/class/hwmon/hwmon4 name=ina3221 -> /sys/devices/platform/bus@0/c240000.i2c/i2c-1/1-0040/hwmon/hwmon4
+## ls -la /sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon4
+total 0
+drwxr-xr-x 3 root root    0 Oct 26 13:45 .
+drwxr-xr-x 3 root root    0 Jan  1  1970 ..
+-rw-r--r-- 1 root root 4096 Jan  1  1970 curr1_crit
+-r--r--r-- 1 root root 4096 Oct 26 13:35 curr1_crit_alarm
+-r--r--r-- 1 root root 4096 Jan  1  1970 curr1_input
+-rw-r--r-- 1 root root 4096 Jan  1  1970 curr1_max
+-r--r--r-- 1 root root 4096 Oct 26 13:35 curr1_max_alarm
+-rw-r--r-- 1 root root 4096 Jan  1  1970 curr2_crit
+-r--r--r-- 1 root root 4096 Oct 26 13:35 curr2_crit_alarm
+-r--r--r-- 1 root root 4096 Jan  1  1970 curr2_input
+-rw-r--r-- 1 root root 4096 Jan  1  1970 curr2_max
+-r--r--r-- 1 root root 4096 Oct 26 13:35 curr2_max_alarm
+-rw-r--r-- 1 root root 4096 Jan  1  1970 curr3_crit
+-r--r--r-- 1 root root 4096 Oct 26 13:35 curr3_crit_alarm
+-r--r--r-- 1 root root 4096 Jan  1  1970 curr3_input
+-rw-r--r-- 1 root root 4096 Jan  1  1970 curr3_max
+-r--r--r-- 1 root root 4096 Oct 26 13:35 curr3_max_alarm
+-rw-r--r-- 1 root root 4096 Oct 26 13:35 curr4_crit
+-r--r--r-- 1 root root 4096 Oct 26 13:35 curr4_crit_alarm
+-r--r--r-- 1 root root 4096 Oct 26 13:35 curr4_input
+lrwxrwxrwx 1 root root    0 Oct 26 13:35 device -> ../../../1-0040
+-rw-r--r-- 1 root root 4096 Oct 26 13:35 in1_enable
+-r--r--r-- 1 root root 4096 Jan  1  1970 in1_input
+-r--r--r-- 1 root root 4096 Jan  1  1970 in1_label
+-rw-r--r-- 1 root root 4096 Oct 26 13:35 in2_enable
+-r--r--r-- 1 root root 4096 Jan  1  1970 in2_input
+-r--r--r-- 1 root root 4096 Jan  1  1970 in2_label
+-rw-r--r-- 1 root root 4096 Oct 26 13:35 in3_enable
+-r--r--r-- 1 root root 4096 Jan  1  1970 in3_input
+-r--r--r-- 1 root root 4096 Jan  1  1970 in3_label
+-r--r--r-- 1 root root 4096 Oct 26 13:35 in4_input
+-r--r--r-- 1 root root 4096 Oct 26 13:35 in5_input
+-r--r--r-- 1 root root 4096 Oct 26 13:35 in6_input
+-r--r--r-- 1 root root 4096 Oct 26 13:35 in7_input
+-r--r--r-- 1 root root 4096 Oct 26 13:35 in7_label
+-r--r--r-- 1 root root 4096 Jan  1  1970 name
+lrwxrwxrwx 1 root root    0 Oct 26 13:35 of_node -> ../../../../../../../../firmware/devicetree/base/bus@0/i2c@c240000/power-sensor@40
+drwxr-xr-x 2 root root    0 Oct 26 13:35 power
+-rw-r--r-- 1 root root 4096 Jan  1  1970 samples
+-rw-r--r-- 1 root root 4096 Oct 26 13:35 shunt1_resistor
+-rw-r--r-- 1 root root 4096 Oct 26 13:35 shunt2_resistor
+-rw-r--r-- 1 root root 4096 Oct 26 13:35 shunt3_resistor
+lrwxrwxrwx 1 root root    0 Jan  1  1970 subsystem -> ../../../../../../../../class/hwmon
+-rw-r--r-- 1 root root 4096 Jan  1  1970 uevent
+-rw-r--r-- 1 root root 4096 Jan  1  1970 update_interval
+## /sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon4 files (name perms value)
+curr1_crit	-rw-r--r--	5032 
+curr1_crit_alarm	-r--r--r--	0 
+curr1_input	-r--r--r--	1016 
+curr1_max	-rw-r--r--	5032 
+curr1_max_alarm	-r--r--r--	0 
+curr2_crit	-rw-r--r--	32760 
+curr2_crit_alarm	-r--r--r--	0 
+curr2_input	-r--r--r--	176 
+curr2_max	-rw-r--r--	32760 
+curr2_max_alarm	-r--r--r--	0 
+curr3_crit	-rw-r--r--	32760 
+curr3_crit_alarm	-r--r--r--	0 
+curr3_input	-r--r--r--	280 
+curr3_max	-rw-r--r--	32760 
+curr3_max_alarm	-r--r--r--	0 
+curr4_crit	-rw-r--r--	131064 
+curr4_crit_alarm	-r--r--r--	0 
+curr4_input	-r--r--r--	1800 
+in1_enable	-rw-r--r--	1 
+in1_input	-r--r--r--	5000 
+in1_label	-r--r--r--	VDD_IN 
+in2_enable	-rw-r--r--	1 
+in2_input	-r--r--r--	4992 
+in2_label	-r--r--r--	VDD_CPU_GPU_CV 
+in3_enable	-rw-r--r--	1 
+in3_input	-r--r--r--	5000 
+in3_label	-r--r--r--	VDD_SOC 
+in4_input	-r--r--r--	5200 
+in5_input	-r--r--r--	920 
+in6_input	-r--r--r--	1400 
+in7_input	-r--r--r--	8800 
+in7_label	-r--r--r--	sum of shunt voltages 
+name	-r--r--r--	ina3221 
+samples	-rw-r--r--	512 
+shunt1_resistor	-rw-r--r--	5000 
+shunt2_resistor	-rw-r--r--	5000 
+shunt3_resistor	-rw-r--r--	5000 
+uevent	-rw-r--r--	OF_NAME=power-sensor OF_FULLNAME=/bus@0/i2c@c240000/power-sensor@40 OF_COMPATIBLE_0=ti,ina3221 OF_COMPATIBLE_N=1 
+update_interval	-rw-r--r--	1 
+## device: /sys/bus/i2c/drivers/ina3221/1-0040
+total 0
+drwxr-xr-x 4 root root    0 Oct 26 13:45 .
+drwxr-xr-x 6 root root    0 Oct 19 20:56 ..
+lrwxrwxrwx 1 root root    0 Jan  1  1970 driver -> ../../../../../../bus/i2c/drivers/ina3221
+drwxr-xr-x 3 root root    0 Oct 26 13:45 hwmon
+-r--r--r-- 1 root root 4096 Oct 26 13:45 modalias
+-r--r--r-- 1 root root 4096 Oct 19 20:56 name
+lrwxrwxrwx 1 root root    0 Oct 26 13:45 of_node -> ../../../../../../firmware/devicetree/base/bus@0/i2c@c240000/power-sensor@40
+drwxr-xr-x 2 root root    0 Oct 26 13:36 power
+lrwxrwxrwx 1 root root    0 Oct 19 20:56 subsystem -> ../../../../../../bus/i2c
+-rw-r--r-- 1 root root 4096 Oct 19 20:56 uevent
+modalias	-r--r--r--	of:Npower-sensorT(null)Cti,ina3221 
+name	-r--r--r--	ina3221 
+uevent	-rw-r--r--	DRIVER=ina3221 OF_NAME=power-sensor OF_FULLNAME=/bus@0/i2c@c240000/power-sensor@40 OF_COMPATIBLE_0=ti,ina3221 OF_COMPATIBLE_N=1 MODALIAS=of:Npower-sensorT(null)Cti,ina3221 
+## device-tree node (of_node) properties
+of_node=/sys/firmware/devicetree/base/bus@0/i2c@c240000/power-sensor@40
+#address-cells	 \0 \0 \0 001 	|hex  00 00 00 01 
+compatible	 t i , i n a 3 2 2 1 \0 	|hex  74 69 2c 69 6e 61 33 32 32 31 00 
+input@0/label	 V D D _ I N \0 	|hex  56 44 44 5f 49 4e 00 
+input@0/name	 i n p u t \0 	|hex  69 6e 70 75 74 00 
+input@0/reg	 \0 \0 \0 \0 	|hex  00 00 00 00 
+input@0/shunt-resistor-micro-ohms	 \0 \0 023 210 	|hex  00 00 13 88 
+input@1/label	 V D D _ C P U _ G P U _ C V \0 	|hex  56 44 44 5f 43 50 55 5f 47 50 55 5f 43 56 00 
+input@1/name	 i n p u t \0 	|hex  69 6e 70 75 74 00 
+input@1/reg	 \0 \0 \0 001 	|hex  00 00 00 01 
+input@1/shunt-resistor-micro-ohms	 \0 \0 023 210 	|hex  00 00 13 88 
+input@2/label	 V D D _ S O C \0 	|hex  56 44 44 5f 53 4f 43 00 
+input@2/name	 i n p u t \0 	|hex  69 6e 70 75 74 00 
+input@2/reg	 \0 \0 \0 002 	|hex  00 00 00 02 
+input@2/shunt-resistor-micro-ohms	 \0 \0 023 210 	|hex  00 00 13 88 
+name	 p o w e r - s e n s o r \0 	|hex  70 6f 77 65 72 2d 73 65 6e 73 6f 72 00 
+reg	 \0 \0 \0 @ 	|hex  00 00 00 40 
+#size-cells	 \0 \0 \0 \0 	|hex  00 00 00 00 
+## power/ runtime
+autosuspend_delay_ms	-rw-r--r--	cat: /sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon4/power/autosuspend_delay_ms: Input/output error 
+control	-rw-r--r--	auto 
+runtime_active_time	-r--r--r--	0 
+runtime_status	-r--r--r--	unsupported 
+runtime_suspended_time	-r--r--r--	0 
+autosuspend_delay_ms	-rw-r--r--	cat: /sys/bus/i2c/drivers/ina3221/1-0040/power/autosuspend_delay_ms: Input/output error 
+control	-rw-r--r--	auto 
+runtime_active_time	-r--r--r--	5194968 
+runtime_status	-r--r--r--	active 
+runtime_suspended_time	-r--r--r--	0 
+## i2c adapter
+c240000.i2c

@@ -1,0 +1,175 @@
+no-CNVRF record 267778: Mac arrival 14:10:02 UTC; dt to previous 522.4 us; previous edge minus nearest GP16 fall +0.12 us
+no-CNVRF record 1078528: Mac arrival 14:24:37 UTC; dt to previous 142.0 us; previous edge minus nearest GP16 fall -3839.40 us
+no-CNVRF record 1078531: Mac arrival 14:24:37 UTC; dt to previous 21.2 us; previous edge minus nearest GP16 fall -3677.40 us
+no-CNVRF record 1078534: Mac arrival 14:24:37 UTC; dt to previous 1079.6 us; previous edge minus nearest GP16 fall -1679.88 us
+no-CNVRF record 1078536: Mac arrival 14:24:37 UTC; dt to previous 1079.6 us; previous edge minus nearest GP16 fall +479.52 us
+GP16 glitch: fall #48682 at PIO 861.948863 s, width 0.12 us, Mac arrival near 14:19:34 UTC; previous/next fall +0.009 / +9.935 ms
+conversion records with FIFO level > 1: 7; levels [1377528, 2, 3, 2] (counts of level 1..); first 14:24:37, last 14:24:37 UTC
+backlog episodes: [('14:24:37', '14:24:37', 7, 4)]
+Mac read gaps > 150 ms: []
+Mac unix - mono spread over C2b: 3.9 ms (no sleep if small)
+--- grid check: every conversion slot on the INA228's ~1079.7 us grid has exactly one record within +-5 us
+records 267700-267860: 160 records, 95 on the grid (T 1079.64 us), 65 off the grid; grid slots 159, missing 64, duplicated 0
+   off-grid record 267777: -518.5 us from slot 77, CNVRF True, level 1, P 6369.2 mW
+   off-grid record 267796: +5.0 us from slot 95, CNVRF True, level 1, P 6329.1 mW
+   off-grid record 267797: +5.0 us from slot 96, CNVRF True, level 1, P 6698.7 mW
+   off-grid record 267798: +5.2 us from slot 97, CNVRF True, level 1, P 6343.1 mW
+   off-grid record 267799: +5.2 us from slot 98, CNVRF True, level 1, P 6301.9 mW
+   off-grid record 267800: +5.3 us from slot 99, CNVRF True, level 1, P 6301.0 mW
+   off-grid record 267801: +5.3 us from slot 100, CNVRF True, level 1, P 6313.8 mW
+   off-grid record 267802: +5.4 us from slot 101, CNVRF True, level 1, P 6329.7 mW
+   off-grid record 267803: +5.4 us from slot 102, CNVRF True, level 1, P 6298.0 mW
+   off-grid record 267804: +5.5 us from slot 103, CNVRF True, level 1, P 6322.5 mW
+   off-grid record 267805: +5.5 us from slot 104, CNVRF True, level 1, P 6220.5 mW
+   off-grid record 267806: +5.6 us from slot 105, CNVRF True, level 1, P 6536.8 mW
+   off-grid record 267807: +5.6 us from slot 106, CNVRF True, level 1, P 6381.7 mW
+   off-grid record 267808: +5.8 us from slot 107, CNVRF True, level 1, P 6338.9 mW
+   off-grid record 267809: +5.8 us from slot 108, CNVRF True, level 1, P 6404.3 mW
+   off-grid record 267810: +5.8 us from slot 109, CNVRF True, level 1, P 6355.1 mW
+   off-grid record 267811: +5.9 us from slot 110, CNVRF True, level 1, P 6316.9 mW
+   off-grid record 267812: +5.9 us from slot 111, CNVRF True, level 1, P 6360.6 mW
+   off-grid record 267813: +6.0 us from slot 112, CNVRF True, level 1, P 6315.3 mW
+   off-grid record 267814: +6.0 us from slot 113, CNVRF True, level 1, P 6258.2 mW
+   off-grid record 267815: +6.1 us from slot 114, CNVRF True, level 1, P 6307.6 mW
+   off-grid record 267816: +6.1 us from slot 115, CNVRF True, level 1, P 6347.9 mW
+   off-grid record 267817: +6.2 us from slot 116, CNVRF True, level 1, P 6298.1 mW
+   off-grid record 267818: +6.2 us from slot 117, CNVRF True, level 1, P 6362.3 mW
+   off-grid record 267819: +6.4 us from slot 118, CNVRF True, level 1, P 6358.3 mW
+   off-grid record 267820: +6.5 us from slot 119, CNVRF True, level 1, P 6303.1 mW
+   off-grid record 267821: +6.5 us from slot 120, CNVRF True, level 1, P 6287.4 mW
+   off-grid record 267822: +6.6 us from slot 121, CNVRF True, level 1, P 6263.6 mW
+   off-grid record 267823: +6.6 us from slot 122, CNVRF True, level 1, P 6356.3 mW
+   off-grid record 267824: +6.6 us from slot 123, CNVRF True, level 1, P 6426.9 mW
+   off-grid record 267825: +6.7 us from slot 124, CNVRF True, level 1, P 6563.9 mW
+   off-grid record 267826: +6.8 us from slot 125, CNVRF True, level 1, P 6288.1 mW
+   off-grid record 267827: +6.8 us from slot 126, CNVRF True, level 1, P 6280.5 mW
+   off-grid record 267828: +6.8 us from slot 127, CNVRF True, level 1, P 6278.2 mW
+   off-grid record 267829: +7.0 us from slot 128, CNVRF True, level 1, P 6318.9 mW
+   off-grid record 267830: +7.1 us from slot 129, CNVRF True, level 1, P 6329.9 mW
+   off-grid record 267831: +7.1 us from slot 130, CNVRF True, level 1, P 6309.2 mW
+   off-grid record 267832: +7.2 us from slot 131, CNVRF True, level 1, P 6291.5 mW
+   off-grid record 267833: +7.2 us from slot 132, CNVRF True, level 1, P 6282.8 mW
+   off-grid record 267834: +7.3 us from slot 133, CNVRF True, level 1, P 6699.9 mW
+   off-grid record 267835: +7.3 us from slot 134, CNVRF True, level 1, P 6299.2 mW
+   off-grid record 267836: +7.3 us from slot 135, CNVRF True, level 1, P 6265.2 mW
+   off-grid record 267837: +7.4 us from slot 136, CNVRF True, level 1, P 6303.5 mW
+   off-grid record 267838: +7.6 us from slot 137, CNVRF True, level 1, P 6550.5 mW
+   off-grid record 267839: +7.6 us from slot 138, CNVRF True, level 1, P 6404.9 mW
+   off-grid record 267840: +7.7 us from slot 139, CNVRF True, level 1, P 6338.6 mW
+   off-grid record 267841: +7.7 us from slot 140, CNVRF True, level 1, P 6324.3 mW
+   off-grid record 267842: +7.8 us from slot 141, CNVRF True, level 1, P 6334.8 mW
+   off-grid record 267843: +7.8 us from slot 142, CNVRF True, level 1, P 6548.8 mW
+   off-grid record 267844: +7.9 us from slot 143, CNVRF True, level 1, P 6373.9 mW
+   off-grid record 267845: +7.9 us from slot 144, CNVRF True, level 1, P 6263.8 mW
+   off-grid record 267846: +8.0 us from slot 145, CNVRF True, level 1, P 6326.2 mW
+   off-grid record 267847: +8.0 us from slot 146, CNVRF True, level 1, P 6292.2 mW
+   off-grid record 267848: +8.2 us from slot 147, CNVRF True, level 1, P 6216.9 mW
+   off-grid record 267849: +8.2 us from slot 148, CNVRF True, level 1, P 6270.9 mW
+   off-grid record 267850: +8.2 us from slot 149, CNVRF True, level 1, P 6291.4 mW
+   off-grid record 267851: +8.3 us from slot 150, CNVRF True, level 1, P 6340.9 mW
+   off-grid record 267852: +8.4 us from slot 151, CNVRF True, level 1, P 6314.3 mW
+   off-grid record 267853: +8.4 us from slot 152, CNVRF True, level 1, P 6577.6 mW
+   off-grid record 267854: +8.5 us from slot 153, CNVRF True, level 1, P 6372.4 mW
+   off-grid record 267855: +8.5 us from slot 154, CNVRF True, level 1, P 6273.9 mW
+   off-grid record 267856: +8.5 us from slot 155, CNVRF True, level 1, P 6366.7 mW
+   off-grid record 267857: +8.6 us from slot 156, CNVRF True, level 1, P 6312.3 mW
+   off-grid record 267858: +8.8 us from slot 157, CNVRF True, level 1, P 6310.1 mW
+   off-grid record 267859: +8.8 us from slot 158, CNVRF True, level 1, P 6366.6 mW
+   on-grid record 267778 without CNVRF (real conversion, flag cleared by a previous handler): level 1, P 6367.7 mW
+records 1078450-1078620: 170 records, 90 on the grid (T 1079.76 us), 80 off the grid; grid slots 166, missing 76, duplicated 0
+   off-grid record 1078528: +137.6 us from slot 77, CNVRF False, level 4, P 6302.0 mW
+   off-grid record 1078529: +148.0 us from slot 77, CNVRF True, level 4, P 6302.3 mW
+   off-grid record 1078530: +157.7 us from slot 77, CNVRF True, level 3, P 6333.6 mW
+   off-grid record 1078531: +178.9 us from slot 77, CNVRF False, level 3, P 6366.9 mW
+   off-grid record 1078544: -5.0 us from slot 90, CNVRF True, level 1, P 6232.1 mW
+   off-grid record 1078545: -5.0 us from slot 91, CNVRF True, level 1, P 6568.2 mW
+   off-grid record 1078546: -5.2 us from slot 92, CNVRF True, level 1, P 6282.8 mW
+   off-grid record 1078547: -5.2 us from slot 93, CNVRF True, level 1, P 6359.8 mW
+   off-grid record 1078548: -5.3 us from slot 94, CNVRF True, level 1, P 6332.6 mW
+   off-grid record 1078549: -5.3 us from slot 95, CNVRF True, level 1, P 6328.0 mW
+   off-grid record 1078550: -5.4 us from slot 96, CNVRF True, level 1, P 6344.4 mW
+   off-grid record 1078551: -5.4 us from slot 97, CNVRF True, level 1, P 6323.0 mW
+   off-grid record 1078552: -5.5 us from slot 98, CNVRF True, level 1, P 6381.1 mW
+   off-grid record 1078553: -5.5 us from slot 99, CNVRF True, level 1, P 6444.1 mW
+   off-grid record 1078554: -5.6 us from slot 100, CNVRF True, level 1, P 6711.3 mW
+   off-grid record 1078555: -5.6 us from slot 101, CNVRF True, level 1, P 6413.6 mW
+   off-grid record 1078556: -5.8 us from slot 102, CNVRF True, level 1, P 6389.5 mW
+   off-grid record 1078557: -5.8 us from slot 103, CNVRF True, level 1, P 6385.6 mW
+   off-grid record 1078558: -5.9 us from slot 104, CNVRF True, level 1, P 6341.9 mW
+   off-grid record 1078559: -5.9 us from slot 105, CNVRF True, level 1, P 6371.5 mW
+   off-grid record 1078560: -6.0 us from slot 106, CNVRF True, level 1, P 6309.8 mW
+   off-grid record 1078561: -6.0 us from slot 107, CNVRF True, level 1, P 6326.8 mW
+   off-grid record 1078562: -6.0 us from slot 108, CNVRF True, level 1, P 6302.1 mW
+   off-grid record 1078563: -6.1 us from slot 109, CNVRF True, level 1, P 6496.8 mW
+   off-grid record 1078564: -6.1 us from slot 110, CNVRF True, level 1, P 6428.9 mW
+   off-grid record 1078565: -6.2 us from slot 111, CNVRF True, level 1, P 6288.6 mW
+   off-grid record 1078566: -6.2 us from slot 112, CNVRF True, level 1, P 6308.4 mW
+   off-grid record 1078567: -6.4 us from slot 113, CNVRF True, level 1, P 6276.4 mW
+   off-grid record 1078568: -6.4 us from slot 114, CNVRF True, level 1, P 6420.3 mW
+   off-grid record 1078569: -6.5 us from slot 115, CNVRF True, level 1, P 6336.1 mW
+   off-grid record 1078570: -6.5 us from slot 116, CNVRF True, level 1, P 6337.8 mW
+   off-grid record 1078571: -6.6 us from slot 117, CNVRF True, level 1, P 6346.5 mW
+   off-grid record 1078572: -6.6 us from slot 118, CNVRF True, level 1, P 6324.0 mW
+   off-grid record 1078573: -6.7 us from slot 119, CNVRF True, level 1, P 6555.4 mW
+   off-grid record 1078574: -6.7 us from slot 120, CNVRF True, level 1, P 6358.9 mW
+   off-grid record 1078575: -6.7 us from slot 121, CNVRF True, level 1, P 6339.6 mW
+   off-grid record 1078576: -6.8 us from slot 122, CNVRF True, level 1, P 6272.1 mW
+   off-grid record 1078577: -6.8 us from slot 123, CNVRF True, level 1, P 6262.1 mW
+   off-grid record 1078578: -7.0 us from slot 124, CNVRF True, level 1, P 6262.5 mW
+   off-grid record 1078579: -7.0 us from slot 125, CNVRF True, level 1, P 6310.9 mW
+   off-grid record 1078580: -7.1 us from slot 126, CNVRF True, level 1, P 6364.4 mW
+   off-grid record 1078581: -7.1 us from slot 127, CNVRF True, level 1, P 6317.9 mW
+   off-grid record 1078582: -7.2 us from slot 128, CNVRF True, level 1, P 6838.6 mW
+   off-grid record 1078583: -7.2 us from slot 129, CNVRF True, level 1, P 6399.4 mW
+   off-grid record 1078584: -7.3 us from slot 130, CNVRF True, level 1, P 6317.0 mW
+   off-grid record 1078585: -7.3 us from slot 131, CNVRF True, level 1, P 6296.4 mW
+   off-grid record 1078586: -7.4 us from slot 132, CNVRF True, level 1, P 6317.0 mW
+   off-grid record 1078587: -7.4 us from slot 133, CNVRF True, level 1, P 6284.2 mW
+   off-grid record 1078588: -7.6 us from slot 134, CNVRF True, level 1, P 6237.0 mW
+   off-grid record 1078589: -7.6 us from slot 135, CNVRF True, level 1, P 6257.9 mW
+   off-grid record 1078590: -7.7 us from slot 136, CNVRF True, level 1, P 6297.3 mW
+   off-grid record 1078591: -7.7 us from slot 137, CNVRF True, level 1, P 6744.0 mW
+   off-grid record 1078592: -7.8 us from slot 138, CNVRF True, level 1, P 6323.6 mW
+   off-grid record 1078593: -7.8 us from slot 139, CNVRF True, level 1, P 6321.8 mW
+   off-grid record 1078594: -7.9 us from slot 140, CNVRF True, level 1, P 6336.1 mW
+   off-grid record 1078595: -7.9 us from slot 141, CNVRF True, level 1, P 6323.8 mW
+   off-grid record 1078596: -8.0 us from slot 142, CNVRF True, level 1, P 6322.9 mW
+   off-grid record 1078597: -8.0 us from slot 143, CNVRF True, level 1, P 6382.8 mW
+   off-grid record 1078598: -8.2 us from slot 144, CNVRF True, level 1, P 6405.4 mW
+   off-grid record 1078599: -8.3 us from slot 145, CNVRF True, level 1, P 6262.7 mW
+   off-grid record 1078600: -8.3 us from slot 146, CNVRF True, level 1, P 6431.5 mW
+   off-grid record 1078601: -8.4 us from slot 147, CNVRF True, level 1, P 6355.1 mW
+   off-grid record 1078602: -8.4 us from slot 148, CNVRF True, level 1, P 6342.3 mW
+   off-grid record 1078603: -8.5 us from slot 149, CNVRF True, level 1, P 6339.6 mW
+   off-grid record 1078604: -8.5 us from slot 150, CNVRF True, level 1, P 6361.1 mW
+   off-grid record 1078605: -8.6 us from slot 151, CNVRF True, level 1, P 6319.5 mW
+   off-grid record 1078606: -8.6 us from slot 152, CNVRF True, level 1, P 6324.2 mW
+   off-grid record 1078607: -8.8 us from slot 153, CNVRF True, level 1, P 6292.0 mW
+   off-grid record 1078608: -8.9 us from slot 154, CNVRF True, level 1, P 6275.3 mW
+   off-grid record 1078609: -8.9 us from slot 155, CNVRF True, level 1, P 6320.6 mW
+   off-grid record 1078610: -9.0 us from slot 156, CNVRF True, level 1, P 6526.9 mW
+   off-grid record 1078611: -9.0 us from slot 157, CNVRF True, level 1, P 6230.2 mW
+   off-grid record 1078612: -9.1 us from slot 158, CNVRF True, level 1, P 6391.0 mW
+   off-grid record 1078613: -9.1 us from slot 159, CNVRF True, level 1, P 6385.4 mW
+   off-grid record 1078614: -9.2 us from slot 160, CNVRF True, level 1, P 6362.6 mW
+   off-grid record 1078615: -9.2 us from slot 161, CNVRF True, level 1, P 6333.7 mW
+   off-grid record 1078616: -9.4 us from slot 162, CNVRF True, level 1, P 6301.9 mW
+   off-grid record 1078617: -9.5 us from slot 163, CNVRF True, level 1, P 6315.9 mW
+   off-grid record 1078618: -9.5 us from slot 164, CNVRF True, level 1, P 6310.2 mW
+   off-grid record 1078619: -9.6 us from slot 165, CNVRF True, level 1, P 6721.9 mW
+   on-grid record 1078534 without CNVRF (real conversion, flag cleared by a previous handler): level 2, P 6321.2 mW
+   on-grid record 1078536 without CNVRF (real conversion, flag cleared by a previous handler): level 1, P 6364.8 mW
+
+# --- summary, 14:38 UTC (V unless marked)
+# 1. 14:24:37 UTC, in block R11A: 4 extra ALRT edges (records 1078528-1078531) and a Pico FIFO backlog up to 4.
+#    raw/C2b_gridcheck.txt (fit on the 60 records before, extrapolated): every conversion slot has its real record,
+#    0 missing; the extras sit 142-183 us after a slot. So no conversion was missed.
+#    pmset -g log: "Using Batt" at 15:24:40 local = 14:24:40 UTC, 3 s later; the Mac had been on AC. The extra edges
+#    coincide with the charger coming off (cause NV: a ground / USB transient at the switch is my reading).
+#    Records without CNVRF are dropped by the analysis; the 2 extras with CNVRF set (1078529, 1078530) stay, placed off
+#    the grid: 2 of about 55 600 conversions in R11A, negligible.
+# 2. 14:19:34 UTC, in block R9H: one GP16 fall + rise 0.12 us apart (one PIO count), 9 us after a real marker fall,
+#    i.e. right after that pulse's rising edge. R9H then has 6001 falls against 6000 mark_ctl rows, so by the brief's
+#    rule it is EXCLUDED and round 9 has no H. Cause NV (no Mac power event at that time).
+# 3. 14:10:02 UTC, in block R6A: one extra ALRT edge 0.12 us after a marker fall (raw/C2b_spurious_alrt.txt).
+# Mac unix - mono spread over C2b 3.9 ms: no sleep.

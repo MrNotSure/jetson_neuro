@@ -1,0 +1,13 @@
+port /dev/cu.usbmodem1101
+Pico stdout after the binary stream: STATS records=55570 elapsed_us=59999728 busy_us=46279131 busy_frac=0.7713 max_handler_us=1325 writes=6946 write_total_us=608021 max_write_us=268 backlog_records=0 mem_free_before=215904 mem_free_after=215840 sm_clkdiv=0x00050000 adc_config=0xB900 i2c=I2C(0, freq=399361, scl=5, sda=4, timeout=50000)
+INA228 reset
+Pico stderr: b''
+bytes received 889120 in 55570 records of 16 bytes (+ trailer); bad magic 0
+sequence: first 0, last 55569, gaps 0 []
+records with FIFO backlog (level > 1 when serviced): 0; levels seen [1]
+conversion interval (PIO): median 1079.640 us, min 1079.640, max 1089.720; +10 us grid steps 120; irregular 0 []
+missed conversions (intervals > 1.5 T): 0
+PIO time span 59.998 s; records/s 926.2; bytes/s 14818 (Mac arrival span 60.002 s)
+VSHUNT: mean -5.196 steps = -108.2 uA, sd 8.53 steps = 177.7 uA
+VBUS: mean 19.24 steps = 3.757 mV, sd 16.59 steps, max 71 steps
+Mac read chunks: 6946, median chunk 128 bytes

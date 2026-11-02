@@ -1,0 +1,20 @@
+spurious edge at t=1849.9414 s (~2026-10-30T16:16:21.847 UTC, +-1 s): diag 0xc001, intervals before/after 67.32 / 612.00 us, level 2, I 375.4 mA, V 19.240 V
+spurious edge at t=1849.9431 s (~2026-10-30T16:16:21.849 UTC, +-1 s): diag 0xc001, intervals before/after 1079.76 / 1079.64 us, level 1, I 380.6 mA, V 19.246 V
+FIFO level 2 at t = [1849.9413, 1849.9414]
+irregular intervals: [(np.float64(1849.9413), np.float64(400.32)), (np.float64(1849.9414), np.float64(67.32)), (np.float64(1849.942), np.float64(612.0))]
+power-up at t=1145.844 s (~2026-10-30T16:04:37.749 UTC)
+peak conversion 1.0081 A at +5.798 s, VBUS 18.722 V, P 18.87 W; min VBUS after power-up 18.628 V
+peak 10 ms mean 0.9495 A; peak 1 s mean 0.6362 A; any 10 ms mean > 2.5 A: False
+  +  0..10  s: I  437.8 mA, V 19.020 V, P  8.308 W
+  + 10..20  s: I  542.3 mA, V 19.017 V, P 10.296 W
+  + 20..30  s: I  362.4 mA, V 19.235 V, P  6.966 W
+  + 30..40  s: I  481.0 mA, V 19.209 V, P  9.239 W
+  + 40..60  s: I  408.3 mA, V 19.225 V, P  7.850 W
+  + 60..120 s: I  383.2 mA, V 19.232 V, P  7.369 W
+  +120..240 s: I  384.4 mA, V 19.235 V, P  7.394 W
+16:20:00-16:27:30 (after the first catch-up wave, before apt-daily-upgrade at 16:27:38): n 416774, P 7.3748 W, V 19.245 V, sd of 10 ms / 1 s / 10 s means 154.4 / 112.3 / 66.7 mW
+16:28:30-16:33:20 (between apt-daily-upgrade and apt-daily): n 268588, P 7.3897 W, V 19.247 V, sd of 10 ms / 1 s / 10 s means 149.4 / 103.8 / 49.2 mW
+16:33:30-16:37:30 (apt-daily, apt-news, esm-cache running): n 222280, P 7.4257 W, V 19.247 V, sd of 10 ms / 1 s / 10 s means 194.6 / 136.9 / 76.0 mW
+16:08:44-16:10:30 (fwupd-refresh, apt-daily-upgrade, anacron, fstrim right after the clock sync): n 98174, P 7.3967 W, V 19.238 V, sd of 10 ms / 1 s / 10 s means 354.2 / 187.4 / 63.4 mW
+16:17:30-16:21:28 (pin 29 held high, then low): P 7.3647 W
+ENERGY register 14828.28 J vs sum(P dt) 14828.57 J over 3147 s

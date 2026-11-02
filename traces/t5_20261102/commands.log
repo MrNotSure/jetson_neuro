@@ -1,0 +1,15 @@
+# T5 Jetson timing check, 2 Nov 2026 (UTC). Run by the planner from the Mac; reconstructed from the
+# session's tool calls. Commands inside the scripts are in scripts/run_one.sh.
+2026-11-02T09:26:28Z	mac	poll `ssh jetson-usb true` every 5 s until up (09:27:34); record board date, uptime -s, nvpmodel Result, checkout
+2026-11-02T09:30:40Z	board	sudo date -u -s '<mac utc>' && sudo systemctl stop anacron.timer man-db.timer fstrim.timer e2scrub_all.timer dpkg-db-backup.timer systemd-tmpfiles-clean.timer   (approved by the user)
+2026-11-02T09:31:02Z	board	read-only state: nvpmodel, cpufreq, devfreq, TPC/FBP masks, default target, radio, temperatures, pgrep -x apt|dpkg, list-jobs, journal -> raw/state_start.txt
+2026-11-02T09:31Z	mac	git bundle create /private/tmp/jn_main_0c397e1.bundle 8d91a6d..main; rsync to jetson-usb:/tmp/jn_t5/
+2026-11-02T09:31Z	board	cd ~/jetson_neuro && git bundle verify … && git fetch <bundle> main && git merge --ff-only FETCH_HEAD   (8d91a6d -> 0c397e1, clean)
+2026-11-02T09:35Z	mac	rsync scripts/steplog_ctl.py scripts/freqlog.py jetson-usb:/tmp/jn_t5/scripts/
+2026-11-02T09:35Z	board	smoke 1: steplog_ctl.py started; the Mac's ssh hung (backgrounded `cd && cmd &` kept stdout open); no episode ran, steplog exited with 0 steps
+2026-11-02T09:39:52Z	mac+board	smoke 2: steplog_ctl.py pinned to cpu 2; jn-sim run track-sine-v1 realtime 3 s -> completed, 300 steps, 0 misses
+2026-11-02T09:40:47Z	mac	scripts/run_one.sh R1 plain   (python -m jn_sim ctl --controller classical --once, taskset -c 2; freqlog.py on cpu 5; jn-sim run 60 s)
+2026-11-02T10:01:39Z	mac	scripts/run_one.sh R2 plain
+2026-11-02T10:03:10Z	mac	scripts/run_one.sh R3 plain
+2026-11-02T10:05:17Z	mac	scripts/run_one.sh D1 diag    (steplog_ctl.py, taskset -c 2)
+2026-11-02T10:07Z	mac	.venv/bin/python scripts/t5_analyze.py -> raw/t5_result.txt, raw/t5_result.json

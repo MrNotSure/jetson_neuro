@@ -1,0 +1,8 @@
+#!/bin/zsh
+# Throwaway: run ONE command on the board over the USB cable and log it first.
+# usage: b 'remote command'
+LOG=/Users/<user>/Documents/code/jetson_neuro/runs/board_20261026/commands.log
+ts=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+one=${1//$'\n'/ ⏎ }
+printf '%s\tssh jetson-usb %s\n' "$ts" "$one" >> "$LOG"
+exec ssh jetson-usb "$1"

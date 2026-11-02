@@ -1,0 +1,83 @@
+== Part 0.5 (before sync), Mac 2026-11-02T16:02:56.3NZ
+board date -u: 2026-11-02T15:27:34.791Z
+uptime -s (board local): 2026-11-02 16:25:51
+ 16:27:34 up 1 min,  1 user,  load average: 0.24, 0.13, 0.05
+Result=success
+ExecMainStatus=0
+ActiveState=inactive
+anacron.timer active enabled
+man-db.timer active enabled
+fstrim.timer active enabled
+e2scrub_all.timer active enabled
+dpkg-db-backup.timer active enabled
+systemd-tmpfiles-clean.timer active static
+No jobs running.
+no apt/dpkg
+no timer job processes
+anacron.timer inactive
+man-db.timer inactive
+fstrim.timer inactive
+e2scrub_all.timer inactive
+dpkg-db-backup.timer inactive
+systemd-tmpfiles-clean.timer inactive
+No jobs running.
+no apt/dpkg
+no timer job processes
+ActiveState=inactive SubState=dead  ActiveState=inactive SubState=dead  ActiveState=inactive SubState=dead  ActiveState=inactive SubState=dead  ActiveState=inactive SubState=dead  ActiveState=inactive SubState=dead
+== Part 0.6 clock: clocksync board - mac = -2121.462 s (rtt 80.5 ms) -> sudo date -u -s '+2121.462 seconds' at 2026-11-02T16:03:22Z; clockcheck after: -0.003 s (rtt 74.6 ms)
+No jobs running.
+no apt/dpkg
+no timer job processes
+NEXT                         LEFT LAST                        PASSED UNIT                         ACTIVATES
+Mon 2026-11-02 18:00:00 CET 56min Mon 2026-11-02 17:03:15 CET 8s ago fake-hwclock-save.timer      fake-hwclock-save.service
+-                               - Mon 2026-11-02 14:01:14 CET      - anacron.timer                anacron.service
+-                               - -                                - apport-autoreport.timer      apport-autoreport.service
+-                               - Mon 2026-11-02 10:30:40 CET      - dpkg-db-backup.timer         dpkg-db-backup.service
+-                               - Mon 2026-11-02 10:30:40 CET      - e2scrub_all.timer            e2scrub_all.service
+-                               - Mon 2026-11-02 10:30:40 CET      - fstrim.timer                 fstrim.service
+-                               - Fri 2026-10-30 18:24:41 CET      - man-db.timer                 man-db.service
+-                               - -                                - snapd.snap-repair.timer      snapd.snap-repair.service
+-                               - -                                - systemd-tmpfiles-clean.timer systemd-tmpfiles-clean.service
+-                               - -                                - ua-timer.timer               ua-timer.service
+
+10 timers listed.
+note: fake-hwclock-save.timer (not one of the six) fired at the clock step (16:03:15Z) and is next due 17:00:00Z; may land inside a K3 block (it writes one small file).
+== Part 0.7 power mode, Mac 2026-11-02T16:05:44.3NZ
+2026-11-02T16:05:44.296Z
+Result=success
+ExecMainStatus=0
+ActiveState=inactive
+NV Power Mode: 25W
+1
+/sys/devices/system/cpu/cpufreq/policy0 governor=schedutil min=729600 max=1344000 cur=1113600 cpus=0 1 2 3
+/sys/devices/system/cpu/cpufreq/policy4 governor=schedutil min=729600 max=1344000 cur=729600 cpus=4 5
+gpu governor=nvhost_podgov min=306000000 max=918000000 cur=306000000
+3:NVPM VERB: Current mode: NV Power Mode: 25W
+11:NVPM VERB: PARAM FBP_POWER_GATING: ARG FBP_PG_MASK: PATH /sys/devices/platform/gpu.0/fbp_pg_mask: REAL_VAL: 2 CONF_VAL: 2
+12:NVPM VERB: PARAM TPC_POWER_GATING: ARG TPC_PG_MASK: PATH /sys/devices/platform/gpu.0/tpc_pg_mask: REAL_VAL: 240 CONF_VAL: 240
+== Part 0.8 board checks, Mac 2026-11-02T16:06:06.211+00:00
+2026-11-02T16:06:06.315Z
+ina3221: /sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon3 name=ina3221 in1=5032mV curr1=896mA
+uid=2002(<user>) gid=2002(<user>) groups=2002(<user>),4(adm),20(dialout),24(cdrom),27(sudo),29(audio),30(dip),44(video),46(plugdev),100(users),108(i2c),111(lpadmin),122(gdm),983(weston-launch),984(gpio),993(render)
+checkout 0c397e1, status lines: 0
+python 3.12.3 numpy 2.5.4
+radio wifi (read-only): disabled
+default target: multi-user.target
+failed units: 0
+No jobs running.
+no apt/dpkg
+3526 bash -c date -u +%FT%T.%3NZ; H=$(ls -d /sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon*); echo "ina3221: $H name=$(cat $H/name) in1=$(cat $H/in1_input)mV curr1=$(cat $H/curr1_input)mA"; id; cd ~/jetson_neuro && echo "checkout $(git rev-parse --short HEAD), status lines: $(git status --short | wc -l)"; ~/venvs/jn/bin/python -c "import sys, numpy; print(\"python\", sys.version.split()[0], \"numpy\", numpy.__version__)"; echo "radio wifi (read-only): $(nmcli radio wifi)"; echo "default target: $(systemctl get-default)"; echo "failed units: $(systemctl --failed --no-pager --no-legend | wc -l)"; systemctl list-jobs --no-pager | tail -1; pgrep -a -x "apt|apt-get|apt-helper|dpkg" || echo "no apt/dpkg"; pgrep -a -f "sampler.py|mark_ctl.py|freqlog.py|jn_sim|jn-sim" || echo "nothing of ours running"; ss -ltn | grep -q ":5555 " && echo "5555 open" || echo "5555 closed"; ls -la /tmp | head; for z in /sys/class/thermal/thermal_zone*; do t=$(cat $z/temp 2>/dev/null) && echo -n "$(cat $z/type)=$t "; done; echo; for h in /sys/class/hwmon/hwmon*; do n=$(cat $h/name); [ "$n" = pwmfan ] && echo -n "fan_pwm=$(cat $h/pwm1) "; [ "$n" = pwm_tach ] && echo -n "fan_rpm=$(cat $h/rpm) "; done; echo; find src scenarios -type f -not -path "*/__pycache__/*" -exec md5sum {} + | sort -k2
+5555 closed
+total 48
+drwxrwxrwt 12 root root 4096 Nov  2 16:26 .
+drwxr-xr-x 22 root root 4096 Jan  1  1970 ..
+drwxrwxrwt  2 root root 4096 Nov  2 16:26 .font-unix
+drwxrwxrwt  2 root root 4096 Nov  2 16:26 .ICE-unix
+drwx------  2 root root 4096 Nov  2 16:26 snap-private-tmp
+drwx------  3 root root 4096 Nov  2 16:26 systemd-private-1e5342ab1d02414ca3741cadfc36ad28-haveged.service-VXlIls
+drwx------  3 root root 4096 Nov  2 16:26 systemd-private-1e5342ab1d02414ca3741cadfc36ad28-polkit.service-drQsAs
+drwx------  3 root root 4096 Nov  2 16:26 systemd-private-1e5342ab1d02414ca3741cadfc36ad28-systemd-logind.service-XwN5Cy
+drwx------  3 root root 4096 Nov  2 16:26 systemd-private-1e5342ab1d02414ca3741cadfc36ad28-systemd-resolved.service-neNXMb
+cpu-thermal=45625 gpu-thermal=45218 soc0-thermal=44562 soc1-thermal=44937 soc2-thermal=45156 tj-thermal=45531 
+fan_pwm=58 fan_rpm=1085 
+board src/ scenarios/ == Mac main (94975c9) by md5, 26 files (sorted with LC_ALL=C)

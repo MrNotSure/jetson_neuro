@@ -1,0 +1,8 @@
+== 2026-10-31T13:10:24Z Part 1.6 after reboot, before sync
+rtt   839.3 ms   board - mac -33.711 s
+rtt   151.4 ms   board - mac -34.056 s
+rtt   139.3 ms   board - mac -34.062 s
+best (shortest rtt 139.3 ms): board - mac = -34.062 s = -0.0004 d; mac utc 2026-10-31 13:10:26
+2026-10-31 14:08:21
+90.83 513.86
+Result=success

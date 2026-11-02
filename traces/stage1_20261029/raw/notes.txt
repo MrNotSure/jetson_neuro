@@ -1,0 +1,52 @@
+Running notes (agent), Stage 1 first run, 29 Oct 2026. Times UTC.
+
+17:51 Part 0. Jetson console device absent, ioreg no NVIDIA device, ssh jetson-usb timed out (V).
+      Pico NOT enumerated at first (no 2e8a device at all). Asked user; user plugged it in at ~17:52:50.
+17:52:51 Pico at /dev/cu.usbmodem1101, 2e8a:0005, <pico-serial>, ticks_ms 3236, listdir [],
+      GP16 funcsel 31 OE 0 pad 0x56 (PDE=1 IE=1) = reset state. GP17 reads 0 (reset pull-down; ALRT open drain idle).
+      Repo: HEAD 78cf5f9, git diff --stat 8d91a6d HEAD -- src scenarios empty. Working tree: M README.md SETUP_NOTES.md
+      docs/exploration.md scripts/jx; ?? docs/img/stage1_wiring.svg docs/stage1_wiring.md traces/pico_20261028/.
+18:02 capture path test, Jetson off (T0_test15, T0_test10): 926 conv/s, 0 missed, busy 53.8 %, max handler 1016-1039 us
+      (with accumulator read), FIFO backlog 0, FDEBUG 0, GP16 untouched (funcsel 31, OE 0, pad 0x56) before/after.
+      Sync by exec `in x,32` into SM0/1/2 back-to-back (viper stores): SM0-SM1 = 1, SM0-SM2 = 1 count at start and end.
+      (First version with Python exec calls: bounds only, 150-188 counts window.)
+      Zero current: I mean -0.037/-0.040 mA, sd 0.186 mA (bench: -0.108 mA, sd 0.178).
+Part 1 (user, ~18:08): D1 and D2 still hold for the final layout; VIN+ to VBUS = 1.3 MOhm (jumper OPEN);
+      15 V reading was taken with the plug out of the Jetson: yes; male plug in Jetson DC jack: yes;
+      supply plugged together but without mains power until told; marker wire disconnected at the Jetson end.
+      Decision: continue with the jumper open (no time to solder; user leaves in 20 min, short test only).
+      VBUS will read ~0; power = I x 19 V (D3) instead of measured.
+18:10:37 capture P2_boot started (cap_host.py, max 1500 s); boot watcher started.
+18:11:32.07 power-up (PIO trace, first conversion > 50 mA). Watcher: USB (NVIDIA 0955:7020 "Linux for Tegra",
+      serial <jetson-serial>) and /dev/cu.usbmodem<jetson-serial>21 at +29.6 s, ssh at +38.4 s.
+      Peak conversion 0.999 A at +28.8 s; peak 10 ms mean 0.963 A; peak 1 s mean 0.628 A (+17.5 s). Never > 2.5 A.
+      Idle ~328-330 mA from ~+40 s (6.23 W at an assumed 19.0 V). CHARGE/sampled current = 1.0001.
+      VBUS 3 mV mean (jumper open, as measured). Current positive: VIN+/VIN- not swapped.
+18:12:25 board clock 2026-10-26 16:06:51 UTC (fake-hwclock restored an old save, not 1970); RTC 1970; not synced
+      (session cut short; syncing starts the catch-up jobs). systemctl list-jobs: none.
+      UNEXPECTED: /sys/class/hwmon/hwmon4/name = soctherm_oc. The INA3221 is hwmon3 this boot
+      (/sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon3). sampler.py hardcodes hwmon4 -> must change before Part 4.
+      gpioinfo: line 105 "PQ.05" unused input active-high (as expected). Board checkout 8d91a6d, clean.
+      INA3221 at ~+90 s: VDD_IN 5.04 V x 0.89-0.94 A = ~4.5-4.7 W (INA228 at 19 V assumed: ~6.2-6.7 W at the same time).
+      Mac-unix vs PIO fit gave -247 ppm: Mac wall clock (time_ns) is slewable; use monotonic next time.
+18:17:15 sudo systemctl poweroff (user asked); current 2.1 mA from 18:17:21, Jetson USB gone by 18:17:30; capture stopped;
+      Pico machine.reset(), state checked (raw/P7_final_pico.txt). User disconnected the supply.
+~18:20-18:28 user (supply unplugged, Pico unplugged, marker wire off GP16 first) soldered the VBUS jumper closed.
+      User reports: VIN+ to VBUS 0.01 Ohm; D1 and D2 redone, hold; 19 V wires still solid; Pico reconnected.
+18:28:39 Jetson off (no tty, ssh timeout). Pico at /dev/cu.usbmodem1101, ticks 57749 ms, listdir [], GP16 reset state.
+18:28:52 capture P2b_boot started (max 3500 s). VBUS with supply off: 0.55-0.69 V (floating VIN+ node, now seen via jumper).
+18:29:31 power-up (PIO). USB/tty +29.3 s (watcher), ssh +38.2 s. VBUS 19.23 V idle (19.01-19.24 V). P 6.24 W idle at +2.5 min.
+      Peak conversion so far 1.008 A. One 120 ns rise+fall pair on GP16 0.72 s before power-up (dangling marker wire,
+      supply being plugged in); filter pulses < 1 us in analysis.
+18:30:53 board clock -267498.7 s (2026-10-26 16:12 UTC). hwmon4 = ina3221 THIS boot (hwmon3 = soctherm_oc):
+      numbering swaps between boots -> sampler must glob the i2c path. Line 105 PQ.05 unused input. Checkout 8d91a6d clean.
+18:31:27 sudo date -u -s (synced at a full second); after: board - mac = -0.04 s (ssh-asymmetry limited). list-jobs empty at 18:31:40.
+18:33:56-18:35:56 D4 run 1 (60 s high / 60 s low); 18:35:57-18:38:57 D4 run 2 (90 s / 90 s). gpioset rc 0 both phases,
+      gpioinfo showed line 105 "gpioset" output [used] while held; released with gpioget (reads 0) -> unused input.
+      USER: pin 29 (spare jumper vs Pico GND) read a constant 3 mV in both runs, high and low. PIN 29 DOES NOT DRIVE.
+      User: investigate tomorrow; shut everything down.
+18:39:1x sudo systemctl poweroff; Jetson USB gone by 18:39:15; current 2.06 mA (39.8 mW at 19.32 V).
+18:39:2x capture P2b_boot stopped (637 s, crossed one PIO wrap at 515.4 s: intervals normal, 0 missed).
+      One spurious ALRT edge at -0.721 s (the supply plug-in, same instant as the GP16 glitch): DIAG_ALRT 0xC001
+      (CNVRF clear) on that record -> CNVRF identifies it. ENERGY register 3832.41 J vs sum(P dt) 3832.59 J.
+18:39:34 Pico machine.reset(), listdir [], GP16 reset state.

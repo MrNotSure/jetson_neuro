@@ -1,0 +1,11 @@
+2026-10-29T18:35:57.274Z start; before: 	line 105:      "PQ.05"       unused   input  active-high 
+2026-10-29T18:35:57.279Z HIGH: gpioset --mode=time --sec=90 gpiochip0 105=1
+2026-10-29T18:37:27.289Z gpioset high rc=0
+2026-10-29T18:37:27.291Z after high, line: 	line 105:      "PQ.05"       unused  output  active-high 
+2026-10-29T18:37:27.297Z LOW: gpioset --mode=time --sec=90 gpiochip0 105=0
+2026-10-29T18:38:57.389Z gpioset low rc=0
+2026-10-29T18:38:57.391Z RELEASE: gpioget gpiochip0 105 -> 0 rc=0
+2026-10-29T18:38:57.395Z end; line: 	line 105:      "PQ.05"       unused   input  active-high 
+no gpioset running
+	line 105:      "PQ.05"       unused   input  active-high 
+No jobs running.

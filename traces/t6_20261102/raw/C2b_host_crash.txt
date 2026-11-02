@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/<user>/Documents/code/jetson_neuro/runs/t6_20261102/scripts/cap_host.py", line 186, in <module>
+    main()
+  File "/Users/<user>/Documents/code/jetson_neuro/runs/t6_20261102/scripts/cap_host.py", line 111, in main
+    raise RuntimeError(f"framing lost after {sum(counts.values())} records: {bytes(rec)!r}")
+RuntimeError: framing lost after 2095417 records: b'INA228 reset\r\n\x04T'

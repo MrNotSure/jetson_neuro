@@ -1,0 +1,28 @@
+mac_utc_before 2026-10-29 18:12:25.606
+board_utc 2026-10-26 16:06:51.282415392
+ 17:06:51 up 0 min,  2 users,  load average: 2.80, 0.81, 0.28
+35.89 174.04
+               Local time: Mon 2026-10-26 17:06:51 CET
+           Universal time: Mon 2026-10-26 16:06:51 UTC
+                 RTC time: Thu 1970-01-01 00:00:54
+                Time zone: Europe/Paris (CET, +0100)
+System clock synchronized: no
+              NTP service: active
+soctherm_oc
+107:	line 105:      "PQ.05"       unused   input  active-high 
+	line 105:      "PQ.05"       unused   input  active-high 
+No jobs running.
+8d91a6d88ccaf7056ca356af8cf6f5f828391bd8
+mac_utc_after 2026-10-29 18:12:26.210
+/sys/class/hwmon/hwmon0 pwmfan -> /sys/devices/platform/pwm-fan/hwmon/hwmon0
+/sys/class/hwmon/hwmon1 nvme -> /sys/devices/platform/bus@0/14160000.pcie/pci0004:00/0004:00:00.0/0004:01:00.0/nvme/nvme0/hwmon1
+/sys/class/hwmon/hwmon2 pwm_tach -> /sys/devices/platform/bus@0/39c0000.tachometer/hwmon/hwmon2
+/sys/class/hwmon/hwmon3 ina3221 -> /sys/devices/platform/bus@0/c240000.i2c/i2c-1/1-0040/hwmon/hwmon3
+/sys/class/hwmon/hwmon4 soctherm_oc -> /sys/devices/platform/soctherm-oc-event/hwmon/hwmon4
+/sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon3
+16:07:03.458 in1=5040 curr1=896 in2=5032 curr2=88 in3=5032 curr3=272
+16:07:04.476 in1=5032 curr1=920 in2=5032 curr2=112 in3=5032 curr3=272
+16:07:05.496 in1=5040 curr1=888 in2=5032 curr2=88 in3=5032 curr3=272
+16:07:06.516 in1=5040 curr1=888 in2=5032 curr2=88 in3=5032 curr3=272
+16:07:07.536 in1=5032 curr1=936 in2=5024 curr2=120 in3=5032 curr3=272
+ 17:07:08 up 0 min,  2 users,  load average: 2.18, 0.77, 0.27

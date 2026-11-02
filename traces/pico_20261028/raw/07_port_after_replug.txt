@@ -1,0 +1,29 @@
+# after user unplug/replug (reported done before 2026-10-28T16:27:47Z)
++-o Root  <class IORegistryEntry, id 0x100000100, retain 37>
+  +-o AppleT6000USBXHCI@02000000  <class AppleT6000USBXHCI, id 0x1000003b3, registered, matched, active, busy 0 (1666 ms), retain 44>
+  | |   "locationID" = 33554432
+  | +-o Board in FS mode@02100000  <class IOUSBHostDevice, id 0x100033516, registered, matched, active, busy 0 (316 ms), retain 27>
+  |       "USB Serial Number" = "<pico-serial>"
+  |       "USB Vendor Name" = "MicroPython"
+  |       "USB Product Name" = "Board in FS mode"
+  |       "idVendor" = 11914
+  |       "idProduct" = 5
+  |       "locationID" = 34603008
+  +-o AppleT6000USBXHCI@01000000  <class AppleT6000USBXHCI, id 0x1000003b8, registered, matched, active, busy 0 (131 ms), retain 27>
+  |     "locationID" = 16777216
+  +-o AppleT6000USBXHCI@00000000  <class AppleT6000USBXHCI, id 0x100000376, registered, matched, active, busy 0 (2259 ms), retain 27>
+        "locationID" = 0
+crw-rw-rw-   1 root             wheel      0x9000003 Oct 21 10:47 cu.Bluetooth-Incoming-Port
+crw-rw-rw-   1 root             wheel      0x9000005 Oct 21 10:47 cu.<bt-headset>
+crw-rw-rw-   1 root             wheel      0x9000001 Oct 21 10:46 cu.debug-console
+crw-rw-rw-   1 root             wheel      0x9000007 Oct 28 17:26 cu.usbmodem2101
+crw-rw-rw-   1 root             wheel      0x9000002 Oct 21 10:47 tty.Bluetooth-Incoming-Port
+crw-rw-rw-   1 root             wheel      0x9000004 Oct 21 10:47 tty.<bt-headset>
+crw-rw-rw-   1 root             wheel      0x9000000 Oct 21 10:46 tty.debug-console
+crw-rw-rw-   1 root             wheel      0x9000006 Oct 28 17:26 tty.usbmodem2101
+/dev/cu.Bluetooth-Incoming-Port None 0000:0000 None None
+/dev/cu.<bt-headset> None 0000:0000 None None
+/dev/cu.debug-console None 0000:0000 None None
+/dev/cu.usbmodem2101 <pico-serial> 2e8a:0005 MicroPython Board in FS mode
+ticks_ms since boot 50665
+listdir []

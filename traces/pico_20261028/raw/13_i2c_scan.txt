@@ -1,0 +1,7 @@
+before: GP4 pad=0x56 PUE=0 PDE=1 IE=1 funcsel=31 level=0 | GP5 pad=0x56 PUE=0 PDE=1 IE=1 funcsel=31 level=0
+i2c object: I2C(0, freq=399361, scl=5, sda=4, timeout=50000)
+after init: GP4 pad=0x5a PUE=1 PDE=0 IE=1 funcsel=3 level=1 | GP5 pad=0x5a PUE=1 PDE=0 IE=1 funcsel=3 level=1
+scan returned [] in 7310 us (112 addresses probed)
+after scan: GP4 pad=0x5a PUE=1 PDE=0 IE=1 funcsel=3 level=1 | GP5 pad=0x5a PUE=1 PDE=0 IE=1 funcsel=3 level=1
+mpremote exit 0
+host wall time 0.26 s

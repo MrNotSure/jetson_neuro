@@ -1,0 +1,23 @@
+== 2026-10-29T18:30:53Z clock before sync
+rtt   142.6 ms   board - mac -267498.702 s
+rtt   152.4 ms   board - mac -267498.697 s
+rtt    88.8 ms   board - mac -267498.729 s
+rtt    98.2 ms   board - mac -267498.724 s
+best (shortest rtt 88.8 ms): board - mac = -267498.729 s = -3.0961 d; mac utc 2026-10-29 18:30:54
+               Local time: Mon 2026-10-26 17:12:36 CET
+           Universal time: Mon 2026-10-26 16:12:36 UTC
+                 RTC time: Thu 1970-01-01 00:01:23
+                Time zone: Europe/Paris (CET, +0100)
+System clock synchronized: no
+              NTP service: active
+          RTC in local TZ: no
+ 17:12:36 up 1 min,  2 users,  load average: 0.33, 0.13, 0.04
+No jobs running.
+/sys/class/hwmon/hwmon0 pwmfan
+/sys/class/hwmon/hwmon1 nvme
+/sys/class/hwmon/hwmon2 pwm_tach
+/sys/class/hwmon/hwmon3 soctherm_oc
+/sys/class/hwmon/hwmon4 ina3221
+	line 105:      "PQ.05"       unused   input  active-high 
+8d91a6d
+0

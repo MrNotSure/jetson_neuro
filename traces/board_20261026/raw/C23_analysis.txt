@@ -1,0 +1,17 @@
+=== C2 idle noise: c2_idle_10hz_300s.csv n=3001 span=300.0s achieved=10.00 Hz utc_end=2026-10-26T12:56:31Z
+  VDD_IN          mean=  4546.5 mW sd=  19.0  sd(1s means)=  17.1 (n=300)  sd(10s means)=  11.6 (n=30)  drift=+1.04 mW/min (OLS se 0.24)  min=4542 max=4896  first60s=4550.5 last60s=4553.7
+      largest 10 s block deviation: block 29 (t=290-300s) mean=4598.8 vs median 4541.9
+  VDD_CPU_GPU_CV  mean=   460.4 mW sd=  21.7  sd(1s means)=  15.9 (n=300)  sd(10s means)=   8.5 (n=30)  drift=-1.99 mW/min (OLS se 0.27)  min=441 max=681  first60s=465.3 last60s=459.3
+      largest 10 s block deviation: block 5 (t=50-60s) mean=482.3 vs median 459.7
+  VDD_SOC         mean=  1367.9 mW sd=   8.1  sd(1s means)=   8.0 (n=300)  sd(10s means)=   7.4 (n=30)  drift=+2.13 mW/min (OLS se 0.09)  min=1364 max=1407  first60s=1365.9 last60s=1375.1
+      largest 10 s block deviation: block 29 (t=290-300s) mean=1405.1 vs median 1366.1
+  raw current LSB 8 mA, voltage LSB 8 mV -> VDD_IN power LSB ~40 mW per sample
+
+=== C3 sampler cost: 10 Hz vs 1000 Hz requested, 60 s each, order 10,1000,10,1000
+  c3_1_10hz.csv    achieved=   10.0 Hz cpu= 0.5% of one core  VDD_IN= 4580.7 VDD_CPU_GPU_CV= 441.6 VDD_SOC=1406.6 mW  (n=541, utc_end=2026-10-26T12:57:37Z)
+  c3_2_1000hz.csv  achieved=  291.0 Hz cpu= 9.5% of one core  VDD_IN= 4621.1 VDD_CPU_GPU_CV= 482.3 VDD_SOC=1406.7 mW  (n=15711, utc_end=2026-10-26T12:58:41Z)
+  c3_3_10hz.csv    achieved=   10.0 Hz cpu= 0.5% of one core  VDD_IN= 4543.0 VDD_CPU_GPU_CV= 441.5 VDD_SOC=1406.7 mW  (n=541, utc_end=2026-10-26T12:59:44Z)
+  c3_4_1000hz.csv  achieved=  291.0 Hz cpu= 9.5% of one core  VDD_IN= 4587.8 VDD_CPU_GPU_CV= 482.5 VDD_SOC=1406.7 mW  (n=15719, utc_end=2026-10-26T13:00:48Z)
+  VDD_IN          mean(1000Hz) - mean(10Hz) = +42.6 mW   per pair: +40.4, +44.8
+  VDD_CPU_GPU_CV  mean(1000Hz) - mean(10Hz) = +40.9 mW   per pair: +40.7, +41.0
+  VDD_SOC         mean(1000Hz) - mean(10Hz) = +0.0 mW   per pair: +0.0, -0.0

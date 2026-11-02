@@ -1,0 +1,33 @@
+tmux	MISSING
+screen	MISSING
+rsync	/usr/bin/rsync
+taskset	/usr/bin/taskset
+chrt	/usr/bin/chrt
+nohup	/usr/bin/nohup
+setsid	/usr/bin/setsid
+perf	MISSING
+stress	/usr/bin/stress
+stress-ng	MISSING
+iperf3	/usr/bin/iperf3
+tcpdump	MISSING
+numactl	/usr/bin/numactl
+cyclictest	MISSING
+jtop	MISSING
+## taskset without sudo
+taskset -c 0 true -> exit 0
+pid 7037's current affinity list: 0-5
+exit 0
+## chrt
+SCHED_OTHER min/max priority	: 0/0
+SCHED_FIFO min/max priority	: 1/99
+SCHED_RR min/max priority	: 1/99
+SCHED_BATCH min/max priority	: 0/0
+SCHED_IDLE min/max priority	: 0/0
+SCHED_DEADLINE min/max priority	: 0/0
+chrt: failed to set pid 0's policy: Operation not permitted
+chrt -f 1 true (no sudo) -> exit 1
+0
+ulimit -r above
+## nice
+nice: cannot set niceness: Permission denied
+nice -n -5 true -> exit 0

@@ -1,0 +1,52 @@
+### throttle indicators label=session_end utc=2026-10-26T13:35:22.256Z
+## soctherm_oc hwmon (/sys/class/hwmon/hwmon3)
+/sys/class/hwmon/hwmon3/oc1_event_cnt=0
+/sys/class/hwmon/hwmon3/oc1_throt_en=1
+/sys/class/hwmon/hwmon3/oc2_event_cnt=0
+/sys/class/hwmon/hwmon3/oc2_throt_en=1
+/sys/class/hwmon/hwmon3/oc3_event_cnt=0
+/sys/class/hwmon/hwmon3/oc3_throt_en=1
+## ina3221 alarms (/sys/class/hwmon/hwmon4)
+/sys/class/hwmon/hwmon4/curr1_crit_alarm=0
+/sys/class/hwmon/hwmon4/curr1_max_alarm=0
+/sys/class/hwmon/hwmon4/curr2_crit_alarm=0
+/sys/class/hwmon/hwmon4/curr2_max_alarm=0
+/sys/class/hwmon/hwmon4/curr3_crit_alarm=0
+/sys/class/hwmon/hwmon4/curr3_max_alarm=0
+/sys/class/hwmon/hwmon4/curr4_crit_alarm=0
+## files matching *throt*|*oc*_event*|*alarm* under the power-monitor and soctherm device trees
+/sys/devices/platform/bus@0/c240000.i2c/i2c-1/1-0040/hwmon/hwmon4/curr1_crit_alarm=0
+/sys/devices/platform/bus@0/c240000.i2c/i2c-1/1-0040/hwmon/hwmon4/curr1_max_alarm=0
+/sys/devices/platform/bus@0/c240000.i2c/i2c-1/1-0040/hwmon/hwmon4/curr2_crit_alarm=0
+/sys/devices/platform/bus@0/c240000.i2c/i2c-1/1-0040/hwmon/hwmon4/curr2_max_alarm=0
+/sys/devices/platform/bus@0/c240000.i2c/i2c-1/1-0040/hwmon/hwmon4/curr3_crit_alarm=0
+/sys/devices/platform/bus@0/c240000.i2c/i2c-1/1-0040/hwmon/hwmon4/curr3_max_alarm=0
+/sys/devices/platform/bus@0/c240000.i2c/i2c-1/1-0040/hwmon/hwmon4/curr4_crit_alarm=0
+/sys/devices/platform/soctherm-oc-event/hwmon/hwmon3/oc1_event_cnt=0
+/sys/devices/platform/soctherm-oc-event/hwmon/hwmon3/oc1_throt_en=1
+/sys/devices/platform/soctherm-oc-event/hwmon/hwmon3/oc2_event_cnt=0
+/sys/devices/platform/soctherm-oc-event/hwmon/hwmon3/oc2_throt_en=1
+/sys/devices/platform/soctherm-oc-event/hwmon/hwmon3/oc3_event_cnt=0
+/sys/devices/platform/soctherm-oc-event/hwmon/hwmon3/oc3_throt_en=1
+## throttle-alert cooling devices
+/sys/class/thermal/cooling_device0 type=cpufreq-cpu0 cur_state=0 max_state=21
+/sys/class/thermal/cooling_device1 type=cpufreq-cpu4 cur_state=0 max_state=21
+/sys/class/thermal/cooling_device10 type=soc2-throttle-alert cur_state=0 max_state=2
+/sys/class/thermal/cooling_device11 type=hot-surface-alert cur_state=0 max_state=2
+/sys/class/thermal/cooling_device12 type=devfreq-17000000.gpu cur_state=0 max_state=7
+/sys/class/thermal/cooling_device2 type=pwm-fan cur_state=0 max_state=3
+/sys/class/thermal/cooling_device3 type=cpu-throttle-alert cur_state=0 max_state=2
+/sys/class/thermal/cooling_device4 type=gpu-throttle-alert cur_state=0 max_state=2
+/sys/class/thermal/cooling_device5 type=cv0-throttle-alert cur_state=0 max_state=2
+/sys/class/thermal/cooling_device6 type=cv1-throttle-alert cur_state=0 max_state=2
+/sys/class/thermal/cooling_device7 type=cv2-throttle-alert cur_state=0 max_state=2
+/sys/class/thermal/cooling_device8 type=soc0-throttle-alert cur_state=0 max_state=2
+/sys/class/thermal/cooling_device9 type=soc1-throttle-alert cur_state=0 max_state=2
+## cpufreq stats (time_in_state totals and transitions)
+/sys/devices/system/cpu/cpufreq/policy0/stats/total_trans=14366
+/sys/devices/system/cpu/cpufreq/policy4/stats/total_trans=3376
+## bpmp debugfs throttle-related files (sudo cat, read-only)
+/sys/kernel/debug/bpmp/debug/soctherm/throt_counters:
+cat: /sys/kernel/debug/bpmp/debug/soctherm/throt_counters: No such file or directory
+/sys/kernel/debug/bpmp/debug/soctherm/oc_counters:
+cat: /sys/kernel/debug/bpmp/debug/soctherm/oc_counters: No such file or directory

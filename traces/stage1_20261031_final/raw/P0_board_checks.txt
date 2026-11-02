@@ -1,0 +1,21 @@
+== 2026-10-31T12:57:16Z Part 0.7 board checks
+ina3221: /sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon4 name=ina3221 labels=VDD_IN,VDD_CPU_GPU_CV,VDD_SOC
+uid=2002(<user>) gid=2002(<user>) groups=2002(<user>),4(adm),20(dialout),24(cdrom),27(sudo),29(audio),30(dip),44(video),46(plugdev),100(users),108(i2c),111(lpadmin),122(gdm),983(weston-launch),984(gpio),993(render)
+crw-rw---- 1 root dialout 236, 1 Oct 30 19:25 /dev/ttyTHS1
+8d91a6d
+status lines: 0
+Python 3.12.3
+numpy 2.5.4
+143-    once: bool = False,
+144-    on_ready: Callable[[tuple[str, int]], None] | None = None,
+72:def controller_metadata(
+35ebb5e1c86ed8e671cc157d89198a88  src/jn_sim/ctl.py
+6484af5a1759aa24d249c3610c335d56  src/jn_sim/testctl.py
+72252a6cb0de3190aac5adf19ffe392d  src/jn_sim/protocol.py
+f8a67e4a6323df07d4054d694839f23f  src/jn_sim/provenance.py
+/sys/class/hwmon/hwmon0 pwmfan pwm1 pwm1_enable 
+/sys/class/hwmon/hwmon1 nvme 
+/sys/class/hwmon/hwmon2 pwm_tach rpm 
+/sys/class/hwmon/hwmon3 soctherm_oc 
+/sys/class/hwmon/hwmon4 ina3221 
+No jobs running.

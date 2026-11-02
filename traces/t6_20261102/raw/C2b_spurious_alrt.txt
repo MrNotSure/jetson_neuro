@@ -1,0 +1,15 @@
+# C2b: one extra ALRT edge, in block R6A (V; checked live after round 8)
+capcheck / t6_check: 0 missed conversions, 1 record without CNVRF ("spurious ALRT"), seq16 gaps 0, FIFO levels [1].
+Conversion records 267776-267779 (index 0 = the CNVR-enable edge):
+  267776  dt  1079.76 us  diag 0xc003  (normal)
+  267777  dt   557.28 us  diag 0xc003  <- the extra edge: 0.12 us (one PIO count) after a GP16 marker fall
+                                         (fall #17963 of R6A's run; its rise follows 8.64 us later)
+  267778  dt   522.36 us  diag 0xc001  <- the real conversion end, on the old grid; CNVRF already cleared by the
+                                         previous handler's DIAG_ALRT read, so capdec marks it spurious
+  267779  dt  1079.76 us  diag 0xc003  (normal again)
+The conversion grid's phase is unchanged across the event (517 us before, 528 us after, mod 1079.7 us).
+Reading (NV): the marker's falling edge coupled into the ALRT line (GP16 and GP17 are adjacent Pico pins; ALRT is
+open-drain with a pull-up). 1 of 48 008 marker edges in C2b so far; 0 of 48 008 in C1, 0 of 1001 in S0.
+Effect on the analysis: the analysis drops record 267778 (CNVRF clear) and keeps 267777, which carries the values
+read at the extra edge and is placed 0.52 ms early. One conversion of 633 728: negligible for X (one sample's
+placement, < 0.01 uJ on R6A's block X). Not corrected.

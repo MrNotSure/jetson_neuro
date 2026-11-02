@@ -1,0 +1,12 @@
+rc 0; new dirs ['20261102T141352Z_sine_hold']
+--- stdout
+run directory: runs/t6_20261102/sim/20261102T141352Z_sine_hold
+status: completed
+  periods=6000 episodes=1 misses=2 achieved_hz=99.9955
+  error: rms_deg=12 max_deg=17  in_view rms_px=59.2 max_px=84.5
+  in_fov=1 losses=0 unrecovered=0 success_rate=1
+  events/period p95=519  sim_us p99=2.4e+03  rtt_us p99=1.06e+03  lateness_us p99=12.6
+  cmd_invalid=0 cmd_clamped=0 flags={'fault': 0, 'detect': 0, 'recover': 0}
+
+--- stderr
+

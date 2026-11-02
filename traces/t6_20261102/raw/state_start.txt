@@ -1,0 +1,35 @@
+# T6 Part 0, board and Pico state at the start, 2 Nov 2026 (UTC). All V unless marked.
+== 2026-11-02T11:19:06Z board (ssh jetson-usb, read-only)
+uptime: up 1:51 at 11:19:06; uptime -s 2026-11-02 10:27:09 CET = 09:27:09 UTC (cold boot, as handed over)
+nvpmodel: Result=success ExecMainStatus=0 ActiveState=inactive; NV Power Mode: 25W (mode 1)
+policy0 governor=schedutil min=729600 max=1344000 cur=1344000 (cur read while the check itself ran)
+policy4 governor=schedutil min=729600 max=1344000 cur=729600
+gpu governor=nvhost_podgov min=306000000 max=918000000 cur=306000000
+cpuidle disable: all 0 (12 states)
+tpc_pg_mask=240 fbp_pg_mask=2 (sysfs)
+timers: anacron man-db fstrim e2scrub_all dpkg-db-backup systemd-tmpfiles-clean inactive (enabled/static);
+        fake-hwclock-save active; apt-daily apt-daily-upgrade motd-news update-notifier-download update-notifier-motd fwupd-refresh inactive disabled
+default target: multi-user.target; radio: disabled
+systemctl list-jobs: No jobs running; pgrep -a -x 'apt|apt-get|apt-helper|dpkg': none; systemctl --failed: empty
+ours: nothing running (pgrep -f sampler/mark_ctl/freqlog/uart_marker/jn_sim/steplog_ctl matched only the check's own shell); port 5555 closed
+temps (m°C): cpu 47718 gpu 47250 soc0 46375 soc1 47156 soc2 47156 tj 47687; fan_pwm=64 fan_rpm=1335
+== 2026-11-02T11:19:35Z board identity
+ina3221: /sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon3 name=ina3221 labels=VDD_IN,VDD_CPU_GPU_CV,VDD_SOC
+id: uid=2002(<user>) ... groups include 20(dialout); /dev/ttyTHS1 crw-rw---- root dialout
+~/jetson_neuro HEAD 0c397e1bb42f90ea295710ea4f225f4e218066c6, git status --short: 0 lines (clean)
+~/venvs/jn: Python 3.12.3, numpy 2.5.4; 6 CPUs online (0-5); /tmp has jn_t5 only (no /tmp/jn_t6 yet)
+== clock
+11:19:35 clockcheck: board - mac = -1.004 s (5 exchanges, best rtt 106.8 ms)  -> over 0.1 s, sync (pre-agreed)
+11:35:10 sudo date -u -s @<mac+60ms>: absolute set, after the approval prompt; left the board -0.772 s
+         (ssh + sudo latency about 0.83 s between computing T on the Mac and date running)
+11:48:05 sudo date -u -s '+0.785 seconds' (relative step, latency-independent; clocksync.py measured -0.785 s just before)
+11:48:06 clockcheck: board - mac = -0.015 s (best rtt 66.7 ms)                                   -> synced
+drift seen: -0.772 s at 11:35:34 -> -0.785 s at 11:48:05, about -17 ppm. So most of the -1.004 s at 11:19 was
+the T5 sync at 09:30:40 itself (same latency), not drift (NV).
+== nvpmodel -q --verbose (sudo, read-only, pre-agreed): raw/nvpmodel_verbose.txt
+Current mode 25W; CPU_ONLINE 0-5 REAL 1; FBP_PG_MASK REAL 2 CONF 2; TPC_PG_MASK REAL 240 CONF 240;
+CPU MAX_FREQ 1344000 cores 0-5 (REAL = CONF); GPU MAX_FREQ 918000000; EMC MAX_FREQ 3199000000
+== Pico (mpremote connect id:<pico-serial> run pico_state.py): raw/pico_state_start.txt
+port /dev/cu.usbmodem1101 (vid 0x2e8a, serial <pico-serial>), the only Pico; Jetson console is /dev/cu.usbmodem<jetson-serial>21
+MicroPython 1.29.0; os.listdir('/') = []; PIO0 CTRL 0 (no SM running); SIO GPIO_OE = 0
+GP16 funcsel=31 (NULL) OE=0 IN=1 pad=0x56 (pull-down, input enabled): an input, reading 1 -> pin 8 (idle-high UART TX) appears connected

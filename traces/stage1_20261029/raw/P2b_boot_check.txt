@@ -1,0 +1,12 @@
+records 591246, bad framing 0, trailer True
+conversions 589968, seq16 gaps 0, FIFO levels [1]
+span 636.998 s, interval median 1079.760 us, min 225.360, max 1089.840, missed 0, +10us steps 1274, irregular 2
+PIO wraps crossed: 1 (one every 515.4 s)
+  around wrap 1 at 515.396 s: intervals [1079.64, 1079.76, 1079.64, 1079.76, 1079.64] us
+I mean 312.799 mA sd 103.626 mA, min -0.85, max 1008.08; V mean 18.1181 V sd 4436.22 mV; P mean 6016.7 mW
+rise: 1 edges, seq gaps 0
+fall: 1 edges, seq gaps 0
+ENERGY samples 637: 0.0000 -> 3832.4113 J over 636.0 s
+CHARGE samples 637: -0.000062 -> 199.278536 C over 636.0 s
+sync phase 0: SM0-SM1 1 counts, SM0-SM2 2 counts, SM0 moved 177 counts during the spin
+sync phase 1: SM0-SM1 0 counts, SM0-SM2 1 counts, SM0 moved 176 counts during the spin

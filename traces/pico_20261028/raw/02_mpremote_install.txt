@@ -1,0 +1,28 @@
+# uv tool install mpremote==1.29.0  (2026-10-28T16:21:48Z)
+Resolved 3 packages in 366ms
+Prepared 3 packages in 114ms
+Installed 3 packages in 52ms
+ + mpremote==1.29.0
+ + platformdirs==4.13.7
+ + pyserial==3.5
+Installed 1 executable: mpremote
+
+# uv pip list (tool env)
+Package      Version
+------------ -------
+mpremote     1.29.0
+platformdirs 4.13.7
+pyserial     3.5
+
+# pyvenv.cfg
+home = /Users/<user>/.local/share/uv/python/cpython-3.11.11-macos-aarch64-none/bin
+implementation = CPython
+uv = 0.6.12
+version_info = 3.11.11
+include-system-site-packages = false
+
+# mpremote connect list, before flashing
+/dev/cu.Bluetooth-Incoming-Port None 0000:0000 None None
+/dev/cu.<bt-headset> None 0000:0000 None None
+/dev/cu.debug-console None 0000:0000 None None
+(exit 0)

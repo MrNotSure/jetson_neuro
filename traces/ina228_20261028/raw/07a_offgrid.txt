@@ -1,0 +1,20 @@
+E4_transparent_diag_400k: falls 513, off-grid (>2 us) 465; low pulses <1us 25
+   off-grid fall at 8979.6 (grid offset -137.4): r-380.1  ]A-342.6  f-241.7  A[-200.6  r-0.1  f+0.0  r+0.0  ]A+37.4  f+138.2  A[+180.4  r+379.7  ]A+418.4
+   off-grid fall at 12370.6 (grid offset -165.1): r-373.8  ]A-335.6  f-213.6  A[-196.6  r-0.0  f+0.0  r+0.2  ]A+38.4  f+74.8  A[+181.4  r+285.7  f+365.5  ]A+414.4
+   off-grid fall at 12445.4 (grid offset -90.3): r-448.6  ]A-410.4  f-288.5  A[-271.4  r-74.9  f-74.8  r-74.6  ]A-36.4  f+0.0  A[+106.6  r+210.9  f+290.6  ]A+339.6
+   off-grid fall at 12736.0 (grid offset -179.5): r-365.5  f-365.5  r-365.3  ]A-327.0  f-290.6  A[-184.0  r-79.8  f+0.0  ]A+49.0  A[+190.0  r+205.7  f+288.6  ]A+425.0
+E5_latched_diag_400k: falls 512, off-grid (>2 us) 460; low pulses <1us 0
+   off-grid fall at 20902.0 (grid offset +2.0): f-379.9  A[-339.0  r-140.6  ]A-103.0  f+0.0  A[+36.0  r+229.7  ]A+267.0  f+379.9  A[+425.0
+   off-grid fall at 21281.9 (grid offset +2.1): f-379.9  A[-343.9  r-150.2  ]A-112.9  f+0.0  A[+45.1  r+242.4  ]A+280.1  f+379.9  A[+417.1
+   off-grid fall at 21661.8 (grid offset +2.1): f-379.9  A[-334.8  r-137.4  ]A-99.8  f+0.0  A[+37.2  r+235.7  ]A+273.2  f+379.9  A[+416.2
+   off-grid fall at 22041.7 (grid offset +2.1): f-379.9  A[-342.7  r-144.2  ]A-106.7  f+0.0  A[+36.3  r+232.1  ]A+270.3  f+379.9  A[+414.3
+E6_transparent_diag_100k: falls 263, off-grid (>2 us) 233; low pulses <1us 0
+   off-grid fall at 24301.2 (grid offset +2.1): r-179.3  ]A-129.2  f+0.0  A[+49.8
+   off-grid fall at 25060.9 (grid offset +2.1): r-168.3  ]A-117.9  f+0.0  A[+40.1
+   off-grid fall at 25820.7 (grid offset +2.2): r-176.3  ]A-127.7  f+0.0  A[+48.3
+   off-grid fall at 26580.5 (grid offset +2.3): r-165.3  ]A-114.5  f+0.0  A[+45.5
+E7_transparent_diag_1M: falls 512, off-grid (>2 us) 454; low pulses <1us 1
+   off-grid fall at 22808.5 (grid offset +2.0): f-379.9  A[-343.5  r-215.4  ]A-183.5  f+0.0  A[+48.5  r+180.7  ]A+215.5  f+379.9  A[+414.5
+   off-grid fall at 23188.4 (grid offset +2.1): f-379.9  A[-331.4  r-199.2  ]A-164.4  f+0.0  A[+34.6  r+166.6  ]A+197.6  f+379.9  A[+428.6
+   off-grid fall at 23568.3 (grid offset +2.1): f-379.9  A[-345.3  r-213.3  ]A-182.3  f+0.0  A[+48.7  r+176.5  ]A+209.7  f+379.9  A[+424.7
+   off-grid fall at 23948.2 (grid offset +2.2): f-379.9  A[-331.2  r-203.4  ]A-170.2  f+0.0  A[+44.8  r+173.5  ]A+207.8  f+379.9  A[+421.8

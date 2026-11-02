@@ -1,0 +1,7 @@
+#!/bin/zsh
+# Throwaway: log a Mac-side command that touches the board (rsync), then run it.
+# usage: bl rsync -a SRC jetson-usb:DST
+LOG=/Users/<user>/Documents/code/jetson_neuro/runs/board_20261026/commands.log
+ts=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+printf '%s\t(mac) %s\n' "$ts" "$*" >> "$LOG"
+exec "$@"

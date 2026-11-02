@@ -1,0 +1,46 @@
+== Jetson console device:
+zsh: no matches found: /dev/cu.usbmodem<jetson-serial>*
+== USB serial devices (IOKit):
+expected exactly one Pico port (vid 0x2e8a, serial <pico-serial>); found [] among []
+== ssh:
+ssh: connect to host 192.168.55.1 port 22: Operation timed out
+ssh exit 255
+== mpremote list:
+/dev/cu.Bluetooth-Incoming-Port None 0000:0000 None None
+/dev/cu.<bt-headset> None 0000:0000 None None
+/dev/cu.debug-console None 0000:0000 None None
+== Pico state:
+mpremote: no device with serial number <pico-serial>
+== git:
+ M README.md
+ M SETUP_NOTES.md
+ M docs/exploration.md
+ M scripts/jx
+?? docs/img/stage1_wiring.svg
+?? docs/stage1_wiring.md
+?? traces/pico_20261028/
+78cf5f988f24526ee05b3f0ed3e8e506d655d0f8
+diff stat src scenarios since 8d91a6d:
+(end diff)
+---
+crw-rw-rw-  1 root  wheel  0x9000003 Oct 21 10:47 /dev/cu.Bluetooth-Incoming-Port
+crw-rw-rw-  1 root  wheel  0x9000005 Oct 21 10:47 /dev/cu.<bt-headset>
+crw-rw-rw-  1 root  wheel  0x9000001 Oct 21 10:46 /dev/cu.debug-console
+== after the user plugged the Pico in (2026-10-29T17:52:51Z):
+/dev/cu.Bluetooth-Incoming-Port None 0000:0000 None None
+/dev/cu.<bt-headset> None 0000:0000 None None
+/dev/cu.debug-console None 0000:0000 None None
+/dev/cu.usbmodem1101 <pico-serial> 2e8a:0005 MicroPython Board in FS mode
+vid=0x2e8a pid=0x0005 serial=<pico-serial> product='Board in FS mode' path=/dev/cu.usbmodem1101
+selected: /dev/cu.usbmodem1101
+zsh: no matches found: /dev/cu.usbmodem<jetson-serial>*
+ticks_ms since boot: 3236
+version: (1, 29, 0, '') Raspberry Pi Pico with RP2040
+os.listdir('/'): []
+SIO GPIO_OE = 0x00000000  GPIO_IN = 0x01000030
+PIO0 CTRL = 0x00000000 (SM enable bits)
+GP4  funcsel=31 OE=0 IN=1 pad=0x56 PUE=0 PDE=1 IE=1 OD=0
+GP5  funcsel=31 OE=0 IN=1 pad=0x56 PUE=0 PDE=1 IE=1 OD=0
+GP16 funcsel=31 OE=0 IN=0 pad=0x56 PUE=0 PDE=1 IE=1 OD=0
+GP17 funcsel=31 OE=0 IN=0 pad=0x56 PUE=0 PDE=1 IE=1 OD=0
+GP25 funcsel=31 OE=0 IN=0 pad=0x56 PUE=0 PDE=1 IE=1 OD=0

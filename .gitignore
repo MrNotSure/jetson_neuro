@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Model weights and datasets — too big for git, fetch or regenerate instead
+*.pt
+*.pth
+*.onnx
+*.engine
+*.trt
+data/
+datasets/
+
+# NOTE: traces/ is deliberately NOT ignored. Publishing raw power traces
+# rather than summary numbers is part of the measurement protocol. Keep them.
+traces/**/*.tmp
+traces/**/*.partial
+
+# macOS / iCloud debris
+.DS_Store
+.AppleDouble
+Icon?
+*.icloud
+# iCloud sync conflict copies, e.g. "train 2.py" — a symptom of keeping this
+# repo in iCloud, which you should not do
+* [0-9].py
+* [0-9].md
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+!traces/**/*.log
+
+# Simulator run outputs — never committed (spec_sim.md R1.4, R12.2).
+# Anchored to the repo root, so run logs copied under traces/ are kept.
+/runs/
+events.bin

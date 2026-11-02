@@ -1,0 +1,10 @@
+ticks_ms since boot: 3046
+version: (1, 29, 0, '') Raspberry Pi Pico with RP2040
+os.listdir('/'): []
+SIO GPIO_OE = 0x00000000  GPIO_IN = 0x01010030
+PIO0 CTRL = 0x00000000 (SM enable bits)
+GP4  funcsel=31 OE=0 IN=1 pad=0x56 PUE=0 PDE=1 IE=1 OD=0
+GP5  funcsel=31 OE=0 IN=1 pad=0x56 PUE=0 PDE=1 IE=1 OD=0
+GP16 funcsel=31 OE=0 IN=1 pad=0x56 PUE=0 PDE=1 IE=1 OD=0
+GP17 funcsel=31 OE=0 IN=0 pad=0x56 PUE=0 PDE=1 IE=1 OD=0
+GP25 funcsel=31 OE=0 IN=0 pad=0x56 PUE=0 PDE=1 IE=1 OD=0

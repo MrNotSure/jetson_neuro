@@ -1,0 +1,64 @@
+## sudo nvpmodel -q --verbose
+NVPM VERB: Config file: /etc/nvpmodel.conf
+NVPM VERB: parsing done for /etc/nvpmodel.conf
+NVPM VERB: Current mode: NV Power Mode: 25W
+1
+NVPM VERB: PARAM CPU_ONLINE: ARG CORE_0: PATH /sys/devices/system/cpu/cpu0/online: REAL_VAL: 1 CONF_VAL: 1
+NVPM VERB: PARAM CPU_ONLINE: ARG CORE_1: PATH /sys/devices/system/cpu/cpu1/online: REAL_VAL: 1 CONF_VAL: 1
+NVPM VERB: PARAM CPU_ONLINE: ARG CORE_2: PATH /sys/devices/system/cpu/cpu2/online: REAL_VAL: 1 CONF_VAL: 1
+NVPM VERB: PARAM CPU_ONLINE: ARG CORE_3: PATH /sys/devices/system/cpu/cpu3/online: REAL_VAL: 1 CONF_VAL: 1
+NVPM VERB: PARAM CPU_ONLINE: ARG CORE_4: PATH /sys/devices/system/cpu/cpu4/online: REAL_VAL: 1 CONF_VAL: 1
+NVPM VERB: PARAM CPU_ONLINE: ARG CORE_5: PATH /sys/devices/system/cpu/cpu5/online: REAL_VAL: 1 CONF_VAL: 1
+NVPM VERB: PARAM FBP_POWER_GATING: ARG FBP_PG_MASK: PATH /sys/devices/platform/gpu.0/fbp_pg_mask: REAL_VAL: 2 CONF_VAL: 2
+NVPM VERB: PARAM TPC_POWER_GATING: ARG TPC_PG_MASK: PATH /sys/devices/platform/gpu.0/tpc_pg_mask: REAL_VAL: 240 CONF_VAL: 240
+NVPM VERB: PARAM GPU_POWER_CONTROL_ENABLE: ARG GPU_PWR_CNTL_EN: PATH /sys/devices/platform/gpu.0/power/control: REAL_VAL: auto CONF_VAL: on
+NVPM VERB: PARAM CPU_A78_0: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq: REAL_VAL: 729600 CONF_VAL: 729600
+NVPM VERB: PARAM CPU_A78_0: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: REAL_VAL: 1344000 CONF_VAL: 1344000
+NVPM VERB: PARAM CPU_A78_1: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq: REAL_VAL: 729600 CONF_VAL: 729600
+NVPM VERB: PARAM CPU_A78_1: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu1/cpufreq/scaling_max_freq: REAL_VAL: 1344000 CONF_VAL: 1344000
+NVPM VERB: PARAM CPU_A78_2: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq: REAL_VAL: 729600 CONF_VAL: 729600
+NVPM VERB: PARAM CPU_A78_2: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq: REAL_VAL: 1344000 CONF_VAL: 1344000
+NVPM VERB: PARAM CPU_A78_3: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq: REAL_VAL: 729600 CONF_VAL: 729600
+NVPM VERB: PARAM CPU_A78_3: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq: REAL_VAL: 1344000 CONF_VAL: 1344000
+NVPM VERB: PARAM CPU_A78_4: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq: REAL_VAL: 729600 CONF_VAL: 729600
+NVPM VERB: PARAM CPU_A78_4: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu4/cpufreq/scaling_max_freq: REAL_VAL: 1344000 CONF_VAL: 1344000
+NVPM VERB: PARAM CPU_A78_5: ARG MIN_FREQ: PATH /sys/devices/system/cpu/cpu5/cpufreq/scaling_min_freq: REAL_VAL: 729600 CONF_VAL: 729600
+NVPM VERB: PARAM CPU_A78_5: ARG MAX_FREQ: PATH /sys/devices/system/cpu/cpu5/cpufreq/scaling_max_freq: REAL_VAL: 1344000 CONF_VAL: 1344000
+NVPM VERB: PARAM GPU: ARG MIN_FREQ: PATH /sys/devices/platform/17000000.gpu/devfreq_dev/min_freq: REAL_VAL: 306000000 CONF_VAL: 0
+NVPM VERB: PARAM GPU: ARG MAX_FREQ: PATH /sys/devices/platform/17000000.gpu/devfreq_dev/max_freq: REAL_VAL: 918000000 CONF_VAL: 918000000
+NVPM VERB: PARAM GPU_POWER_CONTROL_DISABLE: ARG GPU_PWR_CNTL_DIS: PATH /sys/devices/platform/gpu.0/power/control: REAL_VAL: auto CONF_VAL: auto
+NVPM VERB: PARAM EMC: ARG MAX_FREQ: PATH /sys/class/devfreq/bwmgr/max_freq: REAL_VAL: 3199000000 CONF_VAL: 3199000000
+## nvpmodel.conf location
+lrwxrwxrwx 1 root root 44 Jan  1  1970 /etc/nvpmodel.conf -> /etc/nvpmodel/nvpmodel_p3767_0003_super.conf
+/etc/nvpmodel/nvpmodel_p3767_0003_super.conf
+total 256
+drwxr-xr-x   2 root root  4096 Sep 23 17:43 .
+drwxr-xr-x 161 root root 12288 Oct 15 18:46 ..
+-rw-r--r--   1 root root  6904 Aug  7 07:41 nvpmodel_igx_orin.conf
+-rw-r--r--   1 root root  6877 Aug  7 07:41 nvpmodel_igx_orin_safety.conf
+-rw-r--r--   1 root root 16477 Aug  7 07:41 nvpmodel_igx_thor.conf
+-rw-r--r--   1 root root  9131 Aug  7 07:41 nvpmodel_p3701_0000.conf
+-rw-r--r--   1 root root  6761 Aug  7 07:41 nvpmodel_p3701_0002.conf
+-rw-r--r--   1 root root  8243 Aug  7 07:41 nvpmodel_p3701_0004.conf
+-rw-r--r--   1 root root  8909 Aug  7 07:41 nvpmodel_p3701_0004_super.conf
+-rw-r--r--   1 root root  9116 Aug  7 07:41 nvpmodel_p3701_0008.conf
+-rw-r--r--   1 root root 11966 Aug  7 07:41 nvpmodel_p3767_0000.conf
+-rw-r--r--   1 root root 12979 Aug  7 07:41 nvpmodel_p3767_0000_super.conf
+-rw-r--r--   1 root root 10591 Aug  7 07:41 nvpmodel_p3767_0001.conf
+-rw-r--r--   1 root root 11461 Aug  7 07:41 nvpmodel_p3767_0001_super.conf
+-rw-r--r--   1 root root  7317 Aug  7 07:41 nvpmodel_p3767_0003.conf
+-rw-r--r--   1 root root  8122 Aug  7 07:41 nvpmodel_p3767_0003_super.conf
+-rw-r--r--   1 root root  7900 Aug  7 07:41 nvpmodel_p3767_0004.conf
+-rw-r--r--   1 root root  8123 Aug  7 07:41 nvpmodel_p3767_0004_super.conf
+-rw-r--r--   1 root root 12909 Aug  7 07:41 nvpmodel_p3834_0000.conf
+-rw-r--r--   1 root root 14218 Aug  7 07:41 nvpmodel_p3834_0005.conf
+-rw-r--r--   1 root root 10958 Aug  7 07:41 nvpmodel_p3834_0008_as_p5767_0000.conf
+-rw-r--r--   1 root root 16692 Aug  7 07:41 nvpmodel_p3834_0008.conf
+## /var/lib/nvpmodel
+total 16
+drwxr-xr-x  2 root root 4096 Jan  1  1970 .
+drwxr-xr-x 74 root root 4096 Oct 15 16:11 ..
+-rw-r--r--  1 root root   18 Jan  1  1970 conf_file_path
+-rw-r--r--  1 root root   10 Jan  1  1970 status
+pmode:0001
+/etc/nvpmodel.conf

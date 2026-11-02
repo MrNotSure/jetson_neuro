@@ -1,0 +1,24 @@
+== 2026-10-30T17:12:47Z after reboot #1
+rtt   101.0 ms   board - mac -31.332 s
+rtt   130.6 ms   board - mac -31.318 s
+rtt    79.6 ms   board - mac -31.343 s
+best (shortest rtt 79.6 ms): board - mac = -31.343 s = -0.0004 d; mac utc 2026-10-30 17:12:48
+ 18:12:17 up 3 min,  2 users,  load average: 0.45, 0.36, 0.16
+224.00 1270.37
+Result=success
+ExecMainStatus=0
+ActiveState=inactive
+NV Power Mode: 25W
+1
+/sys/devices/system/cpu/cpufreq/policy0 governor=schedutil min=729600 max=1344000 cur=1190400
+/sys/devices/system/cpu/cpufreq/policy4 governor=schedutil min=729600 max=1344000 cur=729600
+gpu governor=nvhost_podgov min=306000000 max=918000000 cur=306000000
+bwmgr min=204000000 max=3199000000 cur=2133000000
+cpuidle disable: 0 0 0 0 0 0 0 0 0 0 0 0 
+tpc_pg_mask=240 fbp_pg_mask=2 gpu_power_control=auto
+	line 105:      "PQ.05"       unused   input  active-high 
+/sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon3
+cpu-thermal=49375 gpu-thermal=49406 soc0-thermal=48531 soc1-thermal=49312 soc2-thermal=49218 tj-thermal=49781 
+no apt/dpkg
+No jobs running.
+20(dialout)

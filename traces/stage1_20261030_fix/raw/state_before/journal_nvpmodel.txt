@@ -1,0 +1,9 @@
+1970-01-01T01:00:32+01:00 jetson systemd[1]: Starting nvpmodel.service - nvpmodel service...
+1970-01-01T01:00:32+01:00 jetson nvpmodel.sh[1951]: NVPM WARN: Golden image context is already created
+1970-01-01T01:00:32+01:00 jetson nvpmodel.sh[1951]: NVPM WARN: Reboot required for changing to this power mode: 1
+1970-01-01T01:00:32+01:00 jetson nvpmodel.sh[1951]: NVPM WARN: DO YOU WANT TO REBOOT NOW? enter YES/yes to confirm:
+1970-01-01T01:00:32+01:00 jetson nvpmodel.sh[1951]: NVPM ERROR: bad input!
+1970-01-01T01:00:32+01:00 jetson nvpmodel.sh[1951]: NVPM ERROR: optMask is 2, no request for power mode
+1970-01-01T01:00:32+01:00 jetson systemd[1]: nvpmodel.service: Main process exited, code=exited, status=234/n/a
+1970-01-01T01:00:32+01:00 jetson systemd[1]: nvpmodel.service: Failed with result 'exit-code'.
+1970-01-01T01:00:32+01:00 jetson systemd[1]: Failed to start nvpmodel.service - nvpmodel service.

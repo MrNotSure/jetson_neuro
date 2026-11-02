@@ -1,0 +1,37 @@
+== running services: before -> after diff (- gone, + new)
+- ModemManager.service
+- accounts-daemon.service
+- bluetooth.service
+- colord.service
+- containerd.service
+- docker.service
+- gdm.service
+- gnome-remote-desktop.service
++ getty@tty1.service
+- iperf3.service
+- nvargus-daemon.service
+- packagekit.service
+- power-profiles-daemon.service
+- switcheroo-control.service
+- udisks2.service
+- upower.service
+- user@121.service
+count before       43, after       28
+== enabled unit files: diff
+- ModemManager.service
+- apt-daily-upgrade.timer
+- apt-daily.timer
+- bluetooth.service
+- containerd.service
+- docker.service
+- docker.socket
+- fwupd-refresh.timer
+- gnome-remote-desktop.service
+- iperf3.service
+- motd-news.timer
+- nvargus-daemon.service
+- saned.socket
+- update-notifier-download.timer
+- update-notifier-motd.timer
+== failed: before
+== failed: after

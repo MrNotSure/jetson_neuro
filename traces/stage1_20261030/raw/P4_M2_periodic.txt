@@ -1,0 +1,33 @@
+INA228 1 s means folded at 60 s (mean of 5 cycles), mW above the fold median:
+0:+0 1:+9 2:+18 3:-5 4:-12 5:+25 6:-1 7:+5 8:+3 9:-9 10:+1 11:+9 12:-3 13:-13 14:+12 15:-8 16:+3 17:-10 18:+4 19:-18 20:-0 21:+5 22:+9 23:+3 24:-11 25:-22 26:-11 27:+55 28:+5 29:+9 30:-11 31:-14 32:+29 33:+1 34:+3 35:-23 36:-10 37:+20 38:+6 39:-5 40:+9 41:-15 42:-24 43:+10 44:+11 45:+11 46:-7 47:-7 48:-15 49:+18 50:-2 51:-18 52:-0 53:-1 54:+22 55:+2 56:-6 57:-5 58:+20 59:-16
+largest seconds-of-minute: [27, 32, 5, 54, 58] [55.5, 29.1, 24.8, 21.7, 20.3]
+window starts at 2026-10-30T17:40:40.251 UTC -> second 0 of the fold = :40.25
+strongest periods of the 1 s means (s): [5.26, 5.36, 2.65, 2.7, 5.45] amplitudes [15.9, 15.1, 12.9, 10.1, 9.2] mW
+2026-10-30T18:45:15+01:00 jetson dhcpd[2042]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-10-30T18:45:15+01:00 jetson dhcpd[2042]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-10-30T18:45:19+01:00 jetson systemd-resolved[459]: Using degraded feature set UDP instead of TCP for DNS server 8.8.8.8.
+2026-10-30T18:45:21+01:00 jetson dhcpd[2042]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-10-30T18:45:21+01:00 jetson dhcpd[2042]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-10-30T18:45:24+01:00 jetson systemd-resolved[459]: Using degraded feature set TCP instead of UDP for DNS server 8.8.8.8.
+2026-10-30T18:45:27+01:00 jetson dhcpd[2042]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-10-30T18:45:27+01:00 jetson dhcpd[2042]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-10-30T18:45:33+01:00 jetson dhcpd[2042]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-10-30T18:45:33+01:00 jetson dhcpd[2042]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-10-30T18:45:39+01:00 jetson dhcpd[2042]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-10-30T18:45:39+01:00 jetson dhcpd[2042]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-10-30T18:45:44+01:00 jetson systemd-resolved[459]: Using degraded feature set UDP instead of TCP for DNS server 8.8.8.8.
+2026-10-30T18:45:45+01:00 jetson dhcpd[2042]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-10-30T18:45:45+01:00 jetson dhcpd[2042]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-10-30T18:45:51+01:00 jetson dhcpd[2042]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-10-30T18:45:51+01:00 jetson dhcpd[2042]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-10-30T18:45:54+01:00 jetson systemd-resolved[459]: Using degraded feature set TCP instead of UDP for DNS server 8.8.8.8.
+2026-10-30T18:45:57+01:00 jetson dhcpd[2042]: DHCPREQUEST for 192.168.55.100 from xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+2026-10-30T18:45:57+01:00 jetson dhcpd[2042]: DHCPACK on 192.168.55.100 to xx:xx:xx:xx:xx:xx (mac-hostname) via l4tbr0
+== cron.d / crontab
+anacron
+e2scrub_all
+SHELL=/bin/sh
+17 *	* * *	root	cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.daily; }
+47 6	* * 7	root	test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.weekly; }
+52 6	1 * *	root	test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.monthly; }

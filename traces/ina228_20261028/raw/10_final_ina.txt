@@ -1,0 +1,7 @@
+scan: [64]
+  CONFIG       0x0000 [reset 0x0000] ok
+  ADC_CONFIG   0xFB68 [reset 0xFB68] ok
+  SHUNT_CAL    0x1000 [reset 0x1000] ok
+  SHUNT_TEMPCO 0x0000 [reset 0x0000] ok
+  DIAG_ALRT    0x0003 (CNVR 0, ALATCH 0, MEMSTAT 1)
+IDs 0x5449 0x2281; ALRT (GP17) level with pull-up: 1

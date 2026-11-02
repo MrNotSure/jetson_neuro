@@ -1,0 +1,242 @@
+## /sys/class/devfreq/15340000.vic -> /sys/devices/platform/bus@0/13e00000.host1x/15340000.vic/devfreq/15340000.vic
+available_frequencies	-r--r--r--	115200000 128000000 140800000 153600000 166400000 179200000 192000000 204800000 217600000 230400000 243200000 256000000 268800000 281600000 294400000 307200000 320000000 332800000 345600000 358400000 371200000 384000000 396800000 409600000 422400000 435200000 
+available_governors	-r--r--r--	nvhost_podgov tegra_wmark userspace performance simple_ondemand 
+cur_freq	-r--r--r--	435200000 
+governor	-rw-r--r--	tegra_wmark 
+max_freq	-rw-r--r--	435200000 
+min_freq	-rw-r--r--	115200000 
+name	-r--r--r--	15340000.vic 
+target_freq	-r--r--r--	435200000 
+trans_stat	-rw-r--r--	cat: /sys/class/devfreq/15340000.vic/trans_stat: File too large 
+uevent	-rw-r--r--	
+## /sys/class/devfreq/15380000.nvjpg -> /sys/devices/platform/bus@0/13e00000.host1x/15380000.nvjpg/devfreq/15380000.nvjpg
+available_frequencies	-r--r--r--	115200000 128000000 140800000 153600000 166400000 179200000 192000000 204800000 217600000 230400000 243200000 256000000 268800000 281600000 294400000 307200000 320000000 332800000 345600000 358400000 371200000 384000000 396800000 409600000 422400000 435200000 448000000 460800000 473600000 486400000 499200000 
+available_governors	-r--r--r--	nvhost_podgov tegra_wmark userspace performance simple_ondemand 
+cur_freq	-r--r--r--	499200000 
+governor	-rw-r--r--	userspace 
+max_freq	-rw-r--r--	499200000 
+min_freq	-rw-r--r--	115200000 
+name	-r--r--r--	15380000.nvjpg 
+target_freq	-r--r--r--	499200000 
+trans_stat	-rw-r--r--	cat: /sys/class/devfreq/15380000.nvjpg/trans_stat: File too large 
+uevent	-rw-r--r--	
+## /sys/class/devfreq/15480000.nvdec -> /sys/devices/platform/bus@0/13e00000.host1x/15480000.nvdec/devfreq/15480000.nvdec
+available_frequencies	-r--r--r--	115200000 128000000 140800000 153600000 166400000 179200000 192000000 204800000 217600000 230400000 243200000 256000000 268800000 281600000 294400000 307200000 320000000 332800000 345600000 358400000 371200000 384000000 396800000 409600000 422400000 435200000 448000000 460800000 473600000 486400000 499200000 512000000 524800000 
+available_governors	-r--r--r--	nvhost_podgov tegra_wmark userspace performance simple_ondemand 
+cur_freq	-r--r--r--	524800000 
+governor	-rw-r--r--	tegra_wmark 
+max_freq	-rw-r--r--	524800000 
+min_freq	-rw-r--r--	115200000 
+name	-r--r--r--	15480000.nvdec 
+target_freq	-r--r--r--	524800000 
+trans_stat	-rw-r--r--	cat: /sys/class/devfreq/15480000.nvdec/trans_stat: File too large 
+uevent	-rw-r--r--	
+## /sys/class/devfreq/15540000.nvjpg -> /sys/devices/platform/bus@0/13e00000.host1x/15540000.nvjpg/devfreq/15540000.nvjpg
+available_frequencies	-r--r--r--	115200000 128000000 140800000 153600000 166400000 179200000 192000000 204800000 217600000 230400000 243200000 256000000 268800000 281600000 294400000 307200000 320000000 332800000 345600000 358400000 371200000 384000000 396800000 409600000 422400000 435200000 448000000 460800000 473600000 486400000 499200000 
+available_governors	-r--r--r--	nvhost_podgov tegra_wmark userspace performance simple_ondemand 
+cur_freq	-r--r--r--	499200000 
+governor	-rw-r--r--	userspace 
+max_freq	-rw-r--r--	499200000 
+min_freq	-rw-r--r--	115200000 
+name	-r--r--r--	15540000.nvjpg 
+target_freq	-r--r--r--	499200000 
+trans_stat	-rw-r--r--	cat: /sys/class/devfreq/15540000.nvjpg/trans_stat: File too large 
+uevent	-rw-r--r--	
+## /sys/class/devfreq/15a50000.ofa -> /sys/devices/platform/bus@0/13e00000.host1x/15a50000.ofa/devfreq/15a50000.ofa
+available_frequencies	-r--r--r--	115200000 128000000 140800000 153600000 166400000 179200000 192000000 204800000 217600000 230400000 243200000 256000000 268800000 281600000 294400000 307200000 320000000 332800000 345600000 358400000 371200000 384000000 396800000 409600000 422400000 435200000 448000000 460800000 473600000 486400000 499200000 512000000 524800000 537600000 
+available_governors	-r--r--r--	nvhost_podgov tegra_wmark userspace performance simple_ondemand 
+cur_freq	-r--r--r--	537600000 
+governor	-rw-r--r--	userspace 
+max_freq	-rw-r--r--	537600000 
+min_freq	-rw-r--r--	115200000 
+name	-r--r--r--	15a50000.ofa 
+target_freq	-r--r--r--	537600000 
+trans_stat	-rw-r--r--	cat: /sys/class/devfreq/15a50000.ofa/trans_stat: File too large 
+uevent	-rw-r--r--	
+## /sys/class/devfreq/17000000.gpu -> /sys/devices/platform/bus@0/17000000.gpu/devfreq/17000000.gpu
+available_frequencies	-r--r--r--	306000000 408000000 510000000 612000000 714000000 816000000 918000000 1020000000 
+available_governors	-r--r--r--	nvhost_podgov tegra_wmark userspace performance simple_ondemand 
+cur_freq	-r--r--r--	306000000 
+governor	-rw-r--r--	nvhost_podgov 
+max_freq	-rw-r--r--	918000000 
+min_freq	-rw-r--r--	306000000 
+name	-r--r--r--	17000000.gpu 
+polling_interval	-rw-r--r--	10 
+target_freq	-r--r--r--	306000000 
+timer	-rw-r--r--	delayed 
+trans_stat	-rw-r--r--	     From  :   To            : 306000000 408000000 510000000 612000000 714000000 816000000 9180000001020000000   time(ms) * 306000000:         0         0         0         0         0         0         0         1   5220452   408000000:         1         0         0         0         0         0         0         0        24   510000000:         0         1         0         0         0         0         0         0        16   612000000:         0         0         1         0         0         0         0         0        16   714000000:         0         0         0         1         0         0         0         0        16   816000000:         0         0         0         0         1         0         0         0        20   918000000:         0         0         0         0         0         1         0         0        72  1020000000:         0         0         0         0         0         0         1         0        12 Total transition : 8 
+uevent	-rw-r--r--	
+## /sys/class/devfreq/bwmgr -> /sys/devices/platform/bwmgr/devfreq/bwmgr
+available_frequencies	-r--r--r--	204000000 665600000 2133000000 3199000000 
+available_governors	-r--r--r--	bpmp-bwmgr 
+cur_freq	-r--r--r--	2133000000 
+governor	-rw-r--r--	bpmp-bwmgr 
+max_freq	-rw-r--r--	3199000000 
+min_freq	-rw-r--r--	204000000 
+name	-r--r--r--	bwmgr 
+target_freq	-r--r--r--	204000000 
+trans_stat	-rw-r--r--	     From  :   To            : 204000000 66560000021330000003199000000   time(ms) * 204000000:         0         0         0         0   5222296   665600000:         0         0         0         0         0  2133000000:         1         0         0         0         0  3199000000:         0         0         0         0         0 Total transition : 1 
+uevent	-rw-r--r--	
+## GPU device dir /sys/devices/platform/bus@0/17000000.gpu
+aelpg_enable	-rwxr--r--	1 
+aelpg_param	-rwxr--r--	1000000 100 10000 2000 200 
+allow_all	-rwxr--r--	0 
+blcg_enable	-rwxr--r--	1 
+comptag_mem_deduct	-rwxr--r--	0 
+counters	-r--r--r--	6960078 2058093891 
+counters_reset	-r--r--r--	6960078 2059295708 
+driver_override	-rw-r--r--	(null) 
+dump_gr_hw_state_on_ctxsw_timeout	-rwxr--r--	0 
+elcg_enable	-rwxr--r--	1 
+elcg_engine_enable	-rwxr--r--	ELCG Engine Bitmask : 0X0 
+elcg_mon_cfg	-rwxr--r--	Monitor Mode : 0X0 
+elcg_mon_start	-rwxr--r--	Sub Feature ID : 0X0 Monitor Started : 0 
+elcg_mon_stop	-rwxr--r--	Sub Feature ID : 0X0 Monitor Stopped : 1 
+elcg_source	-rwxr--r--	ELCG Source : 0 
+elpg_enable	-rwxr--r--	1 
+elpg_ms_enable	-rwxr--r--	0 
+emc3d_ratio	-rwxr--r--	500 
+fbp_fs_mask	-r--r--r--	0x1 
+fbp_pg_mask	-rwxr--r--	2 
+fgpg_enable	-rwxr--r--	0 
+fgpg_engine_enable	-rwxr--r--	FGPG Engine Bitmask : 0X0 
+flcg_enable	-rwxr--r--	0 
+fmax_at_vmin_safe	-r--r--r--	0 
+force_idle	-rwxr--r--	0 
+golden_img_status	-r--r--r--	1 
+gpc0_gcc_l15_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_gcc_l15_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_gpccs_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_gpccs_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_mmu_l1tlb_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_mmu_l1tlb_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc0_sm_cbu_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc0_sm_cbu_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc0_sm_icache_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc0_sm_icache_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc0_sm_l1_data_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc0_sm_l1_data_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc0_sm_l1_tag_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc0_sm_l1_tag_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc0_sm_lrf_ecc_double_err_count	-r--r--r--	0 
+gpc0_tpc0_sm_lrf_ecc_single_err_count	-r--r--r--	0 
+gpc0_tpc0_sm_rams_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc0_sm_rams_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc1_sm_cbu_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc1_sm_cbu_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc1_sm_icache_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc1_sm_icache_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc1_sm_l1_data_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc1_sm_l1_data_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc1_sm_l1_tag_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc1_sm_l1_tag_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc1_sm_lrf_ecc_double_err_count	-r--r--r--	0 
+gpc0_tpc1_sm_lrf_ecc_single_err_count	-r--r--r--	0 
+gpc0_tpc1_sm_rams_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc1_sm_rams_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc2_sm_cbu_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc2_sm_cbu_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc2_sm_icache_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc2_sm_icache_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc2_sm_l1_data_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc2_sm_l1_data_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc2_sm_l1_tag_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc2_sm_l1_tag_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc2_sm_lrf_ecc_double_err_count	-r--r--r--	0 
+gpc0_tpc2_sm_lrf_ecc_single_err_count	-r--r--r--	0 
+gpc0_tpc2_sm_rams_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc2_sm_rams_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc3_sm_cbu_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc3_sm_cbu_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc3_sm_icache_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc3_sm_icache_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc3_sm_l1_data_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc3_sm_l1_data_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc3_sm_l1_tag_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc3_sm_l1_tag_ecc_uncorrected_err_count	-r--r--r--	0 
+gpc0_tpc3_sm_lrf_ecc_double_err_count	-r--r--r--	0 
+gpc0_tpc3_sm_lrf_ecc_single_err_count	-r--r--r--	0 
+gpc0_tpc3_sm_rams_ecc_corrected_err_count	-r--r--r--	0 
+gpc0_tpc3_sm_rams_ecc_uncorrected_err_count	-r--r--r--	0 
+gpcclk_flcg_enable	-rwxr--r--	0 
+gpc_fs_mask	-r--r--r--	1 
+gpc_pg_mask	-rwxr--r--	2 
+gpc_rg_enable	-rwxr--r--	0 
+gpu_flr	--w-------	cat: /sys/devices/platform/bus@0/17000000.gpu/gpu_flr: Permission denied 
+gpu_pg_mask	-rwxr--r--	0 
+gpu_powered_on	-r--r--r--	on 
+gpu_temperature_avg	-r--r--r--	Temperature unavailable: PMU P-state not enabled 
+gpu_temperature_max	-r--r--r--	Temperature unavailable: PMU P-state not enabled 
+gpu_temperature_min	-r--r--r--	Temperature unavailable: PMU P-state not enabled 
+gr0_fecs_ecc_corrected_err_count	-r--r--r--	0 
+gr0_fecs_ecc_uncorrected_err_count	-r--r--r--	0 
+is_pci_igpu	-r--r--r--	no 
+is_railgated	-r--r--r--	no 
+ldiv_slowdown_factor	-rwxr--r--	0 
+load	-r--r--r--	0 
+lpwr_mon_start	-rwxr--r--	LPWR_MON INDEX : 0 Monitor Started : 0 
+lpwr_mon_stop	-rwxr--r--	LPWR_MON INDEX : 0 Monitor Stopped : 1 
+ltc0_lts0_dstg_be_ecc_parity_count	-r--r--r--	0 
+ltc0_lts0_ecc_ded_count	-r--r--r--	0 
+ltc0_lts0_ecc_sec_count	-r--r--r--	0 
+ltc0_lts0_rstg_ecc_parity_count	-r--r--r--	0 
+ltc0_lts0_tstg_ecc_parity_count	-r--r--r--	0 
+ltc0_lts1_dstg_be_ecc_parity_count	-r--r--r--	0 
+ltc0_lts1_ecc_ded_count	-r--r--r--	0 
+ltc0_lts1_ecc_sec_count	-r--r--r--	0 
+ltc0_lts1_rstg_ecc_parity_count	-r--r--r--	0 
+ltc0_lts1_tstg_ecc_parity_count	-r--r--r--	0 
+ltc0_lts2_dstg_be_ecc_parity_count	-r--r--r--	0 
+ltc0_lts2_ecc_ded_count	-r--r--r--	0 
+ltc0_lts2_ecc_sec_count	-r--r--r--	0 
+ltc0_lts2_rstg_ecc_parity_count	-r--r--r--	0 
+ltc0_lts2_tstg_ecc_parity_count	-r--r--r--	0 
+ltc0_lts3_dstg_be_ecc_parity_count	-r--r--r--	0 
+ltc0_lts3_ecc_ded_count	-r--r--r--	0 
+ltc0_lts3_ecc_sec_count	-r--r--r--	0 
+ltc0_lts3_rstg_ecc_parity_count	-r--r--r--	0 
+ltc0_lts3_tstg_ecc_parity_count	-r--r--r--	0 
+mmu_fillunit_ecc_corrected_err_count	-r--r--r--	0 
+mmu_fillunit_ecc_corrected_unique_err_count	-r--r--r--	0 
+mmu_fillunit_ecc_uncorrected_err_count	-r--r--r--	0 
+mmu_fillunit_ecc_uncorrected_unique_err_count	-r--r--r--	0 
+mmu_hubtlb_ecc_corrected_err_count	-r--r--r--	0 
+mmu_hubtlb_ecc_corrected_unique_err_count	-r--r--r--	0 
+mmu_hubtlb_ecc_uncorrected_err_count	-r--r--r--	0 
+mmu_hubtlb_ecc_uncorrected_unique_err_count	-r--r--r--	0 
+mmu_l2tlb_ecc_corrected_err_count	-r--r--r--	0 
+mmu_l2tlb_ecc_corrected_unique_err_count	-r--r--r--	0 
+mmu_l2tlb_ecc_uncorrected_err_count	-r--r--r--	0 
+mmu_l2tlb_ecc_uncorrected_unique_err_count	-r--r--r--	0 
+modalias	-r--r--r--	of:NgpuT(null)Cnvidia,ga10b 
+mscg_enable	-rwxr--r--	0 
+nvdclk_flcg_enable	-rwxr--r--	0 
+nvdec0_load	-r--r--r--	0 
+nvdec1_load	-r--r--r--	0 
+nvdec_elpg_enable	-rwxr--r--	0 
+nvdec_pg_mask	-rwxr--r--	0 
+nvenc0_load	-r--r--r--	0 
+nvenc1_load	-r--r--r--	0 
+nvenc_elpg_enable	-rwxr--r--	0 
+nvenc_pg_mask	-rwxr--r--	0 
+nvjpg0_load	-r--r--r--	0 
+nvjpg_pg_mask	-rwxr--r--	0 
+ofa_elpg_enable	-rwxr--r--	0 
+ofa_load	-r--r--r--	0 
+ofa_pg_mask	-rwxr--r--	0 
+pmu_ecc_corrected_err_count	-r--r--r--	0 
+pmu_ecc_uncorrected_err_count	-r--r--r--	0 
+ptimer_ref_freq	-r--r--r--	31250000 
+ptimer_scale_factor	-r--r--r--	1.8064 
+ptimer_src_freq	-r--r--r--	31250000 
+railgate_delay	-rwxr--r--	500 
+railgate_enable	-rwxr--r--	0 
+slcg_enable	-rwxr--r--	1 
+sysclk_sd_enable	-rwxr--r--	0 
+sysclk_slowdown_threshold	-rwxr--r--	0 
+tpc_fs_mask	-r--r--r--	0xf 
+tpc_pg_mask	-rwxr--r--	240 
+tsg_timeslice_max_us	-rwxr--r--	50000 
+tsg_timeslice_min_us	-rwxr--r--	1000 
+uevent	-rw-r--r--	DRIVER=gk20a OF_NAME=gpu OF_FULLNAME=/bus@0/gpu@17000000 OF_COMPATIBLE_0=nvidia,ga10b OF_COMPATIBLE_N=1 MODALIAS=of:NgpuT(null)Cnvidia,ga10b 
+usage_count	-r--r--r--	0 

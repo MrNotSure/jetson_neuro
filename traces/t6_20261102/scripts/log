@@ -1,0 +1,6 @@
+#!/bin/zsh
+# T6, 2 Nov 2026 (from the 31 Oct session's `log`): append one line to commands.log (Mac side). usage: log 'command text'
+LOG=/Users/<user>/Documents/code/jetson_neuro/runs/t6_20261102/commands.log
+ts=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+one=${1//$'\n'/ ⏎ }
+printf '%s\tmac\t%s\n' "$ts" "$one" >> "$LOG"

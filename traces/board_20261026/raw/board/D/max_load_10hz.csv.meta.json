@@ -1,0 +1,24 @@
+{
+ "rate_hz_requested": 10.0,
+ "duration_s_requested": 40.0,
+ "samples": 401,
+ "wall_s": 40.00348384,
+ "achieved_hz": 10.024126938640151,
+ "cpu_user_s": 0.082832,
+ "cpu_sys_s": 0.047514,
+ "cpu_total_s": 0.13034600000000002,
+ "cpu_fraction_of_one_core": 0.0032583662093366317,
+ "start_mono_ns": 7218333037376,
+ "start_realtime_ns": 1793020729180828384,
+ "stop_mono_ns": 7258336521216,
+ "files": [
+  "/sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon4/in1_input",
+  "/sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon4/curr1_input",
+  "/sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon4/in2_input",
+  "/sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon4/curr2_input",
+  "/sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon4/in3_input",
+  "/sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon4/curr3_input"
+ ],
+ "pid": 18915,
+ "utc_end": "2026-10-26T13:19:29Z"
+}

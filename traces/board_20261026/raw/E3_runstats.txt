@@ -1,0 +1,69 @@
+=== 20261026T133113Z_sine_centroid
+status=completed periods=6000 misses=0 achieved_hz=99.9931
+controller=centroid sha=8d91a6d88cca dirty=False arch=aarch64 py=3.12.3 numpy=2.5.4 endpoint=tcp
+lateness_us p50=1.3 p99=13.5 max=40112.1 n>500us=21 n>1ms=17 n>5ms=9
+sim_us p50=2058 p99=3114 max=47912
+ctl_us p50=93.8 p99=131.7 max=389.2 mean=75.0
+rtt_us p50=1264 p99=1670 max=2940
+link_us p50=1175 p99=1617 max=2818
+rms_px_in_view=13.22 max_px_in_view=29.19 rms_deg=2.729 in_fov_fraction=1.0 events_mean=261.6
+top-5 lateness periods (k: lateness_us): 21:40112, 22:33822, 23:33057, 24:25664, 25:19655
+top-5 ctl_us periods (k: ctl_us): 0:389, 3825:222, 3824:200, 3910:191, 3689:181
+top-5 link_us periods (k: link_us): 1524:2818, 1577:1875, 493:1872, 1492:1861, 444:1850
+
+=== 20261026T133221Z_sine_centroid
+status=completed periods=6000 misses=2 achieved_hz=99.9934
+controller=centroid sha=8d91a6d88cca dirty=False arch=aarch64 py=3.12.3 numpy=2.5.4 endpoint=tcp
+lateness_us p50=0.9 p99=2278.1 max=14934.1 n>500us=181 n>1ms=124 n>5ms=18
+sim_us p50=1753 p99=4973 max=15748
+ctl_us p50=97.1 p99=130.6 max=355.7 mean=76.2
+rtt_us p50=1195 p99=3031 max=22844
+link_us p50=1130 p99=2927 max=22836
+rms_px_in_view=13.15 max_px_in_view=29.19 rms_deg=2.716 in_fov_fraction=1.0 events_mean=261.2
+top-5 lateness periods (k: lateness_us): 4793:14934, 5187:11941, 5250:11452, 5061:9584, 2867:9284
+top-5 ctl_us periods (k: ctl_us): 0:356, 4958:205, 5623:185, 5093:180, 1:179
+top-5 link_us periods (k: link_us): 4792:22836, 4969:8571, 56:8436, 196:7151, 4924:6470
+  miss at k=4994; periods k-3..k+3:
+                   k              miss  send_lateness_us            sim_us            ctl_us            rtt_us           link_us          n_events
+              4991.0               0.0               0.8            4695.0               7.0            1147.5            1140.5             120.0
+              4992.0               0.0               0.6            1232.0               4.2             812.5             808.3              93.0
+              4993.0               0.0               0.8            1322.0               3.9             817.5             813.6             110.0
+              4994.0               1.0               1.8            1385.0               nan               nan               nan             130.0
+              4995.0               0.0               0.6            1238.0               7.3            1243.0            1235.7             126.0
+              4996.0               0.0               0.9            1575.0               6.7            1375.8            1369.0             150.0
+              4997.0               0.0               0.8            1302.0             123.2            1238.7            1115.5             218.0
+  miss at k=5000; periods k-3..k+3:
+                   k              miss  send_lateness_us            sim_us            ctl_us            rtt_us           link_us          n_events
+              4997.0               0.0               0.8            1302.0             123.2            1238.7            1115.5             218.0
+              4998.0               0.0               1.0            1657.0             120.4            1230.2            1109.7             286.0
+              4999.0               0.0               0.6            1598.0             126.3            1310.0            1183.7             365.0
+              5000.0               1.0            2277.8            1484.0               nan               nan               nan             281.0
+              5001.0               0.0            3909.5            1395.0             122.1            1225.5            1103.4             212.0
+              5002.0               0.0               0.8            1328.0               4.8             858.2             853.4             152.0
+              5003.0               0.0               1.0            1316.0               3.8             851.8             848.1              81.0
+
+=== 20261026T133328Z_sine_centroid
+status=completed periods=6000 misses=1 achieved_hz=99.9950
+controller=centroid sha=8d91a6d88cca dirty=False arch=aarch64 py=3.12.3 numpy=2.5.4 endpoint=tcp
+lateness_us p50=1.3 p99=16.9 max=6617.5 n>500us=16 n>1ms=9 n>5ms=1
+sim_us p50=2089 p99=3223 max=12564
+ctl_us p50=87.1 p99=119.3 max=385.6 mean=61.2
+rtt_us p50=915 p99=1316 max=5662
+link_us p50=872 p99=1292 max=5658
+rms_px_in_view=13.26 max_px_in_view=29.68 rms_deg=2.738 in_fov_fraction=1.0 events_mean=260.4
+top-5 lateness periods (k: lateness_us): 1073:6617, 5976:3901, 4014:2771, 3117:1991, 4619:1731
+top-5 ctl_us periods (k: ctl_us): 0:386, 2383:196, 2037:178, 2255:170, 2027:169
+top-5 link_us periods (k: link_us): 179:5658, 2382:4784, 3380:4754, 433:3295, 180:2673
+  miss at k=1973; periods k-3..k+3:
+                   k              miss  send_lateness_us            sim_us            ctl_us            rtt_us           link_us          n_events
+              1970.0               0.0               5.5            2010.0              90.5            1211.7            1121.2             262.0
+              1971.0               0.0               4.7            2449.0              89.7            1161.3            1071.6             297.0
+              1972.0               0.0               1.0            2094.0             112.2            1095.1             982.9             313.0
+              1973.0               1.0               1.8            2081.0               nan               nan               nan             260.0
+              1974.0               0.0               0.7            2240.0              94.1             745.8             651.7             254.0
+              1975.0               0.0               0.8            1930.0              95.9             724.4             628.4             224.0
+              1976.0               0.0               3.7            1898.0               4.7             907.5             902.8             141.0
+
+20261026T133113Z_sine_centroid: ctl_us over periods with >=200 events (centroid computes): n=3871 p50=121.5 p99=136.4 p99.9=182.3 max=389.2
+20261026T133221Z_sine_centroid: ctl_us over periods with >=200 events (centroid computes): n=3888 p50=121.5 p99=134.0 p99.9=179.1 max=355.7
+20261026T133328Z_sine_centroid: ctl_us over periods with >=200 events (centroid computes): n=3899 p50=90.1 p99=122.1 p99.9=169.0 max=385.6

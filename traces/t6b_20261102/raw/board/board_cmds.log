@@ -1,0 +1,50 @@
+2026-11-02T16:11:29.692Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_S.csv
+2026-11-02T16:11:43.626Z	(mc_wait.sh) wait for pid 3744 to exit
+2026-11-02T16:27:42.644Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R1H.csv
+2026-11-02T16:28:45.056Z	(mc_wait.sh) wait for pid 4135 to exit
+2026-11-02T16:28:55.622Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R1A.csv
+2026-11-02T16:29:57.684Z	(mc_wait.sh) wait for pid 4279 to exit
+2026-11-02T16:30:08.287Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R2H.csv
+2026-11-02T16:31:10.376Z	(mc_wait.sh) wait for pid 4431 to exit
+2026-11-02T16:31:20.940Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R2A.csv
+2026-11-02T16:32:22.953Z	(mc_wait.sh) wait for pid 4577 to exit
+2026-11-02T16:33:45.180Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R3A.csv
+2026-11-02T16:34:47.273Z	(mc_wait.sh) wait for pid 4817 to exit
+2026-11-02T16:36:09.512Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R3H.csv
+2026-11-02T16:37:11.602Z	(mc_wait.sh) wait for pid 5053 to exit
+2026-11-02T16:38:33.795Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R4A.csv
+2026-11-02T16:39:35.915Z	(mc_wait.sh) wait for pid 5293 to exit
+2026-11-02T16:39:46.450Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R4H.csv
+2026-11-02T16:40:48.563Z	(mc_wait.sh) wait for pid 5441 to exit
+2026-11-02T16:41:35.334Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R5A.csv
+2026-11-02T16:42:37.387Z	(mc_wait.sh) wait for pid 5592 to exit
+2026-11-02T16:42:47.984Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R5H.csv
+2026-11-02T16:43:50.092Z	(mc_wait.sh) wait for pid 5736 to exit
+2026-11-02T16:45:12.278Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R6H.csv
+2026-11-02T16:46:14.509Z	(mc_wait.sh) wait for pid 5973 to exit
+2026-11-02T16:47:36.765Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R6A.csv
+2026-11-02T16:48:38.936Z	(mc_wait.sh) wait for pid 6214 to exit
+2026-11-02T16:50:01.191Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R7H.csv
+2026-11-02T16:51:03.275Z	(mc_wait.sh) wait for pid 6450 to exit
+2026-11-02T16:51:13.830Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R7A.csv
+2026-11-02T16:52:15.940Z	(mc_wait.sh) wait for pid 6597 to exit
+2026-11-02T16:52:26.512Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R8H.csv
+2026-11-02T16:53:28.623Z	(mc_wait.sh) wait for pid 6745 to exit
+2026-11-02T16:53:39.263Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R8A.csv
+2026-11-02T16:54:41.296Z	(mc_wait.sh) wait for pid 6889 to exit
+2026-11-02T16:56:39.031Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R9A.csv
+2026-11-02T16:57:41.135Z	(mc_wait.sh) wait for pid 7133 to exit
+2026-11-02T16:59:03.349Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R9H.csv
+2026-11-02T17:00:05.496Z	(mc_wait.sh) wait for pid 7368 to exit
+2026-11-02T17:01:27.715Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R10A.csv
+2026-11-02T17:02:29.862Z	(mc_wait.sh) wait for pid 7615 to exit
+2026-11-02T17:02:40.469Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R10H.csv
+2026-11-02T17:03:42.587Z	(mc_wait.sh) wait for pid 7759 to exit
+2026-11-02T17:03:53.162Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R11A.csv
+2026-11-02T17:04:55.331Z	(mc_wait.sh) wait for pid 7903 to exit
+2026-11-02T17:05:05.885Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R11H.csv
+2026-11-02T17:06:07.954Z	(mc_wait.sh) wait for pid 8048 to exit
+2026-11-02T17:07:30.101Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R12H.csv
+2026-11-02T17:08:32.219Z	(mc_wait.sh) wait for pid 8289 to exit
+2026-11-02T17:09:54.496Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup taskset -c 2 ~/venvs/jn/bin/python -u /tmp/jn_t6b/scripts/mark_ctl.py --controller classical --listen 192.168.55.1:5555 --out /tmp/jn_t6b/mc_R12A.csv
+2026-11-02T17:10:56.549Z	(mc_wait.sh) wait for pid 8525 to exit

@@ -1,0 +1,23 @@
+# after user moved the Pico to a different Mac USB port (2026-10-28T16:46:27Z)
++-o Root  <class IORegistryEntry, id 0x100000100, retain 37>
+  +-o AppleT6000USBXHCI@02000000  <class AppleT6000USBXHCI, id 0x1000003b3, registered, matched, active, busy 0 (4103 ms), retain 27>
+  |     "locationID" = 33554432
+  +-o AppleT6000USBXHCI@01000000  <class AppleT6000USBXHCI, id 0x1000003b8, registered, matched, active, busy 0 (395 ms), retain 44>
+  | |   "locationID" = 16777216
+  | +-o Board in FS mode@01100000  <class IOUSBHostDevice, id 0x100033a95, registered, matched, active, busy 0 (263 ms), retain 27>
+  |       "USB Serial Number" = "<pico-serial>"
+  |       "USB Product Name" = "Board in FS mode"
+  |       "idVendor" = 11914
+  |       "idProduct" = 5
+  |       "locationID" = 17825792
+  +-o AppleT6000USBXHCI@00000000  <class AppleT6000USBXHCI, id 0x100000376, registered, matched, active, busy 0 (2259 ms), retain 27>
+        "locationID" = 0
+cu.Bluetooth-Incoming-Port
+cu.<bt-headset>
+cu.debug-console
+cu.usbmodem1101
+/dev/cu.Bluetooth-Incoming-Port None 0000:0000 None None
+/dev/cu.<bt-headset> None 0000:0000 None None
+/dev/cu.debug-console None 0000:0000 None None
+/dev/cu.usbmodem1101 <pico-serial> 2e8a:0005 MicroPython Board in FS mode
+ticks_ms 27835 listdir []

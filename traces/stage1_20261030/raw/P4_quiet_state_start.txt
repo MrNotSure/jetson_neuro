@@ -1,0 +1,6 @@
+17:39:28
+disabled
+inactive inactive inactive inactive inactive inactive inactive inactive inactive inactive inactive inactive 
+Fri 2026-10-30 19:00:00 CET    20min -         - fake-hwclock-save.timer                     fake-hwclock-save.service
+Fri 2026-10-30 20:09:15 CET 1h 29min -         - run-r8b7802d6f42347ee8083f6cf65ea98c2.timer run-r8b7802d6f42347ee8083f6cf65ea98c2.service
+cpu-thermal=49156 gpu-thermal=49156 soc0-thermal=48250 soc1-thermal=49000 soc2-thermal=48843 tj-thermal=49187 fan pwm 66

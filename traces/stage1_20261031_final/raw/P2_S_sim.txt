@@ -1,0 +1,12 @@
+rc 0; new dirs ['20261031T133130Z_sine_hold']
+--- stdout
+run directory: runs/stage1_20261031_final/sim/20261031T133130Z_sine_hold
+status: completed
+  periods=1000 episodes=1 misses=1 achieved_hz=99.9749
+  error: rms_deg=12 max_deg=17  in_view rms_px=59.1 max_px=84.5
+  in_fov=1 losses=0 unrecovered=0 success_rate=1
+  events/period p95=522  sim_us p99=6.98e+03  rtt_us p99=4.91e+03  lateness_us p99=4.16e+03
+  cmd_invalid=0 cmd_clamped=0 flags={'fault': 0, 'detect': 0, 'recover': 0}
+
+--- stderr
+

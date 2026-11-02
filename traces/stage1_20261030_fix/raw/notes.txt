@@ -1,0 +1,57 @@
+Running notes (agent), Stage 1 fix session, 30 Oct 2026. Times UTC. Brief: planner's "Stage 1 fix session".
+User changed the plan at the start: option A (pin 8, UART1 TX) instead of jetson-io (Part 3 dropped; no /boot changes).
+Kept: Part 0, Part 1 (pin 8 voltage), Part 2 (reboot #1 for the power mode), Fallback A as the marker path + M3, Part 5.
+
+16:58 Mac: Jetson tty present, Pico at /dev/cu.usbmodem1101, repo HEAD 78cf5f9, src/scenarios unchanged since 8d91a6d.
+16:59 Part 0: board up 54 min, board - mac -0.135 s (best rtt 90 ms; within 1 s, no sync needed), no apt/dpkg, no jobs,
+      line 105 PQ.05 unused input.
+16:59-17:01 power-mode snapshot raw/state_before/: nvpmodel.service failed (exit 234, "Reboot required for changing to this
+      power mode: 1", "bad input"). nvpmodel -q --verbose: 25W / 1, but REAL vs CONF differ:
+        FBP_PG_MASK 0 vs 2, TPC_PG_MASK 0 vs 240, GPU power/control auto vs on (GPU_POWER_CONTROL_ENABLE),
+        CPU max 1728000 vs 1344000 (all 6), GPU max 1020 MHz vs 918 MHz; GPU min 306 MHz vs 0; EMC max 3199 MHz = conf.
+      -> the GPU power-gating masks (applied at boot) are what needs the reboot (NV). GPU governor performance, cur 1020 MHz.
+      cpuidle all enabled, railgate_enable 0. status pmode:0001 (mtime 26 Oct 17:11). Temps 50-52 C.
+17:0x capture F1 started (max 6000 s).
+~17:03 Part 1: user moved the spare jumper pin 29 -> pin 8 with the Jetson running. USER: pin 8 vs Pico GND = 3.43 V
+      (same as pin 1). A pad that drives (uart1_tx_pr2, tristate 0, UART idle high) reaches the header. Jumper stays on pin 8.
+      Part 0.1 not yet explicitly confirmed: marker wire open at the Jetson end, pin 30 ground wire, serial console open.
+17:04 sudo usermod -aG dialout <user> (approved); ssh -O exit; fresh session: groups include 20(dialout), ttyTHS1 writable.
+      NOTE: pgrep -a 'apt|dpkg' matches kernel threads [capture] / [capture-control]; use pgrep -x with exact names.
+      apt-daily ran 17:03:35 (apt-helper seen 17:04), finished by 17:04:11.
+17:05:10 capture F1 STOPPED (SIGINT -> "stop sent by host True"). Its terminal was then used by the user for the serial
+      console (screen + login on ttyGS0 appears in that terminal's output). F1: 291 s, 0 missed. Capture F2 started 17:08:14.
+      Agent must not stop terminal 3 (the user's console session).
+17:07-17:08 user confirmed: serial console open; marker wire not connected to anything; pin 30 ground wire in place;
+      spare jumper on pin 8, free end touching nothing. User offered Wi-Fi; not needed.
+17:08:42 mark "reboot #1 command sent"; sudo approval -> ssh returned 255 at 17:09:22. Kernel up since ~17:09:03 UTC
+      (uptime 199.9 s at 17:12:23). Watcher started too late to see the USB device drop (USB already back at 17:09:35);
+      ssh answered at 17:12:23 when tried by hand (earliest ssh time NOT measured).
+17:12:47 health after reboot #1: nvpmodel Result=success; 25W/1; CPU max 1344000 both policies, min 729600, schedutil;
+      GPU nvhost_podgov, max 918 MHz, cur 306 MHz; bwmgr 204 M / 3199 M (cur 2133 M); cpuidle all enabled;
+      tpc_pg_mask 240, fbp_pg_mask 2. Temps 48.5-49.8 C. INA3221 = hwmon3 this boot. Line 105 PQ.05 unused input.
+      Board clock -31.3 s after the WARM reboot (fake-hwclock restored the shutdown save; the reboot took ~30 s) ->
+      SETUP_NOTES' "warm reboot keeps the clock" is wrong on this board by the reboot duration.
+17:14:47 sudo date -u -s; 17:16:29 timers stopped (12, all inactive after); board - mac -0.12 s. Between: one
+      update-notifier-download start at 17:13:47 (before the sync).
+17:16:50-17:17:50 health 60 s: INA228 6375.6 mW (331.0 mA, 19.261 V); VDD_IN (INA3221 10 Hz) 4543.4 mW, sd 10.4.
+      Both match the 26 Oct / 29 Oct references (6.2-6.4 W; 4.5-4.6 W). Power mode RESTORED by the warm reboot.
+17:19:00 smoke test uart_marker.py 100 Hz 2 s (nothing on GP16): 200/200 sent; write() p50 6.5 us, p99 14.8, max 44.3 us;
+      schedule lateness p50 0.8 us, p99 1.4 us. stty: 115200 after close.
+17:19:13 capture F2 stopped (659 s, 0 GP16 edges). 17:19:18 Pico machine.reset(); GP16 funcsel 31 OE 0 pad 0x56 IN 0
+      (reset state). SIO GPIO_OE = 0. Ready for the marker wire (pin 8 -> GP16).
+      Still pending from the user: what the serial console showed at reboot #1 (boot menu entries, countdown).
+~17:21 USER: marker wire connected, Jetson pin 8 -> Pico GP16 (no series resistor mentioned). Spare jumper off pin 8.
+      USER on the serial console at reboot #1: saw only the old login session text; no boot menu. Reason (V by config):
+      /dev/cu.usbmodem<jetson-serial>* is the Linux USB gadget ACM (ttyGS0), which disappears during reboot; the boot menu
+      is on the debug UART (console=ttyTCU0), not reachable this way. -> the USB console is not a recovery path for
+      choosing a boot entry.
+17:22:03 capture F3 started; GP16 IN=1 at start (wire high, idle UART).
+17:22:20-17:23:22 M3 100 Hz 60 s; 17:23:32-17:23:45 M3 1 kHz 10 s. Capture stopped 17:23:56 (107 s).
+      Pico: 16000 falls, 16000 rises, 0 seq gaps, FIFO level 1 only; conversions 0 missed, 0 spurious; busy 54.1 %.
+      Pulse width 8.52-8.88 us (p50 8.76; 1/115200 = 8.68); none < 1 us; first edge is a fall (idle high, low pulse).
+      100 Hz: 6000/6000 each; Pico fall interval p50 10000.20, p99 10006.8, max 10014.5, min 9970.0 us;
+        Jetson write-start interval p50 10000.0, p99 10000.6, max 10001.1; write() p50 11.8, p99 19.6, max 90.8 us;
+        write->edge jitter (linear fit, Pico vs Jetson +21.5 ppm): sd 1.39, p1 -1.50, p99 6.26, max 34.6 us (event 0).
+      1 kHz: 10000/10000 each; Pico interval p50 1000.08, p99 1001.16, max 1013.0, min 963.1; write() p50 5.1,
+        p99 6.2, max 47.6 us; jitter sd 0.61 (0.27 vs write end), p99 1.39, max 38.9 us (event 0).
+      M3 PASS.

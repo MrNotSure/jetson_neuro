@@ -1,0 +1,10 @@
+port /dev/cu.usbmodem1101
+started unix 1793637689.473 (2026-11-02T16:41:29Z)
+ended unix 1793638580.705
+records by type {0x5A: 0, 0xA5: 824291, 0xB6: 48008, 0xB7: 48008, 0xC7: 1780, 0xD8: 2}
+bytes 14753440; bad framing 0; trailer True; stop sent by host True
+sync records ['d800b000a2b8ffffa1b8ffffa1b8ffff', 'd801b00039ccea4539ccea4538ccea45']
+peak single-conversion current 0.4440625000000001 A at 78.60849189758301 s; alarm False
+Pico stdout: STATS stop=host conversions=824291 rises=48008 falls=48008 acc=1780 elapsed_us=890001000 busy_us=480746146 busy_frac=0.5402 max_handler_us=1032 backlog=0 marker_backlog=0 writes=115260 max_write_us=119 mem_free=202032->201664 leftover_fifo=[1, 0, 0] fdebug=0x00000000 sync_start=(176,1,1) sync_end=(176,0,1) energy_end=5306786 charge_end=14111215 prog_base=(23,14,23) clkdiv=0x00050000 adc_config=0xb900 gp16_before=[GP16 funcsel=31 OE=0 IN=1 pad=0x56] gp16_after=[GP16 funcsel=31 OE=0 IN=1 pad=0x56] gp17=[GP17 funcsel=5 OE=0 IN=1 pad=0x5a]
+INA228 reset
+Pico stderr: b''

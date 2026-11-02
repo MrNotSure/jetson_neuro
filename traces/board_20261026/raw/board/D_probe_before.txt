@@ -1,0 +1,110 @@
+# dprobe utc=2026-10-26T13:13:37.979Z
+## /sys/kernel/debug/clk/clk_summary (grep cpu|gpc|gpu|emc|nafll|cluster)
+   clock                          count    count    count        rate   accuracy phase  cycle    enable   consumer                         id
+---------------------------------------------------------------------------------------------------------------------------------------------
+ emchub                              0       0        0        621999609   0          0     50000      Y   deviceless                      no_connection_id         
+ gpusysclk                           1       1        0        306000000   0          0     50000      Y   17000000.gpu                    no_connection_id         
+                                                                                                           gpu@17000000                    sysclk                   
+                                                                                                           gpu@17000000                    sysclk                   
+                                                                                                           gpu@17000000                    sysclk                   
+                                                                                                           gpu@17000000                    sysclk                   
+                                                                                                           gpu@17000000                    sysclk                   
+ gpu_pwr                             0       0        0        204000000   0          0     50000      Y   deviceless                      no_connection_id         
+    nafll_gpusys                     0       0        0        306000000   0          0     50000      Y      deviceless                      no_connection_id         
+    nafll_gpc0                       0       0        0        306000000   0          0     50000      Y      deviceless                      no_connection_id         
+ gpc0clk                             1       1        0        306000000   0          0     50000      Y   gpu@17000000                    gpc0clk                  
+                                                                                                           gpu@17000000                    gpc0clk                  
+                                                                                                           gpu@17000000                    gpc0clk                  
+                                                                                                           gpu@17000000                    gpc0clk                  
+                                                                                                           gpu@17000000                    gpc0clk                  
+ emc                                 1       1        0        2133000000  0          0     50000      Y   nvpmodel                        emc                      
+                                                                                                           bwmgr                           emc                      
+                                                                                                           2c60000.external-memory-controller  emc                      
+    nafll_cluster1_dsu               0       0        0        115200000   0          0     50000      Y      deviceless                      no_connection_id         
+    nafll_cluster0_dsu               0       0        0        115200000   0          0     50000      Y      deviceless                      no_connection_id         
+    nafll_dce                        0       0        0        281600000   0          0     50000      Y      deviceless                      no_connection_id         
+       dce_cpu_nic                   0       0        0        281600000   0          0     50000      Y         deviceless                      no_connection_id         
+          dce_cpu                    0       0        0        281600000   0          0     50000      Y            deviceless                      no_connection_id         
+    nafll_ofa                        0       0        0        537600000   0          0     50000      Y      deviceless                      no_connection_id         
+    nafll_seu1                       0       0        0        307200000   0          0     50000      Y      deviceless                      no_connection_id         
+    nafll_cluster1_core              0       0        0        729600000   0          0     50000      Y      deviceless                      no_connection_id         
+    nafll_cluster0_core              0       0        0        729600000   0          0     50000      Y      deviceless                      no_connection_id         
+    nafll_bpmp                       0       0        0        204800000   0          0     50000      Y      deviceless                      no_connection_id         
+    nafll_vic                        0       0        0        435200000   0          0     50000      Y      deviceless                      no_connection_id         
+    nafll_vi                         0       0        0        550400000   0          0     50000      Y      deviceless                      no_connection_id         
+    nafll_tsec                       0       0        0        204800000   0          0     50000      Y      deviceless                      no_connection_id         
+    nafll_se                         0       0        0        307200000   0          0     50000      Y      deviceless                      no_connection_id         
+    nafll_sce                        0       0        0        230400000   0          0     50000      Y      deviceless                      no_connection_id         
+       sce_cpu_nic                   0       0        0        230400000   0          0     50000      Y         deviceless                      no_connection_id         
+          sce_cpu                    0       0        0        230400000   0          0     50000      Y            deviceless                      no_connection_id         
+    nafll_rce                        1       1        0        115200000   0          0     50000      Y      deviceless                      no_connection_id         
+       rce_cpu_nic                   3       3        0        115200000   0          0     50000      Y         rtcpu@bc00000                   no_connection_id         
+          rce_cpu                    1       1        0        115200000   0          0     50000      Y            rtcpu@bc00000                   no_connection_id         
+          rce_nic                    1       1        0        115200000   0          0     50000      Y            rtcpu@bc00000                   no_connection_id         
+    nafll_nvjpg                      0       0        0        499200000   0          0     50000      Y      deviceless                      no_connection_id         
+    nafll_nvdec                      0       0        0        524800000   0          0     50000      Y      deviceless                      no_connection_id         
+    nafll_isp                        0       0        0        729600000   0          0     50000      Y      deviceless                      no_connection_id         
+    nafll_nvjpg1                     0       0        0        499200000   0          0     50000      Y      deviceless                      no_connection_id         
+    aon_cpu_nic                      0       0        0        204000000   0          0     50000      Y      deviceless                      no_connection_id         
+## /sys/kernel/debug/regulator/regulator_summary
+ regulator                      use open bypass  opmode voltage current     min     max
+---------------------------------------------------------------------------------------
+ regulator-dummy                  1    0      0 unknown     0mV     0mA     0mV     0mV 
+ VDD_1V8_HS                       1    1      0 unknown  1800mV     0mA  1800mV  1800mV 
+    0-0050-vcc                    0                                 0mA     0mV     0mV
+ VDD_5V0_SYS                      5    5      0 unknown  5000mV     0mA  5000mV  5000mV 
+    usb2-2-vbus                   1                                 0mA     0mV     0mV
+    usb2-0-vbus                   0                                 0mA     0mV     0mV
+    VDD_1V8_AO                    5    5      0 unknown  1800mV     0mA  1800mV  1800mV 
+       140a0000.pcie-vddio-pex-ctl   1                                 0mA     0mV     0mV
+       141e0000.pcie-vddio-pex-ctl   0                                 0mA     0mV     0mV
+       14160000.pcie-vddio-pex-ctl   1                                 0mA     0mV     0mV
+       14100000.pcie-vddio-pex-ctl   1                                 0mA     0mV     0mV
+       3520000.padctl-vclamp-usb   1                                 0mA     0mV     0mV
+    VDD_3V3_AO                    2    1      0 unknown 33000mV     0mA 33000mV 33000mV 
+       3520000.padctl-avdd-usb    1                                 0mA     0mV     0mV
+    VDD_AV10_HUB                  2    1      0 unknown  1100mV     0mA  1100mV  1100mV 
+       usb2-1-vbus                1                                 0mA     0mV     0mV
+ VDD_1V8_SYS                      1    1      0 unknown  1800mV     0mA  1800mV  1800mV 
+    0-0057-vcc                    0                                 0mA     0mV     0mV
+ VDD-3V3-SYS                      1    0      0 unknown  3300mV     0mA  3300mV  3300mV 
+ VDD_3V3_PCIE                     1    1      0 unknown  3300mV     0mA  3300mV  3300mV 
+    140a0000.pcie-vpcie3v3        1                                 0mA     0mV     0mV
+ VDD_3V3_SD                       0    1      0 unknown  3300mV     0mA  3300mV  3300mV 
+    3400000.mmc-vmmc              0                                 0mA  3300mV  3400mV
+## /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0/rate
+cat: /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0/rate: No such file or directory
+## /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0/dvfs
+cat: /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0/dvfs: No such file or directory
+## /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1/rate
+cat: /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1/rate: No such file or directory
+## /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1/dvfs
+cat: /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1/dvfs: No such file or directory
+## /sys/kernel/debug/bpmp/debug/clk/nafll_cluster2/rate
+cat: /sys/kernel/debug/bpmp/debug/clk/nafll_cluster2/rate: No such file or directory
+## /sys/kernel/debug/bpmp/debug/clk/nafll_cluster2/dvfs
+cat: /sys/kernel/debug/bpmp/debug/clk/nafll_cluster2/dvfs: No such file or directory
+## /sys/kernel/debug/bpmp/debug/clk/nafll_gpc0/rate
+306000000
+## /sys/kernel/debug/bpmp/debug/clk/nafll_gpc0/dvfs
+cat: /sys/kernel/debug/bpmp/debug/clk/nafll_gpc0/dvfs: No such file or directory
+## /sys/kernel/debug/bpmp/debug/clk/nafll_gpc1/rate
+cat: /sys/kernel/debug/bpmp/debug/clk/nafll_gpc1/rate: No such file or directory
+## /sys/kernel/debug/bpmp/debug/clk/nafll_gpc1/dvfs
+cat: /sys/kernel/debug/bpmp/debug/clk/nafll_gpc1/dvfs: No such file or directory
+## /sys/kernel/debug/bpmp/debug/clk/gpc0clk/rate
+306000000
+## /sys/kernel/debug/bpmp/debug/clk/gpc0clk/dvfs
+cat: /sys/kernel/debug/bpmp/debug/clk/gpc0clk/dvfs: No such file or directory
+## /sys/kernel/debug/bpmp/debug/clk/gpc1clk/rate
+cat: /sys/kernel/debug/bpmp/debug/clk/gpc1clk/rate: No such file or directory
+## /sys/kernel/debug/bpmp/debug/clk/gpc1clk/dvfs
+cat: /sys/kernel/debug/bpmp/debug/clk/gpc1clk/dvfs: No such file or directory
+## /sys/kernel/debug/bpmp/debug/clk/gpusysclk/rate
+306000000
+## /sys/kernel/debug/bpmp/debug/clk/gpusysclk/dvfs
+cat: /sys/kernel/debug/bpmp/debug/clk/gpusysclk/dvfs: No such file or directory
+## /sys/kernel/debug/bpmp/debug/clk/nafll_gpusys/rate
+306000000
+## /sys/kernel/debug/bpmp/debug/clk/nafll_gpusys/dvfs
+cat: /sys/kernel/debug/bpmp/debug/clk/nafll_gpusys/dvfs: No such file or directory

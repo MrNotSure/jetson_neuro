@@ -1,0 +1,13 @@
+2026-11-02T15:05:49
+ 16:05:49 up  1:15,  1 user,  load average: 0.01, 0.08, 0.08
+multi-user.target
+radio disabled
+anacron.timer inactive/enabled; man-db.timer inactive/enabled; fstrim.timer inactive/enabled; e2scrub_all.timer inactive/enabled; dpkg-db-backup.timer inactive/enabled; systemd-tmpfiles-clean.timer inactive/static; fake-hwclock-save.timer active/enabled; apt-daily.timer inactive/disabled; apt-daily-upgrade.timer inactive/disabled; motd-news.timer inactive/disabled; update-notifier-download.timer inactive/disabled; update-notifier-motd.timer inactive/disabled; fwupd-refresh.timer inactive/disabled; 
+No jobs running.
+no apt/dpkg
+nothing of ours running
+5555 closed
+Result=success
+tj=48250
+14M	/tmp/jn_t6
+114

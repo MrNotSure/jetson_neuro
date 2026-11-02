@@ -1,0 +1,3 @@
+samples 64 read_u16 min/median/max 14003 14019 14083
+voltage at mean 0.7060 V
+T(mean) = 27.02 C, T(min..max) = 25.17..27.51 C

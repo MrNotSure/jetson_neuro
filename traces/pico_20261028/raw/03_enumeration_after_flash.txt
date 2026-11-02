@@ -1,0 +1,27 @@
+# after cp -X at 2026-10-28T16:21:55Z; volume gone by 16:22:03, port seen 16:22:09
+# ioreg -p IOUSB (Pico entry)
++-o Root  <class IORegistryEntry, id 0x100000100, retain 37>
+  +-o AppleT6000USBXHCI@02000000  <class AppleT6000USBXHCI, id 0x1000003b3, registered, matched, active, busy 0 (818 ms), retain 44>
+  | |   "locationID" = 33554432
+  | +-o Board in FS mode@02100000  <class IOUSBHostDevice, id 0x10003339c, registered, matched, active, busy 0 (401 ms), retain 27>
+  |       "USB Serial Number" = "<pico-serial>"
+  |       "USB Vendor Name" = "MicroPython"
+  |       "USB Product Name" = "Board in FS mode"
+  |       "idVendor" = 11914
+  |       "idProduct" = 5
+  |       "bcdDevice" = 256
+  |       "locationID" = 34603008
+  +-o AppleT6000USBXHCI@01000000  <class AppleT6000USBXHCI, id 0x1000003b8, registered, matched, active, busy 0 (131 ms), retain 27>
+  |     "locationID" = 16777216
+  +-o AppleT6000USBXHCI@00000000  <class AppleT6000USBXHCI, id 0x100000376, registered, matched, active, busy 0 (2259 ms), retain 27>
+        "locationID" = 0
+# serial BSD clients
+      "IOCalloutDevice" = "/dev/cu.debug-console"
+      "IOCalloutDevice" = "/dev/cu.usbmodem2101"
+      "IOCalloutDevice" = "/dev/cu.Bluetooth-Incoming-Port"
+      "IOCalloutDevice" = "/dev/cu.<bt-headset>"
+# mpremote connect list
+/dev/cu.Bluetooth-Incoming-Port None 0000:0000 None None
+/dev/cu.<bt-headset> None 0000:0000 None None
+/dev/cu.debug-console None 0000:0000 None None
+/dev/cu.usbmodem2101 <pico-serial> 2e8a:0005 MicroPython Board in FS mode

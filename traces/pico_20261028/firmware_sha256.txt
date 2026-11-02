@@ -1,0 +1,1 @@
+e1160e602e277d85920adb5fe741435edccba9ba6ecadc85fdab75252eeff4e9  runs/pico_20261028/firmware/RPI_PICO-20260824-v1.29.0.uf2

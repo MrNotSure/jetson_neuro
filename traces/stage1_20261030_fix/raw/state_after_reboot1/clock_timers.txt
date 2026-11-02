@@ -1,0 +1,9 @@
+== 2026-10-30T17:16:29Z after sync + timer stop
+rtt   110.9 ms   board - mac -0.117 s
+rtt   118.7 ms   board - mac -0.113 s
+rtt    99.4 ms   board - mac -0.123 s
+best (shortest rtt 99.4 ms): board - mac = -0.123 s = -0.0000 d; mac utc 2026-10-30 17:16:30
+inactive inactive inactive inactive inactive inactive inactive inactive inactive inactive inactive inactive 
+No jobs running.
+no apt/dpkg
+2026-10-30T18:13:47+01:00 jetson systemd[1]: Starting update-notifier-download.service - Download data for packages that failed at package install time...

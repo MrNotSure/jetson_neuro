@@ -1,0 +1,36 @@
+2026-10-26T13:34:22.052521+01:00 jetson systemd[1]: Started anacron.service - Run anacron jobs.
+2026-10-26T13:34:22.056464+01:00 jetson systemd[1]: Starting apt-daily.service - Daily apt download activities...
+2026-10-26T13:34:22.058700+01:00 jetson systemd[1]: Starting dpkg-db-backup.service - Daily dpkg database backup service...
+2026-10-26T13:34:22.061493+01:00 jetson systemd[1]: Starting e2scrub_all.service - Online ext4 Metadata Check for All Filesystems...
+2026-10-26T13:34:22.064603+01:00 jetson systemd[1]: Starting fake-hwclock-save.service - Save the current clock...
+2026-10-26T13:34:22.067010+01:00 jetson systemd[1]: Starting fwupd-refresh.service - Refresh fwupd metadata and update motd...
+2026-10-26T13:34:22.073773+01:00 jetson systemd[1]: e2scrub_all.service: Deactivated successfully.
+2026-10-26T13:34:22.074180+01:00 jetson systemd[1]: Finished e2scrub_all.service - Online ext4 Metadata Check for All Filesystems.
+2026-10-26T13:34:22.076463+01:00 jetson systemd[1]: fake-hwclock-save.service: Deactivated successfully.
+2026-10-26T13:34:22.076787+01:00 jetson systemd[1]: Finished fake-hwclock-save.service - Save the current clock.
+2026-10-26T13:34:22.097007+01:00 jetson systemd[1]: dpkg-db-backup.service: Deactivated successfully.
+2026-10-26T13:34:22.097391+01:00 jetson systemd[1]: Finished dpkg-db-backup.service - Daily dpkg database backup service.
+2026-10-26T13:34:22.344347+01:00 jetson systemd[1]: Starting systemd-timedated.service - Time & Date Service...
+2026-10-26T13:34:22.391944+01:00 jetson systemd[1]: Started systemd-timedated.service - Time & Date Service.
+2026-10-26T13:34:42.166460+01:00 jetson systemd[1]: fwupd-refresh.service: Failed with result 'exit-code'.
+2026-10-26T13:34:42.167071+01:00 jetson systemd[1]: Failed to start fwupd-refresh.service - Refresh fwupd metadata and update motd.
+2026-10-26T13:34:52.429068+01:00 jetson systemd[1]: systemd-timedated.service: Deactivated successfully.
+2026-10-26T13:34:55.260399+01:00 jetson systemd[1]: Starting apt-news.service - Update APT News...
+2026-10-26T13:34:55.267327+01:00 jetson systemd[1]: Starting esm-cache.service - Update the local ESM caches...
+2026-10-26T13:35:45.212484+01:00 jetson systemd[1]: Starting fstrim.service - Discard unused blocks on filesystems from /etc/fstab...
+2026-10-26T13:35:46.943330+01:00 jetson systemd[1]: fstrim.service: Deactivated successfully.
+2026-10-26T13:35:46.943710+01:00 jetson systemd[1]: Finished fstrim.service - Discard unused blocks on filesystems from /etc/fstab.
+2026-10-26T13:37:02.696541+01:00 jetson systemd[1]: apt-news.service: Deactivated successfully.
+2026-10-26T13:37:02.696981+01:00 jetson systemd[1]: Finished apt-news.service - Update APT News.
+2026-10-26T13:38:55.911762+01:00 jetson systemd[1]: esm-cache.service: Deactivated successfully.
+2026-10-26T13:38:55.912246+01:00 jetson systemd[1]: Finished esm-cache.service - Update the local ESM caches.
+2026-10-26T13:42:57.863019+01:00 jetson systemd[1]: apt-daily.service: Deactivated successfully.
+2026-10-26T13:42:57.863462+01:00 jetson systemd[1]: Finished apt-daily.service - Daily apt download activities.
+2026-10-26T13:42:57.864222+01:00 jetson systemd[1]: apt-daily.service: Consumed 5.175s CPU time.
+2026-10-26T13:42:57.896290+01:00 jetson systemd[1]: Starting apt-daily-upgrade.service - Daily apt upgrade and clean activities...
+2026-10-26T13:43:29.034260+01:00 jetson systemd[1]: apt-daily-upgrade.service: Deactivated successfully.
+2026-10-26T13:43:29.034784+01:00 jetson systemd[1]: Finished apt-daily-upgrade.service - Daily apt upgrade and clean activities.
+2026-10-26T13:43:29.035374+01:00 jetson systemd[1]: apt-daily-upgrade.service: Consumed 1.086s CPU time.
+2026-10-26T13:44:22.083592+01:00 jetson systemd[1]: anacron.service: Deactivated successfully.
+---
+No jobs running.

@@ -1,0 +1,34 @@
+block      cond  win_s     n          VDD_IN  VDD_CPU_GPU_CV         VDD_SOC misses  ctl_p50  lat_max  run_first_rx_vs_start_s  run_last_rx_vs_end_s
+C4_01_C    C      30.7   246          4560.5           446.5          1406.7      2     89.5     6933                     0.31                 -0.37
+C4_02_H    H      30.6   247          4548.2           443.4          1406.7      0      3.7     1874                     0.28                 -0.38
+C4_03_I    I      30.7   247          4541.7           442.1          1406.7    nan      nan      nan                      nan                   nan
+C4_04_H    H      30.8   248          4553.7           446.3          1406.7      0      3.5     9232                     0.37                 -0.44
+C4_05_C    C      30.7   248          4562.3           444.4          1406.7      1     92.3    18993                     0.31                 -0.45
+C4_06_H    H      30.7   247          4558.6           442.4          1406.7      0      4.2    14961                     0.31                 -0.38
+C4_07_I    I      30.8   248          4544.3           443.4          1406.7    nan      nan      nan                      nan                   nan
+C4_08_H    H      30.8   247          4558.5           442.7          1406.7      0      5.0     2031                     0.34                 -0.43
+C4_09_I    I      30.8   248          4541.7           442.1          1406.7    nan      nan      nan                      nan                   nan
+C4_10_I    I      30.7   247          4545.6           444.0          1406.7    nan      nan      nan                      nan                   nan
+C4_11_C    C      30.7   247          4577.0           443.5          1406.7      0     94.8     5323                     0.25                 -0.45
+C4_12_C    C      30.7   247          4578.5           445.9          1406.7      0     90.2     7538                     0.32                 -0.41
+
+condition I: n=4  VDD_IN=4543.3+-2.0  VDD_CPU_GPU_CV=442.9+-0.9  VDD_SOC=1406.7+-0.0
+condition H: n=4  VDD_IN=4554.7+-4.9  VDD_CPU_GPU_CV=443.7+-1.8  VDD_SOC=1406.7+-0.0
+condition C: n=4  VDD_IN=4569.6+-9.5  VDD_CPU_GPU_CV=445.1+-1.4  VDD_SOC=1406.7+-0.0
+
+P_H - P_I VDD_IN         :   +11.4 mW  95% CI [   +4.0,   +18.9] (Welch df=3.9, se=2.6)
+P_H - P_I VDD_CPU_GPU_CV :    +0.8 mW  95% CI [   -1.9,    +3.5] (Welch df=4.6, se=1.0)
+P_H - P_I VDD_SOC        :    +0.0 mW  95% CI [   -0.0,    +0.0] (Welch df=5.9, se=0.0)
+
+P_C - P_H VDD_IN         :   +14.8 mW  95% CI [   +0.5,   +29.1] (Welch df=4.5, se=5.3)
+P_C - P_H VDD_CPU_GPU_CV :    +1.4 mW  95% CI [   -1.4,    +4.2] (Welch df=5.7, se=1.1)
+P_C - P_H VDD_SOC        :    +0.0 mW  95% CI [   -0.0,    +0.0] (Welch df=3.0, se=0.0)
+
+P_C - P_I VDD_IN         :   +26.2 mW  95% CI [  +11.3,   +41.2] (Welch df=3.3, se=4.8)
+P_C - P_I VDD_CPU_GPU_CV :    +2.2 mW  95% CI [   +0.0,    +4.3] (Welch df=5.3, se=0.8)
+P_C - P_I VDD_SOC        :    +0.0 mW  95% CI [   -0.0,    +0.0] (Welch df=3.0, se=0.0)
+
+E per decision at f = 100 Hz:
+  VDD_IN          E_dyn = (P_C-P_H)/f = +0.148 mJ  95% CI [+0.005, +0.291]   E_tot = P_C/f = 45.70 mJ   repeats/condition for CI half-width <= 10% of (P_C-P_H): 205
+  VDD_CPU_GPU_CV  E_dyn = (P_C-P_H)/f = +0.014 mJ  95% CI [-0.014, +0.042]   E_tot = P_C/f = 4.45 mJ   repeats/condition for CI half-width <= 10% of (P_C-P_H): 1057
+  VDD_SOC         E_dyn = (P_C-P_H)/f = +0.000 mJ  95% CI [-0.000, +0.000]   E_tot = P_C/f = 14.07 mJ   repeats/condition for CI half-width <= 10% of (P_C-P_H): 1569

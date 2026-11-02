@@ -1,0 +1,200 @@
+== 2026-10-31T13:22:29Z services after (Part 1.7), board uptime 813.58 s
+== systemctl get-default
+multi-user.target
+== desktop processes (gdm, Xorg, gnome-shell)
+none
+== disabled units: active / enabled
+docker.service inactive disabled
+docker.socket inactive disabled
+containerd.service inactive disabled
+bluetooth.service inactive disabled
+nvargus-daemon.service inactive disabled
+iperf3.service inactive disabled
+saned.socket inactive disabled
+gnome-remote-desktop.service inactive disabled
+ModemManager.service inactive disabled
+apt-daily.timer inactive disabled
+apt-daily-upgrade.timer inactive disabled
+motd-news.timer inactive disabled
+update-notifier-download.timer inactive disabled
+update-notifier-motd.timer inactive disabled
+fwupd-refresh.timer inactive disabled
+gdm.service inactive static
+== list-units --type=service --state=running
+  auditd.service               loaded active running Security Auditing Service
+  avahi-daemon.service         loaded active running Avahi mDNS/DNS-SD Stack
+  cron.service                 loaded active running Regular background program processing daemon
+  dbus.service                 loaded active running D-Bus System Message Bus
+  getty@tty1.service           loaded active running Getty on tty1
+  haveged.service              loaded active running Entropy Daemon based on the HAVEGE algorithm
+  kerneloops.service           loaded active running Tool to automatically collect and submit kernel crash signatures
+  lpd.service                  loaded active running LSB: BSD lpr/lpd line printer spooling system
+  NetworkManager.service       loaded active running Network Manager
+  nv-tee-supplicant.service    loaded active running OP-TEE Client Supplicant
+  nvfancontrol.service         loaded active running nvfancontrol service
+  nvidia-pva-allowd.service    loaded active running service for managing PVA allowlists
+  nvmemwarning.service         loaded active running Display Low memory warning
+  polkit.service               loaded active running Authorization Manager
+  rsyslog.service              loaded active running System Logging Service
+  rtkit-daemon.service         loaded active running RealtimeKit Scheduling Policy Service
+  seatd.service                loaded active running Seat management daemon
+  serial-getty@ttyGS0.service  loaded active running Serial Getty on ttyGS0
+  serial-getty@ttyTCU0.service loaded active running Serial Getty on ttyTCU0
+  ssh.service                  loaded active running OpenBSD Secure Shell server
+  systemd-journald.service     loaded active running Journal Service
+  systemd-logind.service       loaded active running User Login Management
+  systemd-networkd.service     loaded active running Network Configuration
+  systemd-resolved.service     loaded active running Network Name Resolution
+  systemd-timesyncd.service    loaded active running Network Time Synchronization
+  systemd-udevd.service        loaded active running Rule-based Manager for Device Events and Files
+  user@2002.service            loaded active running User Manager for UID 2002
+  wpa_supplicant.service       loaded active running WPA supplicant
+== list-unit-files --state=enabled
+apport-autoreport.path                       enabled enabled
+nvidia-cdi-refresh.path                      enabled enabled
+tpm-udev.path                                enabled enabled
+accounts-daemon.service                      enabled enabled
+anacron.service                              enabled enabled
+apparmor.service                             enabled enabled
+apport.service                               enabled enabled
+auditd.service                               enabled enabled
+avahi-daemon.service                         enabled enabled
+cloud-config.service                         enabled enabled
+cloud-final.service                          enabled enabled
+cloud-init-local.service                     enabled enabled
+cloud-init.service                           enabled enabled
+console-setup.service                        enabled enabled
+cron.service                                 enabled enabled
+dmesg.service                                enabled enabled
+e2scrub_reap.service                         enabled enabled
+fake-hwclock-load.service                    enabled enabled
+fake-hwclock-save.service                    enabled enabled
+getty@.service                               enabled enabled
+grub-common.service                          enabled enabled
+grub-initrd-fallback.service                 enabled enabled
+haveged.service                              enabled enabled
+kerneloops.service                           enabled enabled
+keyboard-setup.service                       enabled enabled
+networkd-dispatcher.service                  enabled enabled
+NetworkManager-dispatcher.service            enabled enabled
+NetworkManager.service                       enabled enabled
+nv-ftpm-device-provision.service             enabled enabled
+nv-graphics.service                          enabled enabled
+nv-kdump.service                             enabled enabled
+nv-l4t-bootloader-config.service             enabled enabled
+nv-l4t-usb-device-mode.service               enabled enabled
+nv-load-display-modules.service              enabled enabled
+nv-load-gpu-libs.service                     enabled enabled
+nv-oobe.service                              enabled enabled
+nv-power-adapter-check.service               enabled enabled
+nv-rootfs-validation-config.service          enabled enabled
+nv-tee-supplicant.service                    enabled enabled
+nv_hugetlbfs_init.service                    enabled enabled
+nv_nvsciipc_init.service                     enabled enabled
+nv_nvsciipc_preinit.service                  enabled enabled
+nvcpupowerfix.service                        enabled enabled
+nvfancontrol.service                         enabled enabled
+nvfb-ping-config.service                     enabled enabled
+nvfb-ssh-keygen.service                      enabled enabled
+nvfb-swapfile.service                        enabled enabled
+nvfb-tegra-hda.service                       enabled enabled
+nvfb-udev.service                            enabled enabled
+nvidia-cdi-refresh.service                   enabled enabled
+nvidia-pva-allowd.service                    enabled enabled
+nvmefc-boot-connections.service              enabled enabled
+nvmemwarning.service                         enabled enabled
+nvmf-autoconnect.service                     enabled enabled
+nvpmodel.service                             enabled enabled
+nvpower.service                              enabled enabled
+nvweston.service                             enabled enabled
+openvpn.service                              enabled enabled
+power-profiles-daemon.service                enabled enabled
+rsync.service                                enabled enabled
+rsyslog.service                              enabled enabled
+seatd.service                                enabled enabled
+secureboot-db.service                        enabled enabled
+setvtrgb.service                             enabled enabled
+snapd.apparmor.service                       enabled enabled
+snapd.autoimport.service                     enabled enabled
+snapd.core-fixup.service                     enabled enabled
+snapd.recovery-chooser-trigger.service       enabled enabled
+snapd.seeded.service                         enabled enabled
+snapd.service                                enabled enabled
+snapd.system-shutdown.service                enabled enabled
+ssh.service                                  enabled enabled
+sssd.service                                 enabled enabled
+switcheroo-control.service                   enabled enabled
+systemd-oomd.service                         enabled enabled
+systemd-pcrlock-file-system.service          enabled enabled
+systemd-pcrlock-firmware-code.service        enabled enabled
+systemd-pcrlock-firmware-config.service      enabled enabled
+systemd-pcrlock-machine-id.service           enabled enabled
+systemd-pcrlock-make-policy.service          enabled enabled
+systemd-pcrlock-secureboot-authority.service enabled enabled
+systemd-pcrlock-secureboot-policy.service    enabled enabled
+systemd-pstore.service                       enabled enabled
+systemd-resolved.service                     enabled enabled
+systemd-timesyncd.service                    enabled enabled
+ua-reboot-cmds.service                       enabled enabled
+ubiquity.service                             enabled enabled
+ubuntu-advantage.service                     enabled enabled
+udisks2.service                              enabled enabled
+wpa_supplicant.service                       enabled enabled
+apport-forward.socket                        enabled enabled
+avahi-daemon.socket                          enabled enabled
+cloud-init-hotplugd.socket                   enabled enabled
+snapd.socket                                 enabled enabled
+ssh.socket                                   enabled enabled
+sssd-autofs.socket                           enabled enabled
+sssd-nss.socket                              enabled enabled
+sssd-pac.socket                              enabled enabled
+sssd-pam-priv.socket                         enabled enabled
+sssd-pam.socket                              enabled enabled
+sssd-ssh.socket                              enabled enabled
+sssd-sudo.socket                             enabled enabled
+systemd-networkd.socket                      enabled enabled
+systemd-oomd.socket                          enabled enabled
+systemd-pcrextend.socket                     enabled enabled
+systemd-sysext.socket                        enabled enabled
+uuidd.socket                                 enabled enabled
+reboot.target                                enabled enabled
+remote-fs.target                             enabled disabled
+remote-veritysetup.target                    enabled enabled
+anacron.timer                                enabled enabled
+apport-autoreport.timer                      enabled enabled
+dpkg-db-backup.timer                         enabled enabled
+e2scrub_all.timer                            enabled enabled
+fake-hwclock-save.timer                      enabled enabled
+fstrim.timer                                 enabled enabled
+man-db.timer                                 enabled enabled
+snapd.snap-repair.timer                      enabled enabled
+ua-timer.timer                               enabled enabled
+== list-timers --all
+NEXT                         LEFT LAST                           PASSED UNIT                         ACTIVATES
+Sat 2026-10-31 15:00:00 CET 37min -                                   - fake-hwclock-save.timer      fake-hwclock-save.service
+-                               - Sat 2026-10-31 14:09:15 CET 12min ago anacron.timer                anacron.service
+-                               - -                                   - apport-autoreport.timer      apport-autoreport.service
+-                               - Sat 2026-10-31 13:56:44 CET         - dpkg-db-backup.timer         dpkg-db-backup.service
+-                               - Sat 2026-10-31 13:56:44 CET         - e2scrub_all.timer            e2scrub_all.service
+-                               - Fri 2026-10-30 17:08:43 CET         - fstrim.timer                 fstrim.service
+-                               - Fri 2026-10-30 18:24:41 CET         - man-db.timer                 man-db.service
+-                               - -                                   - snapd.snap-repair.timer      snapd.snap-repair.service
+-                               - -                                   - systemd-tmpfiles-clean.timer systemd-tmpfiles-clean.service
+-                               - -                                   - ua-timer.timer               ua-timer.service
+
+10 timers listed.
+== systemctl --failed
+== nmcli radio wifi
+disabled
+l4tbr0:bridge:connected (externally):l4tbr0
+lo:loopback:connected (externally):lo
+enP8p1s0:ethernet:unavailable:
+wlP1p1s0:wifi:unavailable:
+can0:can:unmanaged:
+usb0:ethernet:unmanaged:
+== user units of <user> (running)
+  dbus.service           loaded active running D-Bus User Message Bus
+  filter-chain.service   loaded active running PipeWire filter chain daemon
+  pipewire-pulse.service loaded active running PipeWire PulseAudio
+  pipewire.service       loaded active running PipeWire Multimedia Service
+  wireplumber.service    loaded active running Multimedia Service Session Manager

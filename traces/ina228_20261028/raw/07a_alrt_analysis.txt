@@ -1,0 +1,28 @@
+== E4_transparent_diag_400k
+   falls 514 (first = CNVR enable), on-grid 11, off-grid 502, glitch pulses (<1 us low) 25
+   conversion period fit 305.661 us (expected 380), residual sd 1636 ns, max |res| 2815 ns
+   grid slots 447, slots without a fall (conversion not seen) 436
+   action (DIAG_ALRT read, CPU-timed) median 235.0 us; ALRT rise: 131.0 us after it starts (p10 12.1, p90 238.3), 103.3 us before it returns; 378 of 512 actions had a rise inside
+== E5_latched_diag_400k
+   falls 513 (first = CNVR enable), on-grid 512, off-grid 0, glitch pulses (<1 us low) 0
+   conversion period fit 379.888 us (expected 380), residual sd 73 ns, max |res| 159 ns
+   grid slots 513, slots without a fall (conversion not seen) 1
+   action (DIAG_ALRT read, CPU-timed) median 235.0 us; ALRT rise: 196.5 us after it starts (p10 193.2, p90 199.5), 38.6 us before it returns; 512 of 512 actions had a rise inside
+== E6_transparent_diag_100k
+   falls 264 (first = CNVR enable), on-grid 263, off-grid 0, glitch pulses (<1 us low) 0
+   conversion period fit 379.887 us (expected 380), residual sd 92 ns, max |res| 179 ns
+   grid slots 525, slots without a fall (conversion not seen) 262
+   action (DIAG_ALRT read, CPU-timed) median 593.0 us; ALRT rise: 544.3 us after it starts (p10 541.4, p90 547.8), 48.8 us before it returns; 263 of 263 actions had a rise inside
+== E7_transparent_diag_1M
+   falls 513 (first = CNVR enable), on-grid 10, off-grid 502, glitch pulses (<1 us low) 1
+   conversion period fit 378.779 us (expected 380), residual sd 1569 ns, max |res| 2477 ns
+   grid slots 348, slots without a fall (conversion not seen) 338
+   action (DIAG_ALRT read, CPU-timed) median 163.5 us; ALRT rise: 129.8 us after it starts (p10 126.7, p90 133.1), 33.7 us before it returns; 511 of 512 actions had a rise inside
+
+Where in the read does ALRT rise? Model: (return - rise) = p + m * t_bit, with m the bit times
+between the rise and the end of the bus transaction and p the software time after it.
+   E7_transparent_diag_1M       t_bit  1.00 us: rise   33.7 us before the call returns
+   E5_latched_diag_400k         t_bit  2.50 us: rise   38.6 us before the call returns
+   E6_transparent_diag_100k     t_bit 10.00 us: rise   48.8 us before the call returns
+   fit: m = 1.6 bit times before the end of the transaction, p = 33.3 us software overhead
+   i.e. ALRT rises at about bit 46 of the ~48-bit DIAG_ALRT read

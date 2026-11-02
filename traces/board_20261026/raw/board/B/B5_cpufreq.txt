@@ -1,0 +1,48 @@
+## /sys/devices/system/cpu/cpufreq/policy0
+affected_cpus	-r--r--r--	0 1 2 3 
+cpuinfo_cur_freq	-r--------	cat: /sys/devices/system/cpu/cpufreq/policy0/cpuinfo_cur_freq: Permission denied 
+cpuinfo_max_freq	-r--r--r--	1728000 
+cpuinfo_min_freq	-r--r--r--	115200 
+cpuinfo_transition_latency	-r--r--r--	300000 
+related_cpus	-r--r--r--	0 1 2 3 
+scaling_available_frequencies	-r--r--r--	115200 192000 268800 345600 422400 499200 576000 652800 729600 806400 883200 960000 1036800 1113600 1190400 1267200 1344000 1420800 1497600 1574400 1651200 1728000  
+scaling_available_governors	-r--r--r--	ondemand userspace performance schedutil  
+scaling_cur_freq	-r--r--r--	1267200 
+scaling_driver	-r--r--r--	tegra194 
+scaling_governor	-rw-r--r--	schedutil 
+scaling_max_freq	-rw-r--r--	1344000 
+scaling_min_freq	-rw-r--r--	729600 
+scaling_setspeed	-rw-r--r--	<unsupported> 
+# /sys/devices/system/cpu/cpufreq/policy0/stats
+reset	--w-------	cat: /sys/devices/system/cpu/cpufreq/policy0/stats/reset: Permission denied 
+time_in_state	-r--r--r--	115200 0 192000 0 268800 0 345600 0 422400 0 499200 0 576000 0 652800 0 729600 516436 806400 209 883200 278 960000 235 1036800 264 1113600 580 1190400 466 1267200 288 1344000 3249 1420800 0 1497600 0 1574400 0 1651200 0 1728000 531 
+total_trans	-r--r--r--	6077 
+trans_table	-r--r--r--	cat: /sys/devices/system/cpu/cpufreq/policy0/stats/trans_table: File too large 
+## /sys/devices/system/cpu/cpufreq/policy4
+affected_cpus	-r--r--r--	4 5 
+cpuinfo_cur_freq	-r--------	cat: /sys/devices/system/cpu/cpufreq/policy4/cpuinfo_cur_freq: Permission denied 
+cpuinfo_max_freq	-r--r--r--	1728000 
+cpuinfo_min_freq	-r--r--r--	115200 
+cpuinfo_transition_latency	-r--r--r--	300000 
+related_cpus	-r--r--r--	4 5 
+scaling_available_frequencies	-r--r--r--	115200 192000 268800 345600 422400 499200 576000 652800 729600 806400 883200 960000 1036800 1113600 1190400 1267200 1344000 1420800 1497600 1574400 1651200 1728000  
+scaling_available_governors	-r--r--r--	ondemand userspace performance schedutil  
+scaling_cur_freq	-r--r--r--	1190400 
+scaling_driver	-r--r--r--	tegra194 
+scaling_governor	-rw-r--r--	schedutil 
+scaling_max_freq	-rw-r--r--	1344000 
+scaling_min_freq	-rw-r--r--	729600 
+scaling_setspeed	-rw-r--r--	<unsupported> 
+# /sys/devices/system/cpu/cpufreq/policy4/stats
+reset	--w-------	cat: /sys/devices/system/cpu/cpufreq/policy4/stats/reset: Permission denied 
+time_in_state	-r--r--r--	115200 0 192000 0 268800 0 345600 0 422400 0 499200 0 576000 0 652800 0 729600 520552 806400 98 883200 109 960000 74 1036800 107 1113600 231 1190400 79 1267200 35 1344000 730 1420800 0 1497600 0 1574400 0 1651200 0 1728000 529 
+total_trans	-r--r--r--	2025 
+trans_table	-r--r--r--	cat: /sys/devices/system/cpu/cpufreq/policy4/stats/trans_table: File too large 
+## cpufreq boost
+cat: /sys/devices/system/cpu/cpufreq/boost: No such file or directory
+cpu0 cpufreq -> /sys/devices/system/cpu/cpufreq/policy0
+cpu1 cpufreq -> /sys/devices/system/cpu/cpufreq/policy0
+cpu2 cpufreq -> /sys/devices/system/cpu/cpufreq/policy0
+cpu3 cpufreq -> /sys/devices/system/cpu/cpufreq/policy0
+cpu4 cpufreq -> /sys/devices/system/cpu/cpufreq/policy4
+cpu5 cpufreq -> /sys/devices/system/cpu/cpufreq/policy4

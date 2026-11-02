@@ -1,0 +1,25 @@
+spurious ALRT at 662.517725 s: previous conversion 513.48 us before, next 1079.64 us after; diag 0xc001
+  nearest GP16 fall +522.24 us, nearest rise +513.48 us
+  inside block R12H (H), 4.831 s after its first decision edge
+records around the spurious edge (index, t s, dt us, CNVRF, seq16, diag, I mA):
+  613581 662.514486   1079.64 1 23757 0xc003 327.27
+  613582 662.515566   1079.76 1 23758 0xc003 326.42
+  613583 662.516645   1079.64 1 23759 0xc003 334.58
+  613584 662.517212    566.28 1 23760 0xc003 341.48
+  613585 662.517725    513.48 0 23761 0xc001 341.48
+  613586 662.518805   1079.64 1 23762 0xc003 326.23
+  613587 662.519884   1079.76 1 23763 0xc003 328.23
+  613588 662.520964   1079.64 1 23764 0xc003 325.31
+  613589 662.522044   1079.76 1 23765 0xc003 325.23
+grid fit: T 1079.640 us; phase residual before the edge +29.90 us, after +43.23 us; grid slots between record i-1 and i+1: 1.476
+grid slots spanned 839168, CNVRF records 839105, unique slots 839105, empty slots (missed) 63
+
+Reading (written 17:17Z): the extra ALRT falling edge is record 613584 at 662.517212 s, off the conversion grid by
+-513 us and at the same PIO time as a GP16 marker rising edge (the R12H decision pulse: fall 662.517203, rise
+662.517212). Its handler read DIAG after the real conversion ended (CNVRF set) and took that conversion's data. The
+real, on-grid edge (613585, 662.517725) then found CNVRF already cleared and re-read the same values (341.48 mA in
+both), so capdec marks it CNVRF=0. Net effect: one conversion of 839 107 carries a timestamp 513 us early; no
+conversion lost. Same kind of event as T6's extra ALRT edges at marker edges (R6A, C3). Effect on R12H's X: one
+conversion moved by 0.5 ms among ~55 000, well under 0.1 uJ (estimate, NV).
+The "empty slots (missed) 63" line above is wrong: the constant-period grid ignores the +10 us step at each of the
+1812 accumulator reads. capcheck.py's interval test (raw/K3_capcheck.txt) gives missed 0.

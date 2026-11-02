@@ -1,0 +1,25 @@
+=== 20261026T092547Z_sine_centroid
+status=completed periods=6000 misses=1 achieved_hz=99.9950
+ctl_us p50=30.6 p99=170.5 max=588.4 mean=34.9
+rtt_us p50=392 p99=1092 max=5010
+link_us p50=362 p99=960 max=4938
+=== 20261026T092658Z_sine_centroid
+status=completed periods=6000 misses=0 achieved_hz=99.9963
+ctl_us p50=15.8 p99=35.7 max=223.9 mean=13.9
+rtt_us p50=215 p99=332 max=1834
+link_us p50=201 p99=301 max=1831
+=== 20261026T092902Z_sine_centroid
+status=completed periods=6000 misses=3 achieved_hz=99.9961
+ctl_us p50=19.5 p99=78.9 max=2569.6 mean=20.7
+rtt_us p50=277 p99=945 max=18608
+link_us p50=258 p99=850 max=18571
+=== 20261026T114200Z_sine_centroid
+status=completed periods=6000 misses=0 achieved_hz=99.9888
+ctl_us p50=15.1 p99=40.0 max=318.4 mean=13.1
+rtt_us p50=237 p99=379 max=2967
+link_us p50=224 p99=352 max=2953
+=== 20261026T115020Z_sine_centroid
+status=completed periods=6000 misses=2 achieved_hz=99.9903
+ctl_us p50=22.8 p99=136.7 max=2352.5 mean=25.8
+rtt_us p50=282 p99=1434 max=7168
+link_us p50=262 p99=1261 max=7132

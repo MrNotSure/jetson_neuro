@@ -1,0 +1,276 @@
+2026-10-26T12:36:29.392Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T12:36:29.719Z	(throttle.sh) sudo cat /sys/kernel/debug/bpmp/debug/soctherm/throt_counters
+2026-10-26T12:36:29.806Z	(throttle.sh) sudo cat /sys/kernel/debug/bpmp/debug/soctherm/oc_counters
+2026-10-26T12:37:11.931Z	(ctl_start.sh)  PYTHONPATH=src ~/venvs/jn/bin/python -u -m jn_sim ctl --controller centroid --listen 192.168.55.1:5555 
+2026-10-26T12:42:21.570Z	(ctl_stop.sh) kill -INT 6850
+2026-10-26T12:42:21.722Z	(ctl_start.sh)  PYTHONPATH=src ~/venvs/jn/bin/python -u -m jn_sim ctl --controller hold --listen 192.168.55.1:5555 
+2026-10-26T12:43:33.405Z	(ctl_stop.sh) kill -INT 6911
+2026-10-26T12:45:14.154Z	(partB.sh) sudo nvpmodel -q --verbose
+2026-10-26T12:45:27.505Z	(partB.sh) sudo tegrastats --interval 100
+2026-10-26T12:45:28.905Z	(partB.sh) sudo tegrastats --interval 1000
+2026-10-26T12:45:42.976Z	(partB.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T12:45:43.063Z	(partB.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/max_rate
+2026-10-26T12:45:43.148Z	(partB.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/min_rate
+2026-10-26T12:45:43.235Z	(partB.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/mrq_rate_locked
+2026-10-26T12:45:43.322Z	(partB.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/state
+2026-10-26T12:45:43.407Z	(partB.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/flags
+2026-10-26T12:45:43.492Z	(partB.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/parent
+2026-10-26T12:45:43.577Z	(partB.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/refcount
+2026-10-26T12:45:43.662Z	(partB.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/vdd_core
+2026-10-26T12:45:43.747Z	(partB.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/dvfs
+2026-10-26T12:45:43.832Z	(partB.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/dvfs_table
+2026-10-26T12:45:43.920Z	(partB.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/hz_off
+2026-10-26T12:45:44.008Z	(partB.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/mrqcount
+2026-10-26T12:45:44.101Z	(partB.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/pto_counter
+2026-10-26T12:45:44.257Z	(partB.sh) sudo jetson_clocks --show
+2026-10-26T12:45:47.346Z	(partB.sh) sudo ufw status verbose
+2026-10-26T12:48:05.688Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T12:48:50.233Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T12:49:53.232Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T12:50:04.536Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T12:50:15.840Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T12:51:31.715Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T12:56:32.017Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T12:56:37.243Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T12:57:37.543Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T12:57:40.766Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T12:58:41.065Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T12:58:44.289Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T12:59:44.597Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T12:59:47.825Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:00:48.129Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:01:37.043Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:01:57.650Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:01:57.830Z	(ctl_start.sh)  PYTHONPATH=src ~/venvs/jn/bin/python -u -m jn_sim ctl --controller centroid --listen 192.168.55.1:5555 --once
+2026-10-26T13:02:28.907Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:02:39.312Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:02:39.494Z	(ctl_start.sh)  PYTHONPATH=src ~/venvs/jn/bin/python -u -m jn_sim ctl --controller hold --listen 192.168.55.1:5555 --once
+2026-10-26T13:03:10.546Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:03:20.954Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:03:51.882Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:04:02.286Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:04:02.468Z	(ctl_start.sh)  PYTHONPATH=src ~/venvs/jn/bin/python -u -m jn_sim ctl --controller hold --listen 192.168.55.1:5555 --once
+2026-10-26T13:04:33.673Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:04:44.199Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:04:44.381Z	(ctl_start.sh)  PYTHONPATH=src ~/venvs/jn/bin/python -u -m jn_sim ctl --controller centroid --listen 192.168.55.1:5555 --once
+2026-10-26T13:05:15.534Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:05:26.016Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:05:26.204Z	(ctl_start.sh)  PYTHONPATH=src ~/venvs/jn/bin/python -u -m jn_sim ctl --controller hold --listen 192.168.55.1:5555 --once
+2026-10-26T13:05:57.295Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:06:07.741Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:06:38.739Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:06:49.247Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:06:49.436Z	(ctl_start.sh)  PYTHONPATH=src ~/venvs/jn/bin/python -u -m jn_sim ctl --controller hold --listen 192.168.55.1:5555 --once
+2026-10-26T13:07:20.595Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:07:31.077Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:08:02.124Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:08:12.618Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:08:43.584Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:08:54.070Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:08:54.247Z	(ctl_start.sh)  PYTHONPATH=src ~/venvs/jn/bin/python -u -m jn_sim ctl --controller centroid --listen 192.168.55.1:5555 --once
+2026-10-26T13:09:25.344Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:09:35.834Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:09:36.012Z	(ctl_start.sh)  PYTHONPATH=src ~/venvs/jn/bin/python -u -m jn_sim ctl --controller centroid --listen 192.168.55.1:5555 --once
+2026-10-26T13:10:07.137Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:10:28.685Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:13:30.992Z	(throttle.sh) sudo cat /sys/kernel/debug/bpmp/debug/soctherm/throt_counters
+2026-10-26T13:13:31.079Z	(throttle.sh) sudo cat /sys/kernel/debug/bpmp/debug/soctherm/oc_counters
+2026-10-26T13:13:31.309Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/min_rate
+2026-10-26T13:13:31.394Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/max_rate
+2026-10-26T13:13:31.483Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/mrq_rate_locked
+2026-10-26T13:13:31.582Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:13:31.746Z	(clkstate.sh) sudo jetson_clocks --show
+2026-10-26T13:13:37.982Z	(dprobe.sh) sudo cat /sys/kernel/debug/clk/clk_summary
+2026-10-26T13:13:38.903Z	(dprobe.sh) sudo cat /sys/kernel/debug/regulator/regulator_summary
+2026-10-26T13:13:38.989Z	(dprobe.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0/rate
+2026-10-26T13:13:39.072Z	(dprobe.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0/dvfs
+2026-10-26T13:13:39.156Z	(dprobe.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1/rate
+2026-10-26T13:13:39.242Z	(dprobe.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1/dvfs
+2026-10-26T13:13:39.326Z	(dprobe.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster2/rate
+2026-10-26T13:13:39.411Z	(dprobe.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster2/dvfs
+2026-10-26T13:13:39.496Z	(dprobe.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_gpc0/rate
+2026-10-26T13:13:39.584Z	(dprobe.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_gpc0/dvfs
+2026-10-26T13:13:39.670Z	(dprobe.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_gpc1/rate
+2026-10-26T13:13:39.757Z	(dprobe.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_gpc1/dvfs
+2026-10-26T13:13:39.852Z	(dprobe.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc0clk/rate
+2026-10-26T13:13:39.938Z	(dprobe.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc0clk/dvfs
+2026-10-26T13:13:40.024Z	(dprobe.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc1clk/rate
+2026-10-26T13:13:40.109Z	(dprobe.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc1clk/dvfs
+2026-10-26T13:13:40.193Z	(dprobe.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpusysclk/rate
+2026-10-26T13:13:40.280Z	(dprobe.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpusysclk/dvfs
+2026-10-26T13:13:40.366Z	(dprobe.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_gpusys/rate
+2026-10-26T13:13:40.451Z	(dprobe.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_gpusys/dvfs
+2026-10-26T13:13:50.863Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_core/rate
+2026-10-26T13:13:50.949Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_core/max_rate
+2026-10-26T13:13:51.036Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_core/min_rate
+2026-10-26T13:13:51.124Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_core/dvfs
+2026-10-26T13:13:51.208Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_core/dvfs_table
+2026-10-26T13:13:51.293Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1_core/rate
+2026-10-26T13:13:51.384Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1_core/max_rate
+2026-10-26T13:13:51.472Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1_core/min_rate
+2026-10-26T13:13:51.558Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1_core/dvfs
+2026-10-26T13:13:51.644Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1_core/dvfs_table
+2026-10-26T13:13:51.728Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_dsu/rate
+2026-10-26T13:13:51.813Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_dsu/max_rate
+2026-10-26T13:13:51.900Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_dsu/min_rate
+2026-10-26T13:13:51.985Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_dsu/dvfs
+2026-10-26T13:13:52.071Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_dsu/dvfs_table
+2026-10-26T13:13:52.157Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_gpc0/rate
+2026-10-26T13:13:52.244Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_gpc0/max_rate
+2026-10-26T13:13:52.332Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_gpc0/min_rate
+2026-10-26T13:13:52.421Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_gpc0/dvfs
+2026-10-26T13:13:52.507Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_gpc0/dvfs_table
+2026-10-26T13:13:52.592Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc0clk/rate
+2026-10-26T13:13:52.680Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc0clk/max_rate
+2026-10-26T13:13:52.770Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc0clk/min_rate
+2026-10-26T13:13:52.854Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc0clk/dvfs
+2026-10-26T13:13:52.941Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc0clk/dvfs_table
+2026-10-26T13:13:53.028Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpusysclk/rate
+2026-10-26T13:13:53.115Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpusysclk/max_rate
+2026-10-26T13:13:53.201Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpusysclk/min_rate
+2026-10-26T13:13:53.287Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpusysclk/dvfs
+2026-10-26T13:13:53.373Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpusysclk/dvfs_table
+2026-10-26T13:13:53.457Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/emchub/rate
+2026-10-26T13:13:53.542Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/emchub/max_rate
+2026-10-26T13:13:53.627Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/emchub/min_rate
+2026-10-26T13:13:53.713Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/emchub/dvfs
+2026-10-26T13:13:53.797Z	(probe) sudo cat /sys/kernel/debug/bpmp/debug/clk/emchub/dvfs_table
+2026-10-26T13:14:04.706Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/min_rate
+2026-10-26T13:14:04.793Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/max_rate
+2026-10-26T13:14:04.879Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/mrq_rate_locked
+2026-10-26T13:14:04.965Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:14:05.051Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_core/rate
+2026-10-26T13:14:05.139Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1_core/rate
+2026-10-26T13:14:05.226Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc0clk/rate
+2026-10-26T13:14:05.388Z	(clkstate.sh) sudo jetson_clocks --show
+2026-10-26T13:14:09.478Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/min_rate
+2026-10-26T13:14:09.557Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/max_rate
+2026-10-26T13:14:09.637Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/mrq_rate_locked
+2026-10-26T13:14:09.716Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:14:09.795Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_core/rate
+2026-10-26T13:14:09.874Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1_core/rate
+2026-10-26T13:14:09.953Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc0clk/rate
+2026-10-26T13:14:10.093Z	(clkstate.sh) sudo jetson_clocks --show
+2026-10-26T13:14:46.929Z	(setclk.sh) echo 729600 | sudo tee /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+2026-10-26T13:14:47.009Z	(setclk.sh) echo 729600 | sudo tee /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
+2026-10-26T13:14:47.124Z	(setclk.sh) echo 729600 | sudo tee /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq
+2026-10-26T13:14:47.266Z	(setclk.sh) echo 729600 | sudo tee /sys/devices/system/cpu/cpufreq/policy4/scaling_max_freq
+2026-10-26T13:14:47.412Z	(setclk.sh) echo 612000000 | sudo tee /sys/class/devfreq/17000000.gpu/min_freq
+2026-10-26T13:14:47.559Z	(setclk.sh) echo 612000000 | sudo tee /sys/class/devfreq/17000000.gpu/max_freq
+2026-10-26T13:14:53.009Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/min_rate
+2026-10-26T13:14:53.150Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/max_rate
+2026-10-26T13:14:53.292Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/mrq_rate_locked
+2026-10-26T13:14:53.432Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:14:53.575Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_core/rate
+2026-10-26T13:14:53.717Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1_core/rate
+2026-10-26T13:14:53.858Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc0clk/rate
+2026-10-26T13:14:54.100Z	(clkstate.sh) sudo jetson_clocks --show
+2026-10-26T13:15:24.886Z	(dpoint.sh) sudo tegrastats --interval 1000 | head -40
+2026-10-26T13:15:25.955Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:15:26.233Z	(ctl_start.sh)  PYTHONPATH=src ~/venvs/jn/bin/python -u -m jn_sim ctl --controller centroid --listen 192.168.55.1:5555 --once
+2026-10-26T13:15:57.764Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:16:07.683Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/min_rate
+2026-10-26T13:16:07.824Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/max_rate
+2026-10-26T13:16:07.964Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/mrq_rate_locked
+2026-10-26T13:16:08.105Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:16:08.246Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_core/rate
+2026-10-26T13:16:08.386Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1_core/rate
+2026-10-26T13:16:08.527Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc0clk/rate
+2026-10-26T13:16:08.772Z	(clkstate.sh) sudo jetson_clocks --show
+2026-10-26T13:16:20.468Z	(setclk.sh) echo 115200 | sudo tee /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+2026-10-26T13:16:20.613Z	(setclk.sh) echo 115200 | sudo tee /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
+2026-10-26T13:16:21.111Z	(setclk.sh) echo 115200 | sudo tee /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq
+2026-10-26T13:16:21.996Z	(setclk.sh) echo 115200 | sudo tee /sys/devices/system/cpu/cpufreq/policy4/scaling_max_freq
+2026-10-26T13:16:22.901Z	(setclk.sh) echo 306000000 | sudo tee /sys/class/devfreq/17000000.gpu/min_freq
+2026-10-26T13:16:23.795Z	(setclk.sh) echo 306000000 | sudo tee /sys/class/devfreq/17000000.gpu/max_freq
+2026-10-26T13:16:27.250Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/min_rate
+2026-10-26T13:16:28.126Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/max_rate
+2026-10-26T13:16:29.002Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/mrq_rate_locked
+2026-10-26T13:16:29.880Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:16:30.756Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_core/rate
+2026-10-26T13:16:31.628Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1_core/rate
+2026-10-26T13:16:32.510Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc0clk/rate
+2026-10-26T13:16:33.970Z	(clkstate.sh) sudo jetson_clocks --show
+2026-10-26T13:17:07.501Z	(dpoint.sh) sudo tegrastats --interval 1000 | head -40
+2026-10-26T13:17:08.912Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:17:10.602Z	(ctl_start.sh)  PYTHONPATH=src ~/venvs/jn/bin/python -u -m jn_sim ctl --controller centroid --listen 192.168.55.1:5555 --once
+2026-10-26T13:17:45.333Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:17:52.022Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/min_rate
+2026-10-26T13:17:52.896Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/max_rate
+2026-10-26T13:17:53.778Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/mrq_rate_locked
+2026-10-26T13:17:54.649Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:17:55.525Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_core/rate
+2026-10-26T13:17:56.397Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1_core/rate
+2026-10-26T13:17:57.274Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc0clk/rate
+2026-10-26T13:17:58.736Z	(clkstate.sh) sudo jetson_clocks --show
+2026-10-26T13:18:15.729Z	(setclk.sh) echo 1344000 | sudo tee /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
+2026-10-26T13:18:16.261Z	(setclk.sh) echo 1344000 | sudo tee /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+2026-10-26T13:18:16.346Z	(setclk.sh) echo 1344000 | sudo tee /sys/devices/system/cpu/cpufreq/policy4/scaling_max_freq
+2026-10-26T13:18:16.427Z	(setclk.sh) echo 1344000 | sudo tee /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq
+2026-10-26T13:18:16.509Z	(setclk.sh) echo 918000000 | sudo tee /sys/class/devfreq/17000000.gpu/max_freq
+2026-10-26T13:18:16.591Z	(setclk.sh) echo 918000000 | sudo tee /sys/class/devfreq/17000000.gpu/min_freq
+2026-10-26T13:18:17.998Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/min_rate
+2026-10-26T13:18:18.077Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/max_rate
+2026-10-26T13:18:18.156Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/mrq_rate_locked
+2026-10-26T13:18:18.235Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:18:18.313Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_core/rate
+2026-10-26T13:18:18.393Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1_core/rate
+2026-10-26T13:18:18.472Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc0clk/rate
+2026-10-26T13:18:18.613Z	(clkstate.sh) sudo jetson_clocks --show
+2026-10-26T13:18:49.127Z	(dpoint.sh) sudo tegrastats --interval 1000 | head -40
+2026-10-26T13:18:50.167Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:18:50.327Z	(ctl_start.sh)  PYTHONPATH=src ~/venvs/jn/bin/python -u -m jn_sim ctl --controller centroid --listen 192.168.55.1:5555 --once
+2026-10-26T13:19:21.622Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:19:32.194Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/min_rate
+2026-10-26T13:19:32.274Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/max_rate
+2026-10-26T13:19:32.353Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/mrq_rate_locked
+2026-10-26T13:19:32.432Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:19:32.511Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_core/rate
+2026-10-26T13:19:32.590Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1_core/rate
+2026-10-26T13:19:32.669Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc0clk/rate
+2026-10-26T13:19:32.809Z	(clkstate.sh) sudo jetson_clocks --show
+2026-10-26T13:19:51.297Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/min_rate
+2026-10-26T13:19:51.386Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/max_rate
+2026-10-26T13:19:51.472Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/mrq_rate_locked
+2026-10-26T13:19:51.559Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:19:51.645Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_core/rate
+2026-10-26T13:19:51.733Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1_core/rate
+2026-10-26T13:19:51.820Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc0clk/rate
+2026-10-26T13:19:51.980Z	(clkstate.sh) sudo jetson_clocks --show
+2026-10-26T13:21:23.127Z	(e1.sh) sudo systemd-run --on-active=300 nmcli radio wifi on
+2026-10-26T13:21:23.220Z	(e1.sh) sudo nmcli radio wifi off
+2026-10-26T13:21:23.480Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:22:23.772Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:22:23.944Z	(e1.sh) sudo nmcli radio wifi on
+2026-10-26T13:22:54.172Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:23:54.478Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:23:54.657Z	(e1.sh) sudo systemd-run --on-active=300 nmcli radio wifi on
+2026-10-26T13:23:54.752Z	(e1.sh) sudo nmcli radio wifi off
+2026-10-26T13:23:55.096Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:24:55.384Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:24:55.568Z	(e1.sh) sudo nmcli radio wifi on
+2026-10-26T13:25:25.796Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:26:26.097Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:28:12.064Z	(e2.sh) sudo systemctl stop nvfancontrol
+2026-10-26T13:28:12.181Z	(e2.sh) echo 66 | sudo tee /sys/class/hwmon/hwmon0/pwm1
+2026-10-26T13:29:15.898Z	(e2.sh) sudo systemctl start nvfancontrol
+2026-10-26T13:31:11.386Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:31:11.568Z	(ctl_start.sh)  PYTHONPATH=src ~/venvs/jn/bin/python -u -m jn_sim ctl --controller centroid --listen 192.168.55.1:5555 --once
+2026-10-26T13:32:14.186Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:32:19.642Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:32:19.824Z	(ctl_start.sh) taskset -c 2 PYTHONPATH=src ~/venvs/jn/bin/python -u -m jn_sim ctl --controller centroid --listen 192.168.55.1:5555 --once
+2026-10-26T13:33:21.860Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:33:27.342Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:33:27.523Z	(ctl_start.sh) taskset -c 0 PYTHONPATH=src ~/venvs/jn/bin/python -u -m jn_sim ctl --controller centroid --listen 192.168.55.1:5555 --once
+2026-10-26T13:34:29.584Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:35:22.395Z	(throttle.sh) sudo cat /sys/kernel/debug/bpmp/debug/soctherm/throt_counters
+2026-10-26T13:35:22.479Z	(throttle.sh) sudo cat /sys/kernel/debug/bpmp/debug/soctherm/oc_counters
+2026-10-26T13:35:22.702Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/min_rate
+2026-10-26T13:35:22.787Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/max_rate
+2026-10-26T13:35:22.872Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/mrq_rate_locked
+2026-10-26T13:35:22.959Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate
+2026-10-26T13:35:23.044Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster0_core/rate
+2026-10-26T13:35:23.130Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/nafll_cluster1_core/rate
+2026-10-26T13:35:23.216Z	(clkstate.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/gpc0clk/rate
+2026-10-26T13:35:23.376Z	(clkstate.sh) sudo jetson_clocks --show
+2026-10-26T13:35:23.700Z	(snap.sh) sudo cat /sys/kernel/debug/bpmp/debug/clk/emc/rate

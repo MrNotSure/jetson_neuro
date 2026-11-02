@@ -1,0 +1,24 @@
+SSH_CONNECTION=192.168.55.100 61313 192.168.55.1 22
+Running timer as unit: run-r470e1423e7fe477a9d553fb0fd9cfe1e.timer
+Will run service as unit: run-r470e1423e7fe477a9d553fb0fd9cfe1e.service
+cycle 1 radio after off: disabled wlP1p1s0:unavailable
+p2p-dev-wlP1p1s0:unavailable
+cycle 1 radio after on: enabled wlP1p1s0:disconnected
+p2p-dev-wlP1p1s0:disconnected
+Running timer as unit: run-r2eb96919aaf2424fb2a5cdd2db861086.timer
+Will run service as unit: run-r2eb96919aaf2424fb2a5cdd2db861086.service
+cycle 2 radio after off: disabled wlP1p1s0:unavailable
+p2p-dev-wlP1p1s0:unavailable
+cycle 2 radio after on: enabled wlP1p1s0:disconnected
+p2p-dev-wlP1p1s0:disconnected
+final radio: enabled
+DEVICE            TYPE      STATE                   CONNECTION 
+l4tbr0            bridge    connected (externally)  l4tbr0     
+lo                loopback  connected (externally)  lo         
+docker0           bridge    connected (externally)  docker0    
+wlP1p1s0          wifi      disconnected            --         
+p2p-dev-wlP1p1s0  wifi-p2p  disconnected            --         
+enP8p1s0          ethernet  unavailable             --         
+can0              can       unmanaged               --         
+usb0              ethernet  unmanaged               --         
+Mon 2026-10-26 14:28:54 CET 2min 28s -                                      - run-r2eb96919aaf2424fb2a5cdd2db861086.timer run-r2eb96919aaf2424fb2a5cdd2db861086.service

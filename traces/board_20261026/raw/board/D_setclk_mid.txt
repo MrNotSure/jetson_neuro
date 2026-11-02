@@ -1,0 +1,11 @@
+# setclk cpu=729600 kHz gpu=612000000 Hz utc=2026-10-26T13:14:46.926Z
+  write /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq <- 729600 rc=0 readback=729600
+  write /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq <- 729600 rc=0 readback=729600
+  write /sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq <- 729600 rc=0 readback=729600
+  write /sys/devices/system/cpu/cpufreq/policy4/scaling_max_freq <- 729600 rc=0 readback=729600
+  write /sys/class/devfreq/17000000.gpu/min_freq <- 612000000 rc=0 readback=612000000
+  write /sys/class/devfreq/17000000.gpu/max_freq <- 612000000 rc=0 readback=612000000
+  verify policy0: min=729600 max=729600 cur=729600
+  verify policy4: min=729600 max=729600 cur=729600
+  verify gpu: min=612000000 max=612000000 cur=612000000
+  setclk result: OK

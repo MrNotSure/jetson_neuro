@@ -1,0 +1,26 @@
+== 2026-10-31T12:57:00Z Part 0.5-0.6
+rtt    73.3 ms   board - mac -0.018 s
+rtt    80.8 ms   board - mac -0.014 s
+rtt   113.4 ms   board - mac +0.000 s
+best (shortest rtt 73.3 ms): board - mac = -0.018 s = -0.0000 d; mac utc 2026-10-31 12:57:01
+ 13:57:01 up 1 min,  2 users,  load average: 0.78, 0.41, 0.16
+inactive inactive inactive inactive inactive inactive inactive inactive inactive inactive inactive inactive 
+No jobs running.
+no apt/dpkg
+2026-10-31T13:56:44+01:00 jetson systemd[1]: Starting dpkg-db-backup.service - Daily dpkg database backup service...
+2026-10-31T13:56:44+01:00 jetson systemd[1]: Starting e2scrub_all.service - Online ext4 Metadata Check for All Filesystems...
+2026-10-31T13:56:44+01:00 jetson systemd[1]: Starting fake-hwclock-save.service - Save the current clock...
+== power mode
+Result=success
+ExecMainStatus=0
+ActiveState=inactive
+NV Power Mode: 25W
+1
+/sys/devices/system/cpu/cpufreq/policy0 governor=schedutil min=729600 max=1344000 cur=1190400
+/sys/devices/system/cpu/cpufreq/policy4 governor=schedutil min=729600 max=1344000 cur=729600
+gpu governor=nvhost_podgov min=306000000 max=918000000 cur=306000000
+bwmgr min=204000000 max=3199000000 cur=2133000000
+cpuidle disable: 0 0 0 0 0 0 0 0 0 0 0 0 
+tpc_pg_mask=240 fbp_pg_mask=2 gpu_power_control=auto
+cpu-thermal=37468 gpu-thermal=37375 soc0-thermal=36468 soc1-thermal=37062 soc2-thermal=36937 tj-thermal=37562 
+fan pwm: 2 

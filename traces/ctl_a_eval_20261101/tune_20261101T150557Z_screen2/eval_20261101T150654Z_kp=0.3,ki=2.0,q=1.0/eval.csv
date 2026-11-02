@@ -1,0 +1,13 @@
+scenario,seed,rms_deg,max_deg,in_fov,losses,unrecovered,success,events_per_period,ctl_us_p99,status,run_dir
+track-sine-v1,0,0.21251,0.659336,1,0,0,1,152.352,673.785,completed,20261101T150654Z_sine_classical
+track-sine-v1,1,0.206237,0.966471,1,0,0,1,148.279,464.7,completed,20261101T150654Z_sine_classical_2
+track-random-v1,0,0.228299,0.673756,1,0,0,1,152.992,427.306,completed,20261101T150654Z_random_classical
+track-random-v1,1,0.174717,0.606539,1,0,0,1,151.886,492.335,completed,20261101T150654Z_random_classical_2
+track-step-v1,0,2.8151,17.0985,1,0,0,1,163.857,390.79,completed,20261101T150654Z_step_classical
+track-step-v1,1,3.04725,16.9567,1,0,0,1,173.979,460.637,completed,20261101T150654Z_step_classical_2
+track-sine-v1,mean,0.209374,0.812903,1,0,0,1,150.316,569.243,completed,
+track-sine-v1,worst,0.21251,0.966471,1,0,0,1,152.352,673.785,completed,
+track-random-v1,mean,0.201508,0.640147,1,0,0,1,152.439,459.821,completed,
+track-random-v1,worst,0.228299,0.673756,1,0,0,1,152.992,492.335,completed,
+track-step-v1,mean,2.93118,17.0276,1,0,0,1,168.918,425.714,completed,
+track-step-v1,worst,3.04725,17.0985,1,0,0,1,173.979,460.637,completed,

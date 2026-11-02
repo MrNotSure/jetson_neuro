@@ -1,0 +1,9 @@
+INA228 sd of 0.01 s means: raw 114.3 mW, detrended 114.1 mW (n 30023)
+INA228 sd of 1 s means: raw 34.8 mW, detrended 34.3 mW (n 300)
+INA228 sd of 10 s means: raw 8.3 mW, detrended 5.6 mW (n 30)
+INA228 sd of 30 s means: raw 7.8 mW, detrended 4.4 mW (n 10)
+INA228 first vs last minute mean: 6375.3 / 6355.0 mW
+meter-only floor (bench: sd 0.19 mA per conversion x 19.26 V) = 3.58 mW per conversion; for 1 s means 0.118 mW
+VDD_IN: (mV, mA) values and counts: [(5024, 896, 1), (5024, 904, 2986), (5024, 912, 16)]
+VDD_CPU_GPU_CV: (mV, mA) values and counts: [(5016, 88, 2), (5024, 88, 2997), (5024, 96, 4)]
+VDD_SOC: (mV, mA) values and counts: [(5024, 272, 1830), (5024, 280, 1173)]

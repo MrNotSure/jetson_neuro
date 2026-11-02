@@ -1,0 +1,39 @@
+== 2026-10-31T13:20:45Z Part 1.6 after sync
+rtt    75.0 ms   board - mac -0.004 s
+rtt    75.1 ms   board - mac -0.004 s
+rtt    85.2 ms   board - mac +0.001 s
+best (shortest rtt 75.0 ms): board - mac = -0.004 s = -0.0000 d; mac utc 2026-10-31 13:20:46
+ 14:20:46 up 11 min,  1 user,  load average: 0.00, 0.07, 0.11
+inactive inactive inactive inactive inactive inactive 
+No jobs running.
+no apt/dpkg
+== journal starts since boot
+2026-10-31T14:08:41+01:00 jetson systemd[1]: Starting polkit.service - Authorization Manager...
+2026-10-31T14:08:41+01:00 jetson polkitd[2136]: Started polkitd version 124
+2026-10-31T14:08:41+01:00 jetson systemd[1]: Started polkit.service - Authorization Manager.
+2026-10-31T14:09:50+01:00 jetson systemd[1]: Starting user-runtime-dir@2002.service - User Runtime Directory /run/user/2002...
+2026-10-31T14:09:50+01:00 jetson systemd[2513]: Started ubuntu-report.path - Pending report trigger for Ubuntu Report.
+2026-10-31T14:09:50+01:00 jetson systemd[2513]: Started launchpadlib-cache-clean.timer - Clean up old files in the Launchpadlib cache.
+2026-10-31T14:09:50+01:00 jetson systemd[2513]: Starting dbus.socket - D-Bus User Message Bus Socket...
+2026-10-31T14:09:50+01:00 jetson systemd[2513]: Starting gpg-agent-ssh.socket - GnuPG cryptographic agent (ssh-agent emulation)...
+2026-10-31T14:09:50+01:00 jetson systemd[2513]: Starting gnome-initial-setup-copy-worker.service - GNOME Initial Setup Copy Worker...
+2026-10-31T14:09:50+01:00 jetson systemd[2513]: Started pipewire.service - PipeWire Multimedia Service.
+2026-10-31T14:09:50+01:00 jetson systemd[2513]: Started filter-chain.service - PipeWire filter chain daemon.
+2026-10-31T14:09:50+01:00 jetson systemd[2513]: Started wireplumber.service - Multimedia Service Session Manager.
+2026-10-31T14:09:50+01:00 jetson systemd[2513]: Started pipewire-pulse.service - PipeWire PulseAudio.
+2026-10-31T14:09:50+01:00 jetson systemd[2513]: Starting dbus.service - D-Bus User Message Bus...
+2026-10-31T14:09:51+01:00 jetson systemd[2513]: Started dbus.service - D-Bus User Message Bus.
+== power mode
+Result=success
+ExecMainStatus=0
+ActiveState=inactive
+NV Power Mode: 25W
+1
+/sys/devices/system/cpu/cpufreq/policy0 governor=schedutil min=729600 max=1344000 cur=1190400
+/sys/devices/system/cpu/cpufreq/policy4 governor=schedutil min=729600 max=1344000 cur=729600
+gpu governor=nvhost_podgov min=306000000 max=918000000 cur=306000000
+cpuidle disable: 0 0 0 0 0 0 0 0 0 0 0 0 
+tpc_pg_mask=240 fbp_pg_mask=2
+/sys/bus/i2c/drivers/ina3221/1-0040/hwmon/hwmon3
+cpu-thermal=45968 gpu-thermal=45406 soc0-thermal=44781 soc1-thermal=45093 soc2-thermal=45250 tj-thermal=45625 
+fan pwm 55

@@ -1,0 +1,23 @@
+setting            range VSHCT  AVG      n     mean      sd    min    max    p-p   mean uA     sd uA      sd nV datasheet noise-free p-p (steps)
+ct50_avg1              0    50    1   5000   -1.884  25.698   -148    148    296    -39.25    535.37     8030.5 194 (ENOB 12.4)
+ct280_avg1             0   280    1   5000   -5.346  11.963    -53     35     88   -111.37    249.23     3738.5 74 (ENOB 13.8)
+ct1052_avg1            0  1052    1   5000   -5.331   6.068    -26     16     42   -111.05    126.41     1896.1 45 (ENOB 14.5)
+ct280_avg16            0   280   16   5000   -5.264   3.049    -19      6     25   -109.68     63.52      952.8 -
+ct280_avg64            0   280   64   5000   -5.286   1.539    -11      1     12   -110.13     32.06      480.9 -
+ct280_avg1_range1      1   280    1   5000  -20.781  49.005   -208    172    380   -108.23    255.24     3828.5 294 (ENOB 11.8)
+
+standard error of the mean (steps) = sd/sqrt(n), assuming independent samples:
+  ct50_avg1          sem 0.363 steps; lag-1 autocorrelation -0.000; first half mean -1.252, second half mean -2.516
+  ct280_avg1         sem 0.169 steps; lag-1 autocorrelation +0.021; first half mean -5.166, second half mean -5.526
+  ct1052_avg1        sem 0.086 steps; lag-1 autocorrelation -0.020; first half mean -5.369, second half mean -5.292
+  ct280_avg16        sem 0.043 steps; lag-1 autocorrelation -0.011; first half mean -5.281, second half mean -5.248
+  ct280_avg64        sem 0.022 steps; lag-1 autocorrelation +0.022; first half mean -5.236, second half mean -5.336
+  ct280_avg1_range1  sem 0.693 steps; lag-1 autocorrelation +0.009; first half mean -19.885, second half mean -21.677
+
+sample spacing vs expected conversion cycle:
+  ct50_avg1          expected cycle    150 us, measured     527.3 us per sample (+251.533 % if every cycle was read)
+  ct280_avg1         expected cycle    380 us, measured     528.3 us per sample (+39.026 % if every cycle was read)
+  ct1052_avg1        expected cycle   1152 us, measured    1151.7 us per sample (-0.026 % if every cycle was read)
+  ct280_avg16        expected cycle   6080 us, measured    6078.5 us per sample (-0.025 % if every cycle was read)
+  ct280_avg64        expected cycle  24320 us, measured   24313.7 us per sample (-0.026 % if every cycle was read)
+  ct280_avg1_range1  expected cycle    380 us, measured     528.3 us per sample (+39.026 % if every cycle was read)

@@ -1,0 +1,21 @@
+# Capture C2 (first attempt, 12:30:10-12:33:59 UTC): started for rounds 5..N, stopped for the lunch pause before
+# any block ran. Not used for any result. Kept as raw/C2.bin / C2.chunks.csv / C2.txt.   (all V)
+capcheck: 99628 conversions over 227 s; two gaps of 58.78 s and 59.28 s (missed about 110 600), seq16 gaps 2;
+Pico STATS max_handler_us 1000368, max_write_us 999783, busy_frac 0.783 (0.55 normally); FDEBUG 0.
+Cause: the Mac slept. pmset -g log (local time = UTC+1):
+  13:31:27 display off; 13:31:32 "Entering Sleep state due to 'Clamshell Sleep' ... Using Batt" 62 s
+  13:32:34 DarkWake (maintenance) 22 s; 13:32:56 "Entering Sleep state due to 'Maintenance Sleep'" 62 s; 13:33:58 DarkWake
+  -> UTC 12:31:32-12:32:34 and 12:32:56-12:33:58: exactly the two conversion gaps (Mac arrival 12:32:33 and 12:33:57).
+  The capture's Mac unix - mono offset jumps by +59.49 s and +59.64 s at those times (the Mac's monotonic clock stops
+  in sleep). While the Mac sleeps it stops reading USB, the Pico's stdout writes block (~1 s each), and ALRT isn't
+  re-armed, so conversions are lost. The Mac was on battery then (lid closed, unplugged).
+One GP16 fall + rise 0.12 us apart (one PIO count) at PIO 81.241 s, about 12:31:33 UTC: the moment the Mac went to
+  sleep. Not a UART byte (that would be 8.7 us). Cause NV (USB suspend / ground shift at sleep is my guess).
+The stop file was touched about 12:33:01; the Pico answered 'q' only after the second DarkWake (12:33:58).
+The C2 sampler / freqlog files and board_cmds.log lines after 12:24 were on the board's /tmp and were lost when the
+  Jetson was power-cycled during lunch; their start/stop commands are in commands.log (12:30:12, 12:32:58).
+S0 and C1 are clean: Mac unix - mono spread 1.8 ms and 2.5 ms over each capture (no sleep).
+Fix for the rest of the session: `caffeinate -ims -t 10800` running on the Mac from 13:56 UTC (prevents idle and
+  system sleep); clamshell sleep with the lid closed isn't prevented by it, so the lid stays open.
+Analysis fix: t6_analyze.py takes Mac unix - mono per capture from its chunks.csv, not the median over all marks
+  (the marks after the sleep carry a different offset). C1's earlier result is unaffected (all marks then pre-sleep).

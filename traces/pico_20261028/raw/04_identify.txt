@@ -1,0 +1,10 @@
+sys.implementation = (name='micropython', version=(1, 29, 0, ''), _machine='Raspberry Pi Pico with RP2040', _mpy=4870, _build='RPI_PICO', _thread='unsafe')
+sys.version = 3.4.0; MicroPython v1.29.0 on 2026-08-24
+sys.platform = rp2
+os.uname() = (sysname='rp2', nodename='rp2', release='1.29.0', version='v1.29.0 on 2026-08-24 (GNU 16.1.0 MinSizeRel)', machine='Raspberry Pi Pico with RP2040')
+machine.freq() = 125000000
+unique_id hex = <pico-serial>
+gc.mem_free() = 228656
+gc.mem_alloc() = 5072
+os.listdir(/) = []
+fs total/free bytes = 1441792 1433600

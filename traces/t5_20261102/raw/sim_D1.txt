@@ -1,0 +1,7 @@
+run directory: runs/t5_20261102/sim/20261102T100519Z_sine_classical
+status: completed
+  periods=6000 episodes=1 misses=1 achieved_hz=99.9942
+  error: rms_deg=0.182 max_deg=0.57  in_view rms_px=0.881 max_px=2.76
+  in_fov=1 losses=0 unrecovered=0 success_rate=1
+  events/period p95=253  sim_us p99=2.27e+03  rtt_us p99=1.81e+03  lateness_us p99=20.9
+  cmd_invalid=0 cmd_clamped=0 flags={'fault': 0, 'detect': 0, 'recover': 0}

@@ -1,0 +1,21 @@
+2026-10-31T13:22:53.373Z	(board) nohup ~/venvs/jn/bin/python /tmp/jn_final/scripts/sampler.py --rate 10 --duration 420 --out /tmp/jn_final/P1_ina3221_10hz.csv
+2026-10-31T13:31:22.411Z	(board) nohup ~/venvs/jn/bin/python /tmp/jn_final/scripts/sampler.py --rate 10 --duration 2400 --out /tmp/jn_final/P2_ina3221_10hz.csv
+2026-10-31T13:31:28.934Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup ~/venvs/jn/bin/python -u /tmp/jn_final/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_final/mc_S.csv
+2026-10-31T13:31:41.385Z	(mc_wait.sh) wait for pid 3960 to exit
+2026-10-31T13:33:40.923Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup ~/venvs/jn/bin/python -u /tmp/jn_final/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_final/mc_R1H.csv
+2026-10-31T13:34:43.098Z	(mc_wait.sh) wait for pid 4176 to exit
+2026-10-31T13:34:53.823Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup ~/venvs/jn/bin/python -u /tmp/jn_final/scripts/mark_ctl.py --controller centroid --listen 192.168.55.1:5555 --out /tmp/jn_final/mc_R1C.csv
+2026-10-31T13:35:56.035Z	(mc_wait.sh) wait for pid 4315 to exit
+2026-10-31T13:37:18.386Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup ~/venvs/jn/bin/python -u /tmp/jn_final/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_final/mc_R2H.csv
+2026-10-31T13:38:20.455Z	(mc_wait.sh) wait for pid 4526 to exit
+2026-10-31T13:38:31.192Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup ~/venvs/jn/bin/python -u /tmp/jn_final/scripts/mark_ctl.py --controller centroid --listen 192.168.55.1:5555 --out /tmp/jn_final/mc_R2C.csv
+2026-10-31T13:39:33.290Z	(mc_wait.sh) wait for pid 4661 to exit
+2026-10-31T13:40:55.581Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup ~/venvs/jn/bin/python -u /tmp/jn_final/scripts/mark_ctl.py --controller centroid --listen 192.168.55.1:5555 --out /tmp/jn_final/mc_R3C.csv
+2026-10-31T13:41:57.935Z	(mc_wait.sh) wait for pid 4878 to exit
+2026-10-31T13:42:08.627Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup ~/venvs/jn/bin/python -u /tmp/jn_final/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_final/mc_R3H.csv
+2026-10-31T13:43:10.801Z	(mc_wait.sh) wait for pid 5013 to exit
+2026-10-31T13:44:33.063Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup ~/venvs/jn/bin/python -u /tmp/jn_final/scripts/mark_ctl.py --controller hold --listen 192.168.55.1:5555 --out /tmp/jn_final/mc_R4H.csv
+2026-10-31T13:45:35.164Z	(mc_wait.sh) wait for pid 5230 to exit
+2026-10-31T13:45:45.799Z	(mc_start.sh) cd ~/jetson_neuro && PYTHONPATH=src nohup ~/venvs/jn/bin/python -u /tmp/jn_final/scripts/mark_ctl.py --controller centroid --listen 192.168.55.1:5555 --out /tmp/jn_final/mc_R4C.csv
+2026-10-31T13:46:47.987Z	(mc_wait.sh) wait for pid 5363 to exit
+2026-10-31T13:47:27.136Z	(board) kill -TERM 3913 (P2 sampler)

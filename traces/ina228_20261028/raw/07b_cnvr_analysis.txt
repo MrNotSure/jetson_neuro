@@ -1,0 +1,57 @@
+== T1_transparent_diag_400k_repeat  (expected cycle 380 us)
+   conversions seen 1000 of 883 slots; missed 0; off-grid falls 954; glitch pulses <1 us 116
+   interval (consecutive slots, n=882): median 379.896 us, min 81.312, max 379.944, sd 59773 ns, p1..p99 177.648..379.920
+   fitted period 380.1585 us = expected +0.0417 %; jitter about the fit sd 77759 ns, max |res| 216244 ns
+   phase steps of the conversion grid (>1 us): [(8738, 174.6), (8912, -174.58), (10637, 174.74), (10812, -174.72), (15956, 166.58), (16122, -166.61), (17095, 173.54), (17269, -173.54), (17475, -93.22), (17762, 93.22)]
+   handler start after the fall: median 166 us, p99 462, max 657
+   DIAG_ALRT read done (ALRT re-armed) after the fall: median 334 us, p99 630, max 823; margin to next conversion min -443 us
+== I1_latched_diag_380  (expected cycle 380 us)
+   conversions seen 1900 of 1900 slots; missed 0; off-grid falls 700; glitch pulses <1 us 0
+   interval (consecutive slots, n=1899): median 379.896 us, min 379.848, max 389.904, sd 230 ns, p1..p99 379.872..379.920
+   fitted period 379.9010 us = expected -0.0261 %; jitter about the fit sd 2884 ns, max |res| 5742 ns
+   phase steps of the conversion grid (>1 us): [(496901, 10.01)]
+   handler start after the fall: median 50 us, p99 62, max 97
+   DIAG_ALRT read done (ALRT re-armed) after the fall: median 218 us, p99 230, max 277; margin to next conversion min 103 us
+== I2_latched_diag_4608  (expected cycle 4608 us)
+   conversions seen 599 of 599 slots; missed 0; off-grid falls 212; glitch pulses <1 us 0
+   interval (consecutive slots, n=598): median 4606.704 us, min 4606.632, max 4616.688, sd 909 ns, p1..p99 4606.632..4606.776
+   fitted period 4606.7918 us = expected -0.0262 %; jitter about the fit sd 2814 ns, max |res| 5992 ns
+   phase steps of the conversion grid (>1 us): [(488312, 9.98), (990452, 9.98), (1487987, 9.96), (1990127, 9.98), (2487659, 9.98)]
+   handler start after the fall: median 47 us, p99 58, max 59
+   DIAG_ALRT read done (ALRT re-armed) after the fall: median 215 us, p99 226, max 243; margin to next conversion min 4364 us
+== V1_latched_vsh_380_400k  (expected cycle 380 us)
+   conversions seen 1000 of 1499 slots; missed 499; off-grid falls 250; glitch pulses <1 us 0
+   interval (consecutive slots, n=500): median 379.896 us, min 379.848, max 379.944, sd 15 ns, p1..p99 379.872..379.920
+   fitted period 379.8982 us = expected -0.0268 %; jitter about the fit sd 2710 ns, max |res| 6213 ns
+   phase steps of the conversion grid (>1 us): [(496141, 9.98)]
+   handler start after the fall: median 45 us, p99 119, max 124
+   VSHUNT read done after the fall: median 236 us, p99 305, max 311; later than T-50 us (risk of reading the next result): 0
+   VSHUNT values: mean -4.86 steps, sd 11.91
+   DIAG_ALRT read done (ALRT re-armed) after the fall: median 402 us, p99 471, max 476; margin to next conversion min -96 us
+== V2_latched_vsh_4608_400k  (expected cycle 4608 us)
+   conversions seen 599 of 599 slots; missed 0; off-grid falls 231; glitch pulses <1 us 0
+   interval (consecutive slots, n=598): median 4606.704 us, min 4606.632, max 4616.712, sd 910 ns, p1..p99 4606.632..4606.752
+   fitted period 4606.7854 us = expected -0.0264 %; jitter about the fit sd 2861 ns, max |res| 5345 ns
+   phase steps of the conversion grid (>1 us): [(488311, 10.01), (990451, 9.98), (1487984, 9.98), (1990123, 9.98), (2487656, 9.94)]
+   handler start after the fall: median 48 us, p99 60, max 60
+   VSHUNT read done after the fall: median 235 us, p99 247, max 249; later than T-50 us (risk of reading the next result): 0
+   VSHUNT values: mean -5.09 steps, sd 2.87
+   DIAG_ALRT read done (ALRT re-armed) after the fall: median 400 us, p99 413, max 416; margin to next conversion min 4191 us
+== V3_latched_vsh_380_400k_native  (expected cycle 380 us)
+   conversions seen 999 of 1392 slots; missed 393; off-grid falls 61; glitch pulses <1 us 0
+   interval (consecutive slots, n=605): median 379.896 us, min 379.848, max 379.944, sd 16 ns, p1..p99 379.872..379.920
+   fitted period 379.8943 us = expected -0.0278 %; jitter about the fit sd 2153 ns, max |res| 7801 ns
+   phase steps of the conversion grid (>1 us): [(496519, 9.98)]
+   handler start after the fall: median 42 us, p99 79, max 83
+   VSHUNT read done after the fall: median 220 us, p99 258, max 262; later than T-50 us (risk of reading the next result): 0
+   VSHUNT values: mean -5.10 steps, sd 11.61
+   DIAG_ALRT read done (ALRT re-armed) after the fall: median 380 us, p99 418, max 421; margin to next conversion min -41 us
+== V4_latched_vsh_380_1M  (expected cycle 380 us)
+   conversions seen 1000 of 1000 slots; missed 0; off-grid falls 0; glitch pulses <1 us 0
+   interval (consecutive slots, n=999): median 379.896 us, min 379.848, max 379.944, sd 16 ns, p1..p99 379.872..379.920
+   fitted period 379.8934 us = expected -0.0280 %; jitter about the fit sd 157 ns, max |res| 459 ns
+   phase steps of the conversion grid (>1 us): []
+   handler start after the fall: median 46 us, p99 57, max 59
+   VSHUNT read done after the fall: median 146 us, p99 158, max 161; later than T-50 us (risk of reading the next result): 0
+   VSHUNT values: mean -4.07 steps, sd 12.17
+   DIAG_ALRT read done (ALRT re-armed) after the fall: median 239 us, p99 252, max 254; margin to next conversion min 126 us

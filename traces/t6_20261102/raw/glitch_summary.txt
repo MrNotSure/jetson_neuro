@@ -1,0 +1,23 @@
+# GP16 pulses narrower than 8.5 us (a marker byte's start bit is 8.68 us) and ALRT records without CNVRF, per capture
+S0: 1001 falls, 0 narrow pulses, 0 no-CNVRF records
+C1: 48008 falls, 0 narrow pulses, 0 no-CNVRF records
+C2b: 96027 falls, 11 narrow pulses, 5 no-CNVRF records
+   14:19:34 UTC: width 0.12 us; 8.76 us after the previous fall, 0.12 us after the previous rise; next fall +9.935 ms
+   14:39:23 UTC: width 0.12 us; 627194593.56 us after the previous fall, 627194584.80 us after the previous rise; next fall +2.865 ms
+   14:39:23 UTC: width 0.12 us; 2864.76 us after the previous fall, 2864.64 us after the previous rise; next fall +0.056 ms
+   14:39:23 UTC: width 0.12 us; 56.04 us after the previous fall, 55.92 us after the previous rise; next fall +0.156 ms
+   14:39:23 UTC: width 0.24 us; 156.48 us after the previous fall, 156.36 us after the previous rise; next fall +0.000 ms
+   14:39:23 UTC: width 0.12 us; 0.48 us after the previous fall, 0.24 us after the previous rise; next fall +0.001 ms
+   14:39:23 UTC: width 0.12 us; 0.72 us after the previous fall, 0.60 us after the previous rise; next fall +0.001 ms
+   14:39:23 UTC: width 0.12 us; 0.96 us after the previous fall, 0.84 us after the previous rise; next fall +6.351 ms
+   14:39:23 UTC: width 0.12 us; 6351.12 us after the previous fall, 6351.00 us after the previous rise; next fall +91.867 ms
+   14:39:23 UTC: width 0.12 us; 91867.44 us after the previous fall, 91867.32 us after the previous rise; next fall +1.818 ms
+   14:39:23 UTC: width 0.12 us; 1817.52 us after the previous fall, 1817.40 us after the previous rise; next fall +nan ms
+   no-CNVRF record 267778 at 14:10:02 UTC; the edge before it is +0.12 us from the nearest GP16 fall
+   no-CNVRF record 1078528 at 14:24:37 UTC; the edge before it is -3839.40 us from the nearest GP16 fall
+   no-CNVRF record 1078531 at 14:24:37 UTC; the edge before it is -3677.40 us from the nearest GP16 fall
+   no-CNVRF record 1078534 at 14:24:37 UTC; the edge before it is -1679.88 us from the nearest GP16 fall
+   no-CNVRF record 1078536 at 14:24:37 UTC; the edge before it is +479.52 us from the nearest GP16 fall
+C3: 96017 falls, 1 narrow pulses, 1 no-CNVRF records
+   14:55:54 UTC: width 0.12 us; 8.76 us after the previous fall, 0.12 us after the previous rise; next fall +9.948 ms
+   no-CNVRF record 94555 at 14:43:54 UTC; the edge before it is +8.76 us from the nearest GP16 fall

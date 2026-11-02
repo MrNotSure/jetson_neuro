@@ -1,0 +1,37 @@
+### max-rate sampler
+samples=3164 spacing median=3.427 ms
+burst 1000 ms: VDD_CPU_GPU_CV base=522 mW, during mean=2087 max=2808; VDD_IN base=4622 during mean=6247
+   peak within burst+600ms=2808 mW; first sample >= half-way at +254.5 ms after start; last >= half-way at +291.9 ms after end
+burst 300 ms: VDD_CPU_GPU_CV base=589 mW, during mean=1296 max=1871; VDD_IN base=4690 during mean=5415
+   peak within burst+600ms=1871 mW; first sample >= half-way at +125.4 ms after start; last >= half-way at +269.7 ms after end
+burst 100 ms: VDD_CPU_GPU_CV base=617 mW, during mean=885 max=1120; VDD_IN base=4720 during mean=4999
+   peak within burst+600ms=1120 mW; first sample >= half-way at +48.7 ms after start; last >= half-way at +231.5 ms after end
+burst 30 ms: VDD_CPU_GPU_CV base=524 mW, during mean=621 max=681; VDD_IN base=4630 during mean=4727
+   peak within burst+600ms=681 mW; first sample >= half-way at +18.7 ms after start; last >= half-way at +209.7 ms after end
+burst 10 ms: VDD_CPU_GPU_CV base=522 mW, during mean=542 max=562; VDD_IN base=4622 during mean=4642
+   peak within burst+600ms=562 mW; first sample >= half-way at +6.7 ms after start; last >= half-way at +319.1 ms after end
+rise edge of the 1000 ms burst, curr2 [mA] at (ms rel. edge):
+   -29:104 -25:104 -22:104 -18:104 -15:104 -12:104 -8:104 -5:104 -1:104 +6:112 +9:112 +13:112 +16:120 +20:120 +23:128 +27:128 +30:128 +34:136 +37:136 +42:144 +46:144 +49:152 +52:152 +60:160
+   curr1: -29:920 -25:920 -22:920 -18:920 -15:920 -12:920 -8:920 -5:920 -1:920 +6:928 +9:928 +13:936 +16:936 +20:936 +23:944 +27:944 +30:952 +34:952 +37:960 +42:960 +46:968 +49:968 +52:976 +60:984
+fall edge of the 1000 ms burst, curr2 [mA] at (ms rel. edge):
+   -29:568 -25:568 -22:568 -15:568 -11:568 -8:568 -4:568 -1:568 +3:568 +6:560 +9:560 +13:560 +16:552 +19:552 +23:544 +26:544 +29:536 +33:536 +36:536 +39:528 +43:528 +46:520 +49:520 +53:520 +56:512 +60:512
+   curr1: -29:1416 -25:1416 -22:1416 -15:1416 -11:1416 -8:1416 -4:1416 -1:1416 +3:1416 +6:1408 +9:1408 +13:1400 +16:1400 +19:1392 +23:1392 +26:1384 +29:1384 +33:1376 +36:1376 +39:1368 +43:1368 +46:1368 +49:1360 +53:1360 +56:1352 +60:1352
+
+### 100 Hz sampler
+samples=1101 spacing median=10.000 ms
+burst 1000 ms: VDD_CPU_GPU_CV base=482 mW, during mean=2057 max=2848; VDD_IN base=4582 during mean=6206
+   peak within burst+600ms=2848 mW; first sample >= half-way at +273.0 ms after start; last >= half-way at +283.0 ms after end
+burst 300 ms: VDD_CPU_GPU_CV base=574 mW, during mean=1278 max=1831; VDD_IN base=4669 during mean=5400
+   peak within burst+600ms=1831 mW; first sample >= half-way at +133.0 ms after start; last >= half-way at +253.0 ms after end
+burst 100 ms: VDD_CPU_GPU_CV base=592 mW, during mean=845 max=1080; VDD_IN base=4691 during mean=4948
+   peak within burst+600ms=1120 mW; first sample >= half-way at +53.0 ms after start; last >= half-way at +213.0 ms after end
+burst 30 ms: VDD_CPU_GPU_CV base=518 mW, during mean=602 max=641; VDD_IN base=4622 during mean=4697
+   peak within burst+600ms=681 mW; first sample >= half-way at +13.0 ms after start; last >= half-way at +263.0 ms after end
+burst 10 ms: VDD_CPU_GPU_CV base=482 mW, during mean=522 max=522; VDD_IN base=4582 during mean=4622
+   peak within burst+600ms=562 mW; first sample >= half-way at +6.4 ms after start; last >= half-way at +443.0 ms after end
+rise edge of the 1000 ms burst, curr2 [mA] at (ms rel. edge):
+   -27:96 -17:96 -7:96 +6:104 +13:112 +23:120 +33:128 +43:136 +53:144
+   curr1: -27:912 -17:912 -7:912 +6:920 +13:920 +23:936 +33:944 +43:952 +53:960
+fall edge of the 1000 ms burst, curr2 [mA] at (ms rel. edge):
+   -27:568 -17:568 -7:576 +3:568 +13:560 +23:544 +33:536 +43:528 +53:520
+   curr1: -27:1416 -17:1416 -7:1416 +3:1408 +13:1400 +23:1392 +33:1376 +43:1368 +53:1360
