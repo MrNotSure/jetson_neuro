@@ -189,6 +189,8 @@ history. The link is the `src/` tree:
   roles "the planner", "the bench agent" and "the user". Findings are tagged
   **V** (checked and seen), **V-user** (observed or reported by the author)
   and **NV** (not verified).
+- **Models used in development:** Claude Opus 5.5 and Claude Opus 4.8
+  (Anthropic), and GPT-6 Astra (OpenAI), through the Kiro IDE.
 - **References to private notes.** Docs and reports cite `SETUP_NOTES.md`
   (the private rig notebook: board setup, troubleshooting, the session
   checklist) and `hardware_demo_plan.md` (the private project plan). Neither is
