@@ -304,43 +304,22 @@ Raspberry Pi Pico (RP2040), MicroPython 1.29.0, as the logger
 Board configuration and the per-session checklist: `docs/setup.md`. Wiring:
 `docs/stage1_wiring.md`.
 
-## Provenance
+## Provenance and disclosure
 
-The code was developed in a private repository, and the traces and docs cite
-its commit SHAs (`0c397e1`, `cbcae21`, …). Those commits aren't in this repo's
-history. The link is the `src/` tree:
-
-- controller A's final evaluation (`docs/ctl_a.md` §5–§7, code `ce1bda2`)
-  and the board sessions T5, T6 and T6b (code `0c397e1`) ran `src/` tree
-  `8a190b7ca99ad4fedcde25b8c0194ba7767dd413`, which is this repo's `src/`.
-  Check it with `git rev-parse HEAD:src`; `traces/t6b_20261102/raw/board_src_md5.txt`
-  also lists the board's files by md5;
-- controller A's tuning grid (`docs/ctl_a.md` §4) ran an earlier
-  `classical.py`, before the review fixes;
-- sessions up to 31 Oct ran tree `d096a60`: the same code without controller A
-  (`classical.py` absent, and the 8-line `classical` branch in `testctl.py`).
-
-## Notes on the data and the docs
-
-- **How the work was done.** The sessions were planned, run and reported with
-  AI coding agents, under the author's direction; the author did every
-  physical step and approved the board's `sudo` commands. Reports call these
-  roles "the planner", "the bench agent" and "the user". Findings are tagged
-  **V** (checked and seen), **V-user** (observed or reported by the author)
-  and **NV** (not verified).
-- **Models used in development:** Claude Opus 5.5 and Claude Opus 4.8
-  (Anthropic), and GPT-6 Astra (OpenAI), through the Kiro IDE.
-- **References to private notes.** Docs and reports cite `SETUP_NOTES.md`
-  (the private rig notebook: board setup, troubleshooting, the session
-  checklist) and `hardware_demo_plan.md` (the private project plan). Neither is
-  published; `docs/setup.md` summarises the parts the measurements depend on.
-  Session briefs ("the brief", bare `§N` in reports) and one internal code
-  review are not published either.
-- **`runs/…` paths.** Reports were written in a gitignored `runs/<session>/`
-  folder and copied to `traces/<session>/`; read `runs/<session>` as
-  `traces/<session>`. The evaluation and tuning runs cited in `docs/ctl_a.md`
-  are summarised in `traces/ctl_a_eval_20261101/`.
-- **Redactions and removals** are listed in `traces/README.md`.
+- **AI assistance.** Code, docs and analyses were developed with AI coding
+  agents under the author's direction; the author did every physical step on
+  the rig. Models: Claude Opus 5.5 and Claude Opus 4.8 (Anthropic), GPT-6
+  Astra (OpenAI). Reports refer to the roles "the planner", "the bench agent"
+  and "the user", and tag findings **V** (checked), **V-user** (observed by
+  the author) or **NV** (not verified).
+- **Code.** Developed in a private repository, whose commit SHAs the traces
+  cite. Controller A's final evaluation and the board sessions T5–T6b ran this
+  repo's `src/` (tree `8a190b7…`, check with `git rev-parse HEAD:src`);
+  earlier sessions ran the same code without controller A.
+- **Not published:** the private rig notebook (`SETUP_NOTES.md`, summarised in
+  `docs/setup.md`), the project plan, the session briefs and one code review.
+  In reports, `runs/<session>/` means `traces/<session>/`. Redactions are
+  listed in `traces/README.md`.
 
 ## Citing
 
